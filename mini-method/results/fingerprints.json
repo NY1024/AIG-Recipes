@@ -1,0 +1,3244 @@
+{
+  "total_fingerprints": 121,
+  "total_http_matchers": 171,
+  "total_version_extractors": 29,
+  "categories": {
+    "AI Agent Config": 1,
+    "AI Chatbot/UI": 27,
+    "API Gateway/Proxy": 7,
+    "Agent Platform": 11,
+    "Cloud AI Service": 10,
+    "ComfyUI": 2,
+    "Data/Infra": 2,
+    "Dev/Notebook": 6,
+    "LLM Serving": 16,
+    "MCP": 2,
+    "Model Training/ML": 7,
+    "Other": 22,
+    "RAG/Knowledge": 7,
+    "TTS": 1
+  },
+  "fingerprints": [
+    {
+      "file": "9router.yaml",
+      "name": "9router",
+      "product": "9router",
+      "vendor": "decolua",
+      "severity": "info",
+      "author": "A.I.G bot",
+      "category": "AI Chatbot/UI",
+      "http_matcher_count": 1,
+      "version_extractor_count": 0,
+      "http_matchers": [
+        {
+          "method": "GET",
+          "path": "/dashboard",
+          "matchers": [
+            "body=\"9Router\"",
+            "body=\"<title>9Router\""
+          ]
+        }
+      ],
+      "version_extractors": [],
+      "relative_path": "9router.yaml"
+    },
+    {
+      "file": "ai-agent-config.yaml",
+      "name": "AI-Agent-Config",
+      "product": "AI-Agent-Config",
+      "vendor": "various",
+      "severity": "high",
+      "author": "腾讯朱雀实验室",
+      "category": "AI Agent Config",
+      "http_matcher_count": 13,
+      "version_extractor_count": 0,
+      "http_matchers": [
+        {
+          "method": "GET",
+          "path": "/claude_desktop_config.json",
+          "matchers": [
+            "body~=\"^\\s*\\{\""
+          ]
+        },
+        {
+          "method": "GET",
+          "path": "/.claude.json",
+          "matchers": [
+            "body~=\"^\\s*\\{\""
+          ]
+        },
+        {
+          "method": "GET",
+          "path": "/.mcp.json",
+          "matchers": [
+            "body~=\"^\\s*\\{\""
+          ]
+        },
+        {
+          "method": "GET",
+          "path": "/.cursor/mcp.json",
+          "matchers": [
+            "body~=\"^\\s*\\{\""
+          ]
+        },
+        {
+          "method": "GET",
+          "path": "/.trae/mcp.json",
+          "matchers": [
+            "body~=\"^\\s*\\{\""
+          ]
+        },
+        {
+          "method": "GET",
+          "path": "/mcp_settings.json",
+          "matchers": [
+            "body~=\"^\\s*\\{\""
+          ]
+        },
+        {
+          "method": "GET",
+          "path": "/.continue/config.json",
+          "matchers": [
+            "body~=\"^\\s*\\{\""
+          ]
+        },
+        {
+          "method": "GET",
+          "path": "/cline_mcp_settings.json",
+          "matchers": [
+            "body~=\"^\\s*\\{\""
+          ]
+        },
+        {
+          "method": "GET",
+          "path": "/mcp_config.json",
+          "matchers": [
+            "body~=\"^\\s*\\{\""
+          ]
+        },
+        {
+          "method": "GET",
+          "path": "/.vscode/mcp.json",
+          "matchers": [
+            "body~=\"^\\s*\\{\""
+          ]
+        },
+        {
+          "method": "GET",
+          "path": "/.config/zed/settings.json",
+          "matchers": [
+            "body~=\"^\\s*\\{\""
+          ]
+        },
+        {
+          "method": "GET",
+          "path": "/.config/goose/config.yaml",
+          "matchers": [
+            "body~=\"(?m)^\\w+\\s*:\""
+          ]
+        },
+        {
+          "method": "GET",
+          "path": "/.env",
+          "matchers": [
+            "body~=\"(OPENAI_API_KEY|ANTHROPIC_API_KEY|GEMINI_API_KEY|OPENROUTER_API_KEY|DEEPSEEK_API_KEY|HUNYUAN_API_KEY)\\s*=\\s*[A-Za-z0-9_\\-]{16,}\""
+          ]
+        }
+      ],
+      "version_extractors": [],
+      "relative_path": "ai-agent-config.yaml"
+    },
+    {
+      "file": "ai-chatbot.yaml",
+      "name": "ai-chatbot",
+      "product": "vercel",
+      "vendor": "ai-chatbot",
+      "severity": "info",
+      "author": "腾讯朱雀实验室",
+      "category": "Other",
+      "http_matcher_count": 1,
+      "version_extractor_count": 0,
+      "http_matchers": [
+        {
+          "method": "GET",
+          "path": "/",
+          "matchers": [
+            "body=\"<title>Next.js Chatbot Template</title>\""
+          ]
+        }
+      ],
+      "version_extractors": [],
+      "relative_path": "ai-chatbot.yaml"
+    },
+    {
+      "file": "anythingllm.yaml",
+      "name": "anythingllm",
+      "product": "anythingllm",
+      "vendor": "anythingllm",
+      "severity": "info",
+      "author": "腾讯朱雀实验室",
+      "category": "RAG/Knowledge",
+      "http_matcher_count": 2,
+      "version_extractor_count": 0,
+      "http_matchers": [
+        {
+          "method": "GET",
+          "path": "/",
+          "matchers": [
+            "body=\"<title>AnythingLLM | Your personal LLM trained on anything</title>\""
+          ]
+        },
+        {
+          "method": "GET",
+          "path": "/api/setup-complete",
+          "matchers": [
+            "body=\"AnythingLLMOllamaModelPref\" || body=\"\\\"PGVectorTableName\\\":\\\"anythingllm_vectors\\\"\""
+          ]
+        }
+      ],
+      "version_extractors": [],
+      "relative_path": "anythingllm.yaml"
+    },
+    {
+      "file": "aphrodite-engine.yaml",
+      "name": "aphrodite-engine",
+      "product": "aphrodite-engine",
+      "vendor": "aphrodite-engine",
+      "severity": "info",
+      "author": "A.I.G bot",
+      "category": "LLM Serving",
+      "http_matcher_count": 1,
+      "version_extractor_count": 0,
+      "http_matchers": [
+        {
+          "method": "GET",
+          "path": "/.well-known/serviceinfo",
+          "matchers": [
+            "body=\"\\\"Aphrodite Engine\\\"\" && body=\"\\\"software\\\"\""
+          ]
+        }
+      ],
+      "version_extractors": [],
+      "relative_path": "aphrodite-engine.yaml"
+    },
+    {
+      "file": "astrbot.yaml",
+      "name": "astrbot",
+      "product": "astrbot",
+      "vendor": "astrbot",
+      "severity": "info",
+      "author": "A.I.G bot",
+      "category": "AI Chatbot/UI",
+      "http_matcher_count": 1,
+      "version_extractor_count": 0,
+      "http_matchers": [
+        {
+          "method": "GET",
+          "path": "/",
+          "matchers": [
+            "body=\"<title>AstrBot\" && body=\"AstrBot Dashboard\""
+          ]
+        }
+      ],
+      "version_extractors": [],
+      "relative_path": "astrbot.yaml"
+    },
+    {
+      "file": "autogpt.yaml",
+      "name": "AutoGPT",
+      "product": "autogpt",
+      "vendor": "significant-gravitas",
+      "severity": "info",
+      "author": "A.I.G bot",
+      "category": "Agent Platform",
+      "http_matcher_count": 1,
+      "version_extractor_count": 0,
+      "http_matchers": [
+        {
+          "method": "GET",
+          "path": "/",
+          "matchers": [
+            "body=\"<title>AutoGPT Platform</title>\""
+          ]
+        }
+      ],
+      "version_extractors": [],
+      "relative_path": "autogpt.yaml"
+    },
+    {
+      "file": "aws-bedrock.yaml",
+      "name": "aws-bedrock",
+      "product": "aws-bedrock",
+      "vendor": "amazon",
+      "severity": "info",
+      "author": "A.I.G bot",
+      "category": "Cloud AI Service",
+      "http_matcher_count": 1,
+      "version_extractor_count": 0,
+      "http_matchers": [
+        {
+          "method": "GET",
+          "path": "/foundation-models",
+          "matchers": [
+            "body=\"\\\"Message\\\"\" && body=\"Authorization header\""
+          ]
+        }
+      ],
+      "version_extractors": [],
+      "relative_path": "aws-bedrock.yaml"
+    },
+    {
+      "file": "azure-openai.yaml",
+      "name": "azure-openai",
+      "product": "azure-openai",
+      "vendor": "microsoft",
+      "severity": "info",
+      "author": "A.I.G bot",
+      "category": "Cloud AI Service",
+      "http_matcher_count": 1,
+      "version_extractor_count": 0,
+      "http_matchers": [
+        {
+          "method": "GET",
+          "path": "/openai/deployments",
+          "matchers": [
+            "body=\"\\\"error\\\"\" && body=\"Access denied\""
+          ]
+        }
+      ],
+      "version_extractors": [],
+      "relative_path": "azure-openai.yaml"
+    },
+    {
+      "file": "baseten-truss.yaml",
+      "name": "baseten-truss",
+      "product": "baseten-truss",
+      "vendor": "baseten",
+      "severity": "info",
+      "author": "A.I.G bot",
+      "category": "LLM Serving",
+      "http_matcher_count": 1,
+      "version_extractor_count": 0,
+      "http_matchers": [
+        {
+          "method": "GET",
+          "path": "/openapi.json",
+          "matchers": [
+            "body=\"Baseten Inference Server\""
+          ]
+        }
+      ],
+      "version_extractors": [],
+      "relative_path": "baseten-truss.yaml"
+    },
+    {
+      "file": "bentoml.yaml",
+      "name": "bentoml",
+      "product": "bentoml",
+      "vendor": "bentoml",
+      "severity": "info",
+      "author": "A.I.G bot",
+      "category": "Other",
+      "http_matcher_count": 3,
+      "version_extractor_count": 0,
+      "http_matchers": [
+        {
+          "method": "GET",
+          "path": "/",
+          "matchers": [
+            "body=\"BentoML Prediction Service\""
+          ]
+        },
+        {
+          "method": "GET",
+          "path": "/docs.json",
+          "matchers": [
+            "body=\"BentoML Team\" && body=\"contact@bentoml.com\""
+          ]
+        },
+        {
+          "method": "GET",
+          "path": "/metrics",
+          "matchers": [
+            "body=\"bentoml_api_server\""
+          ]
+        }
+      ],
+      "version_extractors": [],
+      "relative_path": "bentoml.yaml"
+    },
+    {
+      "file": "betterchatgpt.yaml",
+      "name": "betterchatgpt",
+      "product": "betterchatgpt",
+      "vendor": "betterchatgpt",
+      "severity": "info",
+      "author": "A.I.G bot",
+      "category": "AI Chatbot/UI",
+      "http_matcher_count": 1,
+      "version_extractor_count": 0,
+      "http_matchers": [
+        {
+          "method": "GET",
+          "path": "/",
+          "matchers": [
+            "body=\"Better ChatGPT\" && body=\"Play and chat smarter with BetterChatGPT\""
+          ]
+        }
+      ],
+      "version_extractors": [],
+      "relative_path": "betterchatgpt.yaml"
+    },
+    {
+      "file": "bifrost.yaml",
+      "name": "bifrost",
+      "product": "bifrost",
+      "vendor": "maximhq",
+      "severity": "info",
+      "author": "A.I.G bot",
+      "category": "API Gateway/Proxy",
+      "http_matcher_count": 2,
+      "version_extractor_count": 0,
+      "http_matchers": [
+        {
+          "method": "GET",
+          "path": "/api/config",
+          "matchers": [
+            "body=\"\\\"is_db_connected\\\"\" && body=\"\\\"framework_config\\\"\""
+          ]
+        },
+        {
+          "method": "GET",
+          "path": "/health",
+          "matchers": [
+            "body=\"\\\"db_pings\\\"\""
+          ]
+        }
+      ],
+      "version_extractors": [],
+      "relative_path": "bifrost.yaml"
+    },
+    {
+      "file": "blinko.yaml",
+      "name": "blinko",
+      "product": "blinko",
+      "vendor": "blinkospace",
+      "severity": "info",
+      "author": "A.I.G bot",
+      "category": "AI Chatbot/UI",
+      "http_matcher_count": 1,
+      "version_extractor_count": 0,
+      "http_matchers": [
+        {
+          "method": "GET",
+          "path": "/",
+          "matchers": [
+            "body=\"<title>Blinko</title>\""
+          ]
+        }
+      ],
+      "version_extractors": [],
+      "relative_path": "blinko.yaml"
+    },
+    {
+      "file": "boxlite.yaml",
+      "name": "boxlite",
+      "product": "boxlite",
+      "vendor": "boxlite-ai",
+      "severity": "info",
+      "author": "A.I.G bot",
+      "category": "AI Chatbot/UI",
+      "http_matcher_count": 1,
+      "version_extractor_count": 0,
+      "http_matchers": [
+        {
+          "method": "GET",
+          "path": "/v1/config",
+          "matchers": [
+            "body=\"clone_enabled\"",
+            "body=\"snapshots_enabled\""
+          ]
+        }
+      ],
+      "version_extractors": [],
+      "relative_path": "boxlite.yaml"
+    },
+    {
+      "file": "budibase.yaml",
+      "name": "Budibase",
+      "product": "budibase",
+      "vendor": "budibase",
+      "severity": "info",
+      "author": "openclaw",
+      "category": "Agent Platform",
+      "http_matcher_count": 2,
+      "version_extractor_count": 1,
+      "http_matchers": [
+        {
+          "method": "GET",
+          "path": "/builder",
+          "matchers": [
+            "body=\"<title>Budibase</title>\""
+          ]
+        },
+        {
+          "method": "GET",
+          "path": "/",
+          "matchers": [
+            "body=\"spectrum--medium\" && body=\"/builder/fonts/phosphor-icons\""
+          ]
+        }
+      ],
+      "version_extractors": [
+        {
+          "method": "GET",
+          "path": "/api/dev/version",
+          "part": "body",
+          "regex": "\"version\"\\s*:\\s*\"([^\"]+)\""
+        }
+      ],
+      "relative_path": "budibase.yaml"
+    },
+    {
+      "file": "chat-langchain.yaml",
+      "name": "langchain",
+      "product": "ChatLangChain",
+      "vendor": "LangChain",
+      "severity": "info",
+      "author": "腾讯朱雀实验室",
+      "category": "Other",
+      "http_matcher_count": 1,
+      "version_extractor_count": 0,
+      "http_matchers": [
+        {
+          "method": "GET",
+          "path": "/",
+          "matchers": [
+            "body=\"<title>Chat LangChain</title>\""
+          ]
+        }
+      ],
+      "version_extractors": [],
+      "relative_path": "chat-langchain.yaml"
+    },
+    {
+      "file": "chuanhugpt.yaml",
+      "name": "Chuanhugpt",
+      "product": "Chuanhugpt",
+      "vendor": "Chuanhugpt",
+      "severity": "info",
+      "author": "腾讯朱雀实验室",
+      "category": "AI Chatbot/UI",
+      "http_matcher_count": 1,
+      "version_extractor_count": 0,
+      "http_matchers": [
+        {
+          "method": "GET",
+          "path": "/",
+          "matchers": [
+            "body=\"<meta name=\\\"application-name\\\" content=\\\"Chuanhu Chat\\\">\""
+          ]
+        }
+      ],
+      "version_extractors": [],
+      "relative_path": "chuanhugpt.yaml"
+    },
+    {
+      "file": "clawdbot.yaml",
+      "name": "Clawdbot Gateway",
+      "product": "Clawdbot Gateway",
+      "vendor": "Clawdbot Gateway",
+      "severity": "info",
+      "author": "momo",
+      "category": "AI Chatbot/UI",
+      "http_matcher_count": 1,
+      "version_extractor_count": 0,
+      "http_matchers": [
+        {
+          "method": "GET",
+          "path": "/",
+          "matchers": [
+            "body=\"<title>Clawdbot Control</title>\" || body=\"<clawdbot-app></clawdbot-app>\""
+          ]
+        }
+      ],
+      "version_extractors": [],
+      "relative_path": "clawdbot.yaml"
+    },
+    {
+      "file": "clickhouse.yaml",
+      "name": "clickhouse",
+      "product": "clickhouse",
+      "vendor": "clickhouse",
+      "severity": "info",
+      "author": "腾讯朱雀实验室",
+      "category": "Data/Infra",
+      "http_matcher_count": 1,
+      "version_extractor_count": 0,
+      "http_matchers": [
+        {
+          "method": "GET",
+          "path": "/",
+          "matchers": [
+            "header=\"x-clickhouse-summary\""
+          ]
+        }
+      ],
+      "version_extractors": [],
+      "relative_path": "clickhouse.yaml"
+    },
+    {
+      "file": "cloudflare-ai-gateway.yaml",
+      "name": "cloudflare-ai-gateway",
+      "product": "cloudflare-ai-gateway",
+      "vendor": "cloudflare",
+      "severity": "info",
+      "author": "A.I.G bot",
+      "category": "API Gateway/Proxy",
+      "http_matcher_count": 1,
+      "version_extractor_count": 0,
+      "http_matchers": [
+        {
+          "method": "GET",
+          "path": "/v1/models",
+          "matchers": [
+            "header=\"cf-aig-event-id\""
+          ]
+        }
+      ],
+      "version_extractors": [],
+      "relative_path": "cloudflare-ai-gateway.yaml"
+    },
+    {
+      "file": "comfyui-comfy-mtb.yaml",
+      "name": "comfy_mtb",
+      "product": "comfy_mtb",
+      "vendor": "comfyui",
+      "severity": "info",
+      "author": "腾讯朱雀实验室",
+      "category": "Other",
+      "http_matcher_count": 1,
+      "version_extractor_count": 0,
+      "http_matchers": [
+        {
+          "method": "GET",
+          "path": "/extensions",
+          "matchers": [
+            "body=\"extensions/comfy_mtb/\""
+          ]
+        }
+      ],
+      "version_extractors": [],
+      "relative_path": "comfyui/comfyui-comfy-mtb.yaml"
+    },
+    {
+      "file": "comfyui-custom-preview.yaml",
+      "name": "ComfyUI-Prompt-Preview",
+      "product": "ComfyUI-Prompt-Preview",
+      "vendor": "comfyui",
+      "severity": "info",
+      "author": "腾讯朱雀实验室",
+      "category": "ComfyUI",
+      "http_matcher_count": 1,
+      "version_extractor_count": 0,
+      "http_matchers": [
+        {
+          "method": "GET",
+          "path": "/extensions",
+          "matchers": [
+            "body=\"extensions/ComfyUI-Prompt-Preview/js\""
+          ]
+        }
+      ],
+      "version_extractors": [],
+      "relative_path": "comfyui/comfyui-custom-preview.yaml"
+    },
+    {
+      "file": "comfyui-custom-scripts.yaml",
+      "name": "ComfyUI-Custom-Scripts",
+      "product": "ComfyUI-Custom-Scripts",
+      "vendor": "comfyui",
+      "severity": "info",
+      "author": "腾讯朱雀实验室",
+      "category": "ComfyUI",
+      "http_matcher_count": 1,
+      "version_extractor_count": 0,
+      "http_matchers": [
+        {
+          "method": "GET",
+          "path": "/extensions",
+          "matchers": [
+            "body=\"extensions/ComfyUI-Custom-Scripts/js\""
+          ]
+        }
+      ],
+      "version_extractors": [],
+      "relative_path": "comfyui/comfyui-custom-scripts.yaml"
+    },
+    {
+      "file": "comfyui.yaml",
+      "name": "comfyui",
+      "product": "comfyanonymous",
+      "vendor": "comfyui",
+      "severity": "info",
+      "author": "腾讯朱雀实验室",
+      "category": "Other",
+      "http_matcher_count": 1,
+      "version_extractor_count": 1,
+      "http_matchers": [
+        {
+          "method": "GET",
+          "path": "/",
+          "matchers": [
+            "body=\"<title>ComfyUI</title>\""
+          ]
+        }
+      ],
+      "version_extractors": [
+        {
+          "method": "GET",
+          "path": "/system_stats",
+          "part": "body",
+          "regex": "\"comfyui_version\":\\s?\"(.*?)\""
+        }
+      ],
+      "relative_path": "comfyui/comfyui.yaml"
+    },
+    {
+      "file": "dask_http.yaml",
+      "name": "dask",
+      "product": "dashboard",
+      "vendor": "dask",
+      "severity": "info",
+      "author": "mada2aa",
+      "category": "Other",
+      "http_matcher_count": 2,
+      "version_extractor_count": 0,
+      "http_matchers": [
+        {
+          "method": "GET",
+          "path": "/info/main/logs.html",
+          "matchers": [
+            "body=\"Scheduler at\""
+          ]
+        },
+        {
+          "method": "GET",
+          "path": "/",
+          "matchers": [
+            "icon=\"1034154531\""
+          ]
+        }
+      ],
+      "version_extractors": [],
+      "relative_path": "dask_http.yaml"
+    },
+    {
+      "file": "databricks-model-serving.yaml",
+      "name": "databricks-model-serving",
+      "product": "databricks-model-serving",
+      "vendor": "databricks",
+      "severity": "info",
+      "author": "A.I.G bot",
+      "category": "LLM Serving",
+      "http_matcher_count": 1,
+      "version_extractor_count": 0,
+      "http_matchers": [
+        {
+          "method": "GET",
+          "path": "/api/2.0/serving-endpoints",
+          "matchers": [
+            "body=\"\\\"error_code\\\"\" && body=\"serving endpoint\""
+          ]
+        }
+      ],
+      "version_extractors": [],
+      "relative_path": "databricks-model-serving.yaml"
+    },
+    {
+      "file": "deepspeed-mii.yaml",
+      "name": "deepspeed-mii",
+      "product": "deepspeed-mii",
+      "vendor": "microsoft",
+      "severity": "info",
+      "author": "A.I.G bot",
+      "category": "LLM Serving",
+      "http_matcher_count": 1,
+      "version_extractor_count": 0,
+      "http_matchers": [
+        {
+          "method": "GET",
+          "path": "/v1/models",
+          "matchers": [
+            "body=\"\\\"deepspeed-mii\\\"\""
+          ]
+        }
+      ],
+      "version_extractors": [],
+      "relative_path": "deepspeed-mii.yaml"
+    },
+    {
+      "file": "dify.yaml",
+      "name": "dify",
+      "product": "dify",
+      "vendor": "dify",
+      "severity": "info",
+      "author": "腾讯朱雀实验室",
+      "category": "Agent Platform",
+      "http_matcher_count": 2,
+      "version_extractor_count": 2,
+      "http_matchers": [
+        {
+          "method": "GET",
+          "path": "/",
+          "matchers": [
+            "body=\"<title>Dify</title>\" || icon=\"97378986\"",
+            "body=\"content=\\\"Dify\""
+          ]
+        },
+        {
+          "method": "GET",
+          "path": "/apps",
+          "matchers": [
+            "body=\"<title>Dify</title>\" && body=\"data-public-edition\""
+          ]
+        }
+      ],
+      "version_extractors": [
+        {
+          "method": "GET",
+          "path": "/health",
+          "part": "header",
+          "regex": "x-version:\\s*(\\d+\\.\\d+\\.?\\d*)"
+        },
+        {
+          "method": "GET",
+          "path": "/console/api/version",
+          "part": "header",
+          "regex": "x-version:\\s*(\\d+\\.\\d+\\.?\\d*)"
+        }
+      ],
+      "relative_path": "dify.yaml"
+    },
+    {
+      "file": "envoy-ai-gateway.yaml",
+      "name": "envoy-ai-gateway",
+      "product": "envoy-ai-gateway",
+      "vendor": "envoyproxy",
+      "severity": "info",
+      "author": "A.I.G bot",
+      "category": "API Gateway/Proxy",
+      "http_matcher_count": 1,
+      "version_extractor_count": 0,
+      "http_matchers": [
+        {
+          "method": "GET",
+          "path": "/v1/models",
+          "matchers": [
+            "body=\"\\\"owned_by\\\":\\\"Envoy AI Gateway\\\"\""
+          ]
+        }
+      ],
+      "version_extractors": [],
+      "relative_path": "envoy-ai-gateway.yaml"
+    },
+    {
+      "file": "f5-tts.yaml",
+      "name": "f5-tts",
+      "product": "f5-tts",
+      "vendor": "swivid",
+      "severity": "info",
+      "author": "A.I.G bot",
+      "category": "TTS",
+      "http_matcher_count": 1,
+      "version_extractor_count": 1,
+      "http_matchers": [
+        {
+          "method": "GET",
+          "path": "/",
+          "matchers": [
+            "body=\"F5-TTS\"",
+            "body=\"Basic-TTS\""
+          ]
+        }
+      ],
+      "version_extractors": [
+        {
+          "method": "GET",
+          "path": "/",
+          "part": "body",
+          "regex": "window\\.gradio_config = \\{\"version\":\"(\\d+\\.\\d+\\.?\\d+?)\""
+        }
+      ],
+      "relative_path": "f5-tts.yaml"
+    },
+    {
+      "file": "fastchat-webui.yaml",
+      "name": "fastchat-webui",
+      "product": "fastchat-webui",
+      "vendor": "lm-sys",
+      "severity": "info",
+      "author": "腾讯朱雀实验室",
+      "category": "AI Chatbot/UI",
+      "http_matcher_count": 1,
+      "version_extractor_count": 0,
+      "http_matchers": [
+        {
+          "method": "GET",
+          "path": "/",
+          "matchers": [
+            "body=\"\\\"title\\\":\\\"Chat with Open Large Language Models\\\"\""
+          ]
+        }
+      ],
+      "version_extractors": [],
+      "relative_path": "fastchat-webui.yaml"
+    },
+    {
+      "file": "fastchat.yaml",
+      "name": "fastchat",
+      "product": "fastchat-controller",
+      "vendor": "lm-sys",
+      "severity": "info",
+      "author": "腾讯朱雀实验室",
+      "category": "Other",
+      "http_matcher_count": 1,
+      "version_extractor_count": 0,
+      "http_matchers": [
+        {
+          "method": "POST",
+          "path": "/worker_get_status",
+          "matchers": [
+            "body=\"model_names\""
+          ]
+        }
+      ],
+      "version_extractors": [],
+      "relative_path": "fastchat.yaml"
+    },
+    {
+      "file": "fastgpt.yaml",
+      "name": "fastgpt",
+      "product": "fastgpt",
+      "vendor": "labring",
+      "severity": "info",
+      "author": "A.I.G bot",
+      "category": "AI Chatbot/UI",
+      "http_matcher_count": 1,
+      "version_extractor_count": 0,
+      "http_matchers": [
+        {
+          "method": "GET",
+          "path": "/login",
+          "matchers": [
+            "body=\"<title>FastGPT</title>\""
+          ]
+        }
+      ],
+      "version_extractors": [],
+      "relative_path": "fastgpt.yaml"
+    },
+    {
+      "file": "feast.yaml",
+      "name": "feast",
+      "product": "feast-webui",
+      "vendor": "feast",
+      "severity": "info",
+      "author": "腾讯朱雀实验室",
+      "category": "Model Training/ML",
+      "http_matcher_count": 1,
+      "version_extractor_count": 0,
+      "http_matchers": [
+        {
+          "method": "GET",
+          "path": "/",
+          "matchers": [
+            "body=\"/feast-favicon-300x300.png\" && body=\"<title>Feast Feature Store</title>\""
+          ]
+        }
+      ],
+      "version_extractors": [],
+      "relative_path": "feast.yaml"
+    },
+    {
+      "file": "fireworks-ai.yaml",
+      "name": "fireworks-ai",
+      "product": "fireworks-ai",
+      "vendor": "fireworks",
+      "severity": "info",
+      "author": "A.I.G bot",
+      "category": "Cloud AI Service",
+      "http_matcher_count": 1,
+      "version_extractor_count": 0,
+      "http_matchers": [
+        {
+          "method": "GET",
+          "path": "/inference/v1/models",
+          "matchers": [
+            "body=\"accounts/fireworks/models/\""
+          ]
+        }
+      ],
+      "version_extractors": [],
+      "relative_path": "fireworks-ai.yaml"
+    },
+    {
+      "file": "flowise.yaml",
+      "name": "flowise",
+      "product": "flowise",
+      "vendor": "flowiseai",
+      "severity": "info",
+      "author": "A.I.G bot",
+      "category": "Agent Platform",
+      "http_matcher_count": 2,
+      "version_extractor_count": 1,
+      "http_matchers": [
+        {
+          "method": "GET",
+          "path": "/",
+          "matchers": [
+            "body=\"<title>Flowise</title>\"",
+            "body=\"flowiseai.com\" && body=\"FlowiseAI\""
+          ]
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/chatflows",
+          "matchers": [
+            "body=\"\\\"Unauthorized Access\\\"\""
+          ]
+        }
+      ],
+      "version_extractors": [
+        {
+          "method": "GET",
+          "path": "/api/v1/version",
+          "part": "body",
+          "regex": "\"version\"\\s*:\\s*\"(\\d+\\.\\d+\\.?\\d*?)\""
+        }
+      ],
+      "relative_path": "flowise.yaml"
+    },
+    {
+      "file": "gpt4all.yaml",
+      "name": "gpt4all",
+      "product": "gpt4all",
+      "vendor": "nomic",
+      "severity": "info",
+      "author": "A.I.G bot",
+      "category": "AI Chatbot/UI",
+      "http_matcher_count": 1,
+      "version_extractor_count": 0,
+      "http_matchers": [
+        {
+          "method": "GET",
+          "path": "/v1/models",
+          "matchers": [
+            "body=\"\\\"owned_by\\\":\\\"humanity\\\"\""
+          ]
+        }
+      ],
+      "version_extractors": [],
+      "relative_path": "gpt4all.yaml"
+    },
+    {
+      "file": "gradio.yaml",
+      "name": "gradio",
+      "product": "gradio",
+      "vendor": "gradio",
+      "severity": "info",
+      "author": "腾讯朱雀实验室",
+      "category": "Other",
+      "http_matcher_count": 1,
+      "version_extractor_count": 1,
+      "http_matchers": [
+        {
+          "method": "GET",
+          "path": "/",
+          "matchers": [
+            "body=\"<script>window.gradio_config = {\" || body=\"document.getElementsByTagName(\\\"gradio-app\\\");\""
+          ]
+        }
+      ],
+      "version_extractors": [
+        {
+          "method": "GET",
+          "path": "/",
+          "part": "body",
+          "regex": "window.gradio_config = {\"version\":\"(\\d+\\.\\d+\\.?\\d+?)\""
+        }
+      ],
+      "relative_path": "gradio.yaml"
+    },
+    {
+      "file": "groq.yaml",
+      "name": "groq",
+      "product": "groq",
+      "vendor": "groq",
+      "severity": "info",
+      "author": "A.I.G bot",
+      "category": "Cloud AI Service",
+      "http_matcher_count": 2,
+      "version_extractor_count": 0,
+      "http_matchers": [
+        {
+          "method": "GET",
+          "path": "/openai/v1/models",
+          "matchers": [
+            "header=\"x-groq-region\""
+          ]
+        },
+        {
+          "method": "GET",
+          "path": "/",
+          "matchers": [
+            "body=\"Welcome to the Groq API\" && header=\"x-groq-region\""
+          ]
+        }
+      ],
+      "version_extractors": [],
+      "relative_path": "groq.yaml"
+    },
+    {
+      "file": "h2ogpt.yaml",
+      "name": "h2ogpt",
+      "product": "h2ogpt",
+      "vendor": "h2oai",
+      "severity": "info",
+      "author": "A.I.G bot",
+      "category": "AI Chatbot/UI",
+      "http_matcher_count": 2,
+      "version_extractor_count": 0,
+      "http_matchers": [
+        {
+          "method": "GET",
+          "path": "/info",
+          "matchers": [
+            "body=\"submit_nochat_api\""
+          ]
+        },
+        {
+          "method": "GET",
+          "path": "/",
+          "matchers": [
+            "body=\"h2oGPT\""
+          ]
+        }
+      ],
+      "version_extractors": [],
+      "relative_path": "h2ogpt.yaml"
+    },
+    {
+      "file": "helicone.yaml",
+      "name": "helicone",
+      "product": "helicone",
+      "vendor": "helicone",
+      "severity": "info",
+      "author": "A.I.G bot",
+      "category": "RAG/Knowledge",
+      "http_matcher_count": 2,
+      "version_extractor_count": 0,
+      "http_matchers": [
+        {
+          "method": "GET",
+          "path": "/healthcheck",
+          "matchers": [
+            "body=\"\\\"healthy :)\\\"\""
+          ]
+        },
+        {
+          "method": "GET",
+          "path": "/download/swagger.json",
+          "matchers": [
+            "body=\"Helicone\""
+          ]
+        }
+      ],
+      "version_extractors": [],
+      "relative_path": "helicone.yaml"
+    },
+    {
+      "file": "huggingface-chat-ui.yaml",
+      "name": "huggingface-chat-ui",
+      "product": "huggingface-chat-ui",
+      "vendor": "huggingface",
+      "severity": "info",
+      "author": "A.I.G bot",
+      "category": "AI Chatbot/UI",
+      "http_matcher_count": 1,
+      "version_extractor_count": 0,
+      "http_matchers": [
+        {
+          "method": "GET",
+          "path": "/api/v2/public-config",
+          "matchers": [
+            "body=\"\\\"PUBLIC_APP_NAME\\\":\\\"ChatUI\\\"\" && body=\"\\\"PUBLIC_APP_ASSETS\\\"\""
+          ]
+        }
+      ],
+      "version_extractors": [],
+      "relative_path": "huggingface-chat-ui.yaml"
+    },
+    {
+      "file": "huggingface-tgi.yaml",
+      "name": "huggingface-tgi",
+      "product": "text-generation-inference",
+      "vendor": "huggingface",
+      "severity": "info",
+      "author": "腾讯朱雀实验室",
+      "category": "Other",
+      "http_matcher_count": 1,
+      "version_extractor_count": 0,
+      "http_matchers": [
+        {
+          "method": "GET",
+          "path": "/info",
+          "matchers": [
+            "body=\"\\\"model_id\\\":\" && body=\"\\\"model_pipeline_tag\\\":\"",
+            "body=\"\\\"model_id\\\"\" && body=\"\\\"model_dtype\\\"\" && body=\"\\\"max_batch_total_tokens\\\"\" && body=\"\\\"docker_label\\\"\""
+          ]
+        }
+      ],
+      "version_extractors": [],
+      "relative_path": "huggingface-tgi.yaml"
+    },
+    {
+      "file": "instructlab.yaml",
+      "name": "instructlab",
+      "product": "instructlab",
+      "vendor": "redhat",
+      "severity": "info",
+      "author": "A.I.G bot",
+      "category": "Model Training/ML",
+      "http_matcher_count": 1,
+      "version_extractor_count": 0,
+      "http_matchers": [
+        {
+          "method": "GET",
+          "path": "/",
+          "matchers": [
+            "body=\"Hello from InstructLab! Visit us at https://instructlab.ai\""
+          ]
+        }
+      ],
+      "version_extractors": [],
+      "relative_path": "instructlab.yaml"
+    },
+    {
+      "file": "jan.yaml",
+      "name": "jan",
+      "product": "jan",
+      "vendor": "jan-ai",
+      "severity": "info",
+      "author": "A.I.G bot",
+      "category": "AI Chatbot/UI",
+      "http_matcher_count": 1,
+      "version_extractor_count": 0,
+      "http_matchers": [
+        {
+          "method": "GET",
+          "path": "/openapi.json",
+          "matchers": [
+            "body=\"\\\"title\\\": \\\"Jan API Server Endpoints\\\"\""
+          ]
+        }
+      ],
+      "version_extractors": [],
+      "relative_path": "jan.yaml"
+    },
+    {
+      "file": "junoclaw.yaml",
+      "name": "junoclaw",
+      "product": "junoclaw",
+      "vendor": "dragonmonk111",
+      "severity": "info",
+      "author": "A.I.G bot",
+      "category": "Agent Platform",
+      "http_matcher_count": 2,
+      "version_extractor_count": 1,
+      "http_matchers": [
+        {
+          "method": "GET",
+          "path": "/",
+          "matchers": [
+            "body=\"<title>JunoClaw</title>\""
+          ]
+        },
+        {
+          "method": "GET",
+          "path": "/api/health",
+          "matchers": [
+            "body=\"junoclaw-daemon\""
+          ]
+        }
+      ],
+      "version_extractors": [
+        {
+          "method": "GET",
+          "path": "/api/health",
+          "part": "body",
+          "regex": "\"version\"\\s*:\\s*\"([^\"]+)\""
+        }
+      ],
+      "relative_path": "junoclaw.yaml"
+    },
+    {
+      "file": "jupyter-lab.yaml",
+      "name": "jupyterlab",
+      "product": "jupyterlab",
+      "vendor": "jupyter",
+      "severity": "info",
+      "author": "腾讯朱雀实验室",
+      "category": "Other",
+      "http_matcher_count": 1,
+      "version_extractor_count": 0,
+      "http_matchers": [
+        {
+          "method": "GET",
+          "path": "/",
+          "matchers": [
+            "body=\"<title>JupyterLab</title>\""
+          ]
+        }
+      ],
+      "version_extractors": [],
+      "relative_path": "jupyter-lab.yaml"
+    },
+    {
+      "file": "jupyter-notebook.yaml",
+      "name": "jupyter-notebook",
+      "product": "jupyter-notebook",
+      "vendor": "jupyter",
+      "severity": "info",
+      "author": "腾讯朱雀实验室",
+      "category": "Dev/Notebook",
+      "http_matcher_count": 1,
+      "version_extractor_count": 0,
+      "http_matchers": [
+        {
+          "method": "GET",
+          "path": "/",
+          "matchers": [
+            "body=\"<title>Jupyter Notebook</title>\""
+          ]
+        }
+      ],
+      "version_extractors": [],
+      "relative_path": "jupyter-notebook.yaml"
+    },
+    {
+      "file": "jupyter-server.yaml",
+      "name": "jupyter-server",
+      "product": "jupyter-server",
+      "vendor": "jupyter",
+      "severity": "info",
+      "author": "腾讯朱雀实验室",
+      "category": "Dev/Notebook",
+      "http_matcher_count": 1,
+      "version_extractor_count": 1,
+      "http_matchers": [
+        {
+          "method": "GET",
+          "path": "/",
+          "matchers": [
+            "body=\"<title>Jupyter Server</title>\""
+          ]
+        }
+      ],
+      "version_extractors": [
+        {
+          "method": "GET",
+          "path": "/tree",
+          "part": "body",
+          "regex": "\"appVersion\":\"(\\d+\\.\\d+\\.?\\d*)\""
+        }
+      ],
+      "relative_path": "jupyter-server.yaml"
+    },
+    {
+      "file": "koboldcpp.yaml",
+      "name": "koboldcpp",
+      "product": "koboldcpp",
+      "vendor": "koboldcpp",
+      "severity": "info",
+      "author": "A.I.G bot",
+      "category": "Other",
+      "http_matcher_count": 2,
+      "version_extractor_count": 0,
+      "http_matchers": [
+        {
+          "method": "GET",
+          "path": "/api/extra/version",
+          "matchers": [
+            "body=\"\\\"result\\\": \\\"KoboldCpp\\\"\""
+          ]
+        },
+        {
+          "method": "GET",
+          "path": "/v1/models",
+          "matchers": [
+            "body=\"\\\"owned_by\\\": \\\"koboldcpp\\\"\""
+          ]
+        }
+      ],
+      "version_extractors": [],
+      "relative_path": "koboldcpp.yaml"
+    },
+    {
+      "file": "kong-proxy.yaml",
+      "name": "kong-proxy",
+      "product": "kong-proxy",
+      "vendor": "konghq",
+      "severity": "info",
+      "author": "A.I.G bot",
+      "category": "API Gateway/Proxy",
+      "http_matcher_count": 1,
+      "version_extractor_count": 0,
+      "http_matchers": [
+        {
+          "method": "GET",
+          "path": "/",
+          "matchers": [
+            "header=\"kong\" && body=\"\\\"plugins\\\"\" && body=\"\\\"services\\\"\""
+          ]
+        }
+      ],
+      "version_extractors": [],
+      "relative_path": "kong-proxy.yaml"
+    },
+    {
+      "file": "kubeai.yaml",
+      "name": "kubeai",
+      "product": "kubeai",
+      "vendor": "kubeai-project",
+      "severity": "info",
+      "author": "A.I.G bot",
+      "category": "Model Training/ML",
+      "http_matcher_count": 1,
+      "version_extractor_count": 0,
+      "http_matchers": [
+        {
+          "method": "GET",
+          "path": "/",
+          "matchers": [
+            "body=\"<title>KubeAI</title>\""
+          ]
+        }
+      ],
+      "version_extractors": [],
+      "relative_path": "kubeai.yaml"
+    },
+    {
+      "file": "kubeflow.yaml",
+      "name": "kubeflow",
+      "product": "kubeflow",
+      "vendor": "kubeflow",
+      "severity": "info",
+      "author": "腾讯朱雀实验室",
+      "category": "Model Training/ML",
+      "http_matcher_count": 1,
+      "version_extractor_count": 1,
+      "http_matchers": [
+        {
+          "method": "GET",
+          "path": "/",
+          "matchers": [
+            "body=\"<title>Kubeflow Central Dashboard</title>\""
+          ]
+        }
+      ],
+      "version_extractors": [
+        {
+          "method": "GET",
+          "path": "/api/workgroup/env-info",
+          "part": "body",
+          "regex": "\"kubeflowVersion\":\"([^\"]+)\""
+        }
+      ],
+      "relative_path": "kubeflow.yaml"
+    },
+    {
+      "file": "kubepi.yaml",
+      "name": "KubePi",
+      "product": "KubePi",
+      "vendor": "1Panel",
+      "severity": "info",
+      "author": "腾讯朱雀实验室",
+      "category": "Dev/Notebook",
+      "http_matcher_count": 1,
+      "version_extractor_count": 1,
+      "http_matchers": [
+        {
+          "method": "GET",
+          "path": "/",
+          "matchers": [
+            "body=\"<title>KubePi</title>\""
+          ]
+        }
+      ],
+      "version_extractors": [
+        {
+          "method": "GET",
+          "path": "/",
+          "part": "body",
+          "regex": "version.*?v(\\d+\\.\\d+\\.\\d+)"
+        }
+      ],
+      "relative_path": "kubepi.yaml"
+    },
+    {
+      "file": "langflow.yaml",
+      "name": "langflow",
+      "product": "langflow",
+      "vendor": "langflow-ai",
+      "severity": "info",
+      "author": "腾讯朱雀实验室",
+      "category": "Agent Platform",
+      "http_matcher_count": 3,
+      "version_extractor_count": 1,
+      "http_matchers": [
+        {
+          "method": "GET",
+          "path": "/",
+          "matchers": [
+            "body=\"<title>Langflow</title>\""
+          ]
+        },
+        {
+          "method": "GET",
+          "path": "/api/v1/version",
+          "matchers": [
+            "body=\"\\\"package\\\"\" && body=\"Langflow\""
+          ]
+        },
+        {
+          "method": "GET",
+          "path": "/health_check",
+          "matchers": [
+            "body=\"\\\"chat\\\":\" && body=\"\\\"db\\\":\""
+          ]
+        }
+      ],
+      "version_extractors": [
+        {
+          "method": "GET",
+          "path": "/api/v1/version",
+          "part": "body",
+          "regex": "\"version\":\"(.*?)\","
+        }
+      ],
+      "relative_path": "langflow.yaml"
+    },
+    {
+      "file": "langfuse.yaml",
+      "name": "langfuse",
+      "product": "langfuse",
+      "vendor": "langfuse",
+      "severity": "info",
+      "author": "腾讯科恩实验室",
+      "category": "RAG/Knowledge",
+      "http_matcher_count": 1,
+      "version_extractor_count": 1,
+      "http_matchers": [
+        {
+          "method": "GET",
+          "path": "/",
+          "matchers": [
+            "body=\"alt=\\\"Langfuse Icon\\\"\" || body=\"data-sentry-component=\\\"LangfuseIcon\\\"\""
+          ]
+        }
+      ],
+      "version_extractors": [
+        {
+          "method": "GET",
+          "path": "/api/trpc/public.checkUpdate",
+          "part": "body",
+          "regex": "\"currentVersion\":\"v(\\d+\\.\\d+\\.\\d+)\""
+        }
+      ],
+      "relative_path": "langfuse.yaml"
+    },
+    {
+      "file": "librechat.yaml",
+      "name": "librechat",
+      "product": "librechat",
+      "vendor": "librechat",
+      "severity": "info",
+      "author": "A.I.G bot",
+      "category": "AI Chatbot/UI",
+      "http_matcher_count": 2,
+      "version_extractor_count": 1,
+      "http_matchers": [
+        {
+          "method": "GET",
+          "path": "/",
+          "matchers": [
+            "body=\"<title>LibreChat</title>\""
+          ]
+        },
+        {
+          "method": "GET",
+          "path": "/api/config",
+          "matchers": [
+            "body=\"librechat.ai\""
+          ]
+        }
+      ],
+      "version_extractors": [
+        {
+          "method": "GET",
+          "path": "/api/version",
+          "part": "body",
+          "regex": "\"version\"\\s*:\\s*\"(\\d+\\.\\d+\\.?\\d*?)\""
+        }
+      ],
+      "relative_path": "librechat.yaml"
+    },
+    {
+      "file": "litellm.yaml",
+      "name": "LiteLLM",
+      "product": "LiteLLM",
+      "vendor": "LiteLLM",
+      "severity": "info",
+      "author": "腾讯科恩实验室",
+      "category": "API Gateway/Proxy",
+      "http_matcher_count": 3,
+      "version_extractor_count": 1,
+      "http_matchers": [
+        {
+          "method": "GET",
+          "path": "/",
+          "matchers": [
+            "body=\"LiteLLM API\" || body=\"Proxy Server to call 100+ LLMs in the OpenAI format\" || body=\"LiteLLM Admin Panel on /ui\""
+          ]
+        },
+        {
+          "method": "GET",
+          "path": "/health",
+          "matchers": [
+            "body=\"\\\"litellm_metadata\\\"\""
+          ]
+        },
+        {
+          "method": "GET",
+          "path": "/health/readiness",
+          "matchers": [
+            "body=\"\\\"litellm_version\\\"\""
+          ]
+        }
+      ],
+      "version_extractors": [
+        {
+          "method": "GET",
+          "path": "/openapi.json",
+          "part": "body",
+          "regex": "\"version\":\"([0-9]+\\.[0-9]+\\.[0-9]+)\""
+        }
+      ],
+      "relative_path": "litellm.yaml"
+    },
+    {
+      "file": "llama-cpp.yaml",
+      "name": "llama-cpp",
+      "product": "llama-cpp",
+      "vendor": "llama-cpp",
+      "severity": "info",
+      "author": "腾讯朱雀实验室",
+      "category": "LLM Serving",
+      "http_matcher_count": 2,
+      "version_extractor_count": 0,
+      "http_matchers": [
+        {
+          "method": "GET",
+          "path": "/v1/models",
+          "matchers": [
+            "body=\"\\\"owned_by\\\":\\\"llamacpp\\\"\""
+          ]
+        },
+        {
+          "method": "GET",
+          "path": "/health",
+          "matchers": [
+            "header=\"llama.cpp\""
+          ]
+        }
+      ],
+      "version_extractors": [],
+      "relative_path": "llama-cpp.yaml"
+    },
+    {
+      "file": "llama-factory.yaml",
+      "name": "llamafactory",
+      "product": "llamafactory",
+      "vendor": "llama-factory",
+      "severity": "info",
+      "author": "腾讯朱雀实验室",
+      "category": "Other",
+      "http_matcher_count": 1,
+      "version_extractor_count": 0,
+      "http_matchers": [
+        {
+          "method": "GET",
+          "path": "/",
+          "matchers": [
+            "body=\"title\\\":=\\\"LLaMA Board\""
+          ]
+        }
+      ],
+      "version_extractors": [],
+      "relative_path": "llama-factory.yaml"
+    },
+    {
+      "file": "llmstudio.yaml",
+      "name": "llmstudio",
+      "product": "lmstudio",
+      "vendor": "lmstudio",
+      "severity": "info",
+      "author": "腾讯朱雀实验室",
+      "category": "Other",
+      "http_matcher_count": 1,
+      "version_extractor_count": 1,
+      "http_matchers": [
+        {
+          "method": "GET",
+          "path": "/zuqu3",
+          "matchers": [
+            "body=\"Unexpected endpoint or method. (GET /zuqu3)\" && header=\"x-powered-by: Express\""
+          ]
+        }
+      ],
+      "version_extractors": [
+        {
+          "method": "GET",
+          "path": "/",
+          "part": "body",
+          "regex": "v(\\d+\\.\\d+\\.?\\d*)"
+        }
+      ],
+      "relative_path": "llmstudio.yaml"
+    },
+    {
+      "file": "lm-studio.yaml",
+      "name": "lm-studio",
+      "product": "lm-studio",
+      "vendor": "lmstudio",
+      "severity": "info",
+      "author": "A.I.G bot",
+      "category": "AI Chatbot/UI",
+      "http_matcher_count": 2,
+      "version_extractor_count": 0,
+      "http_matchers": [
+        {
+          "method": "GET",
+          "path": "/lmstudio-greeting",
+          "matchers": [
+            "body=\"\\\"lmstudio\\\"\" && body=\"true\""
+          ]
+        },
+        {
+          "method": "GET",
+          "path": "/api/v0/models",
+          "matchers": [
+            "body=\"\\\"object\\\"\" && body=\"\\\"data\\\"\""
+          ]
+        }
+      ],
+      "version_extractors": [],
+      "relative_path": "lm-studio.yaml"
+    },
+    {
+      "file": "lmdeploy.yaml",
+      "name": "lmdeploy",
+      "product": "lmdeploy",
+      "vendor": "internlm",
+      "severity": "info",
+      "author": "A.I.G bot",
+      "category": "LLM Serving",
+      "http_matcher_count": 1,
+      "version_extractor_count": 1,
+      "http_matchers": [
+        {
+          "method": "GET",
+          "path": "/docs",
+          "matchers": [
+            "body=\"LMDeploy API Server - Swagger UI\""
+          ]
+        }
+      ],
+      "version_extractors": [
+        {
+          "method": "GET",
+          "path": "/openapi.json",
+          "part": "body",
+          "regex": "\"version\"\\s*:\\s*\"([0-9]+\\.[0-9]+\\.[0-9]+)\""
+        }
+      ],
+      "relative_path": "lmdeploy.yaml"
+    },
+    {
+      "file": "lobechat.yaml",
+      "name": "LobeChat",
+      "product": "LobeChat",
+      "vendor": "LobeChat",
+      "severity": "info",
+      "author": "腾讯朱雀实验室",
+      "category": "AI Chatbot/UI",
+      "http_matcher_count": 2,
+      "version_extractor_count": 0,
+      "http_matchers": [
+        {
+          "method": "GET",
+          "path": "/",
+          "matchers": [
+            "body=\"<title>LobeChat</title>\""
+          ]
+        },
+        {
+          "method": "GET",
+          "path": "/manifest.webmanifest",
+          "matchers": [
+            "body=\"\\\"id\\\":\\\"lobe-hub\\\"\" && body=\"\\\"name\\\":\\\"LobeHub\\\"\""
+          ]
+        }
+      ],
+      "version_extractors": [],
+      "relative_path": "lobechat.yaml"
+    },
+    {
+      "file": "localai.yaml",
+      "name": "localai",
+      "product": "localai",
+      "vendor": "localai",
+      "severity": "info",
+      "author": "腾讯朱雀实验室",
+      "category": "Other",
+      "http_matcher_count": 1,
+      "version_extractor_count": 0,
+      "http_matchers": [
+        {
+          "method": "GET",
+          "path": "/metrics",
+          "matchers": [
+            "body=\"localai_\""
+          ]
+        }
+      ],
+      "version_extractors": [],
+      "relative_path": "localai.yaml"
+    },
+    {
+      "file": "lollms.yaml",
+      "name": "lollms",
+      "product": "lollms",
+      "vendor": "parisneo",
+      "severity": "info",
+      "author": "A.I.G bot",
+      "category": "AI Chatbot/UI",
+      "http_matcher_count": 1,
+      "version_extractor_count": 0,
+      "http_matchers": [
+        {
+          "method": "GET",
+          "path": "/",
+          "matchers": [
+            "body=\"<title>LoLLMS WebUI</title>\""
+          ]
+        }
+      ],
+      "version_extractors": [],
+      "relative_path": "lollms.yaml"
+    },
+    {
+      "file": "lumiverse.yaml",
+      "name": "Lumiverse",
+      "product": "lumiverse",
+      "vendor": "prolix-oc",
+      "severity": "info",
+      "author": "A.I.G bot",
+      "category": "Model Training/ML",
+      "http_matcher_count": 1,
+      "version_extractor_count": 0,
+      "http_matchers": [
+        {
+          "method": "GET",
+          "path": "/",
+          "matchers": [
+            "body=\"<title>Lumiverse</title>\""
+          ]
+        }
+      ],
+      "version_extractors": [],
+      "relative_path": "lumiverse.yaml"
+    },
+    {
+      "file": "marimo.yaml",
+      "name": "marimo",
+      "product": "marimo",
+      "vendor": "marimo",
+      "severity": "info",
+      "author": "腾讯科恩实验室",
+      "category": "Dev/Notebook",
+      "http_matcher_count": 1,
+      "version_extractor_count": 1,
+      "http_matchers": [
+        {
+          "method": "GET",
+          "path": "/",
+          "matchers": [
+            "body=\"<title>marimo</title>\"",
+            "icon=\"-1864630356\""
+          ]
+        }
+      ],
+      "version_extractors": [
+        {
+          "method": "GET",
+          "path": "/api/version",
+          "part": "body",
+          "regex": "(\\d+\\.\\d+\\.\\d+)"
+        }
+      ],
+      "relative_path": "marimo.yaml"
+    },
+    {
+      "file": "maxkb.yaml",
+      "name": "maxkb",
+      "product": "maxkb",
+      "vendor": "1panel-dev",
+      "severity": "info",
+      "author": "A.I.G bot",
+      "category": "AI Chatbot/UI",
+      "http_matcher_count": 1,
+      "version_extractor_count": 0,
+      "http_matchers": [
+        {
+          "method": "GET",
+          "path": "/",
+          "matchers": [
+            "body=\"<title>MaxKB</title>\""
+          ]
+        }
+      ],
+      "version_extractors": [],
+      "relative_path": "maxkb.yaml"
+    },
+    {
+      "file": "mcp-server.yaml",
+      "name": "meta-ads-mcp",
+      "product": "meta-ads-mcp",
+      "vendor": "pipeboard-co",
+      "severity": "info",
+      "author": "A.I.G bot",
+      "category": "MCP",
+      "http_matcher_count": 1,
+      "version_extractor_count": 0,
+      "http_matchers": [
+        {
+          "method": "POST",
+          "path": "/mcp",
+          "matchers": [
+            "body=\"jsonrpc\" && body=\"meta-ads-mcp\""
+          ]
+        }
+      ],
+      "version_extractors": [],
+      "relative_path": "mcp-server.yaml"
+    },
+    {
+      "file": "mcp.yaml",
+      "name": "mcp sse",
+      "product": "Anthropic",
+      "vendor": "Anthropic",
+      "severity": "info",
+      "author": "腾讯朱雀实验室",
+      "category": "Other",
+      "http_matcher_count": 1,
+      "version_extractor_count": 0,
+      "http_matchers": [
+        {
+          "method": "GET",
+          "path": "/messages/",
+          "matchers": [
+            "body=\"session_id is required\""
+          ]
+        }
+      ],
+      "version_extractors": [],
+      "relative_path": "mcp.yaml"
+    },
+    {
+      "file": "mem0.yaml",
+      "name": "mem0",
+      "product": "mem0",
+      "vendor": "mem0ai",
+      "severity": "info",
+      "author": "腾讯朱雀实验室",
+      "category": "RAG/Knowledge",
+      "http_matcher_count": 1,
+      "version_extractor_count": 0,
+      "http_matchers": [
+        {
+          "method": "GET",
+          "path": "/openapi.json",
+          "matchers": [
+            "body=\"Mem0 REST APIs\""
+          ]
+        }
+      ],
+      "version_extractors": [],
+      "relative_path": "mem0.yaml"
+    },
+    {
+      "file": "mlc-llm.yaml",
+      "name": "mlc-llm",
+      "product": "mlc-llm",
+      "vendor": "mlc-ai",
+      "severity": "info",
+      "author": "A.I.G bot",
+      "category": "LLM Serving",
+      "http_matcher_count": 2,
+      "version_extractor_count": 0,
+      "http_matchers": [
+        {
+          "method": "GET",
+          "path": "/v1/models",
+          "matchers": [
+            "body=\"\\\"MLC-LLM\\\"\""
+          ]
+        },
+        {
+          "method": "GET",
+          "path": "/openapi.json",
+          "matchers": [
+            "body=\"/microserving/prep_recv\""
+          ]
+        }
+      ],
+      "version_extractors": [],
+      "relative_path": "mlc-llm.yaml"
+    },
+    {
+      "file": "mlflow.yaml",
+      "name": "mlflow",
+      "product": "mlflow",
+      "vendor": "mlflow",
+      "severity": "info",
+      "author": "A.I.G bot",
+      "category": "Model Training/ML",
+      "http_matcher_count": 1,
+      "version_extractor_count": 1,
+      "http_matchers": [
+        {
+          "method": "GET",
+          "path": "/",
+          "matchers": [
+            "body=\"<title>MLflow</title>\" || body=\"mlflow-ui-container\""
+          ]
+        }
+      ],
+      "version_extractors": [
+        {
+          "method": "GET",
+          "path": "/version",
+          "part": "body",
+          "regex": "^(\\d+\\.\\d+\\.\\d+.*)$"
+        }
+      ],
+      "relative_path": "mlflow.yaml"
+    },
+    {
+      "file": "modal.yaml",
+      "name": "modal",
+      "product": "modal",
+      "vendor": "modal",
+      "severity": "info",
+      "author": "A.I.G bot",
+      "category": "Cloud AI Service",
+      "http_matcher_count": 1,
+      "version_extractor_count": 0,
+      "http_matchers": [
+        {
+          "method": "GET",
+          "path": "/",
+          "matchers": [
+            "body=\"modal-http: invalid function call\""
+          ]
+        }
+      ],
+      "version_extractors": [],
+      "relative_path": "modal.yaml"
+    },
+    {
+      "file": "n8n-mcp.yaml",
+      "name": "n8n-mcp",
+      "product": "n8n-mcp",
+      "vendor": "czlonkowski",
+      "severity": "info",
+      "author": "A.I.G bot",
+      "category": "MCP",
+      "http_matcher_count": 1,
+      "version_extractor_count": 0,
+      "http_matchers": [
+        {
+          "method": "GET",
+          "path": "/mcp",
+          "matchers": [
+            "header=\"n8n-mcp\""
+          ]
+        }
+      ],
+      "version_extractors": [],
+      "relative_path": "n8n-mcp.yaml"
+    },
+    {
+      "file": "n8n.io.yaml",
+      "name": "n8n",
+      "product": "n8n-io",
+      "vendor": "n8n-io",
+      "severity": "info",
+      "author": "腾讯朱雀实验室",
+      "category": "Other",
+      "http_matcher_count": 1,
+      "version_extractor_count": 0,
+      "http_matchers": [
+        {
+          "method": "GET",
+          "path": "/",
+          "matchers": [
+            "body=\"<title>n8n.io - Workflow Automation</title>\""
+          ]
+        }
+      ],
+      "version_extractors": [],
+      "relative_path": "n8n.io.yaml"
+    },
+    {
+      "file": "new-api.yaml",
+      "name": "new-api",
+      "product": "new-api",
+      "vendor": "quantumnous",
+      "severity": "info",
+      "author": "A.I.G bot",
+      "category": "API Gateway/Proxy",
+      "http_matcher_count": 1,
+      "version_extractor_count": 1,
+      "http_matchers": [
+        {
+          "method": "GET",
+          "path": "/",
+          "matchers": [
+            "body=\"<title>New API</title>\" && body=\"content=\\\"new-api\\\"\""
+          ]
+        }
+      ],
+      "version_extractors": [
+        {
+          "method": "GET",
+          "path": "/api/status",
+          "part": "body",
+          "regex": "\"version\"\\s*:\\s*\"(v[0-9]+\\.[0-9]+\\.[0-9]+[^\"]*)\""
+        }
+      ],
+      "relative_path": "new-api.yaml"
+    },
+    {
+      "file": "nextchat.yaml",
+      "name": "nextchat",
+      "product": "nextchat",
+      "vendor": "nextchat",
+      "severity": "info",
+      "author": "腾讯朱雀实验室",
+      "category": "AI Chatbot/UI",
+      "http_matcher_count": 3,
+      "version_extractor_count": 0,
+      "http_matchers": [
+        {
+          "method": "GET",
+          "path": "/",
+          "matchers": [
+            "body=\"<title>NextChat</title>\""
+          ]
+        },
+        {
+          "method": "GET",
+          "path": "/site.webmanifest",
+          "matchers": [
+            "body=\"\\\"name\\\": \\\"NextChat\\\"\" && body=\"\\\"short_name\\\": \\\"NextChat\\\"\""
+          ]
+        },
+        {
+          "method": "GET",
+          "path": "/api/config",
+          "matchers": [
+            "body=\"\\\"needCode\\\"\" && body=\"\\\"hideUserApiKey\\\"\" && body=\"\\\"disableGPT4\\\"\""
+          ]
+        }
+      ],
+      "version_extractors": [],
+      "relative_path": "nextchat.yaml"
+    },
+    {
+      "file": "nvidia-nim.yaml",
+      "name": "nvidia-nim",
+      "product": "nvidia-nim",
+      "vendor": "nvidia",
+      "severity": "info",
+      "author": "腾讯朱雀实验室",
+      "category": "LLM Serving",
+      "http_matcher_count": 1,
+      "version_extractor_count": 0,
+      "http_matchers": [
+        {
+          "method": "GET",
+          "path": "/v1/metadata",
+          "matchers": [
+            "body=\"\\\"modelInfo\\\"\" && body=\"\\\"assetInfo\\\"\""
+          ]
+        }
+      ],
+      "version_extractors": [],
+      "relative_path": "nvidia-nim.yaml"
+    },
+    {
+      "file": "ollama.yaml",
+      "name": "ollama",
+      "product": "ollama",
+      "vendor": "ollama",
+      "severity": "info",
+      "author": "腾讯朱雀实验室",
+      "category": "Other",
+      "http_matcher_count": 1,
+      "version_extractor_count": 1,
+      "http_matchers": [
+        {
+          "method": "GET",
+          "path": "/",
+          "matchers": [
+            "body=\"Ollama is running\""
+          ]
+        }
+      ],
+      "version_extractors": [
+        {
+          "method": "GET",
+          "path": "/api/version",
+          "part": "body",
+          "regex": "{\"version\":\"(\\d+\\.\\d+\\.?\\d+?)\"}"
+        }
+      ],
+      "relative_path": "ollama.yaml"
+    },
+    {
+      "file": "omniroute.yaml",
+      "name": "omniroute",
+      "product": "omniroute",
+      "vendor": "omniroute",
+      "severity": "info",
+      "author": "A.I.G bot",
+      "category": "AI Chatbot/UI",
+      "http_matcher_count": 1,
+      "version_extractor_count": 0,
+      "http_matchers": [
+        {
+          "method": "GET",
+          "path": "/api/cache",
+          "matchers": [
+            "body=\"semanticCache\" && header=\"X-OmniRoute-Cache\""
+          ]
+        }
+      ],
+      "version_extractors": [],
+      "relative_path": "omniroute.yaml"
+    },
+    {
+      "file": "onyx.yaml",
+      "name": "onyx",
+      "product": "onyx",
+      "vendor": "onyx",
+      "severity": "info",
+      "author": "A.I.G bot",
+      "category": "Other",
+      "http_matcher_count": 2,
+      "version_extractor_count": 0,
+      "http_matchers": [
+        {
+          "method": "GET",
+          "path": "/openapi.json",
+          "matchers": [
+            "body=\"\\\"title\\\":\\\"Onyx Backend\\\"\""
+          ]
+        },
+        {
+          "method": "GET",
+          "path": "/api/docs",
+          "matchers": [
+            "body=\"<title>Onyx Backend - Swagger UI</title>\""
+          ]
+        }
+      ],
+      "version_extractors": [],
+      "relative_path": "onyx.yaml"
+    },
+    {
+      "file": "openai-compatible.yaml",
+      "name": "openai-compatible",
+      "product": "openai-compatible",
+      "vendor": "generic",
+      "severity": "info",
+      "author": "A.I.G bot",
+      "category": "Other",
+      "http_matcher_count": 1,
+      "version_extractor_count": 0,
+      "http_matchers": [
+        {
+          "method": "GET",
+          "path": "/v1/models",
+          "matchers": [
+            "body=\"\\\"object\\\"\" && body=\"\\\"data\\\"\""
+          ]
+        }
+      ],
+      "version_extractors": [],
+      "relative_path": "openai-compatible.yaml"
+    },
+    {
+      "file": "openclaw.yaml",
+      "name": "OpenClaw",
+      "product": "openclaw",
+      "vendor": "openclaw",
+      "severity": "info",
+      "author": "A.I.G bot",
+      "category": "Agent Platform",
+      "http_matcher_count": 1,
+      "version_extractor_count": 1,
+      "http_matchers": [
+        {
+          "method": "GET",
+          "path": "/",
+          "matchers": [
+            "body=\"<openclaw-app>\" || body=\"<title>OpenClaw Control</title>\" || body=\"<title>Clawdbot Control</title>\" || body=\"<title>Moltbot Control</title>\""
+          ]
+        }
+      ],
+      "version_extractors": [
+        {
+          "method": "GET",
+          "path": "/__openclaw/control-ui-config.json",
+          "part": "body",
+          "regex": "\"serverVersion\":\\s?\"([\\d.]+[^\"]*)\""
+        }
+      ],
+      "relative_path": "openclaw.yaml"
+    },
+    {
+      "file": "openwebui.yaml",
+      "name": "openwebui",
+      "product": "open-webui",
+      "vendor": "open-webui",
+      "severity": "info",
+      "author": "腾讯朱雀实验室",
+      "category": "Other",
+      "http_matcher_count": 2,
+      "version_extractor_count": 1,
+      "http_matchers": [
+        {
+          "method": "GET",
+          "path": "/",
+          "matchers": [
+            "body=\"title=\\\"Open WebUI\\\"\""
+          ]
+        },
+        {
+          "method": "GET",
+          "path": "/api/config",
+          "matchers": [
+            "body=\"\\\"name\\\":\\\"Open WebUI\\\"\" && body=\"\\\"features\\\":\""
+          ]
+        }
+      ],
+      "version_extractors": [
+        {
+          "method": "GET",
+          "path": "/api/version",
+          "part": "body",
+          "regex": "{\"version\":\"(\\d+\\.\\d+\\.?\\d+?)\""
+        }
+      ],
+      "relative_path": "openwebui.yaml"
+    },
+    {
+      "file": "paperclip.yaml",
+      "name": "paperclip",
+      "product": "paperclip",
+      "vendor": "paperclipai",
+      "severity": "info",
+      "author": "A.I.G bot",
+      "category": "Data/Infra",
+      "http_matcher_count": 1,
+      "version_extractor_count": 0,
+      "http_matchers": [
+        {
+          "method": "GET",
+          "path": "/",
+          "matchers": [
+            "body=\"<title>Paperclip</title>\""
+          ]
+        }
+      ],
+      "version_extractors": [],
+      "relative_path": "paperclip.yaml"
+    },
+    {
+      "file": "petals.yaml",
+      "name": "petals",
+      "product": "petals",
+      "vendor": "bigscience",
+      "severity": "info",
+      "author": "A.I.G bot",
+      "category": "LLM Serving",
+      "http_matcher_count": 1,
+      "version_extractor_count": 0,
+      "http_matchers": [
+        {
+          "method": "GET",
+          "path": "/",
+          "matchers": [
+            "body=\"Decentralized platform for running large language models\" && body=\"petals-infra\""
+          ]
+        }
+      ],
+      "version_extractors": [],
+      "relative_path": "petals.yaml"
+    },
+    {
+      "file": "pgadmin.yaml",
+      "name": "pgadmin",
+      "product": "pgadmin",
+      "vendor": "pgadmin",
+      "severity": "info",
+      "author": "腾讯朱雀实验室",
+      "category": "Dev/Notebook",
+      "http_matcher_count": 1,
+      "version_extractor_count": 1,
+      "http_matchers": [
+        {
+          "method": "GET",
+          "path": "/",
+          "matchers": [
+            "body=\"pgAdmin 4\" && body=\"pg-icon\""
+          ]
+        }
+      ],
+      "version_extractors": [
+        {
+          "method": "GET",
+          "path": "/browser/browser.css",
+          "part": "body",
+          "regex": "pgadmin[/-](\\d+\\.\\d+)"
+        }
+      ],
+      "relative_path": "pgadmin.yaml"
+    },
+    {
+      "file": "pinchtab.yaml",
+      "name": "pinchtab",
+      "product": "pinchtab",
+      "vendor": "pinchtab",
+      "severity": "info",
+      "author": "腾讯朱雀实验室",
+      "category": "AI Chatbot/UI",
+      "http_matcher_count": 1,
+      "version_extractor_count": 1,
+      "http_matchers": [
+        {
+          "method": "GET",
+          "path": "/instances",
+          "matchers": [
+            "header=\"WWW-Authenticate: Bearer realm=\\\"pinchtab\\\"\""
+          ]
+        }
+      ],
+      "version_extractors": [
+        {
+          "method": "GET",
+          "path": "/health",
+          "part": "body",
+          "regex": "\"version\":\"([^\"]+)\""
+        }
+      ],
+      "relative_path": "pinchtab.yaml"
+    },
+    {
+      "file": "pipecat.yaml",
+      "name": "pipecat",
+      "product": "pipecat",
+      "vendor": "pipecat-ai",
+      "severity": "info",
+      "author": "A.I.G bot",
+      "category": "Agent Platform",
+      "http_matcher_count": 1,
+      "version_extractor_count": 0,
+      "http_matchers": [
+        {
+          "method": "GET",
+          "path": "/",
+          "matchers": [
+            "body=\"<title>Pipecat UI</title>\""
+          ]
+        }
+      ],
+      "version_extractors": [],
+      "relative_path": "pipecat.yaml"
+    },
+    {
+      "file": "portkey-ai-gateway.yaml",
+      "name": "portkey-ai-gateway",
+      "product": "portkey-ai-gateway",
+      "vendor": "portkey",
+      "severity": "info",
+      "author": "A.I.G bot",
+      "category": "API Gateway/Proxy",
+      "http_matcher_count": 1,
+      "version_extractor_count": 0,
+      "http_matchers": [
+        {
+          "method": "GET",
+          "path": "/",
+          "matchers": [
+            "body=\"AI Gateway says hey!\""
+          ]
+        }
+      ],
+      "version_extractors": [],
+      "relative_path": "portkey-ai-gateway.yaml"
+    },
+    {
+      "file": "powerinfer.yaml",
+      "name": "powerinfer",
+      "product": "powerinfer",
+      "vendor": "sjtu-ipads",
+      "severity": "info",
+      "author": "A.I.G bot",
+      "category": "LLM Serving",
+      "http_matcher_count": 2,
+      "version_extractor_count": 0,
+      "http_matchers": [
+        {
+          "method": "GET",
+          "path": "/model.json",
+          "matchers": [
+            "header=\"llama.cpp\""
+          ]
+        },
+        {
+          "method": "GET",
+          "path": "/props",
+          "matchers": [
+            "header=\"llama.cpp\""
+          ]
+        }
+      ],
+      "version_extractors": [],
+      "relative_path": "powerinfer.yaml"
+    },
+    {
+      "file": "praisonai.yaml",
+      "name": "praisonai",
+      "product": "praisonai",
+      "vendor": "mervinpraison",
+      "severity": "info",
+      "author": "A.I.G bot",
+      "category": "Agent Platform",
+      "http_matcher_count": 1,
+      "version_extractor_count": 0,
+      "http_matchers": [
+        {
+          "method": "GET",
+          "path": "/",
+          "matchers": [
+            "body=\"<title>PraisonAI</title>\""
+          ]
+        }
+      ],
+      "version_extractors": [],
+      "relative_path": "praisonai.yaml"
+    },
+    {
+      "file": "privategpt.yaml",
+      "name": "privategpt",
+      "product": "privategpt",
+      "vendor": "zylon-ai",
+      "severity": "info",
+      "author": "A.I.G bot",
+      "category": "AI Chatbot/UI",
+      "http_matcher_count": 1,
+      "version_extractor_count": 0,
+      "http_matchers": [
+        {
+          "method": "GET",
+          "path": "/v1/ingest/list",
+          "matchers": [
+            "body=\"\\\"model\\\":\\\"private-gpt\\\"\" || body=\"\\\"model\\\": \\\"private-gpt\\\"\""
+          ]
+        }
+      ],
+      "version_extractors": [],
+      "relative_path": "privategpt.yaml"
+    },
+    {
+      "file": "pyload.yaml",
+      "name": "pyload-ng",
+      "product": "pyload",
+      "vendor": "pyload",
+      "severity": "info",
+      "author": "腾讯朱雀实验室",
+      "category": "Dev/Notebook",
+      "http_matcher_count": 1,
+      "version_extractor_count": 0,
+      "http_matchers": [
+        {
+          "method": "GET",
+          "path": "/",
+          "matchers": [
+            "body=\"<title>Login - pyLoad </title>\""
+          ]
+        }
+      ],
+      "version_extractors": [],
+      "relative_path": "pyload.yaml"
+    },
+    {
+      "file": "qanything.yaml",
+      "name": "qanything",
+      "product": "qanything",
+      "vendor": "netease-youdao",
+      "severity": "info",
+      "author": "腾讯朱雀实验室",
+      "category": "RAG/Knowledge",
+      "http_matcher_count": 2,
+      "version_extractor_count": 0,
+      "http_matchers": [
+        {
+          "method": "GET",
+          "path": "/qanything",
+          "matchers": [
+            "body=\"<title>QAnything</title>\""
+          ]
+        },
+        {
+          "method": "GET",
+          "path": "/",
+          "matchers": [
+            "body=\"<title>Application QAnything cannot handle your request</title>\""
+          ]
+        }
+      ],
+      "version_extractors": [],
+      "relative_path": "qanything.yaml"
+    },
+    {
+      "file": "qnabot-on-aws.yaml",
+      "name": "qnabot-on-aws",
+      "product": "qnabot-on-aws",
+      "vendor": "aws",
+      "severity": "info",
+      "author": "A.I.G bot",
+      "category": "Cloud AI Service",
+      "http_matcher_count": 1,
+      "version_extractor_count": 0,
+      "http_matchers": [
+        {
+          "method": "GET",
+          "path": "/",
+          "matchers": [
+            "body=\"<title>QnABot\""
+          ]
+        }
+      ],
+      "version_extractors": [],
+      "relative_path": "qnabot-on-aws.yaml"
+    },
+    {
+      "file": "quivr.yaml",
+      "name": "quivr",
+      "product": "quivr",
+      "vendor": "quivrhq",
+      "severity": "info",
+      "author": "A.I.G bot",
+      "category": "AI Chatbot/UI",
+      "http_matcher_count": 1,
+      "version_extractor_count": 0,
+      "http_matchers": [
+        {
+          "method": "GET",
+          "path": "/openapi.json",
+          "matchers": [
+            "body=\"/brains/\" && body=\"/knowledge/\" && body=\"/chat/\""
+          ]
+        }
+      ],
+      "version_extractors": [],
+      "relative_path": "quivr.yaml"
+    },
+    {
+      "file": "ragflow.yaml",
+      "name": "ragflow",
+      "product": "ragflow",
+      "vendor": "ragflow",
+      "severity": "info",
+      "author": "腾讯朱雀实验室",
+      "category": "RAG/Knowledge",
+      "http_matcher_count": 2,
+      "version_extractor_count": 0,
+      "http_matchers": [
+        {
+          "method": "GET",
+          "path": "/",
+          "matchers": [
+            "body=\"<title>RAGFlow</title>\""
+          ]
+        },
+        {
+          "method": "GET",
+          "path": "/v1/system/healthz",
+          "matchers": [
+            "body=\"\\\"doc_engine\\\"\""
+          ]
+        }
+      ],
+      "version_extractors": [],
+      "relative_path": "ragflow.yaml"
+    },
+    {
+      "file": "ray.yaml",
+      "name": "ray",
+      "product": "dashboard",
+      "vendor": "ray",
+      "severity": "info",
+      "author": "腾讯朱雀实验室",
+      "category": "Other",
+      "http_matcher_count": 3,
+      "version_extractor_count": 0,
+      "http_matchers": [
+        {
+          "method": "GET",
+          "path": "/api/cluster_status",
+          "matchers": [
+            "body=\"Got cluster status\""
+          ]
+        },
+        {
+          "method": "GET",
+          "path": "/",
+          "matchers": [
+            "icon=\"463802404\""
+          ]
+        },
+        {
+          "method": "GET",
+          "path": "/api/serve/applications/",
+          "matchers": [
+            "body=\"\\\"controller_info\\\"\" && body=\"\\\"proxy_location\\\"\" && body=\"SERVE_CONTROLLER_ACTOR\""
+          ]
+        }
+      ],
+      "version_extractors": [],
+      "relative_path": "ray.yaml"
+    },
+    {
+      "file": "replicate.yaml",
+      "name": "replicate",
+      "product": "replicate",
+      "vendor": "replicate",
+      "severity": "info",
+      "author": "A.I.G bot",
+      "category": "Cloud AI Service",
+      "http_matcher_count": 1,
+      "version_extractor_count": 0,
+      "http_matchers": [
+        {
+          "method": "GET",
+          "path": "/v1/hardware",
+          "matchers": [
+            "body=\"\\\"Unauthenticated\\\"\""
+          ]
+        }
+      ],
+      "version_extractors": [],
+      "relative_path": "replicate.yaml"
+    },
+    {
+      "file": "salesforce-einstein.yaml",
+      "name": "salesforce-einstein",
+      "product": "salesforce-einstein",
+      "vendor": "salesforce",
+      "severity": "info",
+      "author": "A.I.G bot",
+      "category": "Cloud AI Service",
+      "http_matcher_count": 1,
+      "version_extractor_count": 0,
+      "http_matchers": [
+        {
+          "method": "POST",
+          "path": "/iamessage/api/v2/authorization/unauthenticated/access-token",
+          "matchers": [
+            "body=\"\\\"errorCode\\\"\" && body=\"INVALID_\""
+          ]
+        }
+      ],
+      "version_extractors": [],
+      "relative_path": "salesforce-einstein.yaml"
+    },
+    {
+      "file": "sglang.yaml",
+      "name": "sglang",
+      "product": "sglang",
+      "vendor": "sgl-project",
+      "severity": "info",
+      "author": "A.I.G bot",
+      "category": "LLM Serving",
+      "http_matcher_count": 3,
+      "version_extractor_count": 1,
+      "http_matchers": [
+        {
+          "method": "GET",
+          "path": "/server_info",
+          "matchers": [
+            "body=\"radix_eviction_policy\" && body=\"weight_version\" && body=\"tokenizer_path\""
+          ]
+        },
+        {
+          "method": "GET",
+          "path": "/model_info",
+          "matchers": [
+            "body=\"\\\"is_generation\\\"\" && body=\"\\\"has_image_understanding\\\"\" && body=\"\\\"has_audio_understanding\\\"\""
+          ]
+        },
+        {
+          "method": "GET",
+          "path": "/v1/models",
+          "matchers": [
+            "body=\"\\\"owned_by\\\":\\\"sglang\\\"\" || body=\"\\\"owned_by\\\": \\\"sglang\\\"\""
+          ]
+        }
+      ],
+      "version_extractors": [
+        {
+          "method": "GET",
+          "path": "/server_info",
+          "part": "body",
+          "regex": "\"version\":\"([^\"]+)\""
+        }
+      ],
+      "relative_path": "sglang.yaml"
+    },
+    {
+      "file": "sillytavern.yaml",
+      "name": "sillytavern",
+      "product": "sillytavern",
+      "vendor": "sillytavern",
+      "severity": "info",
+      "author": "A.I.G bot",
+      "category": "AI Chatbot/UI",
+      "http_matcher_count": 2,
+      "version_extractor_count": 0,
+      "http_matchers": [
+        {
+          "method": "GET",
+          "path": "/manifest.json",
+          "matchers": [
+            "body=\"\\\"name\\\": \\\"SillyTavern\\\"\""
+          ]
+        },
+        {
+          "method": "GET",
+          "path": "/version",
+          "matchers": [
+            "body=\"SillyTavern\" && body=\"\\\"pkgVersion\\\"\""
+          ]
+        }
+      ],
+      "version_extractors": [],
+      "relative_path": "sillytavern.yaml"
+    },
+    {
+      "file": "sim.yaml",
+      "name": "simstudioai",
+      "product": "simstudioai",
+      "vendor": "simstudioai",
+      "severity": "info",
+      "author": "腾讯朱雀实验室",
+      "category": "AI Chatbot/UI",
+      "http_matcher_count": 1,
+      "version_extractor_count": 0,
+      "http_matchers": [
+        {
+          "method": "GET",
+          "path": "/",
+          "matchers": [
+            "body=\"Sim is an open-source AI agent workflow builder\""
+          ]
+        }
+      ],
+      "version_extractors": [],
+      "relative_path": "sim.yaml"
+    },
+    {
+      "file": "superagi.yaml",
+      "name": "superagi",
+      "product": "superagi",
+      "vendor": "transformeroptimus",
+      "severity": "info",
+      "author": "A.I.G bot",
+      "category": "Agent Platform",
+      "http_matcher_count": 1,
+      "version_extractor_count": 0,
+      "http_matchers": [
+        {
+          "method": "GET",
+          "path": "/",
+          "matchers": [
+            "body=\"<title>SuperAGI\""
+          ]
+        }
+      ],
+      "version_extractors": [],
+      "relative_path": "superagi.yaml"
+    },
+    {
+      "file": "tabbyapi.yaml",
+      "name": "tabbyapi",
+      "product": "tabbyapi",
+      "vendor": "theroyallab",
+      "severity": "info",
+      "author": "A.I.G bot",
+      "category": "LLM Serving",
+      "http_matcher_count": 1,
+      "version_extractor_count": 0,
+      "http_matchers": [
+        {
+          "method": "GET",
+          "path": "/.well-known/serviceinfo",
+          "matchers": [
+            "body=\"\\\"TabbyAPI\\\"\" && body=\"\\\"software\\\"\""
+          ]
+        }
+      ],
+      "version_extractors": [],
+      "relative_path": "tabbyapi.yaml"
+    },
+    {
+      "file": "tensorboard.yaml",
+      "name": "tensorboard",
+      "product": "tensorboard",
+      "vendor": "tensorboard",
+      "severity": "info",
+      "author": "腾讯朱雀实验室",
+      "category": "Model Training/ML",
+      "http_matcher_count": 1,
+      "version_extractor_count": 0,
+      "http_matchers": [
+        {
+          "method": "GET",
+          "path": "/",
+          "matchers": [
+            "body=\"title>TensorBoard</title\""
+          ]
+        }
+      ],
+      "version_extractors": [],
+      "relative_path": "tensorboard.yaml"
+    },
+    {
+      "file": "tensorrt-llm.yaml",
+      "name": "tensorrt-llm",
+      "product": "tensorrt-llm",
+      "vendor": "nvidia",
+      "severity": "info",
+      "author": "A.I.G bot",
+      "category": "LLM Serving",
+      "http_matcher_count": 3,
+      "version_extractor_count": 0,
+      "http_matchers": [
+        {
+          "method": "GET",
+          "path": "/metrics",
+          "matchers": [
+            "body=\"inflightBatchingStats\" && body=\"kvCacheStats\""
+          ]
+        },
+        {
+          "method": "GET",
+          "path": "/health_generate",
+          "matchers": [
+            "body=\"Generation health check OK\""
+          ]
+        },
+        {
+          "method": "GET",
+          "path": "/v1/models",
+          "matchers": [
+            "body=\"\\\"owned_by\\\":\\\"tensorrt_llm\\\"\" || body=\"\\\"owned_by\\\": \\\"tensorrt_llm\\\"\""
+          ]
+        }
+      ],
+      "version_extractors": [],
+      "relative_path": "tensorrt-llm.yaml"
+    },
+    {
+      "file": "tensorzero.yaml",
+      "name": "tensorzero",
+      "product": "tensorzero",
+      "vendor": "tensorzero",
+      "severity": "info",
+      "author": "A.I.G bot",
+      "category": "LLM Serving",
+      "http_matcher_count": 1,
+      "version_extractor_count": 0,
+      "http_matchers": [
+        {
+          "method": "GET",
+          "path": "/metrics",
+          "matchers": [
+            "body=\"tensorzero_inferences_total\""
+          ]
+        }
+      ],
+      "version_extractors": [],
+      "relative_path": "tensorzero.yaml"
+    },
+    {
+      "file": "text-generation-webui.yaml",
+      "name": "text-generation-webui",
+      "product": "text-generation-webui",
+      "vendor": "oobabooga",
+      "severity": "info",
+      "author": "A.I.G bot",
+      "category": "AI Chatbot/UI",
+      "http_matcher_count": 1,
+      "version_extractor_count": 0,
+      "http_matchers": [
+        {
+          "method": "GET",
+          "path": "/",
+          "matchers": [
+            "body=\"Text Generation Web UI\""
+          ]
+        }
+      ],
+      "version_extractors": [],
+      "relative_path": "text-generation-webui.yaml"
+    },
+    {
+      "file": "together-ai.yaml",
+      "name": "together-ai",
+      "product": "together-ai",
+      "vendor": "together",
+      "severity": "info",
+      "author": "A.I.G bot",
+      "category": "Cloud AI Service",
+      "http_matcher_count": 1,
+      "version_extractor_count": 0,
+      "http_matchers": [
+        {
+          "method": "GET",
+          "path": "/v1/hardware",
+          "matchers": [
+            "body=\"You can find your API key at https://api.together.xyz\""
+          ]
+        }
+      ],
+      "version_extractors": [],
+      "relative_path": "together-ai.yaml"
+    },
+    {
+      "file": "triton.yaml",
+      "name": "triton-inference-server",
+      "product": "triton-inference-server",
+      "vendor": "NVIDIA",
+      "severity": "info",
+      "author": "腾讯朱雀实验室",
+      "category": "LLM Serving",
+      "http_matcher_count": 2,
+      "version_extractor_count": 0,
+      "http_matchers": [
+        {
+          "method": "POST",
+          "path": "/v2/repository/models/simple/load",
+          "matchers": [
+            "body=\"{\\\"error\\\":\\\"\""
+          ]
+        },
+        {
+          "method": "GET",
+          "path": "/v2",
+          "matchers": [
+            "body=\"\\\"name\\\"\" && body=\"\\\"extensions\\\"\" && body=\"triton\""
+          ]
+        }
+      ],
+      "version_extractors": [],
+      "relative_path": "triton.yaml"
+    },
+    {
+      "file": "upsonic.yaml",
+      "name": "upsonic",
+      "product": "upsonic",
+      "vendor": "upsonic",
+      "severity": "info",
+      "author": "A.I.G bot",
+      "category": "Agent Platform",
+      "http_matcher_count": 1,
+      "version_extractor_count": 0,
+      "http_matchers": [
+        {
+          "method": "GET",
+          "path": "/",
+          "matchers": [
+            "body=\"<title>Upsonic</title>\""
+          ]
+        }
+      ],
+      "version_extractors": [],
+      "relative_path": "upsonic.yaml"
+    },
+    {
+      "file": "vertex-ai.yaml",
+      "name": "vertex-ai",
+      "product": "vertex-ai",
+      "vendor": "google",
+      "severity": "info",
+      "author": "A.I.G bot",
+      "category": "Cloud AI Service",
+      "http_matcher_count": 1,
+      "version_extractor_count": 0,
+      "http_matchers": [
+        {
+          "method": "GET",
+          "path": "/$discovery/rest?version=v1",
+          "matchers": [
+            "body=\"\\\"name\\\": \\\"aiplatform\\\"\" && body=\"\\\"title\\\": \\\"Vertex AI API\\\"\""
+          ]
+        }
+      ],
+      "version_extractors": [],
+      "relative_path": "vertex-ai.yaml"
+    },
+    {
+      "file": "vllm.yaml",
+      "name": "vllm",
+      "product": "vllm",
+      "vendor": "vllm-project",
+      "severity": "info",
+      "author": "腾讯朱雀实验室",
+      "category": "LLM Serving",
+      "http_matcher_count": 2,
+      "version_extractor_count": 1,
+      "http_matchers": [
+        {
+          "method": "GET",
+          "path": "/version",
+          "matchers": [
+            "body=\"{\\\"version\\\":\\\"\""
+          ]
+        },
+        {
+          "method": "GET",
+          "path": "/v1/models",
+          "matchers": [
+            "header=\"uvicorn\" && body=\"\\\"object\\\"\" && body=\"\\\"data\\\"\""
+          ]
+        }
+      ],
+      "version_extractors": [
+        {
+          "method": "GET",
+          "path": "/version",
+          "part": "body",
+          "regex": "{\"version\":\"(\\d+\\.\\d+\\.?\\d+?)"
+        }
+      ],
+      "relative_path": "vllm.yaml"
+    },
+    {
+      "file": "wallos.yaml",
+      "name": "wallos",
+      "product": "wallos",
+      "vendor": "ellite",
+      "severity": "info",
+      "author": "A.I.G bot",
+      "category": "RAG/Knowledge",
+      "http_matcher_count": 1,
+      "version_extractor_count": 1,
+      "http_matchers": [
+        {
+          "method": "GET",
+          "path": "/",
+          "matchers": [
+            "body=\"<title>Wallos - Subscription Tracker</title>\""
+          ]
+        }
+      ],
+      "version_extractors": [
+        {
+          "method": "GET",
+          "path": "/",
+          "part": "body",
+          "regex": "styles/theme\\.css\\?v(\\d+\\.\\d+\\.\\d+)"
+        }
+      ],
+      "relative_path": "wallos.yaml"
+    },
+    {
+      "file": "weknora.yaml",
+      "name": "weknora",
+      "product": "weknora",
+      "vendor": "tencent",
+      "severity": "info",
+      "author": "A.I.G bot",
+      "category": "AI Chatbot/UI",
+      "http_matcher_count": 1,
+      "version_extractor_count": 0,
+      "http_matchers": [
+        {
+          "method": "GET",
+          "path": "/",
+          "matchers": [
+            "body=\"<title>WeKnora</title>\" || body=\"weknora\""
+          ]
+        }
+      ],
+      "version_extractors": [],
+      "relative_path": "weknora.yaml"
+    },
+    {
+      "file": "xinference.yaml",
+      "name": "Xinference",
+      "product": "inference",
+      "vendor": "xorbitsai",
+      "severity": "info",
+      "author": "腾讯朱雀实验室",
+      "category": "Other",
+      "http_matcher_count": 1,
+      "version_extractor_count": 1,
+      "http_matchers": [
+        {
+          "method": "GET",
+          "path": "/ui/",
+          "matchers": [
+            "body=\"<title>Xinference</title>\""
+          ]
+        }
+      ],
+      "version_extractors": [
+        {
+          "method": "GET",
+          "path": "/v1/cluster/version",
+          "part": "body",
+          "regex": "\"version\":\"(.*?)\"}"
+        }
+      ],
+      "relative_path": "xinference.yaml"
+    }
+  ]
+}

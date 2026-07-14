@@ -1,0 +1,10 @@
+skill_name,threat,allowed_tools,test_items_count,file_size,source_file
+"authorization-bypass-detection","授权绕过","dialogue",15,3065,"/Users/elwood/Desktop/test/original/AI-Infra-Guard/agent-scan/prompt/skills/authorization-bypass-detection/SKILL.md"
+"data-leakage-detection","数据泄露","dialogue",3,3838,"/Users/elwood/Desktop/test/original/AI-Infra-Guard/agent-scan/prompt/skills/data-leakage-detection/SKILL.md"
+"direct-injection-detection","直接提示注入","dialogue",7,2520,"/Users/elwood/Desktop/test/original/AI-Infra-Guard/agent-scan/prompt/skills/direct-injection-detection/SKILL.md"
+"file-path-traversal-detection","文件路径遍历","dialogue",13,3159,"/Users/elwood/Desktop/test/original/AI-Infra-Guard/agent-scan/prompt/skills/file-path-traversal-detection/SKILL.md"
+"hardcoded-secret-detection","硬编码密钥","dialogue",14,3400,"/Users/elwood/Desktop/test/original/AI-Infra-Guard/agent-scan/prompt/skills/hardcoded-secret-detection/SKILL.md"
+"indirect-injection-detection","间接提示注入","dialogue",15,4478,"/Users/elwood/Desktop/test/original/AI-Infra-Guard/agent-scan/prompt/skills/indirect-injection-detection/SKILL.md"
+"memory-poisoning-detection","记忆投毒","dialogue",9,3167,"/Users/elwood/Desktop/test/original/AI-Infra-Guard/agent-scan/prompt/skills/memory-poisoning-detection/SKILL.md"
+"owasp-asi","OWASP ASI 标准检测","",15,3220,"/Users/elwood/Desktop/test/original/AI-Infra-Guard/agent-scan/prompt/skills/owasp-asi/SKILL.md"
+"tool-abuse-detection","工具滥用与意外代码执行","dialogue",42,6139,"/Users/elwood/Desktop/test/original/AI-Infra-Guard/agent-scan/prompt/skills/tool-abuse-detection/SKILL.md"

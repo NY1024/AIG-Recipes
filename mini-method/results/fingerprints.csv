@@ -1,0 +1,122 @@
+name,product,vendor,category,severity,http_matcher_count,version_extractor_count,file
+9router,9router,decolua,AI Chatbot/UI,info,1,0,9router.yaml
+AI-Agent-Config,AI-Agent-Config,various,AI Agent Config,high,13,0,ai-agent-config.yaml
+ai-chatbot,vercel,ai-chatbot,Other,info,1,0,ai-chatbot.yaml
+anythingllm,anythingllm,anythingllm,RAG/Knowledge,info,2,0,anythingllm.yaml
+aphrodite-engine,aphrodite-engine,aphrodite-engine,LLM Serving,info,1,0,aphrodite-engine.yaml
+astrbot,astrbot,astrbot,AI Chatbot/UI,info,1,0,astrbot.yaml
+AutoGPT,autogpt,significant-gravitas,Agent Platform,info,1,0,autogpt.yaml
+aws-bedrock,aws-bedrock,amazon,Cloud AI Service,info,1,0,aws-bedrock.yaml
+azure-openai,azure-openai,microsoft,Cloud AI Service,info,1,0,azure-openai.yaml
+baseten-truss,baseten-truss,baseten,LLM Serving,info,1,0,baseten-truss.yaml
+bentoml,bentoml,bentoml,Other,info,3,0,bentoml.yaml
+betterchatgpt,betterchatgpt,betterchatgpt,AI Chatbot/UI,info,1,0,betterchatgpt.yaml
+bifrost,bifrost,maximhq,API Gateway/Proxy,info,2,0,bifrost.yaml
+blinko,blinko,blinkospace,AI Chatbot/UI,info,1,0,blinko.yaml
+boxlite,boxlite,boxlite-ai,AI Chatbot/UI,info,1,0,boxlite.yaml
+Budibase,budibase,budibase,Agent Platform,info,2,1,budibase.yaml
+langchain,ChatLangChain,LangChain,Other,info,1,0,chat-langchain.yaml
+Chuanhugpt,Chuanhugpt,Chuanhugpt,AI Chatbot/UI,info,1,0,chuanhugpt.yaml
+Clawdbot Gateway,Clawdbot Gateway,Clawdbot Gateway,AI Chatbot/UI,info,1,0,clawdbot.yaml
+clickhouse,clickhouse,clickhouse,Data/Infra,info,1,0,clickhouse.yaml
+cloudflare-ai-gateway,cloudflare-ai-gateway,cloudflare,API Gateway/Proxy,info,1,0,cloudflare-ai-gateway.yaml
+comfy_mtb,comfy_mtb,comfyui,Other,info,1,0,comfyui-comfy-mtb.yaml
+ComfyUI-Prompt-Preview,ComfyUI-Prompt-Preview,comfyui,ComfyUI,info,1,0,comfyui-custom-preview.yaml
+ComfyUI-Custom-Scripts,ComfyUI-Custom-Scripts,comfyui,ComfyUI,info,1,0,comfyui-custom-scripts.yaml
+comfyui,comfyanonymous,comfyui,Other,info,1,1,comfyui.yaml
+dask,dashboard,dask,Other,info,2,0,dask_http.yaml
+databricks-model-serving,databricks-model-serving,databricks,LLM Serving,info,1,0,databricks-model-serving.yaml
+deepspeed-mii,deepspeed-mii,microsoft,LLM Serving,info,1,0,deepspeed-mii.yaml
+dify,dify,dify,Agent Platform,info,2,2,dify.yaml
+envoy-ai-gateway,envoy-ai-gateway,envoyproxy,API Gateway/Proxy,info,1,0,envoy-ai-gateway.yaml
+f5-tts,f5-tts,swivid,TTS,info,1,1,f5-tts.yaml
+fastchat-webui,fastchat-webui,lm-sys,AI Chatbot/UI,info,1,0,fastchat-webui.yaml
+fastchat,fastchat-controller,lm-sys,Other,info,1,0,fastchat.yaml
+fastgpt,fastgpt,labring,AI Chatbot/UI,info,1,0,fastgpt.yaml
+feast,feast-webui,feast,Model Training/ML,info,1,0,feast.yaml
+fireworks-ai,fireworks-ai,fireworks,Cloud AI Service,info,1,0,fireworks-ai.yaml
+flowise,flowise,flowiseai,Agent Platform,info,2,1,flowise.yaml
+gpt4all,gpt4all,nomic,AI Chatbot/UI,info,1,0,gpt4all.yaml
+gradio,gradio,gradio,Other,info,1,1,gradio.yaml
+groq,groq,groq,Cloud AI Service,info,2,0,groq.yaml
+h2ogpt,h2ogpt,h2oai,AI Chatbot/UI,info,2,0,h2ogpt.yaml
+helicone,helicone,helicone,RAG/Knowledge,info,2,0,helicone.yaml
+huggingface-chat-ui,huggingface-chat-ui,huggingface,AI Chatbot/UI,info,1,0,huggingface-chat-ui.yaml
+huggingface-tgi,text-generation-inference,huggingface,Other,info,1,0,huggingface-tgi.yaml
+instructlab,instructlab,redhat,Model Training/ML,info,1,0,instructlab.yaml
+jan,jan,jan-ai,AI Chatbot/UI,info,1,0,jan.yaml
+junoclaw,junoclaw,dragonmonk111,Agent Platform,info,2,1,junoclaw.yaml
+jupyterlab,jupyterlab,jupyter,Other,info,1,0,jupyter-lab.yaml
+jupyter-notebook,jupyter-notebook,jupyter,Dev/Notebook,info,1,0,jupyter-notebook.yaml
+jupyter-server,jupyter-server,jupyter,Dev/Notebook,info,1,1,jupyter-server.yaml
+koboldcpp,koboldcpp,koboldcpp,Other,info,2,0,koboldcpp.yaml
+kong-proxy,kong-proxy,konghq,API Gateway/Proxy,info,1,0,kong-proxy.yaml
+kubeai,kubeai,kubeai-project,Model Training/ML,info,1,0,kubeai.yaml
+kubeflow,kubeflow,kubeflow,Model Training/ML,info,1,1,kubeflow.yaml
+KubePi,KubePi,1Panel,Dev/Notebook,info,1,1,kubepi.yaml
+langflow,langflow,langflow-ai,Agent Platform,info,3,1,langflow.yaml
+langfuse,langfuse,langfuse,RAG/Knowledge,info,1,1,langfuse.yaml
+librechat,librechat,librechat,AI Chatbot/UI,info,2,1,librechat.yaml
+LiteLLM,LiteLLM,LiteLLM,API Gateway/Proxy,info,3,1,litellm.yaml
+llama-cpp,llama-cpp,llama-cpp,LLM Serving,info,2,0,llama-cpp.yaml
+llamafactory,llamafactory,llama-factory,Other,info,1,0,llama-factory.yaml
+llmstudio,lmstudio,lmstudio,Other,info,1,1,llmstudio.yaml
+lm-studio,lm-studio,lmstudio,AI Chatbot/UI,info,2,0,lm-studio.yaml
+lmdeploy,lmdeploy,internlm,LLM Serving,info,1,1,lmdeploy.yaml
+LobeChat,LobeChat,LobeChat,AI Chatbot/UI,info,2,0,lobechat.yaml
+localai,localai,localai,Other,info,1,0,localai.yaml
+lollms,lollms,parisneo,AI Chatbot/UI,info,1,0,lollms.yaml
+Lumiverse,lumiverse,prolix-oc,Model Training/ML,info,1,0,lumiverse.yaml
+marimo,marimo,marimo,Dev/Notebook,info,1,1,marimo.yaml
+maxkb,maxkb,1panel-dev,AI Chatbot/UI,info,1,0,maxkb.yaml
+meta-ads-mcp,meta-ads-mcp,pipeboard-co,MCP,info,1,0,mcp-server.yaml
+mcp sse,Anthropic,Anthropic,Other,info,1,0,mcp.yaml
+mem0,mem0,mem0ai,RAG/Knowledge,info,1,0,mem0.yaml
+mlc-llm,mlc-llm,mlc-ai,LLM Serving,info,2,0,mlc-llm.yaml
+mlflow,mlflow,mlflow,Model Training/ML,info,1,1,mlflow.yaml
+modal,modal,modal,Cloud AI Service,info,1,0,modal.yaml
+n8n-mcp,n8n-mcp,czlonkowski,MCP,info,1,0,n8n-mcp.yaml
+n8n,n8n-io,n8n-io,Other,info,1,0,n8n.io.yaml
+new-api,new-api,quantumnous,API Gateway/Proxy,info,1,1,new-api.yaml
+nextchat,nextchat,nextchat,AI Chatbot/UI,info,3,0,nextchat.yaml
+nvidia-nim,nvidia-nim,nvidia,LLM Serving,info,1,0,nvidia-nim.yaml
+ollama,ollama,ollama,Other,info,1,1,ollama.yaml
+omniroute,omniroute,omniroute,AI Chatbot/UI,info,1,0,omniroute.yaml
+onyx,onyx,onyx,Other,info,2,0,onyx.yaml
+openai-compatible,openai-compatible,generic,Other,info,1,0,openai-compatible.yaml
+OpenClaw,openclaw,openclaw,Agent Platform,info,1,1,openclaw.yaml
+openwebui,open-webui,open-webui,Other,info,2,1,openwebui.yaml
+paperclip,paperclip,paperclipai,Data/Infra,info,1,0,paperclip.yaml
+petals,petals,bigscience,LLM Serving,info,1,0,petals.yaml
+pgadmin,pgadmin,pgadmin,Dev/Notebook,info,1,1,pgadmin.yaml
+pinchtab,pinchtab,pinchtab,AI Chatbot/UI,info,1,1,pinchtab.yaml
+pipecat,pipecat,pipecat-ai,Agent Platform,info,1,0,pipecat.yaml
+portkey-ai-gateway,portkey-ai-gateway,portkey,API Gateway/Proxy,info,1,0,portkey-ai-gateway.yaml
+powerinfer,powerinfer,sjtu-ipads,LLM Serving,info,2,0,powerinfer.yaml
+praisonai,praisonai,mervinpraison,Agent Platform,info,1,0,praisonai.yaml
+privategpt,privategpt,zylon-ai,AI Chatbot/UI,info,1,0,privategpt.yaml
+pyload-ng,pyload,pyload,Dev/Notebook,info,1,0,pyload.yaml
+qanything,qanything,netease-youdao,RAG/Knowledge,info,2,0,qanything.yaml
+qnabot-on-aws,qnabot-on-aws,aws,Cloud AI Service,info,1,0,qnabot-on-aws.yaml
+quivr,quivr,quivrhq,AI Chatbot/UI,info,1,0,quivr.yaml
+ragflow,ragflow,ragflow,RAG/Knowledge,info,2,0,ragflow.yaml
+ray,dashboard,ray,Other,info,3,0,ray.yaml
+replicate,replicate,replicate,Cloud AI Service,info,1,0,replicate.yaml
+salesforce-einstein,salesforce-einstein,salesforce,Cloud AI Service,info,1,0,salesforce-einstein.yaml
+sglang,sglang,sgl-project,LLM Serving,info,3,1,sglang.yaml
+sillytavern,sillytavern,sillytavern,AI Chatbot/UI,info,2,0,sillytavern.yaml
+simstudioai,simstudioai,simstudioai,AI Chatbot/UI,info,1,0,sim.yaml
+superagi,superagi,transformeroptimus,Agent Platform,info,1,0,superagi.yaml
+tabbyapi,tabbyapi,theroyallab,LLM Serving,info,1,0,tabbyapi.yaml
+tensorboard,tensorboard,tensorboard,Model Training/ML,info,1,0,tensorboard.yaml
+tensorrt-llm,tensorrt-llm,nvidia,LLM Serving,info,3,0,tensorrt-llm.yaml
+tensorzero,tensorzero,tensorzero,LLM Serving,info,1,0,tensorzero.yaml
+text-generation-webui,text-generation-webui,oobabooga,AI Chatbot/UI,info,1,0,text-generation-webui.yaml
+together-ai,together-ai,together,Cloud AI Service,info,1,0,together-ai.yaml
+triton-inference-server,triton-inference-server,NVIDIA,LLM Serving,info,2,0,triton.yaml
+upsonic,upsonic,upsonic,Agent Platform,info,1,0,upsonic.yaml
+vertex-ai,vertex-ai,google,Cloud AI Service,info,1,0,vertex-ai.yaml
+vllm,vllm,vllm-project,LLM Serving,info,2,1,vllm.yaml
+wallos,wallos,ellite,RAG/Knowledge,info,1,1,wallos.yaml
+weknora,weknora,tencent,AI Chatbot/UI,info,1,0,weknora.yaml
+Xinference,inference,xorbitsai,Other,info,1,1,xinference.yaml

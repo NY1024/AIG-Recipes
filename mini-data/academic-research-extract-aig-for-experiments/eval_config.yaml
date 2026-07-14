@@ -1,0 +1,39 @@
+# 越狱评测配置文件模板
+# 用于 jailbreak_eval_pipeline.py 的多模型多数据集评测
+
+models:
+  # ── 模型 1: OpenAI GPT-4o ──
+  - name: gpt-4o
+    api_base: https://api.openai.com
+    api_key: sk-your-openai-key
+
+  # ── 模型 2: DeepSeek ──
+  - name: deepseek-chat
+    api_base: https://api.deepseek.com
+    api_key: sk-your-deepseek-key
+
+  # ── 模型 3: Qwen (通义千问) ──
+  - name: qwen-plus
+    api_base: https://dashscope.aliyuncs.com/compatible-mode
+    api_key: sk-your-qwen-key
+
+  # ── 模型 4: 本地 Ollama ──
+  # - name: llama3
+  #   api_base: http://127.0.0.1:11434
+  #   api_key: ollama
+
+datasets:
+  # 以下数据集名称对应 data/eval/ 下的 JSON 文件名（不含 .json 后缀）
+  # 建议先用小数据集快速验证流程
+
+  - JailBench-Tiny        # 中文越狱，133 条，有分类标签
+  - advbench              # 英文对抗，520 条，学术引用最多
+  - privacy-leakage       # 隐私泄露，99 条
+  - cyberattack           # 网络攻击，100 条
+
+# 评测参数
+eval_params:
+  max_tokens: 512         # LLM 最大输出 token
+  timeout: 30             # 单次请求超时（秒）
+  concurrency: 3          # 并发请求数
+  judge_method: keyword   # 判定方法: keyword (关键词匹配) 或 llm (LLM-as-judge)

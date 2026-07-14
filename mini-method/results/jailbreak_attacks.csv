@@ -1,0 +1,106 @@
+method_name,class_name,category,turn_type,module_path
+code_chameleon,CodeChameleon,Code-based,single_turn,deepteam.attacks.single_turn.code_chameleon
+context_poisoning,ContextPoisoning,Prompt Manipulation,single_turn,deepteam.attacks.single_turn.context_poisoning
+deep_inception,DeepInception,Roleplay,single_turn,deepteam.attacks.single_turn.deep_inception
+equa_code,EquaCode,Code-based,single_turn,deepteam.attacks.single_turn.equa_code
+flip_attack,FlipAttack,Direct,single_turn,deepteam.attacks.single_turn.flip_attack
+goal_redirection,GoalRedirection,Goal Manipulation,single_turn,deepteam.attacks.single_turn.goal_redirection
+gray_box,GrayBox,Semantic,single_turn,deepteam.attacks.single_turn.gray_box
+ica,ICA,Prompt Manipulation,single_turn,deepteam.attacks.single_turn.ica
+icrt_jailbreak,IcrtJailbreak,Goal Manipulation,single_turn,deepteam.attacks.single_turn.icrt_jailbreak
+input_bypass,InputBypass,Prompt Manipulation,single_turn,deepteam.attacks.single_turn.input_bypass
+jailbroken,Jailbroken,Direct,single_turn,deepteam.attacks.single_turn.jailbroken
+jam,JAM,Semantic,single_turn,deepteam.attacks.single_turn.jam
+overload,Overload,Direct,single_turn,deepteam.attacks.single_turn.overload
+math_problem,MathProblem,Semantic,single_turn,deepteam.attacks.single_turn.math_problem
+multilingual,Multilingual,Semantic,single_turn,deepteam.attacks.single_turn.multilingual
+past_tense,PastTense,Semantic,single_turn,deepteam.attacks.single_turn.past_tense
+permission_escalation,PermissionEscalation,Goal Manipulation,single_turn,deepteam.attacks.single_turn.permission_escalation
+prefill,Prefill,Direct,single_turn,deepteam.attacks.single_turn.prefill
+promisqroute,Promisqroute,Direct,single_turn,deepteam.attacks.single_turn.promisqroute
+prompt_injection,PromptInjection,Prompt Manipulation,single_turn,deepteam.attacks.single_turn.prompt_injection
+prompt_probing,PromptProbing,Prompt Manipulation,single_turn,deepteam.attacks.single_turn.prompt_probing
+raw,Raw,Direct,single_turn,deepteam.attacks.single_turn.raw
+roleplay,Roleplay,Roleplay,single_turn,deepteam.attacks.single_turn.roleplay
+semantic_manipulation,LinguisticConfusion,Semantic,single_turn,deepteam.attacks.single_turn.semantic_manipulation
+stego,Stego,Code-based,single_turn,deepteam.attacks.single_turn.stego
+super_user,SuperUser,Roleplay,single_turn,deepteam.attacks.single_turn.super_user
+system_override,SystemOverride,Goal Manipulation,single_turn,deepteam.attacks.single_turn.system_override
+encoding/a1z26,A1z26,Encoding,single_turn,deepteam.attacks.single_turn.encoding.a1z26
+encoding/affine,Affine,Encoding,single_turn,deepteam.attacks.single_turn.encoding.affine
+encoding/alternating_case,AlternatingCase,Encoding,single_turn,deepteam.attacks.single_turn.encoding.alternating_case
+encoding/ascii_smuggling,AsciiSmuggling,Encoding,single_turn,deepteam.attacks.single_turn.encoding.ascii_smuggling
+encoding/ascii85,Ascii85,Encoding,single_turn,deepteam.attacks.single_turn.encoding.ascii85
+encoding/atbash,Atbash,Encoding,single_turn,deepteam.attacks.single_turn.encoding.atbash
+encoding/aurebesh,Aurebesh,Encoding,single_turn,deepteam.attacks.single_turn.encoding.aurebesh
+encoding/baconian,Baconian,Encoding,single_turn,deepteam.attacks.single_turn.encoding.baconian
+encoding/base_encoding,BaseEncoding,Encoding,single_turn,deepteam.attacks.single_turn.encoding.base_encoding
+encoding/binary,Binary,Encoding,single_turn,deepteam.attacks.single_turn.encoding.binary
+encoding/braille,Braille,Encoding,single_turn,deepteam.attacks.single_turn.encoding.braille
+encoding/bubble,Bubble,Encoding,single_turn,deepteam.attacks.single_turn.encoding.bubble
+encoding/caesar,Caesar,Encoding,single_turn,deepteam.attacks.single_turn.encoding.caesar
+encoding/camel_case,CamelCase,Encoding,single_turn,deepteam.attacks.single_turn.encoding.camel_case
+encoding/chemical,Chemical,Encoding,single_turn,deepteam.attacks.single_turn.encoding.chemical
+encoding/cursive,Cursive,Encoding,single_turn,deepteam.attacks.single_turn.encoding.cursive
+encoding/cyrillic_stylized,CyrillicStylized,Encoding,single_turn,deepteam.attacks.single_turn.encoding.cyrillic_stylized
+encoding/disemvowel,Disemvowel,Encoding,single_turn,deepteam.attacks.single_turn.encoding.disemvowel
+encoding/doubleStruck,Doublestruck,Encoding,single_turn,deepteam.attacks.single_turn.encoding.doubleStruck
+encoding/dovahzul,Dovahzul,Encoding,single_turn,deepteam.attacks.single_turn.encoding.dovahzul
+encoding/ecoji,Ecoji,Encoding,single_turn,deepteam.attacks.single_turn.encoding.ecoji
+encoding/elder_futhark,ElderFuthark,Encoding,single_turn,deepteam.attacks.single_turn.encoding.elder_futhark
+encoding/emoji,Emoji,Encoding,single_turn,deepteam.attacks.single_turn.encoding.emoji
+encoding/fraktur,Fraktur,Encoding,single_turn,deepteam.attacks.single_turn.encoding.fraktur
+encoding/fullwidth,Fullwidth,Encoding,single_turn,deepteam.attacks.single_turn.encoding.fullwidth
+encoding/greek,Greek,Encoding,single_turn,deepteam.attacks.single_turn.encoding.greek
+encoding/hex,Hex,Encoding,single_turn,deepteam.attacks.single_turn.encoding.hex
+encoding/hieroglyphics,Hieroglyphics,Encoding,single_turn,deepteam.attacks.single_turn.encoding.hieroglyphics
+encoding/hiragana,Hiragana,Encoding,single_turn,deepteam.attacks.single_turn.encoding.hiragana
+encoding/homomorphic,Homomorphic,Encoding,single_turn,deepteam.attacks.single_turn.encoding.homomorphic
+encoding/html,Html,Encoding,single_turn,deepteam.attacks.single_turn.encoding.html
+encoding/invisible_text,InvisibleText,Encoding,single_turn,deepteam.attacks.single_turn.encoding.invisible_text
+encoding/katakana,Katakana,Encoding,single_turn,deepteam.attacks.single_turn.encoding.katakana
+encoding/kebab_case,KebabCase,Encoding,single_turn,deepteam.attacks.single_turn.encoding.kebab_case
+encoding/klingon,Klingon,Encoding,single_turn,deepteam.attacks.single_turn.encoding.klingon
+encoding/leetspeak,Leetspeak,Encoding,single_turn,deepteam.attacks.single_turn.encoding.leetspeak
+encoding/mathematical,Mathematical,Encoding,single_turn,deepteam.attacks.single_turn.encoding.mathematical
+encoding/medieval,Medieval,Encoding,single_turn,deepteam.attacks.single_turn.encoding.medieval
+encoding/mirror,Mirror,Encoding,single_turn,deepteam.attacks.single_turn.encoding.mirror
+encoding/monospace,Monospace,Encoding,single_turn,deepteam.attacks.single_turn.encoding.monospace
+encoding/morse,Morse,Encoding,single_turn,deepteam.attacks.single_turn.encoding.morse
+encoding/nato,Nato,Encoding,single_turn,deepteam.attacks.single_turn.encoding.nato
+encoding/ogham,Ogham,Encoding,single_turn,deepteam.attacks.single_turn.encoding.ogham
+encoding/pigLatin,Piglatin,Encoding,single_turn,deepteam.attacks.single_turn.encoding.pigLatin
+encoding/quenya,Quenya,Encoding,single_turn,deepteam.attacks.single_turn.encoding.quenya
+encoding/qwerty_shift,QwertyShift,Encoding,single_turn,deepteam.attacks.single_turn.encoding.qwerty_shift
+encoding/rail_fence,RailFence,Encoding,single_turn,deepteam.attacks.single_turn.encoding.rail_fence
+encoding/random_case,RandomCase,Encoding,single_turn,deepteam.attacks.single_turn.encoding.random_case
+encoding/regional_indicator,RegionalIndicator,Encoding,single_turn,deepteam.attacks.single_turn.encoding.regional_indicator
+encoding/reverse_words,ReverseWords,Encoding,single_turn,deepteam.attacks.single_turn.encoding.reverse_words
+encoding/roman_numerals,RomanNumerals,Encoding,single_turn,deepteam.attacks.single_turn.encoding.roman_numerals
+encoding/rot_encoding,RotEncoding,Encoding,single_turn,deepteam.attacks.single_turn.encoding.rot_encoding
+encoding/rovarspraket,Rovarspraket,Encoding,single_turn,deepteam.attacks.single_turn.encoding.rovarspraket
+encoding/semaphore,Semaphore,Encoding,single_turn,deepteam.attacks.single_turn.encoding.semaphore
+encoding/sentence_case,SentenceCase,Encoding,single_turn,deepteam.attacks.single_turn.encoding.sentence_case
+encoding/small_caps,SmallCaps,Encoding,single_turn,deepteam.attacks.single_turn.encoding.small_caps
+encoding/snake_case,SnakeCase,Encoding,single_turn,deepteam.attacks.single_turn.encoding.snake_case
+encoding/strikethrough,Strikethrough,Encoding,single_turn,deepteam.attacks.single_turn.encoding.strikethrough
+encoding/subscript,Subscript,Encoding,single_turn,deepteam.attacks.single_turn.encoding.subscript
+encoding/superscript,Superscript,Encoding,single_turn,deepteam.attacks.single_turn.encoding.superscript
+encoding/tap_code,TapCode,Encoding,single_turn,deepteam.attacks.single_turn.encoding.tap_code
+encoding/tengwar,Tengwar,Encoding,single_turn,deepteam.attacks.single_turn.encoding.tengwar
+encoding/title_case,TitleCase,Encoding,single_turn,deepteam.attacks.single_turn.encoding.title_case
+encoding/ubbi_dubbi,UbbiDubbi,Encoding,single_turn,deepteam.attacks.single_turn.encoding.ubbi_dubbi
+encoding/underline,Underline,Encoding,single_turn,deepteam.attacks.single_turn.encoding.underline
+encoding/upside_down,UpsideDown,Encoding,single_turn,deepteam.attacks.single_turn.encoding.upside_down
+encoding/url,Url,Encoding,single_turn,deepteam.attacks.single_turn.encoding.url
+encoding/vaporwave,Vaporwave,Encoding,single_turn,deepteam.attacks.single_turn.encoding.vaporwave
+encoding/vigenere,Vigenere,Encoding,single_turn,deepteam.attacks.single_turn.encoding.vigenere
+encoding/wingdings,Wingdings,Encoding,single_turn,deepteam.attacks.single_turn.encoding.wingdings
+encoding/zalgo,Zalgo,Encoding,single_turn,deepteam.attacks.single_turn.encoding.zalgo
+encoding/zerowidth,Zerowidth,Encoding,single_turn,deepteam.attacks.single_turn.encoding.zerowidth
+bad_likert_judge,BadLikertJudge,Multi-turn,multi_turn,deepteam.attacks.multi_turn.bad_likert_judge
+best_of_n,BestofN,Multi-turn,multi_turn,deepteam.attacks.multi_turn.best_of_n
+crescendo_jailbreaking,CrescendoJailbreaking,Multi-turn,multi_turn,deepteam.attacks.multi_turn.crescendo_jailbreaking
+linear_jailbreaking,LinearJailbreaking,Multi-turn,multi_turn,deepteam.attacks.multi_turn.linear_jailbreaking
+sequential_break,SequentialJailbreak,Multi-turn,multi_turn,deepteam.attacks.multi_turn.sequential_break
+tree_jailbreaking,TreeJailbreaking,Multi-turn,multi_turn,deepteam.attacks.multi_turn.tree_jailbreaking

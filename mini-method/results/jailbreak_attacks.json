@@ -1,0 +1,977 @@
+{
+  "summary": {
+    "single_turn_total": 99,
+    "single_turn_core": 27,
+    "encoding_subtypes": 72,
+    "multi_turn_total": 6,
+    "grand_total": 105
+  },
+  "base_interface": {
+    "error": "[Errno 2] No such file or directory: '../../AIG-PromptSecurity/deepteam/attacks/base_attack.py'"
+  },
+  "single_turn_methods": [
+    {
+      "method_name": "code_chameleon",
+      "class_name": "CodeChameleon",
+      "module_path": "deepteam.attacks.single_turn.code_chameleon",
+      "category": "Code-based",
+      "turn_type": "single_turn",
+      "source_file": "../../AIG-PromptSecurity/deepteam/attacks/single_turn/code_chameleon/code_chameleon.py"
+    },
+    {
+      "method_name": "context_poisoning",
+      "class_name": "ContextPoisoning",
+      "module_path": "deepteam.attacks.single_turn.context_poisoning",
+      "category": "Prompt Manipulation",
+      "turn_type": "single_turn",
+      "source_file": "../../AIG-PromptSecurity/deepteam/attacks/single_turn/context_poisoning/context_poisoning.py"
+    },
+    {
+      "method_name": "deep_inception",
+      "class_name": "DeepInception",
+      "module_path": "deepteam.attacks.single_turn.deep_inception",
+      "category": "Roleplay",
+      "turn_type": "single_turn",
+      "source_file": "../../AIG-PromptSecurity/deepteam/attacks/single_turn/deep_inception/deep_inception.py"
+    },
+    {
+      "method_name": "equa_code",
+      "class_name": "EquaCode",
+      "module_path": "deepteam.attacks.single_turn.equa_code",
+      "category": "Code-based",
+      "turn_type": "single_turn",
+      "source_file": "../../AIG-PromptSecurity/deepteam/attacks/single_turn/equa_code/equa_code.py"
+    },
+    {
+      "method_name": "flip_attack",
+      "class_name": "FlipAttack",
+      "module_path": "deepteam.attacks.single_turn.flip_attack",
+      "category": "Direct",
+      "turn_type": "single_turn",
+      "source_file": "../../AIG-PromptSecurity/deepteam/attacks/single_turn/flip_attack/flip_attack.py"
+    },
+    {
+      "method_name": "goal_redirection",
+      "class_name": "GoalRedirection",
+      "module_path": "deepteam.attacks.single_turn.goal_redirection",
+      "category": "Goal Manipulation",
+      "turn_type": "single_turn",
+      "source_file": "../../AIG-PromptSecurity/deepteam/attacks/single_turn/goal_redirection/goal_redirection.py"
+    },
+    {
+      "method_name": "gray_box",
+      "class_name": "GrayBox",
+      "module_path": "deepteam.attacks.single_turn.gray_box",
+      "category": "Semantic",
+      "turn_type": "single_turn",
+      "source_file": "../../AIG-PromptSecurity/deepteam/attacks/single_turn/gray_box/gray_box.py"
+    },
+    {
+      "method_name": "ica",
+      "class_name": "ICA",
+      "module_path": "deepteam.attacks.single_turn.ica",
+      "category": "Prompt Manipulation",
+      "turn_type": "single_turn",
+      "source_file": "../../AIG-PromptSecurity/deepteam/attacks/single_turn/ica/ica.py"
+    },
+    {
+      "method_name": "icrt_jailbreak",
+      "class_name": "IcrtJailbreak",
+      "module_path": "deepteam.attacks.single_turn.icrt_jailbreak",
+      "category": "Goal Manipulation",
+      "turn_type": "single_turn",
+      "source_file": "../../AIG-PromptSecurity/deepteam/attacks/single_turn/icrt_jailbreak/icrt_jailbreak.py"
+    },
+    {
+      "method_name": "input_bypass",
+      "class_name": "InputBypass",
+      "module_path": "deepteam.attacks.single_turn.input_bypass",
+      "category": "Prompt Manipulation",
+      "turn_type": "single_turn",
+      "source_file": "../../AIG-PromptSecurity/deepteam/attacks/single_turn/input_bypass/input_bypass.py"
+    },
+    {
+      "method_name": "jailbroken",
+      "class_name": "Jailbroken",
+      "module_path": "deepteam.attacks.single_turn.jailbroken",
+      "category": "Direct",
+      "turn_type": "single_turn",
+      "source_file": "../../AIG-PromptSecurity/deepteam/attacks/single_turn/jailbroken/jailbroken.py"
+    },
+    {
+      "method_name": "jam",
+      "class_name": "JAM",
+      "module_path": "deepteam.attacks.single_turn.jam",
+      "category": "Semantic",
+      "turn_type": "single_turn",
+      "source_file": "../../AIG-PromptSecurity/deepteam/attacks/single_turn/jam/jam.py"
+    },
+    {
+      "method_name": "overload",
+      "class_name": "Overload",
+      "module_path": "deepteam.attacks.single_turn.overload",
+      "category": "Direct",
+      "turn_type": "single_turn",
+      "source_file": "../../AIG-PromptSecurity/deepteam/attacks/single_turn/overload/overload.py"
+    },
+    {
+      "method_name": "math_problem",
+      "class_name": "MathProblem",
+      "module_path": "deepteam.attacks.single_turn.math_problem",
+      "category": "Semantic",
+      "turn_type": "single_turn",
+      "source_file": "../../AIG-PromptSecurity/deepteam/attacks/single_turn/math_problem/math_problem.py"
+    },
+    {
+      "method_name": "multilingual",
+      "class_name": "Multilingual",
+      "module_path": "deepteam.attacks.single_turn.multilingual",
+      "category": "Semantic",
+      "turn_type": "single_turn",
+      "source_file": "../../AIG-PromptSecurity/deepteam/attacks/single_turn/multilingual/multilingual.py"
+    },
+    {
+      "method_name": "past_tense",
+      "class_name": "PastTense",
+      "module_path": "deepteam.attacks.single_turn.past_tense",
+      "category": "Semantic",
+      "turn_type": "single_turn",
+      "source_file": "../../AIG-PromptSecurity/deepteam/attacks/single_turn/past_tense/past_tense.py"
+    },
+    {
+      "method_name": "permission_escalation",
+      "class_name": "PermissionEscalation",
+      "module_path": "deepteam.attacks.single_turn.permission_escalation",
+      "category": "Goal Manipulation",
+      "turn_type": "single_turn",
+      "source_file": "../../AIG-PromptSecurity/deepteam/attacks/single_turn/permission_escalation/permission_escalation.py"
+    },
+    {
+      "method_name": "prefill",
+      "class_name": "Prefill",
+      "module_path": "deepteam.attacks.single_turn.prefill",
+      "category": "Direct",
+      "turn_type": "single_turn",
+      "source_file": "../../AIG-PromptSecurity/deepteam/attacks/single_turn/prefill/prefill.py"
+    },
+    {
+      "method_name": "promisqroute",
+      "class_name": "Promisqroute",
+      "module_path": "deepteam.attacks.single_turn.promisqroute",
+      "category": "Direct",
+      "turn_type": "single_turn",
+      "source_file": "../../AIG-PromptSecurity/deepteam/attacks/single_turn/promisqroute/promisqroute.py"
+    },
+    {
+      "method_name": "prompt_injection",
+      "class_name": "PromptInjection",
+      "module_path": "deepteam.attacks.single_turn.prompt_injection",
+      "category": "Prompt Manipulation",
+      "turn_type": "single_turn",
+      "source_file": "../../AIG-PromptSecurity/deepteam/attacks/single_turn/prompt_injection/prompt_injection.py"
+    },
+    {
+      "method_name": "prompt_probing",
+      "class_name": "PromptProbing",
+      "module_path": "deepteam.attacks.single_turn.prompt_probing",
+      "category": "Prompt Manipulation",
+      "turn_type": "single_turn",
+      "source_file": "../../AIG-PromptSecurity/deepteam/attacks/single_turn/prompt_probing/prompt_probing.py"
+    },
+    {
+      "method_name": "raw",
+      "class_name": "Raw",
+      "module_path": "deepteam.attacks.single_turn.raw",
+      "category": "Direct",
+      "turn_type": "single_turn",
+      "source_file": "../../AIG-PromptSecurity/deepteam/attacks/single_turn/raw/raw.py"
+    },
+    {
+      "method_name": "roleplay",
+      "class_name": "Roleplay",
+      "module_path": "deepteam.attacks.single_turn.roleplay",
+      "category": "Roleplay",
+      "turn_type": "single_turn",
+      "source_file": "../../AIG-PromptSecurity/deepteam/attacks/single_turn/roleplay/roleplay.py"
+    },
+    {
+      "method_name": "semantic_manipulation",
+      "class_name": "LinguisticConfusion",
+      "module_path": "deepteam.attacks.single_turn.semantic_manipulation",
+      "category": "Semantic",
+      "turn_type": "single_turn",
+      "source_file": "../../AIG-PromptSecurity/deepteam/attacks/single_turn/semantic_manipulation/semantic_manipulation.py"
+    },
+    {
+      "method_name": "stego",
+      "class_name": "Stego",
+      "module_path": "deepteam.attacks.single_turn.stego",
+      "category": "Code-based",
+      "turn_type": "single_turn",
+      "source_file": "../../AIG-PromptSecurity/deepteam/attacks/single_turn/stego/stego.py"
+    },
+    {
+      "method_name": "super_user",
+      "class_name": "SuperUser",
+      "module_path": "deepteam.attacks.single_turn.super_user",
+      "category": "Roleplay",
+      "turn_type": "single_turn",
+      "source_file": "../../AIG-PromptSecurity/deepteam/attacks/single_turn/super_user/super_user.py"
+    },
+    {
+      "method_name": "system_override",
+      "class_name": "SystemOverride",
+      "module_path": "deepteam.attacks.single_turn.system_override",
+      "category": "Goal Manipulation",
+      "turn_type": "single_turn",
+      "source_file": "../../AIG-PromptSecurity/deepteam/attacks/single_turn/system_override/system_override.py"
+    },
+    {
+      "method_name": "encoding/a1z26",
+      "class_name": "A1z26",
+      "module_path": "deepteam.attacks.single_turn.encoding.a1z26",
+      "category": "Encoding",
+      "turn_type": "single_turn",
+      "source_file": "../../AIG-PromptSecurity/deepteam/attacks/single_turn/encoding/a1z26.py"
+    },
+    {
+      "method_name": "encoding/affine",
+      "class_name": "Affine",
+      "module_path": "deepteam.attacks.single_turn.encoding.affine",
+      "category": "Encoding",
+      "turn_type": "single_turn",
+      "source_file": "../../AIG-PromptSecurity/deepteam/attacks/single_turn/encoding/affine.py"
+    },
+    {
+      "method_name": "encoding/alternating_case",
+      "class_name": "AlternatingCase",
+      "module_path": "deepteam.attacks.single_turn.encoding.alternating_case",
+      "category": "Encoding",
+      "turn_type": "single_turn",
+      "source_file": "../../AIG-PromptSecurity/deepteam/attacks/single_turn/encoding/alternating_case.py"
+    },
+    {
+      "method_name": "encoding/ascii_smuggling",
+      "class_name": "AsciiSmuggling",
+      "module_path": "deepteam.attacks.single_turn.encoding.ascii_smuggling",
+      "category": "Encoding",
+      "turn_type": "single_turn",
+      "source_file": "../../AIG-PromptSecurity/deepteam/attacks/single_turn/encoding/ascii_smuggling.py"
+    },
+    {
+      "method_name": "encoding/ascii85",
+      "class_name": "Ascii85",
+      "module_path": "deepteam.attacks.single_turn.encoding.ascii85",
+      "category": "Encoding",
+      "turn_type": "single_turn",
+      "source_file": "../../AIG-PromptSecurity/deepteam/attacks/single_turn/encoding/ascii85.py"
+    },
+    {
+      "method_name": "encoding/atbash",
+      "class_name": "Atbash",
+      "module_path": "deepteam.attacks.single_turn.encoding.atbash",
+      "category": "Encoding",
+      "turn_type": "single_turn",
+      "source_file": "../../AIG-PromptSecurity/deepteam/attacks/single_turn/encoding/atbash.py"
+    },
+    {
+      "method_name": "encoding/aurebesh",
+      "class_name": "Aurebesh",
+      "module_path": "deepteam.attacks.single_turn.encoding.aurebesh",
+      "category": "Encoding",
+      "turn_type": "single_turn",
+      "source_file": "../../AIG-PromptSecurity/deepteam/attacks/single_turn/encoding/aurebesh.py"
+    },
+    {
+      "method_name": "encoding/baconian",
+      "class_name": "Baconian",
+      "module_path": "deepteam.attacks.single_turn.encoding.baconian",
+      "category": "Encoding",
+      "turn_type": "single_turn",
+      "source_file": "../../AIG-PromptSecurity/deepteam/attacks/single_turn/encoding/baconian.py"
+    },
+    {
+      "method_name": "encoding/base_encoding",
+      "class_name": "BaseEncoding",
+      "module_path": "deepteam.attacks.single_turn.encoding.base_encoding",
+      "category": "Encoding",
+      "turn_type": "single_turn",
+      "source_file": "../../AIG-PromptSecurity/deepteam/attacks/single_turn/encoding/base_encoding.py"
+    },
+    {
+      "method_name": "encoding/binary",
+      "class_name": "Binary",
+      "module_path": "deepteam.attacks.single_turn.encoding.binary",
+      "category": "Encoding",
+      "turn_type": "single_turn",
+      "source_file": "../../AIG-PromptSecurity/deepteam/attacks/single_turn/encoding/binary.py"
+    },
+    {
+      "method_name": "encoding/braille",
+      "class_name": "Braille",
+      "module_path": "deepteam.attacks.single_turn.encoding.braille",
+      "category": "Encoding",
+      "turn_type": "single_turn",
+      "source_file": "../../AIG-PromptSecurity/deepteam/attacks/single_turn/encoding/braille.py"
+    },
+    {
+      "method_name": "encoding/bubble",
+      "class_name": "Bubble",
+      "module_path": "deepteam.attacks.single_turn.encoding.bubble",
+      "category": "Encoding",
+      "turn_type": "single_turn",
+      "source_file": "../../AIG-PromptSecurity/deepteam/attacks/single_turn/encoding/bubble.py"
+    },
+    {
+      "method_name": "encoding/caesar",
+      "class_name": "Caesar",
+      "module_path": "deepteam.attacks.single_turn.encoding.caesar",
+      "category": "Encoding",
+      "turn_type": "single_turn",
+      "source_file": "../../AIG-PromptSecurity/deepteam/attacks/single_turn/encoding/caesar.py"
+    },
+    {
+      "method_name": "encoding/camel_case",
+      "class_name": "CamelCase",
+      "module_path": "deepteam.attacks.single_turn.encoding.camel_case",
+      "category": "Encoding",
+      "turn_type": "single_turn",
+      "source_file": "../../AIG-PromptSecurity/deepteam/attacks/single_turn/encoding/camel_case.py"
+    },
+    {
+      "method_name": "encoding/chemical",
+      "class_name": "Chemical",
+      "module_path": "deepteam.attacks.single_turn.encoding.chemical",
+      "category": "Encoding",
+      "turn_type": "single_turn",
+      "source_file": "../../AIG-PromptSecurity/deepteam/attacks/single_turn/encoding/chemical.py"
+    },
+    {
+      "method_name": "encoding/cursive",
+      "class_name": "Cursive",
+      "module_path": "deepteam.attacks.single_turn.encoding.cursive",
+      "category": "Encoding",
+      "turn_type": "single_turn",
+      "source_file": "../../AIG-PromptSecurity/deepteam/attacks/single_turn/encoding/cursive.py"
+    },
+    {
+      "method_name": "encoding/cyrillic_stylized",
+      "class_name": "CyrillicStylized",
+      "module_path": "deepteam.attacks.single_turn.encoding.cyrillic_stylized",
+      "category": "Encoding",
+      "turn_type": "single_turn",
+      "source_file": "../../AIG-PromptSecurity/deepteam/attacks/single_turn/encoding/cyrillic_stylized.py"
+    },
+    {
+      "method_name": "encoding/disemvowel",
+      "class_name": "Disemvowel",
+      "module_path": "deepteam.attacks.single_turn.encoding.disemvowel",
+      "category": "Encoding",
+      "turn_type": "single_turn",
+      "source_file": "../../AIG-PromptSecurity/deepteam/attacks/single_turn/encoding/disemvowel.py"
+    },
+    {
+      "method_name": "encoding/doubleStruck",
+      "class_name": "Doublestruck",
+      "module_path": "deepteam.attacks.single_turn.encoding.doubleStruck",
+      "category": "Encoding",
+      "turn_type": "single_turn",
+      "source_file": "../../AIG-PromptSecurity/deepteam/attacks/single_turn/encoding/doubleStruck.py"
+    },
+    {
+      "method_name": "encoding/dovahzul",
+      "class_name": "Dovahzul",
+      "module_path": "deepteam.attacks.single_turn.encoding.dovahzul",
+      "category": "Encoding",
+      "turn_type": "single_turn",
+      "source_file": "../../AIG-PromptSecurity/deepteam/attacks/single_turn/encoding/dovahzul.py"
+    },
+    {
+      "method_name": "encoding/ecoji",
+      "class_name": "Ecoji",
+      "module_path": "deepteam.attacks.single_turn.encoding.ecoji",
+      "category": "Encoding",
+      "turn_type": "single_turn",
+      "source_file": "../../AIG-PromptSecurity/deepteam/attacks/single_turn/encoding/ecoji.py"
+    },
+    {
+      "method_name": "encoding/elder_futhark",
+      "class_name": "ElderFuthark",
+      "module_path": "deepteam.attacks.single_turn.encoding.elder_futhark",
+      "category": "Encoding",
+      "turn_type": "single_turn",
+      "source_file": "../../AIG-PromptSecurity/deepteam/attacks/single_turn/encoding/elder_futhark.py"
+    },
+    {
+      "method_name": "encoding/emoji",
+      "class_name": "Emoji",
+      "module_path": "deepteam.attacks.single_turn.encoding.emoji",
+      "category": "Encoding",
+      "turn_type": "single_turn",
+      "source_file": "../../AIG-PromptSecurity/deepteam/attacks/single_turn/encoding/emoji.py"
+    },
+    {
+      "method_name": "encoding/fraktur",
+      "class_name": "Fraktur",
+      "module_path": "deepteam.attacks.single_turn.encoding.fraktur",
+      "category": "Encoding",
+      "turn_type": "single_turn",
+      "source_file": "../../AIG-PromptSecurity/deepteam/attacks/single_turn/encoding/fraktur.py"
+    },
+    {
+      "method_name": "encoding/fullwidth",
+      "class_name": "Fullwidth",
+      "module_path": "deepteam.attacks.single_turn.encoding.fullwidth",
+      "category": "Encoding",
+      "turn_type": "single_turn",
+      "source_file": "../../AIG-PromptSecurity/deepteam/attacks/single_turn/encoding/fullwidth.py"
+    },
+    {
+      "method_name": "encoding/greek",
+      "class_name": "Greek",
+      "module_path": "deepteam.attacks.single_turn.encoding.greek",
+      "category": "Encoding",
+      "turn_type": "single_turn",
+      "source_file": "../../AIG-PromptSecurity/deepteam/attacks/single_turn/encoding/greek.py"
+    },
+    {
+      "method_name": "encoding/hex",
+      "class_name": "Hex",
+      "module_path": "deepteam.attacks.single_turn.encoding.hex",
+      "category": "Encoding",
+      "turn_type": "single_turn",
+      "source_file": "../../AIG-PromptSecurity/deepteam/attacks/single_turn/encoding/hex.py"
+    },
+    {
+      "method_name": "encoding/hieroglyphics",
+      "class_name": "Hieroglyphics",
+      "module_path": "deepteam.attacks.single_turn.encoding.hieroglyphics",
+      "category": "Encoding",
+      "turn_type": "single_turn",
+      "source_file": "../../AIG-PromptSecurity/deepteam/attacks/single_turn/encoding/hieroglyphics.py"
+    },
+    {
+      "method_name": "encoding/hiragana",
+      "class_name": "Hiragana",
+      "module_path": "deepteam.attacks.single_turn.encoding.hiragana",
+      "category": "Encoding",
+      "turn_type": "single_turn",
+      "source_file": "../../AIG-PromptSecurity/deepteam/attacks/single_turn/encoding/hiragana.py"
+    },
+    {
+      "method_name": "encoding/homomorphic",
+      "class_name": "Homomorphic",
+      "module_path": "deepteam.attacks.single_turn.encoding.homomorphic",
+      "category": "Encoding",
+      "turn_type": "single_turn",
+      "source_file": "../../AIG-PromptSecurity/deepteam/attacks/single_turn/encoding/homomorphic.py"
+    },
+    {
+      "method_name": "encoding/html",
+      "class_name": "Html",
+      "module_path": "deepteam.attacks.single_turn.encoding.html",
+      "category": "Encoding",
+      "turn_type": "single_turn",
+      "source_file": "../../AIG-PromptSecurity/deepteam/attacks/single_turn/encoding/html.py"
+    },
+    {
+      "method_name": "encoding/invisible_text",
+      "class_name": "InvisibleText",
+      "module_path": "deepteam.attacks.single_turn.encoding.invisible_text",
+      "category": "Encoding",
+      "turn_type": "single_turn",
+      "source_file": "../../AIG-PromptSecurity/deepteam/attacks/single_turn/encoding/invisible_text.py"
+    },
+    {
+      "method_name": "encoding/katakana",
+      "class_name": "Katakana",
+      "module_path": "deepteam.attacks.single_turn.encoding.katakana",
+      "category": "Encoding",
+      "turn_type": "single_turn",
+      "source_file": "../../AIG-PromptSecurity/deepteam/attacks/single_turn/encoding/katakana.py"
+    },
+    {
+      "method_name": "encoding/kebab_case",
+      "class_name": "KebabCase",
+      "module_path": "deepteam.attacks.single_turn.encoding.kebab_case",
+      "category": "Encoding",
+      "turn_type": "single_turn",
+      "source_file": "../../AIG-PromptSecurity/deepteam/attacks/single_turn/encoding/kebab_case.py"
+    },
+    {
+      "method_name": "encoding/klingon",
+      "class_name": "Klingon",
+      "module_path": "deepteam.attacks.single_turn.encoding.klingon",
+      "category": "Encoding",
+      "turn_type": "single_turn",
+      "source_file": "../../AIG-PromptSecurity/deepteam/attacks/single_turn/encoding/klingon.py"
+    },
+    {
+      "method_name": "encoding/leetspeak",
+      "class_name": "Leetspeak",
+      "module_path": "deepteam.attacks.single_turn.encoding.leetspeak",
+      "category": "Encoding",
+      "turn_type": "single_turn",
+      "source_file": "../../AIG-PromptSecurity/deepteam/attacks/single_turn/encoding/leetspeak.py"
+    },
+    {
+      "method_name": "encoding/mathematical",
+      "class_name": "Mathematical",
+      "module_path": "deepteam.attacks.single_turn.encoding.mathematical",
+      "category": "Encoding",
+      "turn_type": "single_turn",
+      "source_file": "../../AIG-PromptSecurity/deepteam/attacks/single_turn/encoding/mathematical.py"
+    },
+    {
+      "method_name": "encoding/medieval",
+      "class_name": "Medieval",
+      "module_path": "deepteam.attacks.single_turn.encoding.medieval",
+      "category": "Encoding",
+      "turn_type": "single_turn",
+      "source_file": "../../AIG-PromptSecurity/deepteam/attacks/single_turn/encoding/medieval.py"
+    },
+    {
+      "method_name": "encoding/mirror",
+      "class_name": "Mirror",
+      "module_path": "deepteam.attacks.single_turn.encoding.mirror",
+      "category": "Encoding",
+      "turn_type": "single_turn",
+      "source_file": "../../AIG-PromptSecurity/deepteam/attacks/single_turn/encoding/mirror.py"
+    },
+    {
+      "method_name": "encoding/monospace",
+      "class_name": "Monospace",
+      "module_path": "deepteam.attacks.single_turn.encoding.monospace",
+      "category": "Encoding",
+      "turn_type": "single_turn",
+      "source_file": "../../AIG-PromptSecurity/deepteam/attacks/single_turn/encoding/monospace.py"
+    },
+    {
+      "method_name": "encoding/morse",
+      "class_name": "Morse",
+      "module_path": "deepteam.attacks.single_turn.encoding.morse",
+      "category": "Encoding",
+      "turn_type": "single_turn",
+      "source_file": "../../AIG-PromptSecurity/deepteam/attacks/single_turn/encoding/morse.py"
+    },
+    {
+      "method_name": "encoding/nato",
+      "class_name": "Nato",
+      "module_path": "deepteam.attacks.single_turn.encoding.nato",
+      "category": "Encoding",
+      "turn_type": "single_turn",
+      "source_file": "../../AIG-PromptSecurity/deepteam/attacks/single_turn/encoding/nato.py"
+    },
+    {
+      "method_name": "encoding/ogham",
+      "class_name": "Ogham",
+      "module_path": "deepteam.attacks.single_turn.encoding.ogham",
+      "category": "Encoding",
+      "turn_type": "single_turn",
+      "source_file": "../../AIG-PromptSecurity/deepteam/attacks/single_turn/encoding/ogham.py"
+    },
+    {
+      "method_name": "encoding/pigLatin",
+      "class_name": "Piglatin",
+      "module_path": "deepteam.attacks.single_turn.encoding.pigLatin",
+      "category": "Encoding",
+      "turn_type": "single_turn",
+      "source_file": "../../AIG-PromptSecurity/deepteam/attacks/single_turn/encoding/pigLatin.py"
+    },
+    {
+      "method_name": "encoding/quenya",
+      "class_name": "Quenya",
+      "module_path": "deepteam.attacks.single_turn.encoding.quenya",
+      "category": "Encoding",
+      "turn_type": "single_turn",
+      "source_file": "../../AIG-PromptSecurity/deepteam/attacks/single_turn/encoding/quenya.py"
+    },
+    {
+      "method_name": "encoding/qwerty_shift",
+      "class_name": "QwertyShift",
+      "module_path": "deepteam.attacks.single_turn.encoding.qwerty_shift",
+      "category": "Encoding",
+      "turn_type": "single_turn",
+      "source_file": "../../AIG-PromptSecurity/deepteam/attacks/single_turn/encoding/qwerty_shift.py"
+    },
+    {
+      "method_name": "encoding/rail_fence",
+      "class_name": "RailFence",
+      "module_path": "deepteam.attacks.single_turn.encoding.rail_fence",
+      "category": "Encoding",
+      "turn_type": "single_turn",
+      "source_file": "../../AIG-PromptSecurity/deepteam/attacks/single_turn/encoding/rail_fence.py"
+    },
+    {
+      "method_name": "encoding/random_case",
+      "class_name": "RandomCase",
+      "module_path": "deepteam.attacks.single_turn.encoding.random_case",
+      "category": "Encoding",
+      "turn_type": "single_turn",
+      "source_file": "../../AIG-PromptSecurity/deepteam/attacks/single_turn/encoding/random_case.py"
+    },
+    {
+      "method_name": "encoding/regional_indicator",
+      "class_name": "RegionalIndicator",
+      "module_path": "deepteam.attacks.single_turn.encoding.regional_indicator",
+      "category": "Encoding",
+      "turn_type": "single_turn",
+      "source_file": "../../AIG-PromptSecurity/deepteam/attacks/single_turn/encoding/regional_indicator.py"
+    },
+    {
+      "method_name": "encoding/reverse_words",
+      "class_name": "ReverseWords",
+      "module_path": "deepteam.attacks.single_turn.encoding.reverse_words",
+      "category": "Encoding",
+      "turn_type": "single_turn",
+      "source_file": "../../AIG-PromptSecurity/deepteam/attacks/single_turn/encoding/reverse_words.py"
+    },
+    {
+      "method_name": "encoding/roman_numerals",
+      "class_name": "RomanNumerals",
+      "module_path": "deepteam.attacks.single_turn.encoding.roman_numerals",
+      "category": "Encoding",
+      "turn_type": "single_turn",
+      "source_file": "../../AIG-PromptSecurity/deepteam/attacks/single_turn/encoding/roman_numerals.py"
+    },
+    {
+      "method_name": "encoding/rot_encoding",
+      "class_name": "RotEncoding",
+      "module_path": "deepteam.attacks.single_turn.encoding.rot_encoding",
+      "category": "Encoding",
+      "turn_type": "single_turn",
+      "source_file": "../../AIG-PromptSecurity/deepteam/attacks/single_turn/encoding/rot_encoding.py"
+    },
+    {
+      "method_name": "encoding/rovarspraket",
+      "class_name": "Rovarspraket",
+      "module_path": "deepteam.attacks.single_turn.encoding.rovarspraket",
+      "category": "Encoding",
+      "turn_type": "single_turn",
+      "source_file": "../../AIG-PromptSecurity/deepteam/attacks/single_turn/encoding/rovarspraket.py"
+    },
+    {
+      "method_name": "encoding/semaphore",
+      "class_name": "Semaphore",
+      "module_path": "deepteam.attacks.single_turn.encoding.semaphore",
+      "category": "Encoding",
+      "turn_type": "single_turn",
+      "source_file": "../../AIG-PromptSecurity/deepteam/attacks/single_turn/encoding/semaphore.py"
+    },
+    {
+      "method_name": "encoding/sentence_case",
+      "class_name": "SentenceCase",
+      "module_path": "deepteam.attacks.single_turn.encoding.sentence_case",
+      "category": "Encoding",
+      "turn_type": "single_turn",
+      "source_file": "../../AIG-PromptSecurity/deepteam/attacks/single_turn/encoding/sentence_case.py"
+    },
+    {
+      "method_name": "encoding/small_caps",
+      "class_name": "SmallCaps",
+      "module_path": "deepteam.attacks.single_turn.encoding.small_caps",
+      "category": "Encoding",
+      "turn_type": "single_turn",
+      "source_file": "../../AIG-PromptSecurity/deepteam/attacks/single_turn/encoding/small_caps.py"
+    },
+    {
+      "method_name": "encoding/snake_case",
+      "class_name": "SnakeCase",
+      "module_path": "deepteam.attacks.single_turn.encoding.snake_case",
+      "category": "Encoding",
+      "turn_type": "single_turn",
+      "source_file": "../../AIG-PromptSecurity/deepteam/attacks/single_turn/encoding/snake_case.py"
+    },
+    {
+      "method_name": "encoding/strikethrough",
+      "class_name": "Strikethrough",
+      "module_path": "deepteam.attacks.single_turn.encoding.strikethrough",
+      "category": "Encoding",
+      "turn_type": "single_turn",
+      "source_file": "../../AIG-PromptSecurity/deepteam/attacks/single_turn/encoding/strikethrough.py"
+    },
+    {
+      "method_name": "encoding/subscript",
+      "class_name": "Subscript",
+      "module_path": "deepteam.attacks.single_turn.encoding.subscript",
+      "category": "Encoding",
+      "turn_type": "single_turn",
+      "source_file": "../../AIG-PromptSecurity/deepteam/attacks/single_turn/encoding/subscript.py"
+    },
+    {
+      "method_name": "encoding/superscript",
+      "class_name": "Superscript",
+      "module_path": "deepteam.attacks.single_turn.encoding.superscript",
+      "category": "Encoding",
+      "turn_type": "single_turn",
+      "source_file": "../../AIG-PromptSecurity/deepteam/attacks/single_turn/encoding/superscript.py"
+    },
+    {
+      "method_name": "encoding/tap_code",
+      "class_name": "TapCode",
+      "module_path": "deepteam.attacks.single_turn.encoding.tap_code",
+      "category": "Encoding",
+      "turn_type": "single_turn",
+      "source_file": "../../AIG-PromptSecurity/deepteam/attacks/single_turn/encoding/tap_code.py"
+    },
+    {
+      "method_name": "encoding/tengwar",
+      "class_name": "Tengwar",
+      "module_path": "deepteam.attacks.single_turn.encoding.tengwar",
+      "category": "Encoding",
+      "turn_type": "single_turn",
+      "source_file": "../../AIG-PromptSecurity/deepteam/attacks/single_turn/encoding/tengwar.py"
+    },
+    {
+      "method_name": "encoding/title_case",
+      "class_name": "TitleCase",
+      "module_path": "deepteam.attacks.single_turn.encoding.title_case",
+      "category": "Encoding",
+      "turn_type": "single_turn",
+      "source_file": "../../AIG-PromptSecurity/deepteam/attacks/single_turn/encoding/title_case.py"
+    },
+    {
+      "method_name": "encoding/ubbi_dubbi",
+      "class_name": "UbbiDubbi",
+      "module_path": "deepteam.attacks.single_turn.encoding.ubbi_dubbi",
+      "category": "Encoding",
+      "turn_type": "single_turn",
+      "source_file": "../../AIG-PromptSecurity/deepteam/attacks/single_turn/encoding/ubbi_dubbi.py"
+    },
+    {
+      "method_name": "encoding/underline",
+      "class_name": "Underline",
+      "module_path": "deepteam.attacks.single_turn.encoding.underline",
+      "category": "Encoding",
+      "turn_type": "single_turn",
+      "source_file": "../../AIG-PromptSecurity/deepteam/attacks/single_turn/encoding/underline.py"
+    },
+    {
+      "method_name": "encoding/upside_down",
+      "class_name": "UpsideDown",
+      "module_path": "deepteam.attacks.single_turn.encoding.upside_down",
+      "category": "Encoding",
+      "turn_type": "single_turn",
+      "source_file": "../../AIG-PromptSecurity/deepteam/attacks/single_turn/encoding/upside_down.py"
+    },
+    {
+      "method_name": "encoding/url",
+      "class_name": "Url",
+      "module_path": "deepteam.attacks.single_turn.encoding.url",
+      "category": "Encoding",
+      "turn_type": "single_turn",
+      "source_file": "../../AIG-PromptSecurity/deepteam/attacks/single_turn/encoding/url.py"
+    },
+    {
+      "method_name": "encoding/vaporwave",
+      "class_name": "Vaporwave",
+      "module_path": "deepteam.attacks.single_turn.encoding.vaporwave",
+      "category": "Encoding",
+      "turn_type": "single_turn",
+      "source_file": "../../AIG-PromptSecurity/deepteam/attacks/single_turn/encoding/vaporwave.py"
+    },
+    {
+      "method_name": "encoding/vigenere",
+      "class_name": "Vigenere",
+      "module_path": "deepteam.attacks.single_turn.encoding.vigenere",
+      "category": "Encoding",
+      "turn_type": "single_turn",
+      "source_file": "../../AIG-PromptSecurity/deepteam/attacks/single_turn/encoding/vigenere.py"
+    },
+    {
+      "method_name": "encoding/wingdings",
+      "class_name": "Wingdings",
+      "module_path": "deepteam.attacks.single_turn.encoding.wingdings",
+      "category": "Encoding",
+      "turn_type": "single_turn",
+      "source_file": "../../AIG-PromptSecurity/deepteam/attacks/single_turn/encoding/wingdings.py"
+    },
+    {
+      "method_name": "encoding/zalgo",
+      "class_name": "Zalgo",
+      "module_path": "deepteam.attacks.single_turn.encoding.zalgo",
+      "category": "Encoding",
+      "turn_type": "single_turn",
+      "source_file": "../../AIG-PromptSecurity/deepteam/attacks/single_turn/encoding/zalgo.py"
+    },
+    {
+      "method_name": "encoding/zerowidth",
+      "class_name": "Zerowidth",
+      "module_path": "deepteam.attacks.single_turn.encoding.zerowidth",
+      "category": "Encoding",
+      "turn_type": "single_turn",
+      "source_file": "../../AIG-PromptSecurity/deepteam/attacks/single_turn/encoding/zerowidth.py"
+    }
+  ],
+  "multi_turn_methods": [
+    {
+      "method_name": "bad_likert_judge",
+      "class_name": "BadLikertJudge",
+      "module_path": "deepteam.attacks.multi_turn.bad_likert_judge",
+      "category": "Multi-turn",
+      "turn_type": "multi_turn",
+      "description": "利用 Likert 量表评分的多轮越狱攻击",
+      "source_file": "AIG-PromptSecurity/deepteam/attacks/multi_turn/bad_likert_judge/bad_likert_judge.py"
+    },
+    {
+      "method_name": "best_of_n",
+      "class_name": "BestofN",
+      "module_path": "deepteam.attacks.multi_turn.best_of_n",
+      "category": "Multi-turn",
+      "turn_type": "multi_turn",
+      "description": "N 次采样取最优攻击",
+      "source_file": "AIG-PromptSecurity/deepteam/attacks/multi_turn/best_of_n/best_of_n.py"
+    },
+    {
+      "method_name": "crescendo_jailbreaking",
+      "class_name": "CrescendoJailbreaking",
+      "module_path": "deepteam.attacks.multi_turn.crescendo_jailbreaking",
+      "category": "Multi-turn",
+      "turn_type": "multi_turn",
+      "description": "渐进式多轮升级攻击",
+      "source_file": "AIG-PromptSecurity/deepteam/attacks/multi_turn/crescendo_jailbreaking/crescendo_jailbreaking.py"
+    },
+    {
+      "method_name": "linear_jailbreaking",
+      "class_name": "LinearJailbreaking",
+      "module_path": "deepteam.attacks.multi_turn.linear_jailbreaking",
+      "category": "Multi-turn",
+      "turn_type": "multi_turn",
+      "description": "线性多轮越狱攻击",
+      "source_file": "AIG-PromptSecurity/deepteam/attacks/multi_turn/linear_jailbreaking/linear_jailbreaking.py"
+    },
+    {
+      "method_name": "sequential_break",
+      "class_name": "SequentialJailbreak",
+      "module_path": "deepteam.attacks.multi_turn.sequential_break",
+      "category": "Multi-turn",
+      "turn_type": "multi_turn",
+      "description": "顺序中断越狱攻击",
+      "source_file": "AIG-PromptSecurity/deepteam/attacks/multi_turn/sequential_break/sequential_break.py"
+    },
+    {
+      "method_name": "tree_jailbreaking",
+      "class_name": "TreeJailbreaking",
+      "module_path": "deepteam.attacks.multi_turn.tree_jailbreaking",
+      "category": "Multi-turn",
+      "turn_type": "multi_turn",
+      "description": "树形搜索越狱攻击（TAP）",
+      "source_file": "AIG-PromptSecurity/deepteam/attacks/multi_turn/tree_jailbreaking/tree_jailbreaking.py"
+    }
+  ],
+  "categories": {
+    "Encoding": [
+      "a1z26",
+      "affine",
+      "alternating_case",
+      "ascii_smuggling",
+      "ascii85",
+      "atbash",
+      "aurebesh",
+      "baconian",
+      "base_encoding",
+      "binary",
+      "braille",
+      "bubble",
+      "caesar",
+      "camel_case",
+      "chemical",
+      "cursive",
+      "cyrillic_stylized",
+      "disemvowel",
+      "doubleStruck",
+      "dovahzul",
+      "ecoji",
+      "elder_futhark",
+      "emoji",
+      "fraktur",
+      "fullwidth",
+      "greek",
+      "hex",
+      "hieroglyphics",
+      "hiragana",
+      "homomorphic",
+      "html",
+      "invisible_text",
+      "katakana",
+      "kebab_case",
+      "klingon",
+      "leetspeak",
+      "mathematical",
+      "medieval",
+      "mirror",
+      "monospace",
+      "morse",
+      "nato",
+      "ogham",
+      "pigLatin",
+      "quenya",
+      "qwerty_shift",
+      "rail_fence",
+      "random_case",
+      "regional_indicator",
+      "reverse_words",
+      "roman_numerals",
+      "rot_encoding",
+      "rovarspraket",
+      "semaphore",
+      "sentence_case",
+      "small_caps",
+      "snake_case",
+      "strikethrough",
+      "subscript",
+      "superscript",
+      "tap_code",
+      "tengwar",
+      "title_case",
+      "ubbi_dubbi",
+      "underline",
+      "upside_down",
+      "url",
+      "vaporwave",
+      "vigenere",
+      "wingdings",
+      "zalgo",
+      "zerowidth"
+    ],
+    "Roleplay": [
+      "roleplay",
+      "deep_inception",
+      "super_user"
+    ],
+    "Goal Manipulation": [
+      "goal_redirection",
+      "permission_escalation",
+      "system_override",
+      "icrt_jailbreak"
+    ],
+    "Prompt Manipulation": [
+      "prompt_injection",
+      "prompt_probing",
+      "input_bypass",
+      "context_poisoning",
+      "ica"
+    ],
+    "Code-based": [
+      "code_chameleon",
+      "equa_code",
+      "stego"
+    ],
+    "Semantic": [
+      "semantic_manipulation",
+      "jam",
+      "multilingual",
+      "past_tense",
+      "gray_box",
+      "math_problem"
+    ],
+    "Direct": [
+      "raw",
+      "jailbroken",
+      "flip_attack",
+      "overload",
+      "prefill",
+      "promisqroute"
+    ]
+  }
+}

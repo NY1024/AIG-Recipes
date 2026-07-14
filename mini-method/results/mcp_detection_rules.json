@@ -1,0 +1,124 @@
+{
+  "summary": {
+    "total_rules": 4,
+    "rule_files": [
+      "/Users/elwood/Desktop/test/original/AI-Infra-Guard/data/mcp/cors.yaml",
+      "/Users/elwood/Desktop/test/original/AI-Infra-Guard/data/mcp/mcp_command_injection.yaml",
+      "/Users/elwood/Desktop/test/original/AI-Infra-Guard/data/mcp/mcp_credential_exfiltration.yaml",
+      "/Users/elwood/Desktop/test/original/AI-Infra-Guard/data/mcp/tool_poisoning.yaml"
+    ]
+  },
+  "overview": {
+    "tool_poisoning": {
+      "file": "tool_poisoning.yaml",
+      "rule_id": "mcp_tool_poisoning",
+      "name": "MCP Tool Poisoning Detection",
+      "description": "检测嵌入在 MCP 工具描述、参数文档或工具输出中的隐藏/恶意指令",
+      "threat_category": "Tool Poisoning / Indirect Prompt Injection via Tool Metadata",
+      "categories": [
+        "code"
+      ],
+      "detection_criteria": [
+        "工具 description/参数 description 中包含指令性短语（如 \"ignore previous instructions\"）",
+        "工具返回内容中嵌入面向 agent 的命令或伪造的 \"system\" / \"developer\" 框架",
+        "通过 Unicode 控制字符、零宽字符、HTML 注释、Base64 等方式隐藏指令"
+      ],
+      "false_positive_exclusions": [
+        "仅文档参数和行为的正常工具描述",
+        "不含指令性内容的开发者常量字符串",
+        "标记为 test/example/sample 的内容（无实际指令载荷）"
+      ],
+      "output_fields": [
+        "具体文件路径和行号",
+        "被投毒的 description/docstring/output 片段",
+        "技术分析：host agent 如何将其作为指令摄取",
+        "影响评估：注入指令可触发的操作",
+        "修复建议：分离工具元数据与 agent 指令"
+      ]
+    },
+    "mcp_command_injection": {
+      "file": "mcp_command_injection.yaml",
+      "rule_id": "mcp_command_injection",
+      "name": "MCP Command Injection Detection",
+      "description": "检测 MCP Server 代码中的命令注入漏洞",
+      "threat_category": "Command Injection",
+      "categories": [
+        "code"
+      ]
+    },
+    "mcp_credential_exfiltration": {
+      "file": "mcp_credential_exfiltration.yaml",
+      "rule_id": "mcp_credential_exfiltration",
+      "name": "MCP Credential Exfiltration Detection",
+      "description": "检测 MCP Server 中的凭据外泄风险",
+      "threat_category": "Credential Exfiltration",
+      "categories": [
+        "code"
+      ]
+    },
+    "cors": {
+      "file": "cors.yaml",
+      "rule_id": "cors",
+      "name": "CORS Misconfiguration Detection",
+      "description": "检测 MCP Server 的跨域资源共享配置错误",
+      "threat_category": "CORS Misconfiguration",
+      "categories": [
+        "code"
+      ]
+    }
+  },
+  "rules": [
+    {
+      "rule_id": "cors_misconfig",
+      "name": "[example] CORS Misconfiguration Detection",
+      "description": "Detect misconfigured Cross-Origin Resource Sharing (CORS) policies in MCP code that could lead to security vulnerabilities",
+      "author": "腾讯朱雀实验室",
+      "categories": [
+        "code"
+      ],
+      "prompt_template_length": 5213,
+      "prompt_template_preview": "As a professional cybersecurity analyst, you need to precisely detect CORS misconfiguration vulnerabilities in MCP code. This detection requires extremely high accuracy - only report when you find concrete evidence of CORS-related security risks.\n\n## Vulnerability Definition\nCORS misconfiguration refers to security flaws in Cross-Origin Resource Sharing policies that could allow unauthorized cross-domain access, potentially leading to data theft, CSRF attacks, or other security breaches.\n\n## Det...",
+      "prompt_template_full": "As a professional cybersecurity analyst, you need to precisely detect CORS misconfiguration vulnerabilities in MCP code. This detection requires extremely high accuracy - only report when you find concrete evidence of CORS-related security risks.\n\n## Vulnerability Definition\nCORS misconfiguration refers to security flaws in Cross-Origin Resource Sharing policies that could allow unauthorized cross-domain access, potentially leading to data theft, CSRF attacks, or other security breaches.\n\n## Detection Criteria (Must meet at least one concrete evidence)\n\n### 1. Overly Permissive Origin Settings\n**Required Conditions:**\n- Access-Control-Allow-Origin set to wildcard (*) when credentials are enabled\n- Dynamic origin validation that effectively allows all domains\n- Missing or incomplete origin validation logic\n- Reflection-based origin policies without proper validation\n\n**Code Patterns:**\n- Access-Control-Allow-Origin: \"*\"\n- Origin: req.headers.origin (without validation)\n- Arrays containing \"*\" or undefined origins\n- Regular expressions that are too permissive\n\n### 2. Credential Handling Flaws\n**Required Conditions:**\n- Access-Control-Allow-Credentials: true with wildcard origins\n- Missing or incorrect credential configuration\n- Inconsistent credential handling across endpoints\n- Exposure of sensitive cookies or authentication tokens\n\n**Detection Points:**\n- Access-Control-Allow-Credentials: true with Access-Control-Allow-Origin: \"*\"\n- Missing withCredentials flag consistency checks\n- Improper cookie domain settings\n- Token exposure through CORS headers\n\n### 3. Missing Security Headers\n**Required Conditions:**\n- Absence of essential CORS headers\n- Incomplete CORS header configurations\n- Missing preflight request handling\n- Incorrect HTTP method allowances\n\n### 4. Preflight Request Vulnerabilities\n**Required Conditions:**\n- Missing or overly permissive Access-Control-Allow-Methods\n- Inadequate Access-Control-Allow-Headers validation\n- Missing Access-Control-Max-Age or excessively long values\n- Preflight cache poisoning possibilities\n\n### 5. Implementation Logic Errors\n**Required Conditions:**\n- Conditional bypass in CORS validation logic\n- Framework-specific misconfigurations\n- Environment-dependent CORS policies\n- Missing CORS middleware on sensitive endpoints\n\n## Technical Detection Methods\n\n### Code Pattern Recognition\n**High-Risk Patterns:**\n- app.use(cors({ origin: \"*\" }))\n- res.setHeader('Access-Control-Allow-Origin', '*')\n- if (origin.includes('example.com')) { allow } // Incomplete validation\n- @CrossOrigin(origins = \"*\") // Framework annotations\n\n### Configuration File Analysis\n- Check CORS configuration in framework settings\n- Verify environment-specific CORS policies\n- Analyze CORS middleware initialization\n- Review CORS-related environment variables\n\n### API Endpoint Security\n- Identify endpoints missing CORS protection\n- Check consistency of CORS implementation across routes\n- Verify CORS headers in response analysis\n- Analyze preflight request handling\n\n## Exclusion Conditions (Do not report the following)\n\n### Normal Development Scenarios\n- CORS configurations clearly marked for development\n- Localhost or 127.0.0.1 origins in development code\n- Testing configurations with proper isolation\n- Example code with educational purposes\n\n### Security Practices\n- Properly restricted origin lists with validation\n- Correct credential handling with specific origins\n- Appropriate preflight request configurations\n- Framework-recommended CORS implementations\n\n### Configuration Management\n- Environment-specific CORS configurations\n- Properly scoped CORS policies for different environments\n- Security-reviewed CORS implementations\n- Configurations following security best practices\n\n## Verification Requirements\n1. **Vulnerability Exploitability**: Must demonstrate actual cross-domain attack vectors\n2. **Impact Assessment**: Clearly define data exposure or attack possibilities\n3. **Technical Details**: Provide specific misconfiguration analysis\n4. **Remediation Suggestions**: Provide clear security hardening solutions\n\n## Strict Judgment Standards\n- **Development Configuration**: Do not report configurations clearly for development/debugging\n- **Local Environments**: Do not report localhost/127.0.0.1 configurations\n- **Test Identifiers**: Do not report configurations containing test, dev, example keywords\n- **Correct Implementation**: Do not report properly implemented CORS policies\n- **Scope Assessment**: If CORS misconfiguration exists but only affects non-sensitive data or internal endpoints, assess impact before reporting\n\n## Output Requirements\nOnly output when finding concrete CORS misconfiguration vulnerabilities:\n- Specific file paths and line numbers\n- Complete vulnerability code snippets\n- Technical analysis: misconfiguration principles and exploitation methods\n- Impact assessment: potential data exposure or attack vectors\n- Attack paths: specific exploitation steps demonstrating cross-domain attacks\n- Remediation suggestions: detailed CORS security hardening solutions\n\n**Strict Requirement: Must provide complete vulnerability exploitation paths and impact analysis. Remain silent when no concrete evidence exists.**",
+      "source_file": "/Users/elwood/Desktop/test/original/AI-Infra-Guard/data/mcp/cors.yaml"
+    },
+    {
+      "rule_id": "mcp_command_injection",
+      "name": "MCP Tool Command Injection Detection",
+      "description": "Detect MCP server tools that pass tool-call arguments into a shell, evaluator, or dynamic-import sink without sanitization, allowing argument-driven remote code execution (the mcp-remote / FastMCP-class vulnerability).",
+      "author": "ATR (Agent Threat Rules)",
+      "categories": [
+        "code"
+      ],
+      "prompt_template_length": 2619,
+      "prompt_template_preview": "As a professional AI-agent security analyst, precisely detect command-injection vulnerabilities in MCP server tools. The agent (or an upstream prompt-injection) controls tool arguments; if those arguments reach a command/eval sink unsanitized, the MCP server executes attacker-chosen code. Require a concrete tainted-argument-to-sink path; only report with evidence.\n\n## Vulnerability Definition\nAn MCP tool handler takes caller-supplied arguments (from `inputSchema`\nparameters) and routes them into...",
+      "prompt_template_full": "As a professional AI-agent security analyst, precisely detect command-injection vulnerabilities in MCP server tools. The agent (or an upstream prompt-injection) controls tool arguments; if those arguments reach a command/eval sink unsanitized, the MCP server executes attacker-chosen code. Require a concrete tainted-argument-to-sink path; only report with evidence.\n\n## Vulnerability Definition\nAn MCP tool handler takes caller-supplied arguments (from `inputSchema`\nparameters) and routes them into a code-execution sink — OS shell, `eval`,\ndynamic import, template/format execution — without validation or safe APIs.\nBecause tool arguments are model/attacker-influenced, this is argument-driven\nRCE on the MCP host.\n\n## Detection Criteria (require tainted argument -> sink)\n\n### 1. Shell execution of arguments\n**Code Patterns:**\n- `child_process.exec` / `execSync` / `spawn(..., {shell:true})`,\n  `os.system`, `subprocess.*(..., shell=True)`, `Popen` with a string built\n  from tool arguments.\n- Interpreter flags fed argument data: `node -e`, `python -c`, `bash -c`,\n  `npx -c`, `sh -c` with interpolated parameters.\n\n### 2. Dynamic evaluation\n**Code Patterns:**\n- `eval` / `Function(...)` / `vm.runIn*` / `exec()` / `compile()` on a value\n  derived from tool input.\n- Dynamic `require()` / `import()` / module load from an argument-controlled\n  path or name.\n\n### 3. Unsafe templating / path\n**Code Patterns:**\n- Argument concatenated into a command string with no allowlist/escaping.\n- Path arguments reaching file or process APIs without canonicalization.\n\n## Strict Judgment Standards\n- **Constant commands**: Do not report fixed commands with no argument\n  interpolation.\n- **Safe APIs**: Do not report `execFile` / `spawn` with an argv array and\n  `shell:false`, or parameterized library calls.\n- **Validated input**: Do not report arguments passed through a strict\n  allowlist / schema-enforced enum before the sink.\n- **Test/example**: Do not report sample handlers with hardcoded test input.\n\n## Output Requirements\nOnly output when finding a concrete injection path:\n- Specific file paths and line numbers for the tainted argument and the sink\n- The tool parameter name and the exact sink call\n- Technical analysis: how a crafted argument achieves execution\n- Impact assessment: RCE scope on the MCP host\n- Remediation: use argv-array execution with `shell:false`, drop eval/dynamic\n  import, enforce schema allowlists, escape/validate before any sink.\n\n**Strict Requirement: provide the tainted-argument source and the execution sink with line numbers. Remain silent when no concrete evidence exists.**\n",
+      "source_file": "/Users/elwood/Desktop/test/original/AI-Infra-Guard/data/mcp/mcp_command_injection.yaml"
+    },
+    {
+      "rule_id": "mcp_credential_exfiltration",
+      "name": "MCP Credential Exfiltration Detection",
+      "description": "Detect MCP server code that reads secrets (env vars, key files, tokens) and transmits them to an external or attacker-controllable destination, or exposes them through tool output.",
+      "author": "ATR (Agent Threat Rules)",
+      "categories": [
+        "code"
+      ],
+      "prompt_template_length": 2467,
+      "prompt_template_preview": "As a professional AI-agent security analyst, precisely detect credential-exfiltration vulnerabilities in MCP server code. Require concrete evidence linking a secret source to an external sink; only report when both a sensitive read and an outbound transmission (or untrusted exposure) are present.\n\n## Vulnerability Definition\nCredential exfiltration occurs when MCP code accesses secret material —\nenvironment variables, `~/.ssh`, `~/.aws/credentials`, `.env`, `.netrc`,\n`.npmrc`, token/keychain sto...",
+      "prompt_template_full": "As a professional AI-agent security analyst, precisely detect credential-exfiltration vulnerabilities in MCP server code. Require concrete evidence linking a secret source to an external sink; only report when both a sensitive read and an outbound transmission (or untrusted exposure) are present.\n\n## Vulnerability Definition\nCredential exfiltration occurs when MCP code accesses secret material —\nenvironment variables, `~/.ssh`, `~/.aws/credentials`, `.env`, `.netrc`,\n`.npmrc`, token/keychain stores — and sends it off-host (HTTP, DNS, sockets,\nwebhooks) or returns it in tool output where the agent or a third party can\nread it.\n\n## Detection Criteria (require a source AND a sink)\n\n### 1. Sensitive source\n**Code Patterns:**\n- Reads of `process.env` / `os.environ` for secret-named keys (TOKEN, KEY,\n  SECRET, PASSWORD, AWS_*, OPENAI_API_KEY).\n- Reads of credential files: `~/.ssh/id_*`, `~/.aws/credentials`, `.env`,\n  `.netrc`, `.npmrc`, `credentials.json`, `token.json`.\n\n### 2. External / untrusted sink\n**Code Patterns:**\n- `fetch` / `axios` / `requests` / `urllib` / raw socket POST of the secret to\n  a non-local or dynamically-built URL.\n- Encoding the secret into a DNS query, query string, or webhook body.\n- Returning the secret value in the MCP tool result / logging it to a\n  shipped-out channel.\n\n### 3. Obfuscated handling\n**Code Patterns:**\n- Base64/hex-encoding the secret immediately before transmission.\n- Concatenating the secret into a URL built from an attacker-influenced host.\n\n## Strict Judgment Standards\n- **Intended auth flows**: Do not report a secret sent only to its legitimate,\n  statically-configured first-party API endpoint.\n- **Local-only use**: Do not report secrets read and used in-process without an\n  external sink.\n- **Test/example**: Do not report dummy/example credentials or localhost sinks.\n\n## Output Requirements\nOnly output when finding a concrete source-to-sink exfiltration path:\n- Specific file paths and line numbers for both the read and the send\n- The exact secret source and the outbound destination\n- Technical analysis: how the value leaves the host or reaches an untrusted party\n- Impact assessment: which credentials are exposed and the blast radius\n- Remediation: remove the sink, scope secrets, redact tool output, pin to a\n  trusted first-party endpoint.\n\n**Strict Requirement: provide both the secret-read and the outbound-sink with line numbers. Remain silent when no concrete evidence exists.**\n",
+      "source_file": "/Users/elwood/Desktop/test/original/AI-Infra-Guard/data/mcp/mcp_credential_exfiltration.yaml"
+    },
+    {
+      "rule_id": "mcp_tool_poisoning",
+      "name": "MCP Tool Poisoning Detection",
+      "description": "Detect hidden or malicious instructions embedded in MCP tool descriptions, parameter docstrings, or tool output that manipulate the host agent into unintended actions (tool poisoning / indirect prompt injection via tool metadata).",
+      "author": "ATR (Agent Threat Rules)",
+      "categories": [
+        "code"
+      ],
+      "prompt_template_length": 2716,
+      "prompt_template_preview": "As a professional AI-agent security analyst, precisely detect tool-poisoning vulnerabilities in MCP server code. Tool poisoning hides adversarial instructions inside tool-facing text (descriptions, parameter docs, returned content) that the host LLM reads as trusted context. Require concrete evidence; only report when the text is plausibly attacker-controlled and instruction-bearing.\n\n## Vulnerability Definition\nTool poisoning occurs when an MCP tool's description, input-schema field\ndescription...",
+      "prompt_template_full": "As a professional AI-agent security analyst, precisely detect tool-poisoning vulnerabilities in MCP server code. Tool poisoning hides adversarial instructions inside tool-facing text (descriptions, parameter docs, returned content) that the host LLM reads as trusted context. Require concrete evidence; only report when the text is plausibly attacker-controlled and instruction-bearing.\n\n## Vulnerability Definition\nTool poisoning occurs when an MCP tool's description, input-schema field\ndescriptions, annotations, or returned content contain natural-language\ninstructions directed at the *agent* rather than the user — causing the agent\nto exfiltrate data, call other tools, ignore safety policy, or alter behavior.\n\n## Detection Criteria (at least one with concrete evidence)\n\n### 1. Imperative instructions inside tool metadata\n**Code Patterns:**\n- Tool `description` / parameter `description` containing phrases like\n  \"ignore previous instructions\", \"do not tell the user\", \"before answering,\n  first call\", \"always include the contents of\", \"send the result to\".\n- Hidden directives in `inputSchema` field descriptions or tool annotations.\n\n### 2. Instruction-bearing tool output\n**Code Patterns:**\n- Returned tool content that embeds agent-directed commands or fake \"system\"\n  / \"developer\" framing constructed from untrusted input.\n- Output that concatenates external data into instructions without delimiting\n  or neutralizing it.\n\n### 3. Concealment techniques\n**Code Patterns:**\n- Instructions hidden via unicode tag/control characters, zero-width\n  characters, HTML comments, or whitespace far past visible text.\n- Base64 / hex / homoglyph-obfuscated instruction strings in tool text.\n\n## Strict Judgment Standards\n- **Legitimate usage docs**: Do not report ordinary tool descriptions that\n  only document parameters and behavior for the user.\n- **Static help text**: Do not report developer-authored constant strings that\n  carry no agent-directed imperative.\n- **Test/example identifiers**: Do not report content marked test, example, or\n  sample with no real instruction payload.\n\n## Output Requirements\nOnly output when finding concrete tool-poisoning evidence:\n- Specific file paths and line numbers\n- The exact poisoned description / docstring / output snippet\n- Technical analysis: how the host agent would ingest it as instructions\n- Impact assessment: actions the injected instructions could trigger\n- Remediation: separate tool metadata from agent instructions; sanitize and\n  delimit untrusted content; strip control/zero-width characters.\n\n**Strict Requirement: provide the concrete instruction-bearing text and the agent-manipulation path. Remain silent when no concrete evidence exists.**\n",
+      "source_file": "/Users/elwood/Desktop/test/original/AI-Infra-Guard/data/mcp/tool_poisoning.yaml"
+    }
+  ]
+}

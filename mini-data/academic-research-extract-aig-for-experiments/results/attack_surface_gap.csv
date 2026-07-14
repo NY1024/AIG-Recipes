@@ -1,0 +1,52 @@
+Component Name,Description,Has HTTP Rules,Has Version Rules
+9router,"9Router is an open-source AI routing gateway (Next.js) that connects AI coding tools (Claude Code, C",True,False
+AI-Agent-Config,AI Agent 配置文件（如 claude_desktop_config.json、.cursor/mcp.json、.trae/mcp.json 等）通过 HTTP 可公开访问，可能泄露 MCP ,True,False
+aphrodite-engine,"Aphrodite Engine - Large-scale LLM inference engine with OpenAI-compatible API, forked from vLLM.",True,False
+astrbot,AstrBot - Multi-platform LLM chatbot framework with dashboard and plugin system.,True,False
+aws-bedrock,AWS Bedrock - Cloud-managed LLM service with foundation model hosting and inference.,True,False
+azure-openai,Azure OpenAI Service - Microsoft's cloud-hosted OpenAI models with enterprise features.,True,False
+baseten-truss,Baseten Truss - Open-source ML model serving framework with OpenAPI spec.,True,False
+betterchatgpt,Better ChatGPT - Enhanced open-source ChatGPT UI clone.,True,False
+bifrost,Bifrost AI Gateway - High-performance unified LLM gateway by MaximHQ with caching and routing.,True,False
+Clawdbot Gateway,,True,False
+cloudflare-ai-gateway,"Cloudflare AI Gateway - Cloud proxy for multiple AI providers with caching, rate limiting, and obser",True,False
+ComfyUI-Custom-Scripts,一个集合，包含自定义脚本和节点，增强ComfyUI的用户界面和功能。,True,False
+ComfyUI-Prompt-Preview,一个ComfyUI扩展，用于可视化sdxl_prompt_styler的提示风格。,True,False
+databricks-model-serving,Databricks Model Serving - Endpoints for real-time ML inference on Databricks platform.,True,False
+deepspeed-mii,DeepSpeed-MII - High-throughput LLM inference powered by DeepSpeed with OpenAI-compatible API.,True,False
+envoy-ai-gateway,Envoy AI Gateway - Unified access to Generative AI services built on Envoy Gateway.,True,False
+fastchat-webui,,True,False
+fireworks-ai,Fireworks AI - Cloud inference platform for LLMs with OpenAI-compatible API.,True,False
+gpt4all,GPT4All - Local LLM server for running open-source models on any device.,True,False
+groq,Groq Cloud LPU Inference API - Ultra-fast LLM inference with custom LPU hardware.,True,False
+h2ogpt,"h2oGPT - Private local GPT with document Q&A by H2O.ai, built on Gradio.",True,False
+helicone,Helicone - Open-source LLM observability platform and AI gateway.,True,False
+huggingface-chat-ui,HuggingFace Chat UI - Open-source ChatGPT-style interface powering HuggingChat.,True,False
+huggingface-tgi,Hugging Face Text Generation Inference 服务，用于高性能部署大语言模型。,True,False
+jan,Jan AI - Local OpenAI-compatible API server for running LLMs on your machine.,True,False
+koboldcpp,KoboldCpp - Easy-to-use AI text-generation software for GGML/GGUF models.,True,False
+kong-proxy,"Kong API Gateway - Open-source API gateway with exposed Admin API, often used as AI proxy.",True,False
+llmstudio,H2O.ai提供的框架和无代码GUI，用于微调大型语言模型。,True,True
+lm-studio,LM Studio - Local LLM server with OpenAI-compatible API for running models on your machine.,True,False
+localai,本地化 OpenAI 兼容 API 服务，支持多种开源模型与本地推理后端。,True,False
+marimo,一款响应式的Python笔记本，具有优秀的可复现性，原生支持Git，并可作为脚本或应用程序部署。,True,True
+meta-ads-mcp,Meta Ads MCP is a Model Context Protocol (MCP) server from the Pipeboard MCP family that enables AI ,True,False
+mlc-llm,MLC LLM - Universal deployment engine for LLMs with ML compilation optimization.,True,False
+modal,Modal - Serverless AI platform for LLM serving via vLLM/FastAPI.,True,False
+nvidia-nim,NVIDIA NIM 推理微服务，提供企业级 AI 模型部署与推理能力。,True,False
+omniroute,"OmniRoute - AI gateway for multi-provider LLMs with smart routing, load balancing, caching, and obse",True,False
+onyx,Onyx - Open-source AI platform for enterprise search and chat with RAG capabilities.,True,False
+openai-compatible,Generic OpenAI-compatible API endpoint (fallback detection for unidentified LLM services).,True,False
+petals,"Petals - Decentralized LLM inference, BitTorrent-style distributed serving for large models.",True,False
+portkey-ai-gateway,Portkey AI Gateway - Blazing fast unified gateway for 200+ LLM providers.,True,False
+powerinfer,PowerInfer - CPU/GPU hybrid LLM inference engine (llama.cpp fork with activation locality).,True,False
+privategpt,PrivateGPT by Zylon - RAG pipeline for private document Q&A with LLMs.,True,False
+quivr,Quivr - Open-source RAG platform for building AI assistants with brain-based knowledge management.,True,False
+replicate,Replicate - Cloud ML platform with prediction-based API for running open-source models.,True,False
+salesforce-einstein,Salesforce Einstein Messaging API (MIAW) - AI-powered conversational service.,True,False
+tabbyapi,TabbyAPI - FastAPI-based LLM server for ExLlama with OpenAI-compatible API.,True,False
+tensorboard,,True,False
+tensorrt-llm,NVIDIA TensorRT-LLM inference server (trtllm-serve) for high-performance LLM deployment.,True,False
+tensorzero,"TensorZero Gateway - Open-source Rust-based LLM gateway with observability, optimization, and experi",True,False
+together-ai,Together AI - Cloud inference platform for open-source models with OpenAI-compatible API.,True,False
+vertex-ai,Google Vertex AI - ML training and generative AI platform (aiplatform.googleapis.com).,True,False

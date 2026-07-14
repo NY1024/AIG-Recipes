@@ -1,0 +1,263 @@
+{
+  "summary": {
+    "total_datasets": 16,
+    "total_entries": 7248,
+    "total_size_kb": 1695.9
+  },
+  "categories": {
+    "jailbreak": {
+      "files": [
+        "ChatGPT-Jailbreak-Prompts.json",
+        "JailBench-Tiny.json",
+        "JailbreakPrompts-Tiny.json",
+        "JADE-db-v3.0.json",
+        "advbench.json"
+      ],
+      "description": "越狱攻击 prompt 集合"
+    },
+    "harmful_content": {
+      "files": [
+        "HarmfulEvalBenchmark.json",
+        "violent.json",
+        "unethical-behavior.json",
+        "non-violent-illegal-activity.json"
+      ],
+      "description": "有害内容生成评测"
+    },
+    "privacy": {
+      "files": [
+        "privacy-leakage.json"
+      ],
+      "description": "隐私泄露评测"
+    },
+    "cyberattack": {
+      "files": [
+        "cyberattack.json"
+      ],
+      "description": "网络攻击辅助评测"
+    },
+    "misinformation": {
+      "files": [
+        "misinformation.json"
+      ],
+      "description": "虚假信息生成评测"
+    },
+    "copyright": {
+      "files": [
+        "copyright-violation.json"
+      ],
+      "description": "版权侵犯评测"
+    },
+    "cbrn": {
+      "files": [
+        "CBRN-weapon.json"
+      ],
+      "description": "CBRN 武器相关评测"
+    },
+    "multilingual": {
+      "files": [
+        "cnsafe.json",
+        "safebench.json"
+      ],
+      "description": "多语言安全评测（中文）"
+    }
+  },
+  "datasets": [
+    {
+      "filename": "CBRN-weapon.json",
+      "file_size_kb": 19.0,
+      "entry_count": 116,
+      "fields": [
+        "prompt"
+      ],
+      "source_file": "/Users/elwood/Desktop/test/original/AI-Infra-Guard/data/eval/CBRN-weapon.json",
+      "category": "cbrn",
+      "category_description": "CBRN 武器相关评测"
+    },
+    {
+      "filename": "ChatGPT-Jailbreak-Prompts.json",
+      "file_size_kb": 123.2,
+      "entry_count": 60,
+      "fields": [
+        "prompt",
+        "type",
+        "Jailbreak Score",
+        "attack_tag",
+        "harmful_tag"
+      ],
+      "source_file": "/Users/elwood/Desktop/test/original/AI-Infra-Guard/data/eval/ChatGPT-Jailbreak-Prompts.json",
+      "category": "jailbreak",
+      "category_description": "越狱攻击 prompt 集合"
+    },
+    {
+      "filename": "HarmfulEvalBenchmark.json",
+      "file_size_kb": 32.2,
+      "entry_count": 91,
+      "fields": [
+        "prompt",
+        "behavior",
+        "category",
+        "source",
+        "attack_tag",
+        "harmful_tag"
+      ],
+      "source_file": "/Users/elwood/Desktop/test/original/AI-Infra-Guard/data/eval/HarmfulEvalBenchmark.json",
+      "category": "harmful_content",
+      "category_description": "有害内容生成评测"
+    },
+    {
+      "filename": "JADE-db-v3.0.json",
+      "file_size_kb": 38.5,
+      "entry_count": 122,
+      "fields": [
+        "prompt",
+        "behavior",
+        "category",
+        "attack_tag",
+        "harmful_tag"
+      ],
+      "source_file": "/Users/elwood/Desktop/test/original/AI-Infra-Guard/data/eval/JADE-db-v3.0.json",
+      "category": "jailbreak",
+      "category_description": "越狱攻击 prompt 集合"
+    },
+    {
+      "filename": "JailBench-Tiny.json",
+      "file_size_kb": 193.3,
+      "entry_count": 133,
+      "fields": [
+        "prompt",
+        "一级领域",
+        "二级领域",
+        "attack_tag",
+        "harmful_tag"
+      ],
+      "source_file": "/Users/elwood/Desktop/test/original/AI-Infra-Guard/data/eval/JailBench-Tiny.json",
+      "category": "jailbreak",
+      "category_description": "越狱攻击 prompt 集合"
+    },
+    {
+      "filename": "JailbreakPrompts-Tiny.json",
+      "file_size_kb": 56.3,
+      "entry_count": 56,
+      "fields": [
+        "prompt",
+        "source",
+        "attack_tag",
+        "harmful_tag"
+      ],
+      "source_file": "/Users/elwood/Desktop/test/original/AI-Infra-Guard/data/eval/JailbreakPrompts-Tiny.json",
+      "category": "jailbreak",
+      "category_description": "越狱攻击 prompt 集合"
+    },
+    {
+      "filename": "advbench.json",
+      "file_size_kb": 60.9,
+      "entry_count": 520,
+      "fields": [
+        "prompt"
+      ],
+      "source_file": "/Users/elwood/Desktop/test/original/AI-Infra-Guard/data/eval/advbench.json",
+      "category": "jailbreak",
+      "category_description": "越狱攻击 prompt 集合"
+    },
+    {
+      "filename": "cnsafe.json",
+      "file_size_kb": 461.5,
+      "entry_count": 3030,
+      "fields": [
+        "prompt"
+      ],
+      "source_file": "/Users/elwood/Desktop/test/original/AI-Infra-Guard/data/eval/cnsafe.json",
+      "category": "multilingual",
+      "category_description": "多语言安全评测（中文）"
+    },
+    {
+      "filename": "copyright-violation.json",
+      "file_size_kb": 29.4,
+      "entry_count": 100,
+      "fields": [
+        "prompt"
+      ],
+      "source_file": "/Users/elwood/Desktop/test/original/AI-Infra-Guard/data/eval/copyright-violation.json",
+      "category": "copyright",
+      "category_description": "版权侵犯评测"
+    },
+    {
+      "filename": "cyberattack.json",
+      "file_size_kb": 73.7,
+      "entry_count": 100,
+      "fields": [
+        "prompt"
+      ],
+      "source_file": "/Users/elwood/Desktop/test/original/AI-Infra-Guard/data/eval/cyberattack.json",
+      "category": "cyberattack",
+      "category_description": "网络攻击辅助评测"
+    },
+    {
+      "filename": "misinformation.json",
+      "file_size_kb": 52.6,
+      "entry_count": 123,
+      "fields": [
+        "prompt"
+      ],
+      "source_file": "/Users/elwood/Desktop/test/original/AI-Infra-Guard/data/eval/misinformation.json",
+      "category": "misinformation",
+      "category_description": "虚假信息生成评测"
+    },
+    {
+      "filename": "non-violent-illegal-activity.json",
+      "file_size_kb": 54.0,
+      "entry_count": 99,
+      "fields": [
+        "prompt"
+      ],
+      "source_file": "/Users/elwood/Desktop/test/original/AI-Infra-Guard/data/eval/non-violent-illegal-activity.json",
+      "category": "harmful_content",
+      "category_description": "有害内容生成评测"
+    },
+    {
+      "filename": "privacy-leakage.json",
+      "file_size_kb": 63.0,
+      "entry_count": 99,
+      "fields": [
+        "prompt"
+      ],
+      "source_file": "/Users/elwood/Desktop/test/original/AI-Infra-Guard/data/eval/privacy-leakage.json",
+      "category": "privacy",
+      "category_description": "隐私泄露评测"
+    },
+    {
+      "filename": "safebench.json",
+      "file_size_kb": 283.4,
+      "entry_count": 2300,
+      "fields": [
+        "prompt"
+      ],
+      "source_file": "/Users/elwood/Desktop/test/original/AI-Infra-Guard/data/eval/safebench.json",
+      "category": "multilingual",
+      "category_description": "多语言安全评测（中文）"
+    },
+    {
+      "filename": "unethical-behavior.json",
+      "file_size_kb": 109.7,
+      "entry_count": 200,
+      "fields": [
+        "prompt"
+      ],
+      "source_file": "/Users/elwood/Desktop/test/original/AI-Infra-Guard/data/eval/unethical-behavior.json",
+      "category": "harmful_content",
+      "category_description": "有害内容生成评测"
+    },
+    {
+      "filename": "violent.json",
+      "file_size_kb": 45.2,
+      "entry_count": 99,
+      "fields": [
+        "prompt"
+      ],
+      "source_file": "/Users/elwood/Desktop/test/original/AI-Infra-Guard/data/eval/violent.json",
+      "category": "harmful_content",
+      "category_description": "有害内容生成评测"
+    }
+  ]
+}

@@ -1,0 +1,1250 @@
+cve_id,component,severity,cvss_vector,year,version_rule,ref_count,summary
+CVE-2024-0082,ChatRTX,HIGH,CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:H,2024,"version <= ""0.2""",1,NVIDIA ChatRTX 存在权限管理不当漏洞
+CVE-2024-10707,Chuanhugpt,MEDIUM,CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N,2024,,2,由于gradio组件问题，gaizhenbiao/chuanhuchatgpt中存在本地文件包含漏洞
+CVE-2024-10955,Chuanhugpt,MEDIUM,CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H,2024,,2,gaizhenbiao/chuanhuchatgpt中的正则表达式拒绝服务（ReDoS）漏洞
+CVE-2024-2217,Chuanhugpt,HIGH,CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N,2024,,3,Chuanhugpt 访问控制不当漏洞
+CVE-2024-3402,Chuanhugpt,MEDIUM,CVSS:3.0/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:N/A:N,2024,"version = ""20240121""",2,Chuanhugpt 存储型跨站脚本（XSS）漏洞
+CVE-2024-3404,Chuanhugpt,MEDIUM,CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N,2024,"version = ""20240121""",2,Chuanhugpt 访问控制漏洞
+CVE-2024-4321,Chuanhugpt,HIGH,CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N,2024,"version = ""20240310""",2,Chuanhugpt 本地文件包含漏洞
+CVE-2024-4520,Chuanhugpt,HIGH,CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N,2024,"version <= ""20240410""",2,Chuanhugpt 应用程序不当访问控制漏洞
+CVE-2024-48059,Chuanhugpt,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N,2024,"version <= ""20240802""",3,Chuanhugpt 存储型跨站脚本（XSS）漏洞
+CVE-2024-5124,Chuanhugpt,HIGH,CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N,2024,"version < ""20240310""",3,Chuanhugpt 密码比较逻辑中的定时攻击漏洞
+CVE-2024-5278,Chuanhugpt,MEDIUM,CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:N,2024,,2,Chuanhugpt 存在不受限制的文件上传漏洞
+CVE-2024-5823,Chuanhugpt,MEDIUM,CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:L,2024,"version <= ""20240410""",3,Chuanhugpt 文件覆盖漏洞
+CVE-2024-5982,Chuanhugpt,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:H,2024,,3,Chuanhugpt 路径遍历漏洞
+CVE-2024-6035,Chuanhugpt,CRITICAL,CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:N,2024,"version == ""20240410""",2,Chuanhuchatgpt 存储型跨站脚本（XSS）漏洞
+CVE-2024-6036,Chuanhugpt,HIGH,CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,2024,"version == ""20240410""",2,Chuanhugpt 任意重启服务器漏洞
+CVE-2024-6037,Chuanhugpt,HIGH,CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,2024,"version < ""20240410""",2,Chuanhugpt 任意文件夹创建漏洞
+CVE-2024-6038,Chuanhugpt,HIGH,CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,2024,,2,Chuanhugpt的正则表达式拒绝服务（ReDoS）漏洞
+CVE-2024-6090,Chuanhugpt,HIGH,CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,2024,"version == ""20240410""",2,Chuanhugpt 存在路径遍历漏洞
+CVE-2024-6255,Chuanhugpt,HIGH,CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:H,2024,"version == ""20240410""",2,Chuanhuchatgpt JSON文件处理漏洞
+CVE-2024-7807,Chuanhugpt,HIGH,CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,2024,"version = ""20240628""",3,ChuanhuChatGPT拒绝服务漏洞
+CVE-2024-7962,Chuanhugpt,HIGH,CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N,2024,"version == ""20240628""",3,Chuanhugpt 任意文件读取漏洞
+CVE-2024-8143,Chuanhugpt,MEDIUM,CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N,2024,"version == ""20240628""",3,Chuanhugpt 用户聊天记录泄露漏洞
+CVE-2024-8400,Chuanhugpt,MEDIUM,CVSS:3.0/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N,2024,,3,gaizhenbiao/chuanhuchatgpt中存在存储型跨站脚本（XSS）漏洞
+CVE-2024-8613,Chuanhugpt,HIGH,CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N,2024,"version < ""20240803""",3,Chuanhugpt中的漏洞允许未经授权访问聊天记录。
+CVE-2024-9107,Chuanhugpt,MEDIUM,CVSS:3.0/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:N/A:N,2024,"version < """"",2,Chuanhugpt聊天GPT中存在存储型跨站脚本（XSS）漏洞
+CVE-2024-9159,Chuanhugpt,MEDIUM,CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H,2024,"version == ""git c91dbfc""",2,gaizhenbiao/chuanhuchatgpt中存在不正确的授权漏洞，允许任何用户重启服务器。
+CVE-2025-0188,Chuanhugpt,MEDIUM,CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N,2025,"version < ""20240915""",2,gaizhenbiao/chuanhuchatgpt中的服务器端请求伪造（SSRF）漏洞
+CVE-2025-0191,Chuanhugpt,MEDIUM,CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H,2025,"version == ""20240914""",2,文件上传功能中的拒绝服务（DoS）漏洞
+CVE-2024-21577,ComfyUI-Ace-Nodes,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H,2024,,2,ComfyUI-Ace-Nodes 存在代码注入漏洞
+CVE-2024-21576,ComfyUI-Bmad-Nodes,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H,2024,,2,ComfyUI-Bmad-Nodes 存在代码注入漏洞
+CVE-2024-21575,ComfyUI-Impact-Pack,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:N/I:H/A:N,2024,,3,ComfyUI-Impact-Pack 存在路径遍历漏洞
+CVE-2024-21574,ComfyUI-Manager,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H,2024,,3,ComfyUI 安装自定义节点时的远程代码执行漏洞
+CVE-2024-10252,Dify,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H,2024,"version <= ""0.9.1""",3,Dify Sandbox逃逸漏洞
+CVE-2024-11821,Dify,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N,2024,"version == ""0.9.1""",2,Dify中的权限提升漏洞，可修改Orchestrate指令
+CVE-2024-11822,Dify,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N,2024,"version < ""0.9.1""",2,langgenius/dify中的服务器端请求伪造(SSRF)漏洞
+CVE-2024-11824,Dify,MEDIUM,CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:C/C:H/I:H/A:N,2024,"version < ""0.12.1""",3,Dify聊天机器人日志中存在存储型XSS漏洞
+CVE-2024-11850,Dify,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:N/A:N,2024,,2,Dify 中的存储型 XSS 漏洞
+CVE-2024-12039,Dify,HIGH,CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:N,2024,"version = ""0.10.1""",2,Dify 密码重置码猜测次数过多导致管理员账号接管漏洞
+CVE-2024-12775,Dify,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N,2024,"version = ""0.10.1""",2,dify中的非盲SSRF漏洞
+CVE-2024-12776,Dify,HIGH,CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:H,2024,"version < ""0.10.2""",3,Dify 密码重置漏洞导致管理员账号接管
+CVE-2025-0184,Dify,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N,2025,"version < ""0.11.0""",0,Dify的WordExtractor中存在服务器端请求伪造(SSRF)漏洞
+CVE-2025-0185,Dify,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H,2025,,3,Dify 工具 Vanna 模块的 Pandas 查询注入漏洞
+CVE-2025-11750,Dify,MEDIUM,CVSS:3.0/AV:A/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N,2025,"version = ""1.6.0""",2,Dify-web 用户枚举漏洞通过不同的错误消息。
+CVE-2025-1796,Dify,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H,2025,"version < ""0.10.2""",3,Dify 使用弱伪随机数生成器生成密码重置码导致管理员账户接管漏洞
+CVE-2025-29720,Dify,MEDIUM,CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:L/I:L/A:L,2025,"version < ""1.0.1""",3,Dify v1.0包含一个服务器端请求伪造(SSRF)漏洞。
+CVE-2025-3466,Dify,CRITICAL,CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H,2025,"version >= ""1.1.0"" && version <= ""1.1.2""",3,Dify中由于代码节点输入未过滤导致的任意代码执行漏洞
+CVE-2025-3467,Dify,HIGH,CVSS:3.0/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H,2025,"version > ""0"" && version < ""1.1.3""",3,Dify 中影响 Firefox 1.1.3 之前版本的 XSS 漏洞
+CVE-2025-55182,Dify,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H,2025,"version >= ""0.9"" && version < ""1.10.1""",1,Dify 中由于不安全的原型引用导致的远程代码执行 (RCE) 漏洞。
+CVE-2025-56157,Dify,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H,2025,"version <= ""1.5.1""",9,Dify 的 docker-compose.yaml 文件中包含默认凭据，导致未经授权的访问。
+CVE-2025-56520,Dify,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N,2025,"version == ""1.6.0""",2,Dify v1.6.0 中的服务器端请求伪造 (SSRF)
+CVE-2025-63386,Dify,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N,2025,"version == ""1.9.1""",4,Dify v1.9.1 的 /console/api/setup 端点存在 CORS 配置错误漏洞。
+CVE-2025-63387,Dify,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N,2025,"version == ""1.9.1""",7,Dify v1.9.1 存在不安全权限漏洞，允许未经身份验证的用户访问敏感系统配置数据。
+CVE-2025-63388,Dify,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N,2025,"version == ""1.9.1""",4,Dify v1.9.1 存在 CORS 配置错误漏洞，允许未经授权的跨域请求。
+CVE-2026-34082,Dify,MEDIUM,,2026,"version < ""1.13.1""",2,Dify 存在越权漏洞（IDOR），允许任意已认证用户删除他人的聊天会话记录
+CVE-2026-41947,Dify,HIGH,CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N,2026,"version <= ""1.14.1""",3,Dify Trace 配置端点授权绕过漏洞
+CVE-2026-41948,Dify,HIGH,CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:L,2026,"version <= ""1.14.1""",3,Dify 通过插件守护进程内部 REST API 的路径穿越漏洞
+CVE-2026-41949,Dify,MEDIUM,CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N,2026,"version <= ""1.14.1""",3,Dify <= 1.14.1 文件预览端点授权绕过漏洞（CWE-639）
+CVE-2026-41950,Dify,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N,2026,"version < ""1.14.0""",3,Dify 1.14.0 之前版本存在授权绕过漏洞，已认证用户可通过 chat-messages 接口读取同一租户内其他用户上传的文件内容。
+CVE-2026-6617,Dify,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L,2026,"version <= ""0.6.9""",3,Dify ApiToolManageService 存在服务端请求伪造（SSRF）漏洞
+CVE-2026-6618,Dify,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L,2026,"version <= ""1.13.3""",3,Dify ApiBasedToolSchemaParser 存在通过 url 参数操控的服务端请求伪造漏洞
+CVE-2026-6619,Dify,LOW,CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:N/I:L/A:N,2026,"version < ""1.13.4""",3,Dify ImagePreview 组件 filename 参数跨站脚本（XSS）漏洞
+CVE-2024-10188,LiteLLM,HIGH,CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,2024,"version < ""1.53.1.dev1""",4,LiteLLM 由于不当的输入解析而容易受到拒绝服务 (DoS) 攻击。
+CVE-2024-2952,LiteLLM,CRITICAL,CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H,2024,"version < ""1.34.42""",7,LiteLLM 存在服务器端模板注入 (SSTI) 漏洞，可通过 /completions 端点进行利用。
+CVE-2024-4264,LiteLLM,HIGH,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H,2024,"version > ""0"" && version <= ""1.28.11""",8,LiteLLM 中因不安全使用 `eval` 函数导致远程代码执行。
+CVE-2024-4888,LiteLLM,HIGH,CVSS:3.0/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:H/A:H,2024,"version < ""1.35.36""",4,LiteLLM 中因不当输入验证导致任意文件删除。
+CVE-2024-4889,LiteLLM,HIGH,CVSS:3.0/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H,2024,"version < ""1.34.7""",2,LiteLLM 密钥管理系统中的代码注入漏洞。
+CVE-2024-4890,LiteLLM,HIGH,CVSS:3.0/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:N/A:N,2024,"version <= ""1.27.14""",4,LiteLLM 的 '/team/update' 进程中存在 SQL 注入漏洞。
+CVE-2024-5225,LiteLLM,MEDIUM,CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N,2024,"version < ""1.40.0""",5,LiteLLM 的 `/global/spend/logs` 端点存在 SQL 注入漏洞。
+CVE-2024-5710,LiteLLM,MEDIUM,CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:H/A:N,2024,"version > ""0"" && version < ""1.40.15""",5,LiteLLM 在团队管理中存在不当访问控制漏洞。
+CVE-2024-5751,LiteLLM,CRITICAL,CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H,2024,"version > ""0"" && version < ""1.40.16""",5,LiteLLM 由于不安全地使用 `eval` 而存在远程代码执行漏洞。
+CVE-2024-6587,LiteLLM,HIGH,CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N,2024,"version > ""0"" && version < ""1.44.8""",4,LiteLLM 服务端请求伪造 (SSRF) 漏洞允许 API 密钥泄露。
+CVE-2024-6825,LiteLLM,HIGH,CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H,2024,"version > ""1.40.3.dev2"" && version <= ""1.40.12""",5,LiteLLM 由于对 'post_call_rules' 配置处理不当，存在远程代码执行 (RCE) 漏洞。
+CVE-2024-8984,LiteLLM,HIGH,CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,2024,"version > ""0"" && version < ""1.56.2""",5,LiteLLM 易受通过精心构造的 HTTP 请求发起的拒绝服务 (DoS) 攻击。
+CVE-2024-9606,LiteLLM,HIGH,CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N,2024,"version < ""1.44.12""",4,LiteLLM 由于掩码不足，在日志文件中泄露部分 API 密钥。
+CVE-2025-0628,LiteLLM,HIGH,CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N,2025,"version > ""0"" && version < ""1.61.15""",4,LiteLLM 存在不当授权漏洞，允许权限提升。
+CVE-2025-11203,LiteLLM,LOW,CVSS:3.0/AV:N/AC:L/PR:L/UI:R/S:U/C:L/I:N/A:N,2025,,3,LiteLLM 信息健康 API_KEY 信息泄露漏洞。
+CVE-2025-45809,LiteLLM,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:N,2025,"version = ""1.65.4""",2,LiteLLM v1.65.4 的 /key/block 端点存在 SQL 注入漏洞。
+CVE-2026-35029,LiteLLM,MEDIUM,,2026,"version < ""1.83.0""",1,LiteLLM /config/update 接口缺少管理员权限校验，可导致远程代码执行和账户接管
+CVE-2026-35030,LiteLLM,MEDIUM,,2026,"version < ""1.83.0""",1,LiteLLM OIDC userinfo 缓存键碰撞导致认证绕过
+CVE-2026-40217,LiteLLM,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H,2026,"version <= ""2026.04.08""",2,LiteLLM Guardrail 沙箱逃逸（字节码重写）导致远程代码执行
+CVE-2026-42203,LiteLLM,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H,2026,"version >= ""1.80.5"" && version < ""1.83.7""",2,LiteLLM 是一款以 OpenAI（或原生）格式调用 LLM API 的代理服务器（AI 网关）
+CVE-2026-42208,LiteLLM,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H,2026,"version >= ""1.81.16"" && version < ""1.83.7""",3,LiteLLM 是一款代理服务器（AI 网关），支持以 OpenAI（或原生）格式调用各类 LLM API
+CVE-2026-42271,LiteLLM,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H,2026,"version >= ""1.74.2"" && version < ""1.83.7""",2,LiteLLM 是一款代理服务器（AI 网关），用于以 OpenAI（或原生）格式调用各类 LLM API
+CVE-2026-47101,LiteLLM,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H,2026,"version < ""1.83.14""",2,LiteLLM API密钥生成权限提升漏洞（错误授权）
+CVE-2026-47102,LiteLLM,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H,2026,"version < ""1.83.10""",5,LiteLLM 1.83.10 之前版本存在通过 /user/update 端点进行权限提升的漏洞
+CVE-2026-49468,LiteLLM,CRITICAL,,2026,"version < ""1.84.0""",3,litellm Host Header 注入导致认证绕过漏洞
+CVE-2024-37895,LobeChat,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:N/A:N,2024,"version > ""0"" && version < ""0.162.25""",3,由于对基本 URL 修改处理不当，Lobe Chat 存在 API 密钥泄露漏洞。
+CVE-2026-23835,LobeChat,HIGH,CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:H/VA:H/SC:N/SI:N/SA:N/E:P,2026,"version > ""0"" && version < ""1.143.3""",4,LobeHub 的预签名上传功能存在不当授权漏洞，允许攻击者操纵文件大小和路径。
+CVE-2026-39411,LobeChat,MEDIUM,CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:L/I:L/A:L,2026,"version < ""2.1.48""",3,LobeHub（LobeChat）通过伪造 X-lobe-chat-auth 请求头绕过 webapi 认证
+CVE-2026-22168,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N,2026,"version < ""2026.2.21""",4,OpenClaw Windows system.run 审批不匹配（cmd.exe /c 尾随空格绕过）
+CVE-2026-22169,OpenClaw,MEDIUM,CVSS:3.1/AV:L/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H,2026,"version < ""2026.2.22""",4,OpenClaw 非默认 safeBins 排序配置可绕过预期的执行限制
+CVE-2026-22170,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N,2026,"version < ""2026.2.22""",5,OpenClaw BlueBubbles（可选插件）配对/白名单不匹配可通过硬重置绕过
+CVE-2026-22171,OpenClaw,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:N,2026,"version < ""2026.2.19""",5,openclaw 飞书媒体文件临时路径命名存在路径遍历漏洞，可写入 os.tmpdir() 外的文件
+CVE-2026-22172,OpenClaw,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H,2026,"version <= ""2026.3.11""",5,OpenClaw：WebSocket 共享认证连接可自行声明提升的权限范围
+CVE-2026-22174,OpenClaw,MEDIUM,CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:U/C:H/I:L/A:N,2026,"version <= ""2026.2.21-2""",4,OpenClaw Loopback CDP 探测可向本地监听器泄露 Gateway 令牌
+CVE-2026-22175,OpenClaw,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:L/A:N,2026,"version < ""2026.2.23""",4,openclaw 白名单模式下 exec 永久许可可通过未识别的多路复用 shell 包装器（busybox/toybox sh -c）绕过
+CVE-2026-22177,OpenClaw,MEDIUM,CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:L,2026,"version < ""2026.2.21""",4,OpenClaw 的配置环境变量允许启动环境注入到服务运行时
+CVE-2026-22178,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:L,2026,"version < ""2026.2.19""",5,OpenClaw 在处理未转义的飞书 mention 元数据时存在 ReDoS 和正则注入
+CVE-2026-22179,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H,2026,"version < ""2026.2.22""",4,OpenClaw macOS system.run 白名单通过引号命令替换绕过
+CVE-2026-22180,OpenClaw,MEDIUM,CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L,2026,"version <= ""2026.3.1""",4,OpenClaw 统一根边界写入加固（浏览器输出和相关路径）
+CVE-2026-22181,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:L/A:L,2026,"version <= ""2026.3.1""",4,OpenClaw web 工具严格 URL 守卫在环境探测禁用时可能丢失 DNS 固定
+CVE-2026-22217,OpenClaw,MEDIUM,CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:N/I:H/A:L,2026,"version >= ""2026.2.22"" && version < ""2026.2.23""",4,OpenClaw shell-env trusted-prefix 回退允许攻击者控制的环境注入
+CVE-2026-24763,OpenClaw,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H,2026,"version <= ""2026.1.24""",1,OpenClaw 通过 PATH 环境变量在 Clawdbot Docker 执行中实现命令注入
+CVE-2026-24764,OpenClaw,LOW,CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:U/C:L/I:L/A:N,2026,"version < ""2026.2.3""",1,OpenClaw Slack 集成加固：防止频道元数据影响系统提示词
+CVE-2026-25157,OpenClaw,HIGH,CVSS:3.1/AV:L/AC:H/PR:N/UI:R/S:C/C:H/I:H/A:H,2026,"version < ""v2026.1.29""",1,OpenClaw 在 sshNodeCommand 中通过项目根路径实现操作系统命令注入
+CVE-2026-25474,OpenClaw,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N,2026,"version <= ""2026.1.30""",1,OpenClaw 在 webhookSecret 缺失时可能在未验证密钥令牌的情况下接受 Telegram webhook 请求
+CVE-2026-25475,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:N/A:N,2026,"version <= ""2026.1.30""",1,OpenClaw 可能通过 MEDIA: 路径暂存泄露本地文件
+CVE-2026-25593,OpenClaw,HIGH,CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H,2026,"version < ""2026.1.20""",1,OpenClaw 通过 WebSocket config.apply 实现未认证本地远程代码执行
+CVE-2026-26316,OpenClaw,HIGH,,2026,"version < ""2026.2.13""",1,OpenClaw BlueBubbles webhook 通过回环代理信任绕过认证
+CVE-2026-26317,OpenClaw,HIGH,,2026,"version <= ""2026.2.13""",1,OpenClaw 通过回环浏览器变更端点实现跨站请求伪造（CSRF）
+CVE-2026-26319,OpenClaw,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N,2026,"version <= ""2026.2.13""",1,OpenClaw Telnyx 提供商 Webhook 认证缺失允许未认证请求
+CVE-2026-26320,OpenClaw,HIGH,,2026,"version <= ""2026.2.13""",1,OpenClaw macOS 深层链接确认截断可隐藏实际执行的代理消息
+CVE-2026-26321,OpenClaw,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N,2026,"version < ""2026.2.14""",1,OpenClaw 飞书扩展中 sendMediaFeishu 导致本地文件泄露
+CVE-2026-26322,OpenClaw,HIGH,,2026,"version <= ""2026.2.13""",1,OpenClaw Gateway 工具允许不受限制的 gatewayUrl 覆盖
+CVE-2026-26323,OpenClaw,MEDIUM,,2026,"version >= ""2026.1.8"" && version < ""2026.2.14""",1,OpenClaw 维护者 clawtributors 更新器中的命令注入
+CVE-2026-26324,OpenClaw,HIGH,,2026,"version <= ""2026.2.13""",1,OpenClaw 通过完整格式 IPv4 映射 IPv6 绕过 SSRF 防护（可达回环地址/元数据）
+CVE-2026-26325,OpenClaw,HIGH,,2026,"version <= ""2026.2.13""",1,OpenClaw 节点主机 system.run rawCommand/command 不匹配可绕过允许列表/审批
+CVE-2026-26326,OpenClaw,MEDIUM,,2026,"version <= ""2026.2.13""",1,OpenClaw skills.status 可向 operator.read 客户端泄露密钥
+CVE-2026-26327,OpenClaw,HIGH,,2026,"version <= ""2026.2.13""",1,OpenClaw 未认证的发现 TXT 记录可操纵路由和 TLS 固定
+CVE-2026-26328,OpenClaw,MEDIUM,,2026,"version <= ""2026.2.13""",1,OpenClaw iMessage 群组允许列表授权继承了 DM 配对存储身份，导致跨上下文命令授权
+CVE-2026-26329,OpenClaw,HIGH,,2026,"version < ""2026.2.14""",1,OpenClaw 浏览器上传中的路径遍历允许读取本地文件
+CVE-2026-26972,OpenClaw,MEDIUM,,2026,"version <= ""2026.2.12""",1,OpenClaw 浏览器下载功能中的路径遍历
+CVE-2026-27001,OpenClaw,HIGH,,2026,"version < ""2026.2.15""",1,OpenClaw OC-19：未净化的 CWD 路径注入 LLM 提示
+CVE-2026-27002,OpenClaw,MEDIUM,,2026,"version <= ""2026.2.14""",1,OpenClaw OC-13：通过未验证的绑定挂载配置注入实现 Docker 容器逃逸
+CVE-2026-27003,OpenClaw,MEDIUM,,2026,"version <= ""2026.2.14""",1,OpenClaw OC-17：Telegram 机器人令牌通过日志泄露
+CVE-2026-27004,OpenClaw,HIGH,,2026,"version <= ""2026.2.14""",1,OpenClaw OC-07：会话工具可见性加固及 Telegram webhook 密钥回退
+CVE-2026-27007,OpenClaw,MEDIUM,,2026,"version <= ""2026.2.14""",1,OpenClaw 沙箱配置哈希对原始类型数组排序导致抑制必要的容器重建
+CVE-2026-27008,OpenClaw,MEDIUM,,2026,"version <= ""2026.2.14""",1,OpenClaw 加固技能下载目标目录验证
+CVE-2026-27009,OpenClaw,MEDIUM,,2026,"version <= ""2026.2.14""",1,OpenClaw 控制 UI 中通过未净化的助手名称/头像实现内联脚本注入的存储型 XSS
+CVE-2026-27158,OpenClaw,MEDIUM,,2026,"version <= ""2026.2.19-2""",1,OpenClaw OC-91：WhatsApp 表情回应操作绕过 allowFrom 受限目标的 JID 授权
+CVE-2026-27159,OpenClaw,MEDIUM,,2026,"version <= ""2026.2.19-2""",1,OpenClaw TTS 模型指令默认允许提供商切换
+CVE-2026-27164,OpenClaw,LOW,,2026,"version >= ""2026.2.9"" && version <= ""2026.2.19-2""",1,OpenClaw OC-65：溢出压缩重试计数器在截断后重置导致有界重试/成本循环被放大
+CVE-2026-27165,OpenClaw,MEDIUM,,2026,"version <= ""2026.2.19-2""",1,OpenClaw ACP resource_link 元数据提示插值允许通过 title/URI 字段注入提示内容
+CVE-2026-27183,OpenClaw,MEDIUM,CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L,2026,"version < ""2026.3.7""",2,OpenClaw shell审批绕过漏洞（dispatch-wrapper深度边界不对齐）
+CVE-2026-27209,OpenClaw,HIGH,,2026,"version <= ""2026.2.19-2""",1,OpenClaw 在 exec 允许列表模式下通过未引用的 heredoc 扩展实现 Shell 命令注入
+CVE-2026-27484,OpenClaw,MEDIUM,,2026,"version <= ""2026.2.17""",1,OpenClaw Discord 审核授权在工具驱动流中使用了不受信任的发送者身份
+CVE-2026-27485,OpenClaw,LOW,,2026,"version <= ""2026.2.17""",1,OpenClaw OC-22：拒绝本地技能打包脚本中的符号链接
+CVE-2026-27486,OpenClaw,LOW,,2026,"version < ""2026.2.14""",1,OpenClaw OC-31：进程安全 - 进程清理中通过 SIGKILL 进行未验证的 PID 终止
+CVE-2026-27487,OpenClaw,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:L,2026,"version <= ""2026.2.13""",1,OpenClaw OC-28：防止 macOS 钥匙链凭证写入中的 shell 注入
+CVE-2026-27488,OpenClaw,MEDIUM,,2026,"version <= ""2026.2.17""",1,OpenClaw 加固 cron webhook 传递以防止 SSRF
+CVE-2026-27522,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N,2026,"version <= ""2026.2.23""",4,OpenClaw 消息操作附件水合绕过本地媒体根边界
+CVE-2026-27523,OpenClaw,MEDIUM,CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:L,2026,"version <= ""2026.2.23""",4,OpenClaw 沙箱绑定验证可绕过 allowed-root 和阻止路径检查
+CVE-2026-27524,OpenClaw,LOW,CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:L/A:N,2026,"version < ""2026.2.21""",4,OpenClaw 运行时 /debug 覆盖路径接受原型保留键导致污染
+CVE-2026-27545,OpenClaw,MEDIUM,CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:L,2026,"version <= ""2026.2.25""",5,OpenClaw Node system.run 审批通过父符号链接 cwd 重绑定绕过
+CVE-2026-27576,OpenClaw,LOW,,2026,"version <= ""2026.2.17""",1,OpenClaw OC-53：ACP 本地 stdio 桥接中缺少提示词大小检查，可能在超大输入时降低响应性
+CVE-2026-27646,OpenClaw,MEDIUM,CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:H/A:N,2026,"version < ""2026.3.7""",2,OpenClaw 沙箱逃逸漏洞（/acp spawn 命令可初始化宿主 ACP 会话）
+CVE-2026-30741,OpenClaw,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H,2026,"version <= ""2026.2.6""",2,OpenClaw Agent 平台 agent 任务执行中的请求侧提示词注入导致 RCE
+CVE-2026-32038,OpenClaw,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H,2026,"version <= ""2026.2.23""",2,OpenClaw 沙箱网络隔离绕过漏洞（docker.network=container:<id>）
+CVE-2026-32043,OpenClaw,MEDIUM,CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:L/I:H/A:H,2026,"version < ""2026.2.25""",3,OpenClaw 2026.2.25 之前版本存在 TOCTOU 漏洞，允许攻击者绕过命令执行限制
+CVE-2026-32044,OpenClaw,MEDIUM,CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H,2026,"version < ""2026.3.2""",3,OpenClaw 2026.3.2 之前版本在 tar.bz2 安装路径中存在压缩包解压漏洞，可导致本地拒绝服务
+CVE-2026-32045,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N,2026,"version < ""2026.2.21""",5,OpenClaw 网关将无令牌 Tailscale 认证错误应用于 HTTP 路由，导致认证绕过
+CVE-2026-32046,OpenClaw,MEDIUM,CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L,2026,"version < ""2026.2.21""",4,OpenClaw 2026.2.21 之前版本存在沙箱配置不当漏洞，可导致任意代码执行
+CVE-2026-32050,OpenClaw,LOW,CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:N,2026,"version < ""2026.2.25""",3,OpenClaw 2026.2.25 之前版本在信号反应通知处理中存在访问控制漏洞，未授权发送者可绕过授权检查入队状态事件
+CVE-2026-32052,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:U/C:N/I:H/A:H,2026,"version < ""2026.2.24""",4,OpenClaw 2026.2.24 之前版本在 system.run shell 包装器中存在命令注入漏洞，可通过位置参数载体执行隐藏命令
+CVE-2026-32053,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:L,2026,"version < ""2026.2.23""",3,OpenClaw 2026.2.23 之前版本在 Twilio webhook 事件去重中存在漏洞，规范化事件 ID 每次解析时随机生成，导致重放事件可绕过去重检查
+CVE-2026-32054,OpenClaw,MEDIUM,CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:L/I:H/A:H,2026,"version < ""2026.2.25""",3,OpenClaw 2026.2.25 之前版本在浏览器跟踪和下载输出路径处理中存在软链接遍历漏洞，可导致任意文件覆写
+CVE-2026-32058,OpenClaw,LOW,CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:U/C:N/I:L/A:N,2026,"version < ""2026.2.26""",3,OpenClaw 2026.2.26 之前版本在 host=node 的 system.run 执行流中存在审批上下文绑定弱点，已修改环境变量的请求可重用先前的审批
+CVE-2026-32059,OpenClaw,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H,2026,"version >= ""2026.2.22-2"" && version < ""2026.2.23""",1,OpenClaw tools.exec.safeBins 白名单绕过漏洞（sort 命令 GNU 长选项缩写）
+CVE-2026-32060,OpenClaw,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H,2026,"version < ""2026.2.14""",1,OpenClaw apply_patch 路径穿越漏洞（任意文件写入/删除）
+CVE-2026-32061,OpenClaw,MEDIUM,CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:H/I:N/A:N,2026,"version < ""2026.2.17""",1,OpenClaw $include 指令路径穿越漏洞（任意本地文件读取）
+CVE-2026-32062,OpenClaw,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,2026,"version >= ""2026.2.21-2"" && version < ""2026.2.22""",1,OpenClaw 及 @openclaw/voice-call 未授权 WebSocket DoS 漏洞（流升级前置验证缺失）
+CVE-2026-32063,OpenClaw,HIGH,CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:H,2026,"version >= ""2026.2.19-2"" && version < ""2026.2.21""",1,OpenClaw systemd 单元文件生成中的 CR/LF 注入命令执行漏洞
+CVE-2026-32065,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:U/C:N/I:H/A:N,2026,"version < ""2026.2.25""",3,OpenClaw 2026.2.25 之前版本在 system.run 中存在审批完整性绕过漏洞，渲染命令文本与运行时执行的原始 argv 不一致
+CVE-2026-32067,OpenClaw,LOW,CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:U/C:L/I:L/A:N,2026,"version < ""2026.2.26""",4,OpenClaw 2026.2.26 之前版本在直接消息配对策略的配对存储访问控制中存在授权绕过漏洞，可跨账户重用配对审批
+CVE-2026-32302,OpenClaw,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N,2026,"version < ""2026.3.11""",3,OpenClaw 在 trusted-proxy 模式下 WebSocket 来源验证绕过，允许未授权建立特权 operator 会话
+CVE-2026-32846,OpenClaw,MEDIUM,,2026,"version <= ""2026.3.24""",4,OpenClaw 2026.3.23 及以前版本在媒体解析中存在路径遍历漏洞，可读取任意文件
+CVE-2026-32895,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:N,2026,"version < ""2026.2.26""",3,OpenClaw 2026.2.26 之前版本在成员和消息子类型系统事件处理器中未强制执行发送者授权，导致未授权事件可被入队
+CVE-2026-32896,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N,2026,"version < ""2026.2.21""",4,OpenClaw 2026.2.21 之前版本 BlueBubbles webhook 处理器存在无密码回退认证路径，在特定反向代理或本地路由配置下允许未认证 webhook 事件
+CVE-2026-32897,OpenClaw,LOW,CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N,2026,"version <= ""2026.2.21-2""",5,OpenClaw 2026.2.22 之前版本在所有者 ID 提示词哈希回退中复用网关认证令牌，可导致令牌泄露
+CVE-2026-32898,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:N,2026,"version < ""2026.2.23""",4,OpenClaw 2026.2.23 之前版本 ACP 客户端基于不可信工具元数据和宽松名称启发式自动批准工具调用，存在授权绕过漏洞
+CVE-2026-32899,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N,2026,"version < ""2026.2.25""",4,OpenClaw 2026.2.25 之前版本未对 reaction_* 和 pin_* 非消息事件一致执行发送者策略检查，可绕过访问控制注入未授权事件
+CVE-2026-32905,OpenClaw,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:L,2026,"version < ""2026.5.4""",2,OpenClaw device-pair 插件授权绕过漏洞，允许非 owner 聊天发送者签发设备配对引导码
+CVE-2026-32906,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N,2026,"version < ""2026.5.12""",2,OpenClaw 2026.5.12 之前版本存在通过 Slack 插件审批执行审批门的权限提升漏洞
+CVE-2026-32913,OpenClaw,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:L/A:N,2026,"version <= ""2026.3.2""",2,OpenClaw：fetchWithSsrFGuard 将授权头转发至跨域重定向目标
+CVE-2026-32916,OpenClaw,CRITICAL,CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:H/VI:H/VA:L/SC:N/SI:N/SA:N,2026,"version >= ""2026.3.7"" && version < ""2026.3.11""",3,OpenClaw 插件子代理路由通过合成管理员权限绕过授权验证
+CVE-2026-32917,OpenClaw,CRITICAL,CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N,2026,"version < ""2026.3.13""",2,OpenClaw < 2026.3.13 - iMessage 附件路径未过滤导致 SCP 远程命令注入
+CVE-2026-32922,OpenClaw,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H,2026,"version < ""2026.3.11""",3,OpenClaw device.token.rotate 接口未约束 scope 导致权限提升漏洞（CRITICAL）
+CVE-2026-32924,OpenClaw,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H,2026,"version < ""2026.3.12""",3,OpenClaw 2026.3.12 之前版本 - 通过省略 chat_id 的飞书 Reaction 事件实现授权绕过
+CVE-2026-32973,OpenClaw,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H,2026,"version < ""2026.3.11""",3,OpenClaw 2026.3.11 之前版本存在 exec 白名单绕过漏洞，源于 POSIX 路径规范化处理不当
+CVE-2026-32975,OpenClaw,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H,2026,"version < ""2026.3.12""",3,OpenClaw Zalouser 白名单绕过漏洞（通过可变群组显示名称实现越权访问控制）
+CVE-2026-32987,OpenClaw,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H,2026,"version < ""2026.3.13""",4,OpenClaw 2026.3.13 之前版本 - 设备配对引导码重放攻击导致权限提升至 operator.admin
+CVE-2026-34507,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:N,2026,"version < ""2026.4.29""",3,OpenClaw QQBot 管理命令策略绕过（DM-only 与 allowFrom 检查缺失）
+CVE-2026-34511,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:N/A:N,2026,"version < ""2026.4.2""",3,OpenClaw OAuth State 参数复用 PKCE Verifier 导致令牌窃取
+CVE-2026-34512,OpenClaw,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:H,2026,"version < ""2026.3.25""",3,OpenClaw 2026.3.25 之前版本存在会话终止接口访问控制缺陷
+CVE-2026-35617,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:L/I:L/A:N,2026,"version < ""2026.3.25""",3,OpenClaw 2026.3.25 之前版本存在通过可变空间显示名称进行群组策略重绑定的授权绕过漏洞
+CVE-2026-35618,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:H/A:N,2026,"version < ""2026.3.23""",4,OpenClaw Plivo V2 签名重放身份绕过漏洞（2026.3.23 之前版本）
+CVE-2026-35619,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N,2026,"version < ""2026.3.24""",3,OpenClaw 2026.3.24 之前版本 HTTP /v1/models 端点未强制执行 operator read scope 检查导致授权绕过
+CVE-2026-35620,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:L,2026,"version < ""2026.3.24""",5,OpenClaw 2026.3.24 之前版本存在 /send 和 /allowlist 聊天命令处理器授权缺失漏洞
+CVE-2026-35621,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N,2026,"version < ""2026.3.24""",2,OpenClaw 2026.3.24 之前版本存在权限提升漏洞
+CVE-2026-35622,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:L/I:H/A:N,2026,"version < ""2026.3.22""",0,OpenClaw 2026.3.22 之前版本 - Google Chat Webhook 鉴权绕过漏洞
+CVE-2026-35623,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N,2026,"version < ""2026.3.25""",3,OpenClaw Webhook 认证缺少频率限制（暴力破解）
+CVE-2026-35624,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:L/I:L/A:N,2026,"version < ""2026.3.22""",4,OpenClaw 2026.3.22 以下版本存在房间授权策略混淆漏洞
+CVE-2026-35625,OpenClaw,HIGH,CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H,2026,"version < ""2026.3.25""",3,OpenClaw 静默本地共享认证重连导致权限提升（可实现远程代码执行）
+CVE-2026-35626,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L,2026,"version < ""2026.3.22""",4,OpenClaw 2026.3.22 之前版本存在未授权资源耗尽漏洞（通过语音通话 webhook）
+CVE-2026-35627,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:L,2026,"version < ""2026.3.22""",4,OpenClaw 2026.3.22 版本之前存在 Nostr 入站 DM 消息处理中未授权加密计算漏洞（DoS）
+CVE-2026-35628,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N,2026,"version < ""2026.3.25""",0,OpenClaw 2026.3.25 之前版本的 Telegram Webhook 鉴权缺少频率限制，攻击者可对弱 Webhook 密钥发起暴力破解攻击。
+CVE-2026-35629,OpenClaw,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:L,2026,"version < ""2026.3.25""",3,OpenClaw 2026.3.25 之前版本 - 渠道扩展中存在服务端请求伪造漏洞
+CVE-2026-35630,OpenClaw,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H,2026,"version < ""2026.5.18""",2,OpenClaw 2026.5.18 以下版本 QQBot 原生审批按钮存在授权绕过漏洞
+CVE-2026-35631,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N,2026,"version < ""2026.3.22""",4,OpenClaw 2026.3.22 之前版本内部 ACP 聊天命令缺少授权校验
+CVE-2026-35632,OpenClaw,HIGH,CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:H,2026,"version <= ""2026.2.22""",2,OpenClaw agents.create/update 处理器中 IDENTITY.md appendFile 符号链接遍历漏洞（RCE）
+CVE-2026-35633,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L,2026,"version < ""2026.3.22""",4,OpenClaw 2026.3.22 之前版本存在远程媒体 HTTP 错误响应触发无界内存分配漏洞
+CVE-2026-35634,OpenClaw,MEDIUM,CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N,2026,"version < ""2026.3.23""",3,OpenClaw Canvas 网关通过本地直连请求绕过身份认证
+CVE-2026-35635,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N,2026,"version < ""2026.3.22""",4,OpenClaw 2026.3.22 之前版本存在 Webhook 路径路由替换漏洞
+CVE-2026-35636,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N,2026,"version >= ""2026.3.11"" && version < ""2026.3.25""",3,OpenClaw session_status 中 sessionId 解析导致的沙箱会话隔离绕过漏洞（版本 2026.3.11 - 2026.3.24）
+CVE-2026-35637,OpenClaw,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L,2026,"version < ""2026.3.22""",5,OpenClaw 在频道和私信授权检查完成前过早执行引用展开
+CVE-2026-35638,OpenClaw,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H,2026,"version < ""2026.3.22""",4,OpenClaw 2026.3.22 之前版本存在通过 trusted-proxy 控制界面自声明权限范围的提权漏洞
+CVE-2026-35639,OpenClaw,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H,2026,"version < ""2026.3.22""",4,OpenClaw 2026.3.22 之前版本存在通过 device.pair.approve 接口范围验证不足导致的权限提升漏洞
+CVE-2026-35640,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L,2026,"version < ""2026.3.25""",3,OpenClaw 2026.3.25 之前的版本存在未认证 Webhook 请求体解析拒绝服务漏洞
+CVE-2026-35641,OpenClaw,HIGH,CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H,2026,"version < ""2026.3.24""",2,OpenClaw 2026.3.24 之前版本存在任意代码执行漏洞，攻击者可通过本地插件/Hook 安装时的恶意 .npmrc 文件触发
+CVE-2026-35642,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N,2026,"version < ""2026.3.25""",3,OpenClaw 2026.3.25 之前版本存在授权绕过漏洞（群组 reaction 绕过 requireMention 访问控制）
+CVE-2026-35643,OpenClaw,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H,2026,"version < ""2026.3.22""",4,OpenClaw 2026.3.22 版本前存在 WebView JavascriptInterface 未验证漏洞，可导致远程代码执行
+CVE-2026-35644,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N,2026,"version < ""2026.3.22""",4,OpenClaw 2026.3.22 以下版本通过 operator.read 权限可在网关快照中暴露凭据
+CVE-2026-35645,OpenClaw,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:H,2026,"version < ""2026.3.25""",3,OpenClaw 2026.3.25 以下版本存在通过合成 operator.admin 作用域在 deleteSession 中进行权限提升的漏洞
+CVE-2026-35646,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N,2026,"version < ""2026.3.25""",3,OpenClaw 2026.3.25 之前版本存在 Webhook Token 验证的预认证速率限制绕过漏洞
+CVE-2026-35647,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N,2026,"version < ""2026.3.25""",3,OpenClaw 2026.3.25 之前版本存在访问控制漏洞，可绕过私信策略
+CVE-2026-35648,OpenClaw,LOW,CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:N,2026,"version < ""2026.3.22""",4,OpenClaw 2026.3.22 之前版本存在策略绕过漏洞
+CVE-2026-35649,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N,2026,"version < ""2026.3.22""",4,OpenClaw 2026.3.22 之前版本存在访问控制绕过漏洞
+CVE-2026-35650,OpenClaw,HIGH,CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H,2026,"version < ""2026.3.22""",4,OpenClaw 2026.3.22 以下版本存在环境变量覆盖绕过漏洞，可导致任意代码执行
+CVE-2026-35651,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:N,2026,"version >= ""2026.2.13"" && version < ""2026.3.25""",3,OpenClaw 2026.2.13 至 2026.3.24 版本存在 ANSI 转义序列注入漏洞
+CVE-2026-35652,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:L,2026,"version < ""2026.3.22""",4,OpenClaw 2026.3.22 之前版本存在回调分发授权绕过漏洞
+CVE-2026-35653,OpenClaw,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:H,2026,"version < ""2026.3.24""",4,OpenClaw POST /reset-profile 接口通过 browser.request 绕过授权访问控制
+CVE-2026-35654,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N,2026,"version < ""2026.3.25""",3,OpenClaw 2026.3.25 之前版本存在 Microsoft Teams 反馈调用授权绕过漏洞
+CVE-2026-35655,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:N/I:H/A:N,2026,"version < ""2026.3.22""",4,OpenClaw 2026.3.22 之前版本存在身份伪造漏洞
+CVE-2026-35656,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N,2026,"version < ""2026.3.22""",4,OpenClaw 2026.3.22 之前版本存在通过 X-Forwarded-For 头部伪造绕过身份认证的漏洞
+CVE-2026-35657,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N,2026,"version < ""2026.3.25""",3,OpenClaw 会话历史路由授权绕过漏洞（2026.3.25 之前版本）
+CVE-2026-35658,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N,2026,"version < ""2026.3.2""",5,OpenClaw 2026.3.2 之前版本存在图像工具文件系统边界绕过漏洞
+CVE-2026-35659,OpenClaw,MEDIUM,CVSS:3.1/AV:A/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:N,2026,"version < ""2026.3.22""",4,OpenClaw 2026.3.22 之前版本存在服务发现漏洞
+CVE-2026-35660,OpenClaw,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:H,2026,"version < ""2026.3.23""",4,OpenClaw 2026.3.23 之前版本 Gateway agent 会话重置端点存在访问控制不足漏洞
+CVE-2026-35661,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N,2026,"version < ""2026.3.25""",3,OpenClaw 2026.3.25 之前版本存在 Telegram 回调查询处理授权绕过漏洞
+CVE-2026-35662,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N,2026,"version < ""2026.3.22""",4,OpenClaw 2026.3.22 之前版本未能正确执行 send 动作的 controlScope 访问控制限制
+CVE-2026-35663,OpenClaw,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H,2026,"version < ""2026.3.25""",3,OpenClaw 后端重连 Scope 自提权漏洞（特权提升）
+CVE-2026-35664,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N,2026,"version < ""2026.3.25""",3,OpenClaw 2026.3.25 之前版本存在身份验证绕过漏洞
+CVE-2026-35665,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L,2026,"version < ""2026.3.24""",2,OpenClaw 2026.3.24 以下版本存在拒绝服务漏洞，攻击者可通过向 Feishu webhook 端点发送慢速 HTTP POST 请求触发
+CVE-2026-35666,OpenClaw,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H,2026,"version < ""2026.3.22""",4,OpenClaw 2026.3.22 以下版本存在白名单绕过漏洞（通过未注册的 /usr/bin/time 包装器）
+CVE-2026-35667,OpenClaw,MEDIUM,CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:H,2026,"version < ""2026.3.24""",2,OpenClaw 2026.3.24 之前版本 - shell-utils.ts 中未修复的 killProcessTree 导致进程异常终止
+CVE-2026-35668,OpenClaw,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:N,2026,"version < ""2026.3.24""",2,OpenClaw 沙盒媒体根路径绕过漏洞——通过未规范化的 mediaUrl 和 fileUrl 参数实现路径穿越
+CVE-2026-35669,OpenClaw,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H,2026,"version < ""2026.3.25""",3,OpenClaw 网关插件 HTTP 认证范围边界绕过导致权限提升漏洞
+CVE-2026-35670,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:L/A:N,2026,"version < ""2026.3.22""",4,OpenClaw 2026.3.22 之前版本存在 Webhook 回复重绑定漏洞
+CVE-2026-35673,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:C/C:H/I:L/A:N,2026,"version < ""2026.4.29""",2,OpenClaw 浏览器调试/导出路由 SSRF 策略绕过漏洞（2026.4.29 之前版本）
+CVE-2026-35674,OpenClaw,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H,2026,"version < ""2026.5.18""",2,OpenClaw 2026.5.18 之前版本存在通过继承 chat.send 路由绕过权限范围的漏洞
+CVE-2026-3689,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N,2026,"version <= ""2026.2.19-2""",2,OpenClaw Canvas 路径遍历信息泄露漏洞
+CVE-2026-3690,OpenClaw,HIGH,AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N,2026,"version <= ""2026.2.17""",2,OpenClaw Canvas 认证绕过漏洞（CWE-291）
+CVE-2026-3691,OpenClaw,MEDIUM,,2026,"version < ""2026.2.25""",2,OpenClaw 客户端 PKCE 验证码信息泄露漏洞
+CVE-2026-40037,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:N,2026,"version < ""2026.4.8""",3,OpenClaw fetchWithSsrFGuard 跨域重定向请求体重放漏洞
+CVE-2026-40045,OpenClaw,MEDIUM,CVSS:3.1/AV:A/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:N,2026,"version < ""2026.4.2""",3,OpenClaw 2026.4.2 之前版本通过未加密 WebSocket 连接传输网关凭据
+CVE-2026-4039,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L,2026,"version <= ""2026.2.19-2""",1,OpenClaw Skill Env Handler applySkillConfigenvOverrides 代码注入漏洞
+CVE-2026-4040,OpenClaw,LOW,CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N,2026,"version <= ""2026.2.17""",1,OpenClaw tools.exec.safeBins 文件存在性信息泄露漏洞（差异侧信道）
+CVE-2026-41294,OpenClaw,HIGH,CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H,2026,"version < ""2026.3.28""",2,OpenClaw 2026.3.28 之前版本存在通过当前工作目录 .env 文件的环境变量注入漏洞
+CVE-2026-41295,OpenClaw,HIGH,CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H,2026,"version < ""2026.4.2""",3,OpenClaw 2026.4.2 之前版本允许不受信任的工作区通道影子在内置通道设置期间执行代码
+CVE-2026-41296,OpenClaw,HIGH,CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:N,2026,"version < ""2026.3.31""",3,OpenClaw 远程文件系统桥 TOCTOU 竞争条件导致沙箱逃逸
+CVE-2026-41297,OpenClaw,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:L/A:N,2026,"version < ""2026.3.31""",3,OpenClaw 2026.3.31 之前版本存在服务端请求伪造（SSRF）漏洞，可通过市场插件下载重定向触发
+CVE-2026-41298,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:N,2026,"version < ""2026.4.2""",4,OpenClaw 会话终止端点授权绕过漏洞
+CVE-2026-41299,OpenClaw,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:H/A:N,2026,"version < ""2026.3.28""",2,OpenClaw 2026.3.28 之前版本 - chat.send 网关溯源守卫客户端身份伪造漏洞
+CVE-2026-41300,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:N,2026,"version < ""2026.3.31""",3,OpenClaw 信任拒绝端点保留漏洞（2026.3.31 之前版本）
+CVE-2026-41301,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L,2026,"version >= ""2026.3.22"" && version < ""2026.3.31""",3,OpenClaw Nostr DM 签名验证绕过漏洞，允许未认证攻击者创建配对状态（DoS）
+CVE-2026-41302,OpenClaw,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:L/A:N,2026,"version < ""2026.3.31""",4,OpenClaw 插件市场下载功能中未防护的 fetch() 导致服务端请求伪造（SSRF）漏洞
+CVE-2026-41303,OpenClaw,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H,2026,"version < ""2026.3.28""",3,OpenClaw Discord 文本审批命令中的授权绕过漏洞
+CVE-2026-41329,OpenClaw,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H,2026,"version < ""2026.3.31""",3,OpenClaw 2026.3.31 之前版本存在沙箱绕过漏洞
+CVE-2026-41330,OpenClaw,MEDIUM,CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:N,2026,"version < ""2026.3.31""",3,OpenClaw 2026.3.31 之前版本 - 宿主执行策略中存在环境变量覆盖漏洞
+CVE-2026-41331,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L,2026,"version < ""2026.3.31""",3,OpenClaw 2026.3.31 以下版本 - 未授权 Telegram 音频预检转录导致资源消耗漏洞
+CVE-2026-41332,OpenClaw,MEDIUM,CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:L/I:H/A:N,2026,"version < ""2026.3.28""",2,OpenClaw 2026.3.28 之前版本存在环境变量净化漏洞
+CVE-2026-41334,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H,2026,"version < ""2026.3.31""",3,OpenClaw 2026.3.31 之前版本存在图像处理解压炸弹漏洞
+CVE-2026-41335,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N,2026,"version < ""2026.3.31""",3,OpenClaw 2026.3.31 之前版本存在信息泄露漏洞
+CVE-2026-41336,OpenClaw,HIGH,CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H,2026,"version < ""2026.3.31""",3,OpenClaw 2026.3.31 之前版本允许通过环境变量覆盖实现任意代码执行
+CVE-2026-41337,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N,2026,"version < ""2026.3.31""",3,OpenClaw Plivo 语音通话重放回调源变异漏洞
+CVE-2026-41338,OpenClaw,MEDIUM,CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:U/C:N/I:H/A:L,2026,"version < ""2026.3.31""",3,OpenClaw 2026.3.31 之前版本沙箱文件操作存在检查时间与使用时间（TOCTOU）漏洞
+CVE-2026-41339,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N,2026,"version < ""2026.4.2""",3,OpenClaw 2026.4.2 之前版本向非管理员认证客户端暴露敏感文件系统元数据
+CVE-2026-41340,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N,2026,"version < ""2026.3.31""",3,OpenClaw 2026.3.31 以下版本存在 Telegram legacy allowFrom 迁移导致的认证边界绕过漏洞
+CVE-2026-41341,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:N,2026,"version < ""2026.3.31""",3,OpenClaw Discord 组件交互误分类漏洞（2026.3.31 之前版本）
+CVE-2026-41342,OpenClaw,HIGH,CVSS:3.1/AV:A/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N,2026,"version < ""2026.3.28""",2,OpenClaw 未认证发现端点欺骗导致身份验证绕过
+CVE-2026-41343,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L,2026,"version < ""2026.3.31""",3,OpenClaw 2026.3.31 之前版本存在 LINE Webhook 预认证并发洪泛导致的拒绝服务漏洞
+CVE-2026-41344,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:N,2026,"version < ""2026.3.28""",3,OpenClaw 通过 chat.send 接口 /verbose 参数绕过实现权限提升
+CVE-2026-41345,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:N/A:N,2026,"version < ""2026.3.31""",3,OpenClaw 2026.3.31 之前版本 - 媒体下载跨域重定向泄露 Authorization 凭据
+CVE-2026-41346,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L,2026,"version >= ""2026.2.26"" && version < ""2026.3.31""",3,OpenClaw 拒绝服务漏洞——配对请求上限按频道文件而非账号维度执行导致可被绕过
+CVE-2026-41347,OpenClaw,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L,2026,"version < ""2026.3.31""",3,OpenClaw 2026.3.31 之前版本 HTTP 操作端点缺少浏览器来源校验（CSRF）
+CVE-2026-41348,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:N,2026,"version < ""2026.3.31""",3,OpenClaw 2026.3.31 版本前存在 Discord 斜杠命令授权绕过漏洞
+CVE-2026-41349,OpenClaw,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H,2026,"version < ""2026.3.28""",3,OpenClaw 2026.3.28 之前版本存在 Agent 执行授权绕过漏洞（通过 config.patch 参数）
+CVE-2026-41350,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N,2026,"version < ""2026.3.31""",3,OpenClaw 2026.3.31 之前版本存在会话可见性绕过漏洞（通过非沙箱调用 session_status）
+CVE-2026-41351,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N,2026,"version < ""2026.3.31""",3,OpenClaw 2026.3.31 以下版本存在通过 Base64 签名重编码绕过 Webhook 重放检测漏洞
+CVE-2026-41352,OpenClaw,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H,2026,"version < ""2026.3.31""",3,OpenClaw 2026.3.31 以下版本 - 节点作用域门控绕过导致远程代码执行
+CVE-2026-41353,OpenClaw,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N,2026,"version < ""2026.3.22""",3,OpenClaw 2026.3.22 之前版本 allowProfiles 功能存在访问控制绕过漏洞
+CVE-2026-41359,OpenClaw,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:H/A:N,2026,"version < ""2026.3.28""",3,OpenClaw 2026.3.28 以下版本存在权限提升漏洞，可通过 operator.write 权限访问管理员级 Telegram 配置及 cron 持久化设置
+CVE-2026-41361,OpenClaw,HIGH,CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:L/A:N,2026,"version < ""2026.3.28""",2,OpenClaw SSRF 防护绕过漏洞（IPv6 特殊用途地址范围未拦截）
+CVE-2026-41362,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L,2026,"version >= ""2026.2.19"" && version < ""2026.3.31""",4,OpenClaw 2026.2.19 至 2026.3.31 之前版本存在缓存隔离不当漏洞
+CVE-2026-41363,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:N/A:N,2026,"version >= ""2026.2.6"" && version < ""2026.3.28""",2,OpenClaw 2026.2.6 至 2026.3.24 版本存在路径遍历漏洞，可导致任意文件读取
+CVE-2026-41364,OpenClaw,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:H,2026,"version < ""2026.3.31""",3,OpenClaw 2026.3.31 之前版本存在 SSH 沙箱 tar 上传符号链接跟踪漏洞（任意文件写入）
+CVE-2026-41365,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:N,2026,"version < ""2026.3.31""",3,OpenClaw 2026.3.31 之前版本存在发件人白名单绕过漏洞
+CVE-2026-41366,OpenClaw,MEDIUM,CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N,2026,"version < ""2026.3.31""",3,OpenClaw appendLocalMediaParentRoots 本地根目录自我白名单任意主机文件读取漏洞
+CVE-2026-41367,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:N/I:L/A:N,2026,"version >= ""2026.2.14"" && version < ""2026.3.28""",2,OpenClaw Discord 组件交互策略执行绕过（版本 2026.2.14–2026.3.24）
+CVE-2026-41368,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N,2026,"version < ""2026.3.28""",2,OpenClaw 通过 jq $ENV 过滤器绕过 safe-bin 限制导致环境变量泄露
+CVE-2026-41369,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N,2026,"version < ""2026.3.31""",3,OpenClaw Host 执行操作中环境变量清理不足
+CVE-2026-41370,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N,2026,"version < ""2026.3.31""",3,OpenClaw 2026.3.31 之前版本存在路径穿越漏洞
+CVE-2026-41371,OpenClaw,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:N/I:H/A:L,2026,"version < ""2026.3.28""",2,OpenClaw 2026.3.28 之前版本存在通过 chat.send 接口的权限提升漏洞
+CVE-2026-41372,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:L/I:N/A:N,2026,"version < ""2026.4.2""",3,OpenClaw 2026.4.2 之前版本存在回环保护绕过漏洞（CDP 发现响应中尾点 localhost 处理缺陷）
+CVE-2026-41373,OpenClaw,MEDIUM,CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:H/A:N,2026,"version < ""2026.3.31""",3,OpenClaw 2026.3.31 之前版本存在编译器二进制文件替换漏洞
+CVE-2026-41374,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L,2026,"version < ""2026.3.31""",3,OpenClaw 2026.3.31 之前版本存在未授权资源消耗漏洞
+CVE-2026-41375,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N,2026,"version < ""2026.3.28""",3,OpenClaw 2026.3.28 之前版本 /phone arm 和 /phone disarm 接口存在授权绕过漏洞
+CVE-2026-41376,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N,2026,"version < ""2026.3.31""",3,OpenClaw 2026.3.31 之前版本在 Matrix 线程/回复上下文发件人验证中存在允许列表绕过漏洞
+CVE-2026-41377,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:L/I:L/A:N,2026,"version < ""2026.3.31""",0,OpenClaw 插件安装安全扫描失效漏洞（fail-open）
+CVE-2026-41378,OpenClaw,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H,2026,"version < ""2026.3.31""",3,OpenClaw 2026.3.31 版本前 - 通过不受限制的节点事件 Agent 调度实现权限提升至远程代码执行
+CVE-2026-41379,OpenClaw,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:H/A:N,2026,"version < ""2026.3.28""",3,OpenClaw 2026.3.28 之前版本存在权限提升漏洞，可通过 chat.send 接口越权访问管理员级 Talk Voice 配置
+CVE-2026-41380,OpenClaw,HIGH,CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H,2026,"version < ""2026.3.28""",3,OpenClaw 执行审批绕过漏洞（allow-always 载体可执行文件路由）
+CVE-2026-41381,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:N,2026,"version < ""2026.3.31""",3,OpenClaw 2026.3.31 之前版本存在 Discord 语音管理器访问控制绕过漏洞
+CVE-2026-41382,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:N,2026,"version < ""2026.3.31""",3,OpenClaw Discord 语音接入授权绕过漏洞（频道与角色验证缺陷）
+CVE-2026-41383,OpenClaw,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:H,2026,"version < ""2026.4.2""",3,OpenClaw 2026.4.2 之前版本存在镜像模式路径配置不当导致的任意远程目录删除漏洞
+CVE-2026-41384,OpenClaw,HIGH,CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H,2026,"version < ""2026.3.24""",3,OpenClaw 2026.3.24 以下版本 - 通过工作区配置注入环境变量
+CVE-2026-41385,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N,2026,"version < ""2026.3.31""",3,OpenClaw 2026.3.31 之前版本通过 config.get 脱敏绕过导致 Nostr 私钥明文泄露
+CVE-2026-41386,OpenClaw,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N,2026,"version < ""2026.3.22""",3,OpenClaw 2026.3.22 之前版本 - 未绑定 Bootstrap 配对码导致的权限提升漏洞
+CVE-2026-41387,OpenClaw,HIGH,CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H,2026,"version < ""2026.3.22""",2,OpenClaw 2026.3.22 以下版本存在宿主环境变量净化不完整漏洞，可导致供应链重定向攻击
+CVE-2026-41388,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N,2026,"version < ""2026.3.31""",3,OpenClaw 2026.3.31 版本之前存在配置管理漏洞
+CVE-2026-41389,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:L/I:N/A:N,2026,"version >= ""2026.4.7"" && version < ""2026.4.15""",5,OpenClaw 通过未经验证的工具结果媒体路径实现任意本地文件及 UNC 路径读取（2026.4.7 至 2026.4.15 之前版本）
+CVE-2026-41390,OpenClaw,HIGH,CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H,2026,"version < ""2026.3.28""",2,OpenClaw 2026.3.28 版本前存在 exec 白名单绕过漏洞（通过未注册的 /usr/bin/script 包装器）
+CVE-2026-41391,OpenClaw,MEDIUM,CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:L/I:H/A:N,2026,"version < ""2026.3.31""",3,OpenClaw 2026.3.31 之前版本 - 包索引 URL 处理中的环境变量注入漏洞
+CVE-2026-41392,OpenClaw,MEDIUM,CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:U/C:H/I:H/A:H,2026,"version < ""2026.3.31""",3,OpenClaw 2026.3.31 之前版本存在 exec 白名单绕过漏洞
+CVE-2026-41393,OpenClaw,MEDIUM,CVSS:3.1/AV:A/AC:H/PR:N/UI:R/S:U/C:H/I:N/A:N,2026,"version < ""2026.3.31""",3,OpenClaw 2026.3.31 之前版本存在广域发现漏洞，可导致凭据泄露
+CVE-2026-41394,OpenClaw,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:H/A:N,2026,"version < ""2026.3.31""",4,OpenClaw 未授权 plugin-auth HTTP 路由获得 operator 写权限漏洞
+CVE-2026-41395,OpenClaw,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N,2026,"version < ""2026.3.28""",2,OpenClaw Plivo V3 Webhook 通过查询参数重排序绕过重放检测漏洞
+CVE-2026-41396,OpenClaw,HIGH,CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H,2026,"version < ""2026.3.31""",3,OpenClaw 2026.3.31 之前版本存在插件信任根目录可被工作区 .env 文件覆盖的漏洞
+CVE-2026-41397,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:N,2026,"version < ""2026.3.31""",4,OpenClaw 2026.3.31 之前版本存在沙箱逃逸漏洞，攻击者可通过文件同步操作中的符号链接遍历突破目录边界
+CVE-2026-41398,OpenClaw,MEDIUM,CVSS:3.1/AV:A/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:L,2026,"version < ""2026.4.2""",3,OpenClaw 2026.4.2 之前版本 iOS A2UI 桥接组件存在访问控制不当漏洞
+CVE-2026-41399,OpenClaw,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,2026,"version < ""2026.3.28""",2,OpenClaw 未授权 WebSocket 升级无限制导致拒绝服务
+CVE-2026-41400,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L,2026,"version < ""2026.3.31""",3,OpenClaw voice-call 组件通过超大 pre-start WebSocket 帧导致拒绝服务（CVE-2026-32062 的不完整修复）
+CVE-2026-41402,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:L/I:L/A:N,2026,"version < ""2026.3.31""",3,OpenClaw 2026.3.31 之前版本存在 Webhook 重放缓存跨目标绕过漏洞
+CVE-2026-41404,OpenClaw,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H,2026,"version < ""2026.3.31""",3,OpenClaw 2026.3.31 之前版本 - 受信代理认证模式权限提升漏洞
+CVE-2026-41405,OpenClaw,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,2026,"version < ""2026.3.31""",3,OpenClaw 2026.3.31 之前版本存在未认证资源耗尽漏洞（MS Teams Webhook）
+CVE-2026-41406,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:N,2026,"version < ""2026.3.31""",3,OpenClaw 发件人白名单绕过漏洞（通过线程历史与引用消息）（CVE-2026-41406）
+CVE-2026-41408,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L,2026,"version < ""2026.3.31""",3,OpenClaw 2026.3.31 之前版本存在媒体下载资源耗尽漏洞
+CVE-2026-41908,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N,2026,"version < ""2026.4.20""",3,OpenClaw 2026.4.20 以下版本 assistant-media 路由存在 scope 强制执行绕过漏洞
+CVE-2026-41909,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:N,2026,"version < ""2026.4.20""",3,OpenClaw 2026.4.20 之前版本存在配对设备管理的越权漏洞
+CVE-2026-41910,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N,2026,"version < ""2026.4.8""",3,OpenClaw 2026.4.8 之前版本存在跨频道白名单越权写入漏洞
+CVE-2026-41911,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N,2026,"version < ""2026.4.8""",0,OpenClaw 2026.4.8 之前版本在 docx 上传处理中存在文件系统策略绕过漏洞。
+CVE-2026-41912,OpenClaw,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:L/A:N,2026,"version < ""2026.4.8""",3,OpenClaw 2026.4.8 之前版本存在交互触发导航的 SSRF 策略绕过漏洞
+CVE-2026-41914,OpenClaw,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:L/A:N,2026,"version < ""2026.4.8""",3,OpenClaw QQ Bot 媒体下载路径存在服务端请求伪造漏洞（2026.4.8 版本前）
+CVE-2026-41915,OpenClaw,MEDIUM,CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:L/I:H/A:N,2026,"version < ""2026.4.8""",3,OpenClaw 2026.4.8 之前版本存在 Git 环境变量注入漏洞
+CVE-2026-41916,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:N,2026,"version < ""2026.4.8""",3,OpenClaw 2026.4.8 之前版本存在认证状态管理漏洞
+CVE-2026-42420,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L,2026,"version < ""2026.4.8""",3,OpenClaw 2026.4.8 之前版本存在 base64 解码大小校验不当导致的拒绝服务漏洞
+CVE-2026-42421,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:N,2026,"version < ""2026.4.8""",3,OpenClaw 2026.4.8 之前版本存在会话管理漏洞
+CVE-2026-42422,OpenClaw,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H,2026,"version < ""2026.4.8""",3,OpenClaw 2026.4.8 之前版本存在设备令牌轮换角色绕过漏洞
+CVE-2026-42423,OpenClaw,HIGH,CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H,2026,"version < ""2026.4.8""",0,OpenClaw 2026.4.8 之前版本存在审批超时回退机制，可绕过 strictInlineEval 显式审批要求
+CVE-2026-42424,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:N/A:N,2026,"version < ""2026.4.8""",3,OpenClaw 2026.4.8 之前版本存在跨通道本地文件泄露漏洞（通过可信共享回复 MEDIA 路径）。
+CVE-2026-42426,OpenClaw,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H,2026,"version < ""2026.4.8""",3,OpenClaw 2026.4.8 之前版本 node.pair.approve 存在不当授权漏洞（CWE-863）
+CVE-2026-42428,OpenClaw,HIGH,CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:U/C:H/I:H/A:H,2026,"version < ""2026.4.8""",3,OpenClaw 2026.4.8 之前版本插件包下载缺少完整性验证（CWE-353）
+CVE-2026-42429,OpenClaw,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:H/A:N,2026,"version < ""2026.4.8""",3,OpenClaw 2026.4.8 之前版本 gateway 插件 HTTP 认证机制存在权限提升漏洞
+CVE-2026-42431,OpenClaw,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N,2026,"version < ""2026.4.8""",3,OpenClaw 2026.4.8 以下版本 - 通过 node.invoke(browser.proxy) 绕过持久化浏览器配置文件保护的安全漏洞
+CVE-2026-42432,OpenClaw,HIGH,CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H,2026,"version < ""2026.4.8""",3,OpenClaw 2026.4.8 之前版本存在权限提升漏洞
+CVE-2026-42433,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N,2026,"version < ""2026.4.10""",3,OpenClaw operator.write 消息工具路径授权绕过漏洞（2026.4.10 之前版本）
+CVE-2026-42434,OpenClaw,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H,2026,"version >= ""2026.4.5"" && version < ""2026.4.10""",3,OpenClaw 沙箱逃逸漏洞，允许受沙箱限制的 Agent 通过 host=node 参数覆盖 exec 路由
+CVE-2026-42435,OpenClaw,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H,2026,"version >= ""2026.2.22"" && version < ""2026.4.12""",3,OpenClaw Shell-Wrapper 检测绕过漏洞（环境变量赋值注入）(CVE-2026-42435)
+CVE-2026-42436,OpenClaw,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:N,2026,"version < ""2026.4.14""",3,OpenClaw 2026.4.14 之前版本 - 浏览器快照/截图路由访问控制缺陷导致 SSRF 绕过
+CVE-2026-42437,OpenClaw,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,2026,"version < ""2026.4.10""",3,OpenClaw 语音通话实时路径超大 WebSocket 帧拒绝服务漏洞（2026.4.10 之前版本）
+CVE-2026-42438,OpenClaw,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:N,2026,"version >= ""2026.4.9"" && version < ""2026.4.10""",3,OpenClaw 发件人策略绕过漏洞导致 host-media 附件读取未授权本地文件泄露
+CVE-2026-42439,OpenClaw,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:L/A:N,2026,"version < ""2026.4.10""",2,OpenClaw 浏览器标签页操作端点存在 SSRF 策略绕过漏洞
+CVE-2026-43526,OpenClaw,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:N,2026,"version < ""2026.4.12""",4,OpenClaw QQBot 回复媒体 URL 处理存在服务端请求伪造漏洞（2026.4.12 之前版本）
+CVE-2026-43527,OpenClaw,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:N,2026,"version < ""2026.4.14""",5,OpenClaw 2026.4.14 之前版本存在浏览器 SSRF 漏洞，默认允许私有网络导航
+CVE-2026-43528,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N,2026,"version < ""2026.4.14""",3,OpenClaw 2026.4.14 版本之前存在密钥脱敏绕过漏洞
+CVE-2026-43530,OpenClaw,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H,2026,"version >= ""2026.2.23"" && version < ""2026.4.12""",3,OpenClaw 2026.2.23 至 2026.4.12 之前版本存在 exec 审批绑定弱化漏洞，可通过 busybox/toybox applet 执行路径绕过
+CVE-2026-43531,OpenClaw,HIGH,CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H,2026,"version < ""2026.4.9""",3,OpenClaw 工作区 .env 文件环境变量注入漏洞（2026.4.9 之前版本）
+CVE-2026-43532,OpenClaw,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:N,2026,"version >= ""2026.4.7"" && version < ""2026.4.10""",3,OpenClaw 沙箱媒体规范化绕过漏洞（Discord 活动封面图像参数注入，版本 2026.4.7 - 2026.4.9）
+CVE-2026-43533,OpenClaw,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N,2026,"version < ""2026.4.10""",3,OpenClaw 2026.4.10 之前版本存在任意文件读取漏洞
+CVE-2026-43534,OpenClaw,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N,2026,"version < ""2026.4.10""",3,OpenClaw 2026.4.10 之前版本允许将不可信 hook 输入提升至受信 Agent 上下文
+CVE-2026-43535,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:N,2026,"version < ""2026.4.14""",3,OpenClaw 2026.4.14 之前版本 - Collect 模式队列批处理中的授权上下文复用漏洞
+CVE-2026-43566,OpenClaw,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N,2026,"version >= ""2026.4.7"" && version < ""2026.4.14""",3,OpenClaw 通过不受信任的 Webhook 唤醒事件实现权限提升（影响版本 2026.4.7 至 2026.4.14 之前）
+CVE-2026-43567,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N,2026,"version < ""2026.4.10""",3,OpenClaw 2026.4.10 之前版本存在路径遍历漏洞
+CVE-2026-43568,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N,2026,"version >= ""2026.4.5"" && version < ""2026.4.10""",3,OpenClaw 2026.4.5 至 2026.4.10 之前版本存在权限提升漏洞
+CVE-2026-43569,OpenClaw,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H,2026,"version < ""2026.4.9""",2,OpenClaw 未授信工作区插件自动启用导致身份验证绕过
+CVE-2026-43570,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:N,2026,"version >= ""2026.3.22"" && version < ""2026.4.5""",4,OpenClaw 远程市场仓库路径处理中存在符号链接遍历漏洞（影响版本 2026.3.22 至 2026.4.5）
+CVE-2026-43571,OpenClaw,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H,2026,"version < ""2026.4.10""",3,OpenClaw 2026.4.10 之前版本存在插件信任绕过漏洞（CWE-829）
+CVE-2026-43572,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N,2026,"version >= ""2026.4.10"" && version < ""2026.4.14""",3,OpenClaw Microsoft Teams SSO 调用处理器缺少授权验证漏洞（版本 2026.4.10 - 2026.4.14）
+CVE-2026-43573,OpenClaw,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:N,2026,"version < ""2026.4.10""",3,OpenClaw 2026.4.10 之前版本存在 SSRF 策略绕过漏洞
+CVE-2026-43574,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N,2026,"version < ""2026.4.12""",3,OpenClaw 2026.4.12 之前版本存在不当授权漏洞
+CVE-2026-43575,OpenClaw,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H,2026,"version >= ""2026.2.21"" && version < ""2026.4.10""",3,OpenClaw 沙箱 noVNC 辅助路由认证绕过漏洞
+CVE-2026-43576,OpenClaw,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:N,2026,"version < ""2026.4.5""",3,OpenClaw 2026.4.5 之前版本存在 SSRF 漏洞
+CVE-2026-43577,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N,2026,"version < ""2026.4.9""",3,OpenClaw 2026.4.9 之前版本存在任意文件读取漏洞
+CVE-2026-43578,OpenClaw,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N,2026,"version < ""2026.4.10""",3,OpenClaw 心跳所有者降级检测遗漏本地后台异步执行完成事件导致权限提升漏洞（影响版本 2026.3.31 至 2026.4.10）
+CVE-2026-43579,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N,2026,"version < ""2026.4.10""",3,OpenClaw 2026.4.10 之前版本的 Nostr 插件 HTTP 配置接口存在访问控制不当漏洞
+CVE-2026-43580,OpenClaw,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:N,2026,"version < ""2026.4.10""",5,OpenClaw 2026.4.10 之前版本存在导航守卫不完整漏洞
+CVE-2026-43581,OpenClaw,CRITICAL,CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H,2026,"version < ""2026.4.10""",3,OpenClaw 2026.4.10 以下版本 - CDP 中继绑定范围过宽（0.0.0.0）
+CVE-2026-43582,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:N/A:N,2026,"version < ""2026.4.10""",3,OpenClaw 2026.4.10 之前版本存在服务端请求伪造漏洞
+CVE-2026-43583,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:H/A:N,2026,"version >= ""2026.4.10"" && version < ""2026.4.14""",3,OpenClaw 2026.4.10 至 2026.4.14 之前版本在传递队列恢复期间未持久化会话上下文
+CVE-2026-43584,OpenClaw,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H,2026,"version < ""2026.4.10""",3,OpenClaw exec 环境策略中环境变量黑名单不充分漏洞（CVE-2026-43584）
+CVE-2026-43585,OpenClaw,HIGH,CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H,2026,"version < ""2026.4.15""",3,OpenClaw 2026.4.15 之前版本存在 Bearer Token 在 SecretRef 轮换后仍可复用的漏洞
+CVE-2026-44109,OpenClaw,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H,2026,"version < ""2026.4.15""",3,OpenClaw 2026.4.15 之前版本存在认证绕过漏洞
+CVE-2026-44110,OpenClaw,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H,2026,"version < ""2026.4.15""",4,OpenClaw 2026.4.15 之前版本存在授权绕过漏洞
+CVE-2026-44111,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N,2026,"version < ""2026.4.15""",3,OpenClaw 2026.4.15 之前版本存在任意文件读取漏洞
+CVE-2026-44112,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:H/A:N,2026,"version < ""2026.4.22""",3,OpenClaw 2026.4.22 之前的版本在 OpenShell 沙箱文件系统写操作中存在 TOCTOU 竞争条件漏洞。
+CVE-2026-44113,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:N/A:N,2026,"version < ""2026.4.22""",3,OpenClaw 2026.4.22 之前版本存在 OpenShell 文件系统桥接器竞争条件漏洞
+CVE-2026-44114,OpenClaw,HIGH,CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H,2026,"version < ""2026.4.20""",3,OpenClaw 2026.4.20 之前版本存在环境变量命名空间冲突漏洞
+CVE-2026-44115,OpenClaw,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H,2026,"version < ""2026.4.22""",3,OpenClaw 2026.4.22 之前版本存在 exec 白名单绕过漏洞
+CVE-2026-44116,OpenClaw,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N,2026,"version < ""2026.4.22""",3,OpenClaw 2026.4.22 之前版本的 Zalo 插件 sendPhoto 函数存在服务端请求伪造（SSRF）漏洞
+CVE-2026-44117,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:L/I:N/A:N,2026,"version < ""2026.4.20""",3,OpenClaw 2026.4.20 之前版本存在服务端请求伪造漏洞
+CVE-2026-44118,OpenClaw,HIGH,CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H,2026,"version < ""2026.4.22""",3,OpenClaw 2026.4.22 之前版本存在回环 MCP 所有者上下文欺骗漏洞（通过 Bearer Token 请求头）
+CVE-2026-44991,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:L/I:L/A:N,2026,"version < ""2026.4.21""",4,OpenClaw 2026.4.21 之前版本存在通过通配符渠道发送者绕过授权的漏洞
+CVE-2026-44992,OpenClaw,MEDIUM,CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:N/A:N,2026,"version >= ""2026.4.5"" && version < ""2026.4.20""",3,OpenClaw 2026.4.5 至 2026.4.20 之前版本存在环境变量注入漏洞，可通过工作区 dotenv 文件覆盖 MINIMAX_API_HOST，导致 MiniMax API 密钥泄露
+CVE-2026-44993,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:N,2026,"version < ""2026.4.20""",3,OpenClaw 飞书卡片回调将私聊消息错误分类为群聊，绕过 dmPolicy 策略执行。
+CVE-2026-44994,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N,2026,"version < ""2026.4.22""",3,OpenClaw 2026.4.22 之前版本的 Control UI bootstrap 配置接口存在身份认证绕过漏洞
+CVE-2026-44995,OpenClaw,HIGH,CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H,2026,"version < ""2026.4.20""",4,OpenClaw 2026.4.20 之前版本存在 MCP stdio 环境变量注入漏洞，可导致任意代码执行
+CVE-2026-44996,OpenClaw,LOW,CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N,2026,"version < ""2026.4.15""",3,OpenClaw 2026.4.15 之前版本存在任意本地文件读取漏洞
+CVE-2026-44997,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N,2026,"version < ""2026.4.22""",3,OpenClaw 2026.4.22 之前版本 - ACP 子会话安全信封约束绕过漏洞
+CVE-2026-44998,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:N,2026,"version < ""2026.4.20""",3,OpenClaw 2026.4.20 版本前 - 内置 MCP/LSP 工具绕过工具策略漏洞
+CVE-2026-44999,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N,2026,"version < ""2026.4.20""",3,OpenClaw 2026.4.20 之前版本存在不可信标签保留缺陷
+CVE-2026-45000,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:N/I:L/A:N,2026,"version < ""2026.4.20""",2,OpenClaw 浏览器 CDP 配置创建中的服务端请求伪造漏洞
+CVE-2026-45001,OpenClaw,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:H/A:N,2026,"version < ""2026.4.20""",3,OpenClaw 2026.4.20 之前版本存在防护绕过漏洞，允许被提示词注入的模型通过网关配置接口篡改受保护的运营商设置
+CVE-2026-45002,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N,2026,"version < ""2026.4.20""",3,OpenClaw 2026.4.20 之前版本存在 Hook Session Key 绕过漏洞
+CVE-2026-45003,OpenClaw,MEDIUM,CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:N/A:N,2026,"version < ""2026.4.22""",3,OpenClaw 2026.4.22 之前版本存在连接器端点主机覆盖漏洞
+CVE-2026-45004,OpenClaw,HIGH,CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H,2026,"version < ""2026.4.23""",4,OpenClaw 2026.4.23 之前版本存在任意代码执行漏洞，攻击者可通过在当前工作目录放置恶意 setup-api.js 文件触发（CWE-427：不受控制的搜索路径元素）。
+CVE-2026-45005,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:L/I:H/A:L,2026,"version < ""2026.4.23""",3,OpenClaw 2026.4.23 之前版本存在 Webhook 路由密钥缓存未失效漏洞
+CVE-2026-45006,OpenClaw,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H,2026,"version < ""2026.4.23""",3,OpenClaw 2026.4.23 之前版本存在网关工具配置接口访问控制不当漏洞（黑名单绕过）
+CVE-2026-53806,OpenClaw,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H,2026,"version < ""2026.5.12""",2,OpenClaw exec 重新验证中的 Shell 选项解析绕过漏洞
+CVE-2026-53807,OpenClaw,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H,2026,"version < ""2026.5.6""",2,Telegram 交互回调中因跳过 commands.allowFrom 导致的授权绕过漏洞
+CVE-2026-53808,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:N,2026,"version < ""2026.5.6""",2,OpenClaw Skill Workshop 应用流程审批策略绕过漏洞
+CVE-2026-53809,OpenClaw,LOW,CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:N/I:L/A:N,2026,"version < ""2026.4.25""",2,OpenClaw 2026.4.25 之前版本存在嵌入式运行器策略绕过漏洞
+CVE-2026-53810,OpenClaw,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H,2026,"version < ""2026.5.18""",2,OpenClaw 2026.5.18 之前版本 - 通过未扫描的市场运行时扩展元数据实现任意代码执行
+CVE-2026-53811,OpenClaw,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H,2026,"version < ""2026.5.7""",2,OpenClaw Matrix allowFrom 功能中通过可变显示名称实现权限提升
+CVE-2026-53812,OpenClaw,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:N,2026,"version < ""2026.5.18""",2,OpenClaw 浏览器控制私有网络导航绕过导致 SSRF
+CVE-2026-53813,OpenClaw,HIGH,CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H,2026,"version < ""2026.4.25""",2,OpenClaw memory-core 制品加载中通过伪造包根路径解析实现的路径穿越漏洞
+CVE-2026-53814,OpenClaw,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:L,2026,"version < ""2026.5.20""",2,Hook 触发的 CLI 运行获取所有者 MCP 工具权限导致权限提升
+CVE-2026-53815,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N,2026,"version < ""2026.5.19""",2,OpenClaw 2026.5.19 之前版本存在授权绕过漏洞
+CVE-2026-53816,OpenClaw,HIGH,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H,2026,"version < ""2026.5.18""",2,OpenClaw 节点事件处理中来源验证不足，允许伪造 exec 生命周期事件
+CVE-2026-53817,OpenClaw,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H,2026,"version < ""2026.5.22""",2,OpenClaw 2026.5.22 之前版本存在本地性验证漏洞
+CVE-2026-53818,OpenClaw,MEDIUM,CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:H/A:L,2026,"version < ""2026.4.24""",2,OpenClaw MCP 回环路径授权绕过漏洞，允许非所有者调用方跳过仅限所有者的工具策略
+CVE-2026-53819,OpenClaw,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H,2026,"version < ""2026.5.27""",2,OpenClaw 2026.5.27 之前的版本存在任意代码执行漏洞
+CVE-2026-53820,OpenClaw,MEDIUM,CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:H/A:L,2026,"version < ""2026.5.12""",2,OpenClaw 通过 bundle MCP 回环 session-spawn 绕过 exec 拒绝列表
+CVE-2026-53821,OpenClaw,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H,2026,"version < ""2026.5.18""",2,OpenClaw WebSocket 作用域提升漏洞允许未授权管理员 RPC 执行
+CVE-2026-53822,OpenClaw,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H,2026,"version < ""2026.5.18""",2,OpenClaw shell 包装器 argv 修改导致命令注入漏洞
+CVE-2026-53823,OpenClaw,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N,2026,"version < ""2026.5.3""",2,allowFrom 功能中基于可变 Slack 显示名的权限提升漏洞
+CVE-2026-53824,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N,2026,"version < ""2026.4.24""",2,OpenClaw 监控刷新延迟导致令牌撤销绕过漏洞
+CVE-2026-53825,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N,2026,"version < ""2026.4.7""",2,OpenClaw memory-wiki 导入功能存在任意文件读取漏洞（operator.write 权限）
+CVE-2026-53826,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N,2026,"version < ""2026.4.26""",2,OpenClaw 沙箱会话派生导致信息泄露
+CVE-2026-53827,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N,2026,"version < ""2026.5.2""",2,OpenClaw message.action 转发中模型控制的回环 URL 导致凭据暴露
+CVE-2026-53828,OpenClaw,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H,2026,"version < ""2026.5.6""",2,OpenClaw 原生命令处理授权绕过漏洞
+CVE-2026-53829,OpenClaw,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H,2026,"version < ""2026.5.18""",2,OpenClaw exec 审批显示截断漏洞允许隐藏恶意命令后缀
+CVE-2026-53830,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N,2026,"version < ""2026.4.22""",2,OpenClaw webhook 密钥撤销绕过漏洞（secrets.reload）
+CVE-2026-53831,OpenClaw,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:L,2026,"version < ""2026.5.18""",2,POSIX 节点 system.run safe-bin 白名单通过 Shell 展开绕过策略执行
+CVE-2026-53832,OpenClaw,HIGH,CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N,2026,"version < ""2026.5.18""",2,OpenClaw 2026.5.18 之前版本存在身份头部验证绕过漏洞
+CVE-2026-53833,OpenClaw,HIGH,CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N,2026,"version < ""2026.4.29""",2,OpenClaw 2026.4.29 之前版本 QQBot 流式命令授权绕过漏洞
+CVE-2026-53834,OpenClaw,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N,2026,"version < ""2026.4.27""",2,OpenClaw QQBot 预分发斜杠命令授权绕过漏洞
+CVE-2026-53835,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N,2026,"version < ""2026.5.6""",2,OpenClaw 2026.5.6 之前版本中飞书动态 Agent 绑定的配置执行绕过漏洞
+CVE-2026-53836,OpenClaw,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H,2026,"version < ""2026.5.12""",2,OpenClaw PowerShell 编码命令白名单绕过漏洞
+CVE-2026-53837,OpenClaw,LOW,CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:N,2026,"version < ""2026.5.6""",2,OpenClaw Mattermost 事件处理器访问控制不当，可绕过私信策略决策
+CVE-2026-53838,OpenClaw,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H,2026,"version < ""2026.5.27""",2,OpenClaw 节点配对重连状态突变绕过漏洞
+CVE-2026-53839,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N,2026,"version < ""2026.5.7""",2,OpenClaw 受信重试端点验证中的主机名前缀匹配绕过漏洞
+CVE-2026-53840,OpenClaw,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:L/A:N,2026,"version < ""2026.5.12""",2,OpenClaw streamable-http MCP 跨域重定向请求头泄露
+CVE-2026-53841,OpenClaw,MEDIUM,CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:A/VC:N/VI:N/VA:N/SC:L/SI:L/SA:N,2026,"version < ""2026.5.12""",3,OpenClaw 导出会话 HTML 中存在不安全 Markdown 链接导致的跨站脚本漏洞
+CVE-2026-53842,OpenClaw,HIGH,CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N,2026,"version < ""2026.5.2""",2,OpenClaw 2026.5.2 之前版本存在通过 CLOUDSDK_PYTHON 的环境变量注入漏洞
+CVE-2026-53843,OpenClaw,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H,2026,"version < ""2026.5.26""",2,配对域设备会话恢复已撤销节点令牌权限的授权绕过漏洞
+CVE-2026-53844,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N,2026,"version < ""2026.4.29""",2,OpenClaw memory-wiki 共享搜索会话可见性检查绕过漏洞
+CVE-2026-53846,OpenClaw,HIGH,CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N,2026,"version < ""2026.4.29""",2,OpenClaw 安装助手路径遍历漏洞，允许工作区 .env 覆盖 npm_execpath 配置
+CVE-2026-53849,OpenClaw,HIGH,CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N,2026,"version < ""2026.5.7""",2,OpenClaw allowFrom 功能使用可变 Discord 显示名称导致权限提升
+CVE-2026-53853,OpenClaw,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:L,2026,"version < ""2026.5.12""",2,Linux 与 macOS 平台 exec 允许列表中的参数模式验证绕过漏洞
+CVE-2026-53855,OpenClaw,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N,2026,"version < ""2026.4.2""",3,OpenClaw 通过 shell 位置参数绕过 inline-eval 检查，允许已认证操作者规避严格白名单校验
+CVE-2026-53857,OpenClaw,HIGH,CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N,2026,"version < ""2026.5.3""",3,OpenClaw Zalo allowFrom 策略绑定可变显示名称导致认证绕过
+CVE-2026-53858,OpenClaw,HIGH,CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N,2026,"version < ""2026.5.2""",2,OpenClaw 2026.5.2 之前版本存在环境变量注入漏洞
+CVE-2026-53863,OpenClaw,HIGH,CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:N/VC:L/VI:H/VA:N/SC:N/SI:N/SA:N,2026,"version < ""2026.4.25""",3,OpenClaw 工具组策略未校验组 ID 导致授权绕过漏洞
+CVE-2026-53864,OpenClaw,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N,2026,"version < ""2026.5.26""",2,宿主环境消毒器净化不足导致 Node.js 控制变量绕过验证
+CVE-2026-53865,OpenClaw,HIGH,CVSS:4.0/AV:L/AC:L/AT:P/PR:L/UI:N/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N,2026,"version < ""2026.5.2""",3,OpenClaw 维护任务执行中的路径遍历漏洞，允许工作区派生的服务路径影响回收站命令选择
+CVE-2026-53866,OpenClaw,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:L,2026,"version < ""2026.5.12""",3,OpenClaw 2026.5.12 之前版本 - Shell 内联命令解析白名单绕过漏洞
+CVE-2026-6011,OpenClaw,MEDIUM,CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L,2026,"version < ""2026.1.29""",5,OpenClaw 2026.1.26 及之前版本在 assertPublicHostname 处理器（web-fetch.ts）中存在 SSRF 漏洞
+CVE-2026-8305,OpenClaw,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L,2026,"version < ""2026.2.12""",6,OpenClaw bluebubbles Webhook 身份认证绕过漏洞
+CVE-2025-3622,Xinference,CRITICAL,CVSS:3.1/AV:A/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L,2025,"version <= ""1.4.1""",3,Xorbits Inference up to 1.4.1中的严重反序列化漏洞
+CVE-2025-45424,Xinference,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N,2025,"version < ""1.4.0""",3,Xinference中存在访问控制不当问题，允许未认证访问Web图形界面
+CVE-2026-8719,ai-engine-wordpress,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H,2026,"version == ""3.4.9""",3,AI Engine WordPress 插件 MCP OAuth 授权缺陷——订阅者权限可提升至管理员
+CVE-2024-0455,anythingllm,CRITICAL,CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H,2024,,3,AnythingLLM Web Scraper 漏洞
+CVE-2024-0549,anythingllm,HIGH,CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:H,2024,,3,anythingllm 存在相对路径遍历漏洞
+CVE-2024-0759,anythingllm,CRITICAL,CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:N,2024,,3,AnythingLLM 内部网络链接抓取漏洞
+CVE-2024-0765,anythingllm,CRITICAL,CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:N,2024,,3,AnythingLLM 数据泄露漏洞
+CVE-2024-10513,anythingllm,HIGH,CVSS:3.0/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H,2024,"version < ""1.2.2""",3,“文档上传管理器”功能中的路径遍历漏洞
+CVE-2024-13060,anythingllm,MEDIUM,CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N,2024,"version < ""1.3.1""",3,AnythingLLM Docker中的漏洞允许未经授权的访问用户头像。
+CVE-2024-3279,anythingllm,CRITICAL,CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:H,2024,,3,anythingllm 应用程序导入端点存在不当访问控制漏洞
+CVE-2024-3570,anythingllm,LOW,CVSS:3.0/AV:L/AC:H/PR:H/UI:R/S:U/C:N/I:N/A:N,2024,,3,AnythingLLM 存储型跨站脚本（XSS）漏洞
+CVE-2024-5211,anythingllm,CRITICAL,CVSS:3.0/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H,2024,,3,anythingllm 路径遍历漏洞
+CVE-2025-63390,anythingllm,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N,2025,"version <= ""1.8.5""",4,AnythingLLM 中通过 /api/workspaces 端点进行的身份验证绕过。
+CVE-2026-32617,anythingllm,HIGH,CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:L,2026,"version <= ""1.11.1""",3,Mintplexlabs anythingllm AnythingLLM 宽松的 CORS 策略漏洞
+CVE-2026-32626,anythingllm,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H,2026,"version <= ""1.11.1""",4,AnythingLLM 流式阶段 XSS 到 RCE（通过 LLM 响应注入浏览器扩展工具）
+CVE-2026-32628,anythingllm,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H,2026,"version <= ""1.11.1""",4,Mintplexlabs anythingllm AnythingLLM 内置 SQL Agent 插件中存在 SQL 注入漏洞（未过滤 table_name 参数）
+CVE-2026-32715,anythingllm,LOW,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:L/A:N,2026,"version <= ""1.11.1""",4,Mintplexlabs anythingllm AnythingLLM Manager 角色权限绕过，可访问仅限管理员的系统偏好设置
+CVE-2026-32717,anythingllm,LOW,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:L/I:L/A:N,2026,"version <= ""1.11.1""",4,Mintplexlabs anythingllm AnythingLLM 访问控制绕过：已暂停用户可继续使用浏览器扩展 API 密钥
+CVE-2026-32719,anythingllm,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H,2026,"version <= ""1.11.1""",4,Mintplexlabs anythingllm AnythingLLM 社区中心插件导入存在 Zip Slip 路径遍历和代码执行漏洞
+CVE-2026-41318,anythingllm,MEDIUM,CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:U/C:H/I:L/A:N,2026,"version < ""1.12.1""",2,AnythingLLM 1.12.1 以下版本 Chartable 组件图表标题未过滤导致存储型 DOM XSS
+CVE-2026-5627,anythingllm,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H,2026,"version <= ""1.9.1""",4,AnythingLLM AgentFlows 组件存在路径穿越漏洞，可读取或删除任意 .json 文件
+CVE-2026-30950,autogpt,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:L,2026,"version >= ""0.6.36"" && version < ""0.6.51""",5,AutoGPT 平台存在经身份验证的会话劫持漏洞（IDOR 越权访问）
+CVE-2026-33232,autogpt,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,2026,"version >= ""0.4.2"" && version < ""0.6.52""",3,AutoGPT Platform 存在未经认证的拒绝服务漏洞，可通过无限制磁盘空间消耗触发。
+CVE-2026-33233,autogpt,HIGH,CVSS:3.1/AV:A/AC:H/PR:H/UI:N/S:C/C:H/I:H/A:H,2026,"version >= ""0.6.34"" && version < ""0.6.52""",2,AutoGPT Platform 后端使用 pickle.loads 反序列化 Redis 缓存字节时未进行完整性/真实性校验，攻击者可通过缓存投毒实现任意代码执行。
+CVE-2026-33744,bentoml,HIGH,CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H,2026,"version <= ""1.4.36""",3,BentoML bentofile.yaml 中 system_packages 字段存在 Dockerfile 命令注入漏洞
+CVE-2026-35043,bentoml,HIGH,CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H,2026,"version < ""1.4.38""",2,BentoML 云部署路径 system_packages 字段存在 OS 命令注入漏洞（CWE-78）
+CVE-2026-44345,bentoml,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H,2026,"version < ""1.4.39""",3,BentoML 通过 bento.yaml 中未经过滤的 docker.base_image 字段实现 Dockerfile 命令注入
+CVE-2026-44346,bentoml,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H,2026,"version < ""1.4.39""",2,BentoML 通过 bentofile.yaml 中 envs[*].name 字段实现 Dockerfile 命令注入（CVE-2026-33744 的兄弟补丁绕过漏洞）
+CVE-2026-23882,blinko,HIGH,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H,2026,"version < ""1.8.4""",1,Blinko MCP Server 任意命令执行漏洞（未验证命令参数）
+CVE-2026-46695,boxlite,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:N,2026,"version < ""0.9.0""",2,BoxLite 只读卷挂载绕过漏洞允许沙箱逃逸并实现对宿主机文件的任意写入
+CVE-2026-48146,budibase,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:N,2026,"version < ""3.39.0""",2,Budibase OAuth2 Token Fetch 服务端请求伪造（SSRF）漏洞
+CVE-2024-3234,chuanhuchatgpt,CRITICAL,CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H,2024,"version < ""20240305""",3,chuanhuchatgpt应用程序的路径遍历漏洞
+CVE-2018-14668,clickhouse,HIGH,CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H,2018,"version < ""1.1.54388""",2,ClickHouse 远程表函数跨协议请求伪造漏洞
+CVE-2018-14669,clickhouse,HIGH,CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N,2018,"version < ""1.1.54390""",2,ClickHouse MySQL客户端文件读取漏洞
+CVE-2018-14670,clickhouse,CRITICAL,CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H,2018,"version < ""1.1.54131""",2,ClickHouse 1.1.54131之前版本deb包配置错误可能导致数据库被未授权使用
+CVE-2018-14671,clickhouse,CRITICAL,CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H,2018,"version < ""18.10.3""",2,ClickHouse unixODBC 远程代码执行漏洞
+CVE-2018-14672,clickhouse,MEDIUM,CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N,2018,"version < ""18.12.13""",2,ClickHouse 在加载 CatBoost 模型时的路径遍历漏洞
+CVE-2019-15024,clickhouse,MEDIUM,,2019,"version < ""19.14.3""",2,ClickHouse ZooKeeper 注册漏洞
+CVE-2019-16535,clickhouse,HIGH,,2019,"version < ""19.14.0""",2,ClickHouse 解压缩算法中的越界读取、写入及整数下溢漏洞
+CVE-2019-16536,clickhouse,HIGH,CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:H/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X,2019,"version < ""19.14.3.3""",2,在19.14.3.3之前的Clickhouse版本中，堆栈溢出导致DoS
+CVE-2019-18657,clickhouse,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N,2019,"version < ""19.13.5.44""",4,ClickHouse HTTP头注入漏洞
+CVE-2021-25263,clickhouse,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N,2021,"version < ""20.8.18.32"" || (version < ""21.1.9.41"" && version != ""21.1.x"") || version < ""21.2.9.41"" || version < ""21.3.6.55"" || version < ""21.4.3.21""",3,Clickhouse 文件读取漏洞
+CVE-2021-4104,clickhouse,HIGH,CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H,2021,"version < ""2.0.7""",4,使用log4j配置中的JMSAppender可能导致反序列化不受信任的数据
+CVE-2021-42387,clickhouse,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:H,2021,,3,Clickhouse的LZ4压缩编解码器堆越界读取漏洞
+CVE-2021-42388,clickhouse,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:H,2021,,3,Clickhouse的LZ4压缩编解码器堆越界读取漏洞
+CVE-2021-42389,clickhouse,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H,2021,,2,Clickhouse Delta压缩编解码器中的除零漏洞
+CVE-2021-42390,clickhouse,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H,2021,"version < ""21.3.7.1""",0,Clickhouse DeltaDouble 压缩编解码器中的除零漏洞
+CVE-2021-42391,clickhouse,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H,2021,,2,Clickhouse Gorilla压缩编解码器中的除零漏洞
+CVE-2021-43304,clickhouse,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H,2021,,3,Clickhouse的LZ4压缩编解码器中的堆缓冲区溢出漏洞
+CVE-2021-43305,clickhouse,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H,2021,,3,Clickhouse的LZ4压缩编解码器堆缓冲区溢出漏洞
+CVE-2022-44010,clickhouse,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,2022,"version < ""22.9.1.2603""",2,ClickHouse 堆缓冲区溢出漏洞
+CVE-2022-44011,clickhouse,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H,2022,"version < ""22.9.1.2603""",2,ClickHouse 堆缓冲区溢出漏洞
+CVE-2024-23689,clickhouse,MEDIUM,CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:L/I:L/A:L,2024,"version > ""0"" && version < ""0.4.6""",7,ClickHouse客户端异常中客户端证书密码泄露。
+CVE-2024-41436,clickhouse,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,2024,"version = ""24.3.3.102""",3,ClickHouse缓冲区溢出漏洞
+CVE-2025-1386,clickhouse,MEDIUM,CVSS:4.0/AV:N/AC:H/AT:N/PR:H/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N,2025,"version > ""0"" && version < ""0.65.0""",0,ch-go 库中存在的查询走私漏洞。
+CVE-2025-1520,clickhouse,HIGH,CVSS:3.0/AV:A/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H,2025,"version > ""0"" && version <= ""1.10.7""",4,PostHog 插件服务器 SQL 注入漏洞允许远程代码执行。
+CVE-2025-52969,clickhouse,LOW,CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:C/C:N/I:L/A:N,2025,"version == ""25.7.1.557""",2,低权限用户可通过 ClickHouse 中的 Executable() 表执行 Shell 命令
+CVE-2024-12952,comfy_mtb,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L,2024,"version <= ""0.1.4""",8,comfy_mtb代码注入漏洞
+CVE-2024-10099,comfyui,MEDIUM,CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N,2024,"version < ""0.2.3""",2,ComfyUI 存储型跨站脚本（XSS）漏洞
+CVE-2024-10481,comfyui,MEDIUM,CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:N,2024,"version <= ""0.2.2""",2,comfyanonymous/comfyui 版本直至 v0.2.2 存在 CSRF 漏洞
+CVE-2024-12882,comfyui,HIGH,CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N,2024,"version < ""0.2.5""",2,comfyui中的非盲SSRF漏洞
+CVE-2024-6673,comfyui,MEDIUM,CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:L/I:N/A:L,2024,"version >= ""9.9""",3,lollms-webui 的 `install_comfyui` 端点中存在跨站请求伪造 (CSRF) 漏洞。
+CVE-2025-6092,comfyui,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:N,2025,"version < ""0.3.40""",5,comfyui版本0.3.39及之前版本中的跨站脚本漏洞
+CVE-2025-6107,comfyui,LOW,CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:N/I:N/A:L,2025,"version <= ""0.3.40""",6,comfyui 0.3.40中的漏洞允许远程操作对象属性。
+CVE-2025-67303,comfyui,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N,2025,"version < ""3.38""",3,ComfyUI-Manager 将敏感文件存储在保护不足的位置。
+CVE-2026-22777,comfyui,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N,2026,"version < ""3.39.2"" || (version >= ""4.0.0"" && version < ""4.0.5"")",4,ComfyUI-Manager 的配置处理程序中存在 CRLF 注入漏洞。
+CVE-2026-6589,comfyui,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:N,2026,"version <= ""0.13.0""",3,ComfyUI 0.13.0 及以下版本存在跨站请求伪造（CSRF）漏洞，位于 server.py 的 create_origin_only_middleware 函数中。
+CVE-2026-6590,comfyui,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N,2026,"version <= ""0.13.0""",3,ComfyUI 0.13.0 及以下版本存在路径穿越漏洞，漏洞位于 app/model_manager.py 的 get_model_preview 函数。
+CVE-2026-6591,comfyui,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N,2026,"version <= ""0.13.0""",3,ComfyUI LoadImage 节点路径遍历漏洞，允许远程已认证攻击者读取任意文件
+CVE-2026-6592,comfyui,LOW,CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:N/I:L/A:N,2026,"version <= ""0.13.0""",3,ComfyUI userdata 端点存储型跨站脚本（XSS）漏洞
+CVE-2026-6593,comfyui,LOW,CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:N/I:L/A:N,2026,"version <= ""0.13.0""",3,ComfyUI 0.13.0 及以下版本存在跨站脚本（XSS）漏洞，漏洞位于 server.py 的 View Endpoint。
+CVE-2026-2275,crewai,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H,2026,"version <= ""1.14.1""",3,CrewAI CodeInterpreterTool SandboxPython Fallback Remote Code Execution
+CVE-2026-2286,crewai,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H,2026,"version <= ""1.14.1""",2,CrewAI Server-Side Request Forgery (SSRF) allows access to internal and cloud metadata endpoints
+CVE-2026-2287,crewai,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H,2026,"version <= ""1.14.1""",2,CrewAI Docker runtime check bypass leads to remote code execution via insecure sandbox fallback
+CVE-2024-10096,dask,CRITICAL,CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H,2024,"version > ""0"" && version <= ""2024.8.2""",3,Dask 因 pickle 序列化而存在命令注入漏洞。
+CVE-2026-23528,dask,MEDIUM,CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N,2026,"version > ""0"" && version < ""2026.1.0""",4,Dask Distributed 存在远程代码执行漏洞，起因是 Jupyter Proxy 和 Dashboard 中存在跨站脚本 (XSS) 错误。
+CVE-2026-43624,f5-tts,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N,2026,"version < ""1.1.21""",3,F5-TTS 1.1.20 及更早版本在微调 Gradio 处理器中存在路径遍历漏洞
+CVE-2024-10044,fastchat,CRITICAL,CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:L/A:N,2024,,2,fastchat Controller API Server的SSRF漏洞
+CVE-2024-10907,fastchat,HIGH,CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,2024,"version < ""0.2.37""",2,fastchat中由于对多部分边界处理不当导致的拒绝服务（DoS）漏洞
+CVE-2024-10908,fastchat,MEDIUM,CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N,2024,"version < ""0.2.37""",2,fastchat中的开放重定向漏洞允许远程未经身份验证的攻击者将用户重定向到任意网站。
+CVE-2024-10912,fastchat,HIGH,CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,2024,"version < ""0.2.37""",2,文件上传功能中的拒绝服务（DoS）漏洞
+CVE-2024-11603,fastchat,HIGH,CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N,2024,"version < ""0.2.37""",2,fastchat中的服务器端请求伪造（SSRF）漏洞
+CVE-2024-12376,fastchat,HIGH,CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N,2024,"version < ""git 2c68a13""",2,lm-sys/fastchat中的服务器端请求伪造(SSRF)漏洞
+CVE-2025-3677,fastchat,CRITICAL,CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L,2025,"version < ""0.2.37""",5,lm-sys fastchat中最高至0.2.36版本的严重反序列化漏洞。
+CVE-2026-6607,fastchat,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L,2026,"version <= ""0.2.36""",2,FastChat 0.2.36 及以下版本 Worker API api_generate 端点存在远程 DoS 资源耗尽漏洞
+CVE-2026-6608,fastchat,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N,2026,"version <= ""0.2.36""",2,FastChat 0.2.36 及以下版本 Arena Side-by-Side View add_text 处理程序存在控制流错误漏洞
+CVE-2026-40351,fastgpt,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H,2026,"version < ""4.14.9.5""",2,FastGPT loginByPassword 接口 NoSQL 注入导致认证绕过
+CVE-2026-42302,fastgpt,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H,2026,"version >= ""4.14.10"" && version < ""4.14.13""",4,FastGPT agent-sandbox 因 code-server 配置错误导致未授权远程代码执行
+CVE-2024-11602,feast,HIGH,CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:N/A:N,2024,"version == ""0.40.0""",2,feast-dev/feast版本0.40.0中的不安全CORS配置
+CVE-2025-11157,feast,HIGH,CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H,2025,"version > ""0"" && version < ""0.54.0""",5,Feast 存在反序列化不受信任数据漏洞，导致远程代码执行。
+CVE-2024-58351,flowise,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H,2024,"version < ""2.1.4""",2,Flowise 2.1.4 之前版本存在通过 overrideConfig 实现的远程代码执行漏洞
+CVE-2025-71324,flowise,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N,2025,"version < ""3.0.6""",2,"Flowise 3.0.6 之前版本存在任意文件读取漏洞，攻击者可通过 /api/v1/get-upload-file 和 /api/v1/openai-assistants-file/download 端点的 chatId 参数进行路径遍历，读取服务器上的任意文件。
+"
+CVE-2025-71327,flowise,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N,2025,"version == ""3.0.1""",2,"Flowise 存在认证绕过漏洞，攻击者可通过未受保护的 /api/v1/account/register 端点 未经认证创建任意用户账户，获取完整的 API 访问权限。
+"
+CVE-2025-71328,flowise,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:L,2025,"version < ""3.0.10""",2,Flowise 账户设置未验证密码修改漏洞
+CVE-2025-71331,flowise,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N,2025,"version < ""3.0.8""",2,Flowise 聊天消息与 Agent 工作流中的跨站脚本漏洞
+CVE-2025-71332,flowise,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U:C:H/I:H/A:N,2025,"version <= ""2.2.7""",2,Flowise importChatflows API 中 chatflow.id 参数导致 SQL 注入
+CVE-2025-71334,flowise,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H,2025,"version >= ""2.2.8"" && version < ""3.0.6""",3,Flowise 因缺少 chatflow ID 校验导致任意文件访问
+CVE-2025-71335,flowise,HIGH,CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N,2025,"version < ""3.0.10""",2,Flowise 修改密码后会话未失效漏洞
+CVE-2025-71336,flowise,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H,2025,"version < ""3.0.6""",2,Flowise Custom MCP 功能未沙箱化远程代码执行漏洞
+CVE-2025-71337,flowise,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:L,2025,"version < ""3.0.10""",2,Flowise 3.0.10 之前版本存在未验证邮箱变更漏洞，可导致账户接管
+CVE-2025-71338,flowise,CRITICAL,CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H,2025,"version < ""3.0.7""",2,Flowise document-store API 任意文件写入导致远程代码执行漏洞
+CVE-2026-12821,flowise,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L,2026,"version <= ""3.1.2""",2,Flowise 3.1.2 及之前版本 S3 文档加载器路径遍历漏洞
+CVE-2026-30820,flowise,CRITICAL,CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N,2026,"version < ""3.0.13""",3,Flowise 通过伪造 x-request-from 请求头实现授权绕过（权限提升）
+CVE-2026-30823,flowise,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N,2026,"version <= ""3.0.12""",3,Flowise IDOR 漏洞导致账户接管及企业 SSO 功能鉴权绕过
+CVE-2026-31829,flowise,HIGH,CVSS:3.0/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:L,2026,"version < ""3.0.13""",2,Flowise HTTP 节点服务端请求伪造（SSRF）漏洞，攻击者可访问内部网络
+CVE-2026-40933,flowise,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H,2026,"version < ""3.1.0""",3,Flowise 是一款拖拽式大型语言模型工作流构建界面，存在 MCP stdio 命令注入漏洞
+CVE-2026-41137,flowise,HIGH,,2026,"version < ""3.1.0""",2,Flowise CSVAgent 自定义 Pandas CSV 读取代码中存在命令注入漏洞
+CVE-2026-41138,flowise,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H,2026,"version < ""3.1.0""",2,Flowise AirtableAgent 存在提示注入导致远程代码执行漏洞，未修复版本中用户输入未经过滤直接反射至 Python 代码执行。
+CVE-2026-41264,flowise,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H,2026,"version < ""3.1.0""",2,Flowise CSV Agent 提示注入远程代码执行漏洞
+CVE-2026-41265,flowise,HIGH,,2026,"version < ""3.1.0""",2,Flowise Airtable Agent 节点通过提示词注入允许未授权远程代码执行（Python 脚本无沙箱执行）
+CVE-2026-41266,flowise,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N,2026,"version < ""3.1.0""",2,Flowise 未授权敏感数据泄露漏洞（公开 ChatbotConfig 接口）
+CVE-2026-41267,flowise,HIGH,CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H,2026,"version < ""3.1.0""",1,Flowise 账户注册接口存在不当批量赋值漏洞，未认证攻击者可操控所有权元数据、时间戳、组织关联及角色映射
+CVE-2026-41268,flowise,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H,2026,"version < ""3.1.0""",1,Flowise 未授权远程代码执行（RCE）漏洞，可通过 FILE-STORAGE 关键字与 NODE_OPTIONS 注入触发
+CVE-2026-41269,flowise,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:H/A:N,2026,"version < ""3.1.0""",1,Flowise Chatflow 配置允许任意文件上传，可通过恶意 Node.js Web Shell 导致远程代码执行
+CVE-2026-41270,flowise,HIGH,CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:L,2026,"version < ""3.1.0""",1,Flowise 自定义函数特性中存在 SSRF 防护绕过漏洞（通过 Node.js 内置模块）
+CVE-2026-41271,flowise,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:L,2026,"version < ""3.1.0""",1,Flowise POST/GET API Chain 组件存在 SSRF 漏洞，允许未认证攻击者向内部和外部系统发起任意 HTTP 请求。
+CVE-2026-41272,flowise,HIGH,CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:L,2026,"version < ""3.1.0""",1,Flowise SSRF 防护绕过漏洞（DNS 重绑定与默认配置缺陷）
+CVE-2026-41273,flowise,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:N,2026,"version < ""3.1.0""",1,Flowise 公开聊天流配置接口未授权 OAuth 2.0 访问令牌泄露漏洞
+CVE-2026-41275,flowise,HIGH,CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H,2026,"version < ""3.1.0""",2,Flowise 密码重置链接通过 HTTP 而非 HTTPS 发送，存在中间人攻击风险
+CVE-2026-41276,flowise,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H,2026,"version < ""3.1.0""",1,Flowise 空密码重置令牌身份认证绕过漏洞（CVE-2026-41276）
+CVE-2026-41277,flowise,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H,2026,"version < ""3.1.0""",1,Flowise 批量赋值漏洞允许已认证用户通过 IDOR 覆盖 DocumentStore 对象
+CVE-2026-41278,flowise,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N,2026,"version < ""3.1.0""",1,Flowise 公开聊天流端点敏感信息泄露（凭据 ID 与 API 密钥明文暴露）
+CVE-2026-41279,flowise,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,2026,"version < ""3.1.0""",1,Flowise 文字转语音端点凭据泄露漏洞，允许未认证攻击者解密 API 密钥
+CVE-2026-42861,flowise,MEDIUM,,2026,"version < ""3.1.2""",2,变量更新端点存在批量赋值漏洞，允许跨工作空间资源重新分配
+CVE-2026-42862,flowise,MEDIUM,,2026,"version < ""3.1.2""",2,Flowise 工具更新端点存在批量赋值漏洞，可绕过工作空间隔离
+CVE-2026-42863,flowise,MEDIUM,,2026,"version < ""3.1.2""",2,Flowise 聊天流更新端点存在批量赋值漏洞，允许跨工作空间重新分配
+CVE-2026-43995,flowise,MEDIUM,,2026,"version < ""3.1.0""",1,Flowise 多个工具实现直接调用原始 HTTP 客户端导致 SSRF 防护被绕过
+CVE-2026-46440,flowise,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N,2026,"version < ""3.1.2""",2,Flowise 基础认证明文凭据验证缺乏速率限制
+CVE-2026-46441,flowise,MEDIUM,,2026,"version < ""3.1.2""",2,FlowiseAI 助手更新接口存在批量赋值漏洞，可绕过工作空间隔离
+CVE-2026-46442,flowise,MEDIUM,,2026,"version < ""3.1.2""",2,Flowise Custom JS Function 节点缺乏路由级授权，可通过沙箱逃逸实现认证后远程代码执行
+CVE-2026-46443,flowise,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N,2026,"version < ""3.1.2""",2,Flowise 使用 credentialName 过滤参数获取凭据时存在凭据数据泄露漏洞
+CVE-2026-46444,flowise,HIGH,,2026,"version < ""3.1.2""",2,Flowise OpenAI Assistants 向量存储 CRUD 端点缺乏认证和权限校验
+CVE-2026-46475,flowise,HIGH,,2026,"version < ""3.1.2""",2,Flowise 助手创建和更新存在批量赋值漏洞，允许跨工作空间接管助手
+CVE-2026-46476,flowise,MEDIUM,,2026,"version < ""3.1.2""",2,Flowise CustomTemplate 批量赋值漏洞允许跨工作区模板接管
+CVE-2026-46477,flowise,HIGH,,2026,"version < ""3.1.2""",2,Flowise 3.1.2 之前版本中数据集创建和更新的大规模赋值漏洞允许跨工作空间数据集接管
+CVE-2026-46478,flowise,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N,2026,"version < ""3.1.0""",3,Flowise 公共聊天流端点未授权信息泄露漏洞
+CVE-2026-46479,flowise,HIGH,CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N,2026,"version < ""3.1.2""",5,flowise Evaluation 创建和更新存在批量赋值漏洞，允许跨工作区评估数据接管
+CVE-2026-46480,flowise,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N,2026,"version < ""3.1.0""",3,Flowise 未授权敏感信息泄露漏洞（公开 Chatflow 端点）
+CVE-2026-56268,flowise,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:N,2026,"version < ""3.1.2""",2,Flowise 3.1.2 之前版本跨工作空间聊天流信息泄露漏洞
+CVE-2026-56269,flowise,MEDIUM,CVSS:3.1/AV:L/AC:H/PR:H/UI:R/S:U/C:H/I:L/A:N,2026,"version < ""3.1.0""",2,Flowise 使用弱硬编码默认 TOKEN_HASH_SECRET 进行 JWT Token 加密
+CVE-2026-56270,flowise,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N,2026,"version < ""3.1.0""",2,/api/v1/loginmethod 端点缺少身份验证导致未授权 OAuth 密钥泄露
+CVE-2026-56272,flowise,MEDIUM,CVSS:3.1/AV:L/AC:H/PR:H/UI:N/S:U/C:H/I:N/A:N,2026,"version < ""3.0.13""",2,Flowise 密码哈希中 bcrypt 盐值轮数不足
+CVE-2026-56274,flowise,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H,2026,"version < ""3.1.2""",2,Flowise 自定义 MCP 服务器操作系统命令注入（远程代码执行）
+CVE-2026-56275,flowise,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:L/A:N,2026,"version < ""3.1.0""",2,Flowise Execute Flow 节点 SSRF 漏洞
+CVE-2026-8027,flowise,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N,2026,"version <= ""3.0.12""",3,Flowise User Controller 授权绕过漏洞，低权限攻击者可访问其他用户数据
+CVE-2021-43831,gradio,CRITICAL,CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:L,2021,"version < ""2.5.0""",5,主机上的文件可以通过Gradio界面访问
+CVE-2022-24770,gradio,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H,2022,"version > ""0"" && version < ""2.8.11""",6,Gradio CSV文件中公式元素的不当中和
+CVE-2023-25823,gradio,MEDIUM,CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:N/I:L/A:L,2023,"version > ""0"" && version < ""3.13.1""",4,更新分享链接以使用FRP代替SSH隧道
+CVE-2023-34239,gradio,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L,2023,"version < ""3.34.0""",5,Gradio 存在任意文件读取和代理任意 URL 的漏洞
+CVE-2023-41626,gradio,MEDIUM,CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N,2023,"version >= ""0"" && version < ""3.27.1""",3,Gradio 任意文件上传漏洞
+CVE-2023-51449,gradio,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:L,2023,"version > ""0"" && version < ""4.11.0""",6,Gradio 修复了 `/file` 路由的文件遍历和服务器端请求伪造攻击漏洞
+CVE-2023-6572,gradio,CRITICAL,CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:N,2023,"version > ""0"" && version < ""4.14.0""",5,Gradio 向未授权方暴露敏感信息漏洞
+CVE-2024-0964,gradio,HIGH,CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N,2024,"version > ""0"" && version < ""4.9.0""",4,Gradio 路径遍历漏洞
+CVE-2024-10569,gradio,HIGH,CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,2024,"version >= ""4.0.0"" && version < ""5.0.0b3""",4,Gradio易受通过特制Zip炸弹实现的拒绝服务（DoS）攻击
+CVE-2024-10624,gradio,HIGH,CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,2024,"version >= ""4.38.0"" && version < ""5.0.0-beta.2""",4,Gradio易受通过特制HTTP请求的拒绝服务（DoS）攻击
+CVE-2024-10648,gradio,HIGH,CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:H,2024,"version >= ""4.0.0"" && version < ""5.0.0b3""",4,Gradio易受任意文件删除漏洞影响
+CVE-2024-1183,gradio,MEDIUM,CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:N,2024,"version >= ""0"" && version < ""4.10.0""",5,gradio 服务器端请求伪造漏洞
+CVE-2024-12217,gradio,MEDIUM,CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N,2024,"version < ""67e4044""",2,Gradio在Windows操作系统中的路径遍历漏洞
+CVE-2024-1540,gradio,HIGH,CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:L,2024,"version >= ""0"" && version < ""4.18.0""",4,Gradio的CI存在命令注入漏洞
+CVE-2024-1561,gradio,HIGH,CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N,2024,"version > ""0"" && version < ""4.13.0""",5,gradio 存在路径遍历漏洞
+CVE-2024-1727,gradio,MEDIUM,CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:L,2024,"version >= ""0"" && version < ""4.19.2""",5,Gradio中的跨站请求伪造
+CVE-2024-1728,gradio,CRITICAL,CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H,2024,"version > ""0"" && version < ""4.19.2""",5,Gradio 允许用户访问任意文件。
+CVE-2024-1729,gradio,UNKNOWN,,2024,"version < ""4.19.2""",5,Gradio 应用易受时间攻击以猜测密码
+CVE-2024-2206,gradio,HIGH,CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L,2024,"version >= ""0"" && version < ""4.18.0""",4,gradio 服务器端请求伪造漏洞
+CVE-2024-34510,gradio,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N,2024,"version < ""4.20.0""",3,Gradio 在 4.20 之前版本允许在 Windows 上泄露凭据
+CVE-2024-34511,gradio,MEDIUM,CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:L/A:N,2024,"version >= ""0"" && version < ""4.13.0""",4,Gradio的组件服务器未正确考虑`_is_server_fn`函数
+CVE-2024-39236,gradio,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H,2024,"version = ""4.36.1""",4,Gradio 组件存在代码注入漏洞
+CVE-2024-4253,gradio,HIGH,CVSS:3.0/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H,2024,"version <= ""0.6.12""",3,Gradio 命令注入漏洞
+CVE-2024-4254,gradio,HIGH,CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:L/A:N,2024,"version > ""0"" && version < ""4.44.0""",2,gradio工作流中的秘密泄露漏洞
+CVE-2024-4325,gradio,HIGH,CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N,2024,"version >= ""0"" && version <= ""4.36.0""",4,gradio中的服务器端请求伪造(SSRF)漏洞
+CVE-2024-47084,gradio,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H,2024,"version > ""0"" && version < ""4.44.0""",3,Gradio的CORS来源验证在请求包含cookie时未执行
+CVE-2024-47164,gradio,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N,2024,"version < ""5.0.0""",4,Gradio的`is_in_or_equal`函数可能被绕过
+CVE-2024-47165,gradio,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:N,2024,"version >= ""0"" && version < ""5.0.0""",3,Gradio接受空origin的CORS验证漏洞
+CVE-2024-47166,gradio,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N,2024,"version > ""0"" && version < ""4.44.0""",3,Gradio在`/custom_component`中存在一级读取路径遍历漏洞
+CVE-2024-47167,gradio,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:L/I:L/A:N,2024,"version > ""0"" && version < ""5.0.0""",3,Gradio 在 /queue/join 路径参数中存在 SSRF 漏洞
+CVE-2024-47168,gradio,LOW,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N,2024,"version >= ""0"" && version < ""4.44.0""",3,Gradio的`enable_monitoring`标志设置为`False`时未能禁用监控
+CVE-2024-47867,gradio,HIGH,CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H,2024,"version > ""0"" && version < ""5.0.0""",3,Gradio缺乏对下载的FRP客户端的完整性检查
+CVE-2024-47868,gradio,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N,2024,"version < ""5.0.0""",3,Gradio 存在多个组件后处理步骤允许任意文件泄露
+CVE-2024-47869,gradio,MEDIUM,CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N,2024,"version >= ""0"" && version < ""4.44.0""",3,Gradio 在比较哈希时执行非恒定时间比较
+CVE-2024-47870,gradio,HIGH,CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:H,2024,"version >= ""0"" && version < ""5.0.0""",3,Gradio在update_root_in_config中的竞态条件可能导致用户流量重定向
+CVE-2024-47871,gradio,HIGH,CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N,2024,"version > ""0"" && version < ""5.0.0""",3,Gradio 在 FRP 客户端和服务器之间使用不安全的通信
+CVE-2024-47872,gradio,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N,2024,"version > ""0"" && version < ""5.0.0""",3,Gradio 服务器存在通过上传 HTML、JS 或 SVG 文件导致的跨站脚本（XSS）漏洞
+CVE-2024-48052,gradio,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N,2024,"version <= ""4.42.0""",4,gradio 服务器端请求伪造漏洞
+CVE-2024-4940,gradio,MEDIUM,CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:N,2024,"version >= ""0"" && version < ""4.36.2""",3,Gradio 开放重定向漏洞
+CVE-2024-4941,gradio,HIGH,CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N,2024,"version > ""0"" && version < ""4.31.3""",4,Gradio 本地文件包含漏洞
+CVE-2024-51751,gradio,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:N,2024,"version >= ""5.0.0"" && version < ""5.5.0""",3,Gradio File和UploadButton组件存在任意文件读取漏洞
+CVE-2024-8021,gradio,MEDIUM,CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:N,2024,"version > ""0"" && version < ""4.44.0""",2,Gradio中的开放重定向漏洞允许恶意重定向
+CVE-2024-8966,gradio,HIGH,CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,2024,"version = ""@gradio/video@0.10.2""",2,Gradio文件上传过程中的拒绝服务（DoS）漏洞
+CVE-2025-0187,gradio,HIGH,CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,2025,"version < ""0.39.2""",2,文件上传功能中的拒绝服务（DoS）漏洞
+CVE-2025-23042,gradio,CRITICAL,CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N,2025,"version <= ""5.6.0""",5,Gradio Blocked Path ACL绕过漏洞
+CVE-2025-48889,gradio,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L,2025,"version >= ""0"" && version < ""5.31.0""",3,Gradio 允许通过路径操作进行未经授权的文件复制
+CVE-2025-5320,gradio,LOW,CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:N,2025,"version >= ""5.0.0"" && version <= ""5.29.1""",7,Gradio CORS 域名验证绕过漏洞
+CVE-2026-48545,gradio,MEDIUM,CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:N,2026,"version < ""6.15.0""",5,Gradio 6.15.0 之前版本存在 Cookie 注入漏洞，可被利用实施跨 Space 会话固定攻击
+CVE-2026-45758,guardrails-ai,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H,2026,"version == ""0.10.1""",2,guardrails-ai 0.10.1 供应链攻击——攻击者发布恶意 PyPI 包，包含凭据窃取恶意软件。
+CVE-2026-6855,instructlab,HIGH,CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N,2026,,3,InstructLab 聊天会话处理器存在路径遍历漏洞，可导致任意目录创建和文件写入
+CVE-2026-43989,junoclaw,HIGH,CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:L,2026,"version < ""0.x.y-security-1""",2,JunoClaw upload_wasm MCP 工具因文件系统路径未校验导致任意文件读取
+CVE-2026-43992,junoclaw,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H,2026,"version < ""0.3.0""",3,JunoClaw MCP 写入工具将 BIP-39 助记词作为显式工具调用参数暴露，导致钱包种子短语泄露
+CVE-2019-9644,jupyter-notebook,MEDIUM,CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:N,2019,"version < ""5.7.6""",6,Jupyter Notebook 中网页生成时输入的不当中和
+CVE-2025-53000,jupyter-notebook,HIGH,CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:P/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N,2025,"version > ""0"" && version <= ""7.16.6""",4,nbconvert 存在未受控的搜索路径，导致在 Windows 上执行未经授权的代码。
+CVE-2020-26232,jupyter-server,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:N/I:L/A:N,2020,"version < ""1.0.6""",4,Jupyter Server 中的开放重定向漏洞
+CVE-2020-26275,jupyter-server,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N,2020,"version < ""1.1.1""",7,Jupyter Server 开放重定向漏洞
+CVE-2022-21697,jupyter-server,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:L/A:N,2022,"version <= ""3.2.0""",6,jupyter-server-proxy中的SSRF漏洞
+CVE-2022-24757,jupyter-server,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N,2022,"version > ""0"" && version < ""1.15.4""",5,Jupyter notebook 中敏感信息插入日志文件
+CVE-2022-29241,jupyter-server,HIGH,CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:U/C:H/I:H/A:H,2022,"(version >= ""6.4.0"" && version <= ""6.4.11"") || (version >= ""1.16.0"" && version < ""1.17.1"") || (version == ""2.0.0a0"")",6,Jupyter server Token暴力破解
+CVE-2023-39968,jupyter-server,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N,2023,"version < ""2.7.2""",7,jupyter-server中的开放重定向漏洞
+CVE-2023-40170,jupyter-server,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:L/I:L/A:N,2023,"version >= ""0"" && version < ""2.7.2""",7,jupyter-server中的跨站包含(XSSI)文件漏洞
+CVE-2023-49080,jupyter-server,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N,2023,"version > ""0"" && version < ""2.11.2""",7,jupyter-server 错误包含带有路径信息的回溯
+CVE-2024-22415,jupyter-server,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L,2024,"version < ""2.2.2""",4,jupyter-lsp 服务器扩展中的不安全端点
+CVE-2024-22421,jupyter-server,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:L/A:L,2024,"version < ""2.7.2""",7,JupyterLab 可能存在身份验证和 CSRF 令牌泄露漏洞
+CVE-2024-28179,jupyter-server,CRITICAL,CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:H,2024,"version < ""3.2.3"" || (version >= ""4.0.0"" && version < ""4.1.1"")",3,Jupyter Server Proxy的Websocket代理不需要身份验证
+CVE-2024-28188,jupyter-server,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N,2024,"(version >= ""1.0.0"" && version <= ""1.1.5"") || version == ""1.2.0"" || (version >= ""1.3.0"" && version <= ""1.8.1"") || (version >= ""2.0.0"" && version <= ""2.5.1"")",6,jupyter-scheduler 的端点缺少身份验证
+CVE-2024-35178,jupyter-server,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N,2024,"version < ""2.14.1""",4,Jupyter server在Windows上泄露Windows用户密码哈希
+CVE-2025-30167,jupyter-server,HIGH,CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H,2025,"version < ""5.8.1""",3,Jupyter Core在Windows上存在不受控搜索路径元素本地权限提升漏洞
+CVE-2026-44727,jupyter-server,CRITICAL,,2026,"version < ""2.20.0""",4,Jupyter Server NbconvertFileHandler/NbconvertPostHandler 因缺少 sandbox CSP 指令导致存储型 XSS
+CVE-2021-32797,jupyterlab,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:N/A:N,2021,"version < ""1.2.21"" || (version >= ""2.0.0a0"" && version < ""2.2.10"") || (version >= ""2.3.0a0"" && version < ""2.3.2"") || (version >= ""3.0.0a0"" && version < ""3.0.17"") || (version >= ""3.1.0a0"" && version < ""3.1.4"")",5,JupyterLab XSS 由于缺乏对 html <form> 的 action 属性的消毒
+CVE-2021-41134,jupyterlab,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:N,2021,"version < ""1.1.1"" || (version >= ""2.0.0"" && version < ""2.1.1"") || (version >= ""3.0.0"" && version < ""3.1.1"") || version < ""5.0.2"" || version >= ""6.0.0"" && version < ""6.1.2"" || version < ""1.0.1"" || version >= ""2.0.0"" && version < ""2.1.1""",5,Jupyter nbdime 存储型 XSS 漏洞
+CVE-2021-41247,jupyterlab,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:L/I:N/A:N,2021,"version >= ""1.0.0"" && version < ""1.5.0""",5,不完整的JupyterHub注销与同时进行的JupyterLab会话
+CVE-2024-22420,jupyterlab,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:N,2024,"version >= ""4.0.0"" && version <= ""4.0.10""",3,JupyterLab Markdown 预览中的跨站脚本漏洞
+CVE-2024-35225,jupyterlab,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H,2024,"version >= ""3.0.0"" && version <= ""4.1.2""",7,Jupyter Server Proxy 在主机参数中存在反射型 XSS 问题
+CVE-2024-43805,jupyterlab,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:L/A:L,2024,"(version <= ""3.6.7"" && version >= ""0"") || (version <= ""4.2.4"" && version >= ""4.0.0"")",5,Jupyter Notebook 和 JupyterLab 中的 HTML 注入导致 DOM 操作劫持
+CVE-2025-30370,jupyterlab,HIGH,CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:C/C:L/I:H/A:H,2025,"version >= ""0"" && version < ""0.51.1""",6,jupyterlab-git 在“在终端中打开 Git 仓库”中存在命令注入漏洞
+CVE-2025-59842,jupyterlab,LOW,CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:A/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N,2025,"version >= ""0.0.0"" && version < ""4.4.8""",4,JupyterLab LaTeX 排版器生成的链接未强制添加 `noopener` 属性
+CVE-2026-42266,jupyterlab,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H,2026,"version >= ""4.0.0"" && version < ""4.5.7""",2,JupyterLab PyPI 扩展管理器允许列表未正确执行，导致可安装任意第三方扩展
+CVE-2026-34940,kubeai,HIGH,,2026,"version < ""0.23.2""",1,KubeAI Ollama Engine Startup Probe OS Command Injection
+CVE-2023-6570,kubeflow,HIGH,CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:N,2023,,2,Kubeflow中的服务器端请求伪造(SSRF)漏洞
+CVE-2023-6571,kubeflow,MEDIUM,CVSS:3.0/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N,2023,,2,Kubeflow 反射型跨站脚本（XSS）漏洞
+CVE-2024-5552,kubeflow,HIGH,CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,2024,,2,Kubeflow 正则表达式拒绝服务（ReDoS）漏洞
+CVE-2024-9526,kubeflow,HIGH,CVSS:4.0/AV:A/AC:L/AT:P/PR:H/UI:P/VC:H/VI:H/VA:L/SC:H/SI:H/SA:L/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:P/AU:Y/R:U/V:D/RE:L/U:Green,2024,,2,Kubeflow Pipeline View web UI 存储型 XSS 漏洞
+CVE-2026-31228,kubeflow,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H,2026,"version <= ""1.20.1""",3,Adversarial Robustness Toolbox (ART) Kubeflow 组件存在不安全 eval() 导致的远程代码执行漏洞
+CVE-2026-31229,kubeflow,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H,2026,"version <= ""1.20.1""",3,Adversarial Robustness Toolbox（ART）Kubeflow 组件不安全反序列化漏洞导致远程代码执行
+CVE-2026-31230,kubeflow,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H,2026,"version <= ""1.20.1""",3,Adversarial Robustness Toolbox (ART) Kubeflow 组件 eval() 注入漏洞可导致远程代码执行
+CVE-2023-22463,kubepi,CRITICAL,CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H,2023,"version <= ""1.6.2""",5,KubePi 允许恶意行为者通过硬编码的 Jwtsigkeys 使用伪造的 JWT 令牌登录
+CVE-2023-22478,kubepi,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N,2023,"version <= ""1.6.3""",5,KubePi 可能允许未经授权访问系统API
+CVE-2023-22479,kubepi,HIGH,CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H,2023,"version <= ""1.6.3""",6,KubePi 会话固定攻击允许攻击者劫持合法用户会话
+CVE-2023-37916,kubepi,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N,2023,"version >= ""0"" && version < ""1.6.5""",5,KubePi 可能泄露任何用户的密码哈希
+CVE-2023-37917,kubepi,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:H/A:L,2023,"version < ""1.6.5""",5,KubePi 权限提升漏洞
+CVE-2023-29374,langchain,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H,2023,"version <= ""0.0.131""",7,LangChain 存在代码注入漏洞
+CVE-2023-32785,langchain,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H,2023,"version >= ""0"" && version < ""0.0.247""",4,Langchain SQL注入漏洞
+CVE-2023-32786,langchain,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N,2023,"version < ""0.0.329""",5,Langchain 服务器端请求伪造漏洞
+CVE-2023-34540,langchain,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H,2023,"version < ""0.0.225""",8,Langchain OS命令注入漏洞
+CVE-2023-34541,langchain,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H,2023,"version >= ""0"" && version < ""0.0.247""",7,Langchain 存在任意代码执行漏洞
+CVE-2023-36095,langchain,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H,2023,"version < ""0.0.236""",11,langchain代码注入漏洞
+CVE-2023-36188,langchain,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H,2023,"version < ""0.0.236""",7,langchain 存在任意代码执行漏洞
+CVE-2023-36189,langchain,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N,2023,"version < ""0.0.247""",10,langchain SQL注入漏洞
+CVE-2023-36258,langchain,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H,2023,"version < ""0.0.247""",11,langchain 任意代码执行漏洞
+CVE-2023-36281,langchain,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H,2023,"version > ""0"" && version < ""0.0.312""",8,langchain 存在任意代码执行漏洞
+CVE-2023-38860,langchain,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H,2023,"version < ""0.0.247""",9,LangChain 存在任意代码执行漏洞
+CVE-2023-38896,langchain,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H,2023,"version < ""0.0.236""",8,LangChain 存在任意代码执行漏洞
+CVE-2023-39631,langchain,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H,2023,"version > ""0"" && version < ""0.0.308""",9,Langchain 通过 numexpr 库的 evaluate 函数存在任意代码执行漏洞
+CVE-2023-39659,langchain,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H,2023,"version < ""0.0.325""",8,LangChain 存在任意代码执行漏洞
+CVE-2023-44467,langchain,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H,2023,"version = ""0.0.14""",6,langchain_experimental 存在通过 PALChain 的 python exec 方法执行任意代码的漏洞
+CVE-2023-46229,langchain,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H,2023,"version < ""0.0.317""",5,LangChain 服务器端请求伪造漏洞
+CVE-2024-0243,langchain,UNKNOWN,,2024,"version < ""0.1.0""",6,langchain 服务器端请求伪造漏洞
+CVE-2024-0968,langchain,MEDIUM,CVSS:3.0/AV:N/AC:H/PR:L/UI:R/S:U/C:L/I:L/A:L,2024,"version < ""0.0.0""",3,Langchain XSS漏洞
+CVE-2024-10940,langchain,MEDIUM,CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N,2024,"(version >= ""0.1.17"" && version < ""0.1.53"") || (version >= ""0.2.0"" && version < ""0.2.43"") || (version >= ""0.3.0"" && version < ""0.3.15"")",3,langchain-core中的未经授权文件读取漏洞
+CVE-2024-1455,langchain,MEDIUM,CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H,2024,"version < ""0.1.35""",7,LangChain的XMLOutputParser易受XML实体扩展攻击
+CVE-2024-2057,langchain,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L,2024,"version < ""0.1.9""",6,LangChain的load_local函数存在服务器端请求伪造漏洞
+CVE-2024-21513,langchain,CRITICAL,CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H,2024,"version >= ""0.0.0"" && version < ""0.0.21""",6,langchain-experimental 存在任意代码执行漏洞
+CVE-2024-27444,langchain,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H,2024,"version < ""0.0.52""",3,LangChain Experimental 存在任意代码执行漏洞
+CVE-2024-28088,langchain,LOW,,2024,"version < ""0.1.30""",8,LangChain 目录遍历漏洞
+CVE-2024-2965,langchain,MEDIUM,CVSS:3.0/AV:P/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H,2024,"version < ""0.2.5""",7,langchain-community 中的拒绝服务漏洞
+CVE-2024-3095,langchain,MEDIUM,CVSS:3.0/AV:P/AC:H/PR:L/UI:N/S:C/C:H/I:N/A:N,2024,"version < ""0.2.9""",6,langchain-community.retrievers.web_research.WebResearchRetriever 中的服务器端请求伪造漏洞
+CVE-2024-3571,langchain,MEDIUM,CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N,2024,"version < ""0.0.353""",4,langchain 存在路径遍历漏洞
+CVE-2024-38459,langchain,HIGH,CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H,2024,"version < ""0.0.61""",6,langchain_experimental 通过 Python REPL 访问执行代码漏洞
+CVE-2024-46946,langchain,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H,2024,"version >= ""0.1.17"" && version <= ""0.3.0""",5,LangChain Experimental Eval 注入漏洞
+CVE-2024-58340,langchain,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,2024,"version <= ""0.3.1""",5,LangChain 的 MRKLOutputParser.parse() 方法存在正则表达式拒绝服务 (ReDoS) 漏洞。
+CVE-2024-5998,langchain,HIGH,CVSS:3.1/AV:P/AC:L/PR:L/UI:R/S:U/C:H/I:L/A:L,2024,"version < ""0.2.4""",4,LangChain pickle反序列化不受信任数据
+CVE-2024-7042,langchain,LOW,CVSS:3.0/AV:L/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L,2024,"version >= ""0"" && version < ""0.3.3""",5,@langchain/community SQL注入漏洞
+CVE-2024-7774,langchain,MEDIUM,CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N,2024,"version >= ""0"" && version < ""0.2.19""",5,Langchain 路径遍历漏洞
+CVE-2024-8309,langchain,LOW,CVSS:3.0/AV:L/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L,2024,"version < ""0.2.19"" && (version >= ""0.2.0"" && version < ""0.2.0"")",6,Langchain SQL注入漏洞
+CVE-2025-2828,langchain,HIGH,CVSS:3.0/AV:N/AC:L/PR:H/UI:R/S:C/C:H/I:H/A:H,2025,"version >= ""0"" && version < ""0.0.28""",4,LangChain社区RequestsToolkit组件的SSRF漏洞
+CVE-2025-45150,langchain,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H,2025,,4,LangChain-ChatGLM-Webui 中不安全的权限允许任意文件查看和下载。
+CVE-2025-46059,langchain,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H,2025,"version < ""0.3.51""",5,Langchain 的 GmailToolkit 中存在间接提示注入漏洞。
+CVE-2025-56265,langchain,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H,2025,"version < ""1.107.0""",5,N8N 的聊天触发器组件由于任意文件上传而容易受到 XSS 攻击。
+CVE-2025-58177,langchain,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:N/A:N,2025,"version >= ""1.24.0"" && version < ""1.107.0""",0,n8n LangChain 聊天触发器节点中通过 initialMessages 参数存在存储型 XSS。
+CVE-2025-64104,langchain,HIGH,CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:L/A:N,2025,"version > ""0"" && version < ""2.0.11""",4,LangGraph 的 SQLite 存储因键参数化不当而容易受到 SQL 注入攻击。
+CVE-2025-64439,langchain,HIGH,CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:N/VC:N/VI:H/VA:H/SC:H/SI:H/SA:H,2025,"version < ""3.0.0""",6,"LangGraph Checkpoint 的 JsonPlusSerializer 在 ""json"" 模式下受 RCE 漏洞影响。"
+CVE-2025-65106,langchain,HIGH,CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:H/VI:L/VA:N/SC:N/SI:N/SA:N,2025,"version < ""1.0.7"" || version < ""0.3.80""",5,LangChain 存在通过提示模板中的属性访问进行模板注入的漏洞，允许攻击者访问 Python 对象的内部。
+CVE-2025-67644,langchain,HIGH,CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:L/A:N,2025,"version > ""0"" && version < ""3.0.1""",4,LangGraph 的 SQLite 检查点容易受到通过元数据过滤键进行的 SQL 注入攻击。
+CVE-2025-6853,langchain,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L,2025,"version > ""0"" && version < ""0.3.2""",5,Langchain-Chatchat 的 upload_temp_docs 函数存在路径遍历漏洞
+CVE-2025-6854,langchain,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N,2025,"version <= ""0.3.1""",5,Langchain-Chatchat路径遍历漏洞（影响版本至0.3.1）
+CVE-2025-6855,langchain,HIGH,CVSS:3.1/AV:A/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L,2025,"version > ""0"" && version < ""0.3.2""",5,Langchain-Chatchat中的路径遍历漏洞，源于标志参数处理不当
+CVE-2025-68664,langchain,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:L/A:N,2025,"(version > ""0"" && version < ""0.3.81"") || (version >= ""1.0.0"" && version < ""1.2.5"")",9,LangChain 序列化注入漏洞允许在 dumps/loads API 中提取秘密。
+CVE-2025-68665,langchain,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N,2025,"(version > ""0"" && version < ""0.3.80"") || (version > ""1.0.0"" && version < ""1.1.8"") || (version > ""0"" && version < ""0.3.37"") || (version > ""1.0.0"" && version < ""1.2.3"")",6,LangChain 序列化注入漏洞导致秘密信息泄露。
+CVE-2025-6984,langchain,HIGH,CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N,2025,"version > ""0"" && version < ""0.3.27""",5,Langchain Community 因 EverNoteLoader 组件中不安全的 XML 解析而容易受到 XML 外部实体 (XXE) 攻击。
+CVE-2025-6985,langchain,HIGH,CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N,2025,"version >= ""0"" && version < ""0.3.9""",5,LangChain 的 HTMLSectionSplitter 中存在不安全的 XSLT 解析导致的 XXE 漏洞
+CVE-2025-8709,langchain,HIGH,CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:L/A:N,2025,"version > ""0"" && version < ""2.0.11""",6,LangGraph 的 SQLite 存储实现存在 SQL 注入漏洞。
+CVE-2026-44843,langchain,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:N,2026,"version < ""0.3.85"" || version >= ""1.0.0"" && version < ""1.3.3""",2,LangChain 因 load() 允许列表过于宽泛导致不安全反序列化，攻击者可控制对象实例化
+CVE-2024-37014,langflow,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H,2024,"version < ""1.0.15""",4,Langflow 远程代码执行漏洞
+CVE-2024-42835,langflow,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H,2024,"version < ""1.0.13""",3,langflow 在 PythonCodeTool 组件中存在漏洞
+CVE-2024-48061,langflow,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H,2024,"version <= ""1.0.18""",5,Langflow易受远程代码执行攻击
+CVE-2024-7297,langflow,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H,2024,"version < ""1.0.13""",2,Langflow 中通过批量赋值导致的权限提升漏洞。
+CVE-2024-9277,langflow,MEDIUM,CVSS:3.1/AV:A/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L,2024,"version > ""0"" && version <= ""1.0.18""",0,Langflow 1.0.18版本及以下存在低效正则表达式复杂度漏洞。
+CVE-2025-3248,langflow,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H,2025,"version < ""1.3.0""",5,Langflow 在 `/api/v1/validate/code` 端点易受代码注入攻击
+CVE-2025-34291,langflow,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H,2025,"version > ""0"" && version <= ""1.6.9""",8,Langflow CORS配置错误导致账户劫持和RCE。
+CVE-2025-57760,langflow,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H,2025,"version > ""0"" && version < ""1.5.1""",4,Langflow 存在特权升级漏洞，经过远程代码执行后可通过 CLI 创建超级用户。
+CVE-2025-68477,langflow,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:N,2025,"version > ""0"" && version < ""1.7.1""",3,Langflow 的 API 请求组件中用户提供的 URL 验证不当，导致其易受服务器端请求伪造 (SSRF) 攻击。
+CVE-2025-68478,langflow,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:L,2025,"version > ""0"" && version < ""1.7.1""",3,Langflow 中外部控制文件名或路径漏洞允许通过身份验证的任意文件写入。
+CVE-2026-0768,langflow,CRITICAL,CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H,2026,,2,由于对用户提供的代码验证不当，Langflow 存在远程代码执行漏洞。
+CVE-2026-0769,langflow,CRITICAL,CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H,2026,,2,Langflow eval_custom_component_code Eval 注入远程代码执行漏洞。
+CVE-2026-0770,langflow,CRITICAL,CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H,2026,,2,Langflow 远程代码执行漏洞，通过 exec_globals 参数。
+CVE-2026-0771,langflow,HIGH,CVSS:3.0/AV:N/AC:H/PR:L/UI:R/S:U/C:H/I:H/A:H,2026,,2,Langflow PythonFunction 代码注入远程代码执行漏洞。
+CVE-2026-0772,langflow,HIGH,CVSS:3.0/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H,2026,,2,Langflow 磁盘缓存反序列化不受信任数据远程代码执行漏洞。
+CVE-2026-10561,langflow,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H,2026,"version >= ""1.0.0"" && version < ""1.9.4""",1,Langflow OSS 未授权远程代码执行漏洞（PythonREPLComponent 内置函数注入）
+CVE-2026-12822,langflow,MEDIUM,CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L,2026,"version < ""1.9.4""",3,langflow-ai langflow 1.9.3 及更早版本中 Bundle URL Loader 组件存在代码注入漏洞
+CVE-2026-21445,langflow,HIGH,CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N/E:P,2026,"version < ""0.7.1""",5,Langflow 中多个关键 API 端点缺少身份验证控制，允许任何未经身份验证的用户访问敏感的用户对话数据、交易历史记录并执行破坏性操作。
+CVE-2026-33017,langflow,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H,2026,"version <= ""1.8.1""",1,通过公共流构建端点实现未授权远程代码执行
+CVE-2026-33053,langflow,HIGH,,2026,"version < ""1.7.2""",4,Langflow API 密钥删除缺少所有权验证（IDOR）
+CVE-2026-33309,langflow,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H,2026,"version >= ""1.2.0"" && version <= ""1.8.1""",2,Langflow v2 API 存在任意文件写入漏洞（可导致 RCE，深度防御绕过）
+CVE-2026-3341,langflow,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:N,2026,"version >= ""1.0.0"" && version <= ""1.9.2""",1,IBM Langflow Desktop DNS 重绑定 SSRF 绕过漏洞（TOCTOU）
+CVE-2026-33475,langflow,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N,2026,"version < ""1.9.0""",1,Langflow GitHub Actions 工作流中未经身份验证的远程 Shell 注入漏洞
+CVE-2026-33484,langflow,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N,2026,"version >= ""1.0.0"" && version < ""1.9.0""",1,Langflow 图片下载接口存在未授权越权访问（IDOR）漏洞，允许任意获取用户上传图片
+CVE-2026-33497,langflow,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N,2026,"version < ""1.7.1""",1,Langflow 头像接口路径遍历漏洞导致 secret_key 泄露
+CVE-2026-3357,langflow,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H,2026,"version >= ""1.6.0"" && version <= ""1.8.2""",2,IBM Langflow Desktop FAISS 组件不安全反序列化导致远程代码执行
+CVE-2026-33760,langflow,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H,2026,"version < ""1.9.0""",1,Langflow 是一个用于构建和部署 AI 驱动的智能体和工作流的工具
+CVE-2026-33873,langflow,CRITICAL,,2026,"version <= ""1.8.1""",2,Langflow Agentic Assistant 执行 LLM 生成的 Python 代码，经身份验证的攻击者可通过代码注入实现远程代码执行。
+CVE-2026-34046,langflow,MEDIUM,,2026,"version < ""1.5.1""",2,Langflow MCP 服务器通过 flow_id 参数存在路径穿越漏洞
+CVE-2026-42048,langflow,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:N/I:H/A:H,2026,"version < ""1.9.0""",1,Langflow 是一款用于构建和部署 AI 智能体与工作流的工具
+CVE-2026-42867,langflow,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:L,2026,"version < ""1.9.0""",2,Langflow 知识库 API 路径遍历漏洞
+CVE-2026-4503,langflow,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N,2026,"version >= ""1.0.0"" && version <= ""1.8.4""",2,IBM Langflow Desktop 不安全直接对象引用（IDOR）— 未授权图片文件访问（CWE-639）
+CVE-2026-48519,langflow,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H,2026,"version < ""1.9.2""",3,langflow Langflow Shareable Playground 未授权远程代码执行漏洞
+CVE-2026-48520,langflow,MEDIUM,CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:H/I:N/A:N,2026,"version < ""1.10.0""",1,Langflow 共享游乐场存在任意文件读取漏洞
+CVE-2026-55255,langflow,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:L,2026,"version < ""1.9.1""",2,Langflow /api/v1/responses 端点存在 IDOR 漏洞，已认证攻击者可访问其他用户的 Flow
+CVE-2026-55423,langflow,MEDIUM,CVSS:3.1/AV:P/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N,2026,"version < ""1.7.0""",4,langflow 登出时会话未正确清除漏洞
+CVE-2026-55446,langflow,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,2026,"version < ""1.0.19""",2,未授权攻击者通过滥用multipart表单边界实现拒绝服务
+CVE-2026-55447,langflow,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H,2026,"version < ""1.9.2""",2,Langflow BaseFileComponent 组件任意文件读取及远程代码执行漏洞
+CVE-2026-55450,langflow,CRITICAL,CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:L,2026,"version < ""1.9.1""",3,langflow 未授权文件上传导致拒绝服务与信息泄露漏洞
+CVE-2026-6543,langflow,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H,2026,"version >= ""1.0.0"" && version <= ""1.8.4""",2,IBM Langflow Desktop 代码验证端点认证后远程代码执行漏洞
+CVE-2026-6596,langflow,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L,2026,"version <= ""1.1.0""",3,Langflow 1.1.0 及以下版本存在 API 端点文件上传无限制漏洞，可被远程利用。
+CVE-2026-6597,langflow,LOW,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:L/I:N/A:N,2026,"version <= ""1.8.3""",3,Langflow 1.8.3 及以下版本在 Flow Using API 组件中因凭证处理不当，导致 API 密钥以明文形式存储。
+CVE-2026-6598,langflow,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N,2026,"version <= ""1.8.3""",3,Langflow 1.8.3 及以下版本在项目创建端点中以明文存储 auth_settings 认证配置
+CVE-2026-6599,langflow,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L,2026,"version <= ""1.8.3""",2,Langflow 1.8.3 及以下版本 MCP 配置 API 存在 X-Forwarded-For 头注入漏洞
+CVE-2026-6600,langflow,LOW,CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:N/I:L/A:N,2026,"version <= ""1.8.3""",3,Langflow 1.8.3 及以下版本前端 React 组件渲染存在跨站脚本（XSS）漏洞
+CVE-2026-7524,langflow,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H,2026,"version >= ""1.0.0"" && version <= ""1.9.1""",2,Langflow OSS 归档解压时符号链接校验不当导致路径穿越和远程代码执行（CWE-22）
+CVE-2026-7528,langflow,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:H,2026,"version >= ""1.0.0"" && version <= ""1.9.0""",2,Langflow OSS 非受控资源消耗导致拒绝服务漏洞（CVE-2026-7528）
+CVE-2026-7664,langflow,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H,2026,"version >= ""1.0.0"" && version <= ""1.8.4""",1,Langflow OSS 未认证流程执行与 MCP 资源访问漏洞
+CVE-2026-7687,langflow,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L,2026,"version <= ""1.8.4""",3,Langflow 1.8.4 及以下版本存在命令注入漏洞，漏洞位于 Full Builtins Module Handler 的 CodeParser.parse_callable_details 函数中。
+CVE-2026-7787,langflow,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N,2026,"version >= ""1.0.0"" && version < ""1.9.2""",2,Langflow OSS 通过 IDOR 实现未认证会话历史记录访问
+CVE-2025-0330,langfuse,HIGH,CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N,2025,"version > ""0"" && version <= ""1.52.1""",3,由于解析团队设置时出错，LiteLLM 泄露 Langfuse API 密钥。
+CVE-2025-59305,langfuse,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:L/A:L,2025,"version < ""3.1.0""",4,Langfuse 后台迁移端点中不当授权允许已认证用户调用控制功能。
+CVE-2025-9799,langfuse,LOW,CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:L/I:L/A:L,2025,"version < ""3.88.0""",6,Langfuse 通过 promptChangeEventSourcing 函数容易受到服务器端请求伪造 (SSRF) 攻击。
+CVE-2026-41487,langfuse,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:N,2026,"version >= ""3.68.0"" && version < ""3.167.0""",3,"Langfuse LLM 连接更新流程中的 RBAC 权限控制缺陷，允许""member""角色用户获取存储的 LLM 服务商 API 密钥"
+CVE-2025-41258,librechat,HIGH,CVSS:3.1/AV:A/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H,2025,"version == ""0.8.1-rc2""",2,LibreChat v0.8.1-rc2 JWT 密钥重用漏洞
+CVE-2026-31942,librechat,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:L,2026,"version < ""0.8.3""",1,LibreChat 是一个增强版 ChatGPT 克隆，支持多种 AI 提供商
+CVE-2026-31943,librechat,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:L/A:N,2026,"version < ""0.8.3""",1,LibreChat SSRF 防护绕过漏洞（IPv4 映射 IPv6 地址十六进制规范化）
+CVE-2026-31944,librechat,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:L/A:N,2026,"version == ""0.8.2""",2,LibreChat MCP OAuth 回调会话绑定缺失，导致 OAuth 令牌窃取与账户接管
+CVE-2026-31945,librechat,HIGH,,2026,"version >= ""0.8.2-rc2"" && version <= ""0.8.2""",2,LibreChat agent actions 和 MCP 中存在 DNS 重绑定绕过 SSRF 漏洞
+CVE-2026-31949,librechat,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H,2026,"version < ""0.8.3-rc1""",2,LibreChat DELETE /api/convos 端点未处理的 TypeError 导致 Node.js 服务器进程崩溃（DoS）
+CVE-2026-31950,librechat,MEDIUM,CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:N/A:N,2026,"version >= ""0.8.2-rc2"" && version < ""0.8.2""",1,LibreChat SSE 流式端点未授权访问他人实时对话内容
+CVE-2026-31951,librechat,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:N/A:N,2026,"version >= ""0.8.2-rc1"" && version < ""0.8.3-rc2""",1,LibreChat MCP 服务器请求头注入导致 OAuth 令牌窃取
+CVE-2026-32625,librechat,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:N,2026,"version < ""0.8.4""",1,LibreChat MCP 服务器集成通过 ${VAR} 占位符解析导致环境变量泄露
+CVE-2026-33265,librechat,MEDIUM,CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:L,2026,"version == ""0.8.1-rc2""",2,LibreChat v0.8.1-rc2 JWT 令牌暴露
+CVE-2026-34371,librechat,MEDIUM,CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:N/I:H/A:N,2026,"version < ""0.8.4""",1,LibreChat execute_code 沙箱文件名路径穿越导致任意文件写入
+CVE-2026-4276,librechat,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N,2026,"version == ""0.7.0""",2,LibreChat RAG API v0.7.0 日志注入漏洞
+CVE-2026-44653,librechat,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N,2026,"version < ""0.8.4""",1,LibreChat MCP 服务器密钥泄露漏洞，允许查看权限用户窃取管理员凭据
+CVE-2026-44654,librechat,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:H,2026,"version < ""0.8.5""",1,LibreChat 共享 Agent 编辑者可全局删除文件记录，导致其他 Agent 异常
+CVE-2026-54024,librechat,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H,2026,"version < ""0.8.4-rc1""",1,LibreChat 是一个增强版 ChatGPT 克隆，支持多种 AI 提供商
+CVE-2026-54025,librechat,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N,2026,"version < ""0.8.4-rc1""",1,LibreChat 是一个增强版 ChatGPT 克隆，支持多种 AI 提供商
+CVE-2026-54027,librechat,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:L,2026,"version < ""0.8.4-rc1""",2,LibreChat 图片上传路由绕过 Agent 权限检查漏洞
+CVE-2026-54029,librechat,MEDIUM,CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:H/A:N,2026,"version < ""0.8.4-rc1""",1,DELETE /api/messages 接口缺少授权校验，允许任意已认证用户删除其他用户的消息
+CVE-2026-54030,librechat,HIGH,CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:H/I:H/A:N,2026,"version < ""0.8.5""",2,LibreChat MCP OAuth 资源参数校验绕过导致访问令牌窃取
+CVE-2026-54033,librechat,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:N,2026,"version < ""0.8.4-rc1""",1,LibreChat 是一个增强版 ChatGPT 克隆，支持多种 AI 提供商
+CVE-2026-54036,librechat,MEDIUM,CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:H/A:N,2026,"version <= ""0.8.3""",1,LibreChat 2FA 重置漏洞，已启用双因素认证的账户可被覆盖
+CVE-2024-32878,llama-cpp,HIGH,CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:L,2024,"version < ""b2740""",2,llama.cpp 在 gguf_init_from_file 中使用未初始化变量，加载恶意 GGUF 模型可导致任意地址释放
+CVE-2024-42477,llama-cpp,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N,2024,"version < ""b3561""",2,llama.cpp RPC 服务端因攻击者可控的 tensor type 字段，在 ggml_type_size 中发生全局缓冲区溢出
+CVE-2024-42478,llama-cpp,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N,2024,"version < ""b3561""",2,llama.cpp RPC 服务端在 rpc_server::get_tensor 中使用攻击者可控的 tensor data 指针进行读取，导致任意地址读与信息泄露
+CVE-2024-42479,llama-cpp,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H,2024,"version < ""b3561""",2,llama.cpp RPC 服务端在 rpc_server::set_tensor 中信任攻击者可控的 tensor data 指针，导致任意地址写（write-what-where），可升级为远程代码执行
+CVE-2025-49847,llama-cpp,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H,2025,"version < ""b5662""",2,llama.cpp 加载恶意 GGUF 模型时，词表加载函数（llama_vocab::impl::token_to_piece）发生缓冲区溢出，可导致内存破坏与潜在代码执行
+CVE-2025-52566,llama-cpp,HIGH,CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H,2025,"version < ""b5721""",2,llama.cpp 分词器（llama_vocab::tokenize）存在有符号/无符号整数比较导致的堆溢出，可由构造的文本输入触发
+CVE-2026-27940,llama-cpp,HIGH,CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H,2026,"version < ""b8146""",2,llama.cpp mem_size 计算整数溢出导致堆缓冲区溢出，可通过恶意 GGUF 文件触发任意代码执行
+CVE-2026-33298,llama-cpp,HIGH,CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H,2026,"version < ""b7824""",2,llama.cpp：ggml_nbytes 整数溢出导致可通过恶意 GGUF 文件触发堆缓冲区溢出
+CVE-2026-34159,llama-cpp,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H,2026,"version < ""b8492""",4,llama.cpp RPC 后端 deserialize_tensor() 缓冲区零值绕过导致未授权远程代码执行
+CVE-2024-52803,llamafactory,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N,2024,"version <= ""0.9.0""",3,LLama Factory 远程操作系统命令注入漏洞
+CVE-2025-46567,llamafactory,CRITICAL,CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:L/A:L,2025,"version < ""0.9.2""",4,LLaMA-Factory 允许通过 Ilamafy_baichuan2.py 中的不安全反序列化执行任意代码
+CVE-2025-53002,llamafactory,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:L/A:H,2025,"version <= ""0.9.3""",4,LLaMA-Factory 允许通过不恰当的 vhead_file 安全措施导致代码注入
+CVE-2025-61784,llamafactory,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:L/A:L,2025,"version >= ""0"" && version <= ""0.9.3""",4,LLaMA Factory 的聊天 API 存在严重的 SSRF 和 LFI 漏洞
+CVE-2026-33626,lmdeploy,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N,2026,"version < ""0.12.3""",2,LMDeploy 视觉语言图像加载模块存在服务端请求伪造（SSRF）漏洞
+CVE-2026-46432,lmdeploy,HIGH,CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H,2026,"version <= ""0.12.3""",1,LMDeploy 硬编码 trust_remote_code=True 导致任意代码执行
+CVE-2026-46517,lmdeploy,HIGH,CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H,2026,"version <= ""0.12.3""",1,硬编码 trust_remote_code=True 导致用户无法选择退出的隐式远程代码执行
+CVE-2026-1115,lollms,CRITICAL,,2026,"version < ""2.2.0""",3,LoLLMs 社交帖子内容未过滤导致的存储型跨站脚本（XSS）漏洞
+CVE-2026-33340,lollms,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N,2026,"version < ""11.0.0""",3,LoLLMs WebUI /api/proxy 端点未授权服务端请求伪造（SSRF）漏洞
+CVE-2026-44450,lumiverse,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H,2026,"version < ""0.9.7""",2,Lumiverse MCP stdio 参数注入漏洞允许已认证用户在服务器上执行任意操作系统命令
+CVE-2026-44847,maxkb,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L,2026,"version < ""2.9.0""",3,MaxKB Webhook 触发器身份验证绕过漏洞（CWE-287/CWE-306）
+CVE-2025-6515,mcp sse,HIGH,CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:N/I:H/A:H,2025,,2,oatpp-mcp 的 MCP SSE 端点中不安全的会话 ID 生成。
+CVE-2026-49257,mcp-pinot,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H,2026,"version <= ""3.0.1""",2,mcp-pinot 关键功能缺失认证导致未授权工具调用漏洞
+CVE-2026-46519,mcp-server-kubernetes,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H,2026,"version < ""3.6.0""",3,mcp-server-kubernetes 展示层过滤未在执行层强制执行导致访问控制绕过
+CVE-2026-49948,mem0,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N,2026,"version <= ""0.2.8""",5,mem0 POST /configure 端点缺失授权漏洞
+CVE-2022-0736,mlflow,HIGH,CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:H,2022,"version < ""1.23.1""",6,mlflow 中的不安全临时文件
+CVE-2023-1176,mlflow,MEDIUM,CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N,2023,"version < ""2.2.1""",5,mlflow server 和 mlflow ui CLIs 的远程文件存在检查漏洞
+CVE-2023-1177,mlflow,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H,2023,"version < ""2.2.1""",7,mlflow 在 `mlflow server` 和 `mlflow ui` CLIs 中存在远程文件访问漏洞
+CVE-2023-2356,mlflow,HIGH,CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:L,2023,"version < ""2.3.1""",5,mlflow中的相对路径遍历漏洞
+CVE-2023-2780,mlflow,CRITICAL,CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H,2023,"version < ""2.3.0""",5,mlflow 路径遍历漏洞
+CVE-2023-30172,mlflow,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N,2023,"version < ""2.0.0""",8,mlflow存在目录遍历漏洞
+CVE-2023-3765,mlflow,CRITICAL,CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H,2023,"version < ""2.5.0""",4,MLflow 路径遍历漏洞
+CVE-2023-4033,mlflow,HIGH,CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H,2023,"version < ""2.6.0""",5,mlflow 存在操作系统命令注入漏洞
+CVE-2023-43472,mlflow,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N,2023,"version >= ""0"" && version < ""2.9.0""",4,MLflow中的信息泄露
+CVE-2023-6014,mlflow,CRITICAL,CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N,2023,"version < ""2.8.0""",7,MLflow 认证绕过漏洞允许用户任意创建账户
+CVE-2023-6015,mlflow,CRITICAL,CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:N,2023,"version < ""2.8.1""",5,MLflow 允许任意文件上传到服务器
+CVE-2023-6018,mlflow,CRITICAL,CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H,2023,"version < ""2.9.2""",4,mlflow中的远程代码执行漏洞，由于完全控制的文件写入
+CVE-2023-6568,mlflow,MEDIUM,CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:N,2023,"version < ""2.9.0""",5,MLflow 中的跨站脚本 (XSS) 漏洞
+CVE-2023-6709,mlflow,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H,2023,"version >= ""0"" && version < ""2.9.2""",5,mlflow中的Jinja2模板注入漏洞
+CVE-2023-6753,mlflow,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H,2023,"version > ""0"" && version < ""2.9.2""",4,MLflow中的路径遍历漏洞
+CVE-2023-6831,mlflow,CRITICAL,CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:C/C:N/I:H/A:H,2023,"version < ""2.9.2""",5,MLflow 路径遍历漏洞
+CVE-2023-6909,mlflow,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N,2023,"version < ""2.9.2""",5,MLflow 路径遍历漏洞
+CVE-2023-6940,mlflow,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H,2023,"version < ""2.9.2""",7,mlflow 命令注入漏洞
+CVE-2023-6974,mlflow,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H,2023,"version >= ""0"" && version < ""2.9.2""",4,MLflow 服务器端请求伪造(SSRF)漏洞
+CVE-2023-6975,mlflow,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H,2023,"version >= ""0"" && version < ""2.9.2""",4,MLFlow 路径遍历漏洞
+CVE-2023-6976,mlflow,HIGH,CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H,2023,"version > ""0"" && version < ""2.9.2""",4,MLflow 路径遍历漏洞
+CVE-2023-6977,mlflow,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N,2023,"version < ""2.9.2""",4,MLflow 本地文件泄露漏洞
+CVE-2024-0520,mlflow,CRITICAL,CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H,2024,"version < ""2.9.0""",4,mlflow 远程代码执行漏洞
+CVE-2024-1483,mlflow,HIGH,CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N,2024,"version <= ""2.9.2""",3,mlflow 路径遍历漏洞
+CVE-2024-1558,mlflow,HIGH,CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N,2024,"version <= ""2.9.2""",3,mlflow 存在路径遍历漏洞
+CVE-2024-1560,mlflow,HIGH,CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:H,2024,"version <= ""2.9.2""",3,mlflow 存在路径遍历漏洞
+CVE-2024-1593,mlflow,HIGH,CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N,2024,"version >= ""0"" && version < ""2.9.3""",3,mlflow 存在路径遍历漏洞
+CVE-2024-1594,mlflow,HIGH,CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N,2024,"version > ""0"" && version < ""2.9.3""",4,mlflow 存在路径遍历漏洞
+CVE-2024-27132,mlflow,HIGH,CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H,2024,"version >= ""0"" && version < ""2.10.0""",4,MLFlow 跨站脚本漏洞
+CVE-2024-27133,mlflow,HIGH,CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H,2024,"version >= ""0"" && version < ""2.10.0""",6,MLFlow跨站脚本漏洞导致客户端远程代码执行
+CVE-2024-27134,mlflow,HIGH,CVSS:3.1/AV:L/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H,2024,"version >= ""0"" && version < ""2.16.0""",4,MLflow的过度目录权限允许本地权限提升
+CVE-2024-2928,mlflow,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N,2024,"version >= ""0"" && version < ""2.11.3""",4,mlflow中的本地文件包含漏洞
+CVE-2024-3099,mlflow,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:L,2024,"version >= ""0"" && version < ""2.11.3""",3,mlflow中的未定义行为漏洞
+CVE-2024-3573,mlflow,CRITICAL,CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:L/A:N,2024,"version >= ""0"" && version < ""2.10.0""",4,mlflow存在路径遍历漏洞
+CVE-2024-37052,mlflow,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H,2024,"version >= ""1.1.0"" && version <= ""2.14.1""",3,MLFlow 不安全的反序列化
+CVE-2024-37053,mlflow,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H,2024,"version >= ""1.1.0"" && version <= ""2.14.1""",3,MLFlow 不安全的反序列化
+CVE-2024-37054,mlflow,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H,2024,"version >= ""0.9.0"" && version <= ""2.14.1""",3,MLFlow 不安全的反序列化
+CVE-2024-37055,mlflow,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H,2024,"version >= ""1.24.0"" && version <= ""2.14.1""",3,MLFlow 不安全的反序列化
+CVE-2024-37056,mlflow,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H,2024,"version >= ""1.23.0"" && version <= ""2.14.1""",3,MLFlow 不安全的反序列化
+CVE-2024-37057,mlflow,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H,2024,"version >= ""2.0.0rc0"" && version <= ""2.14.1""",3,MLFlow 不安全的反序列化
+CVE-2024-37058,mlflow,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H,2024,"version >= ""2.5.0"" && version <= ""2.14.1""",3,MLFlow 不安全的反序列化
+CVE-2024-37059,mlflow,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H,2024,"version >= ""0.5.0"" && version <= ""2.14.1""",3,MLFlow 不安全的反序列化
+CVE-2024-37060,mlflow,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H,2024,"version >= ""1.27.0"" && version <= ""2.14.1""",3,MLFlow 不安全的反序列化
+CVE-2024-37061,mlflow,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H,2024,"version >= ""1.11.0"" && version <= ""2.13.1""",3,MLFlow 输入验证不当
+CVE-2024-3848,mlflow,HIGH,CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N,2024,"version >= ""2.9.2"" && version < ""2.12.1""",4,MLflow存在本地文件读取/路径遍历绕过漏洞
+CVE-2024-4263,mlflow,MEDIUM,CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:L,2024,"version < ""2.10.1""",5,MLflow 允许低权限用户删除任意工件
+CVE-2024-6838,mlflow,MEDIUM,CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L,2024,"version < ""2.13.3""",2,mlflow中的漏洞允许通过大型实验名称和无限的工件位置导致拒绝服务。
+CVE-2024-8859,mlflow,HIGH,CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N,2024,"version == ""2.15.1""",3,mlflow 版本 2.15.1 中的路径遍历漏洞
+CVE-2025-0453,mlflow,MEDIUM,CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H,2025,"version == ""2.17.2""",2,mlflow GraphQL端点存在拒绝服务漏洞
+CVE-2025-10279,mlflow,HIGH,CVSS:3.0/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H,2025,"version > ""0"" && version < ""3.4.0""",4,mlflow 在权限不安全的目录中创建临时文件。
+CVE-2025-11200,mlflow,HIGH,CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H,2025,"version > ""0"" && version < ""2.22.0rc0""",4,MLflow 弱密码要求身份验证绕过漏洞。
+CVE-2025-11201,mlflow,HIGH,CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H,2025,"(version > ""0"" && version < ""2.22.4"") || (version >= ""3.0.0rc0"" && version < ""3.0.0"")",6,MLflow Tracking Server 模型创建目录遍历远程代码执行漏洞。
+CVE-2025-14279,mlflow,HIGH,CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N,2025,"version > ""0"" && version < ""3.5.0""",5,由于缺少 Origin 头验证，MLFlow 容易受到 DNS 重绑定攻击。
+CVE-2025-14287,mlflow,HIGH,CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H,2025,"version < ""3.8.0rc0""",3,mlflow MLflow 在 mlflow/sagemaker/__init__.py 中存在命令注入漏洞
+CVE-2025-1473,mlflow,MEDIUM,CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:N,2025,"version >= ""2.17.0"" && version <= ""2.20.1""",3,mlflow注册功能中的跨站请求伪造（CSRF）漏洞
+CVE-2025-1474,mlflow,LOW,CVSS:3.0/AV:N/AC:L/PR:H/UI:N/S:U/C:L/I:L/A:N,2025,"version >= ""2.18.0"" && version < ""2.19.0""",3,管理员可以在mlflow版本2.18中创建用户帐户而不设置密码
+CVE-2025-15031,mlflow,HIGH,,2025,"version < ""3.9.0rc0""",1,MLflow pyfunc tar.gz 提取路径遍历漏洞
+CVE-2025-15036,mlflow,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:N,2025,"version < ""3.7.0""",3,MLflow tar 解压路径穿越漏洞，可导致任意文件覆盖及多租户环境下的权限提升。
+CVE-2025-15379,mlflow,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H,2025,"version >= ""3.8.0"" && version < ""3.8.2""",3,MLflow 模型服务容器初始化中存在命令注入漏洞，攻击者可通过恶意 python_env.yaml 依赖项实现任意命令执行。
+CVE-2025-15381,mlflow,HIGH,,2025,"version < ""3.10.1""",2,MLflow basic-auth 鉴权绕过漏洞，允许任意已认证用户访问 tracing 和 assessment 端点。
+CVE-2025-52967,mlflow,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:N/I:L/A:N,2025,"version > ""0"" && version < ""3.1.0""",6,MLFlow 通过 gateway_proxy_handler 的 SSRF 漏洞
+CVE-2026-0545,mlflow,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N,2026,"version <= ""3.10.1""",2,MLflow FastAPI 作业接口缺失身份验证，启用 basic-auth 时可通过 /ajax-api/3.0/jobs/* 实现未授权远程代码执行。
+CVE-2026-0596,mlflow,CRITICAL,,2026,"version < ""3.9.0""",2,MLflow 模型服务在 enable_mlserver=True 时存在命令注入漏洞，攻击者可通过未经过滤的 model_uri 执行任意命令
+CVE-2026-10803,mlflow,LOW,CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:N/I:L/A:L,2026,"version <= ""3.10.0""",2,MLflow 数据集摘要计算使用弱哈希算法
+CVE-2026-22607,mlflow,HIGH,CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:P,2026,"version > ""0"" && version < ""0.1.7""",11,Fickling 版本最高包括 0.1.6 未将 Python 的 `cProfile` 模块视为不安全，导致黑名单绕过和潜在的任意代码执行。
+CVE-2026-2393,mlflow,HIGH,,2026,"version < ""3.9.0""",3,MLflow 的 _create_webhook() 函数未对 webhook URL 进行验证，导致经身份认证的攻击者可发起 SSRF 攻击， 向内部服务或任意外部服务器发送 HTTP 请求。
+CVE-2026-2611,mlflow,CRITICAL,CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:P/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H,2026,"version == ""3.9.0""",3,MLflow 3.9.0 /ajax-api 端点存在跨域请求来源验证缺陷，攻击者可通过恶意网页远程执行任意命令。
+CVE-2026-2614,mlflow,HIGH,,2026,"version <= ""3.9.0""",3,MLflow 任意文件读取漏洞（模型版本标签绕过源路径校验，未授权可利用）
+CVE-2026-2651,mlflow,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H,2026,"version < ""3.10.0""",2,MLflow 未授权访问分块上传（MPU）端点，可导致制品覆盖与模型供应链污染
+CVE-2026-2652,mlflow,HIGH,,2026,"version < ""3.10.0""",3,MLflow 通过 uvicorn（ASGI）启用 basic-auth 时 FastAPI 路由存在认证绕过漏洞
+CVE-2026-2734,mlflow,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N,2026,"version < ""3.10.0""",3,MLflow SearchModelVersions API 缺少按模型的授权检查，允许已认证用户枚举所有模型版本
+CVE-2026-3198,mlflow,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N,2026,"version == ""3.9.0""",1,MLflow basic-auth 绕过允许未授权枚举网关密钥、端点和模型定义
+CVE-2026-33865,mlflow,MEDIUM,,2026,"version <= ""3.10.1""",2,MLflow 存在存储型跨站脚本漏洞（Stored XSS），由 Web 界面对 YAML 格式 MLmodel 制品的不安全解析引起
+CVE-2026-33866,mlflow,MEDIUM,,2026,"version <= ""3.10.1""",2,MLflow 存在授权绕过漏洞，影响用于下载已保存模型产物的 AJAX 端点
+CVE-2026-4035,mlflow,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N,2026,"version < ""3.11.0""",3,AI Gateway 密钥中的环境变量解析导致服务端凭证泄露
+CVE-2026-4137,mlflow,HIGH,CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H,2026,"version < ""3.11.0""",3,MLflow 不安全临时目录权限允许本地攻击者通过篡改模型制品实现任意代码执行
+CVE-2023-27562,n8n,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N,2023,"version > ""0"" && version < ""0.216.1""",9,n8n 目录遍历漏洞
+CVE-2023-27563,n8n,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H,2023,"version > ""0"" && version < ""0.216.1""",7,Node.js 的 n8n 包在 0.216.1 版本之前允许权限提升。
+CVE-2023-27564,n8n,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N,2023,"version < ""0.216.1""",7,适用于 Node.js 的 n8n 软件包在 0.216.1 版本之前存在信息泄露漏洞。
+CVE-2025-46343,n8n,MEDIUM,CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:U/C:H/I:L/A:N,2025,"version > ""0"" && version < ""1.90.0""",6,n8n 存在通过附件查看端点实现的存储型XSS漏洞，允许已认证攻击者执行恶意JavaScript。
+CVE-2025-49592,n8n,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:L/I:L/A:N,2025,"version > ""0"" && version < ""1.98.0""",6,n8n 允许通过 /signin 端点进行开放重定向，可能导致网络钓鱼攻击和凭据窃取。
+CVE-2025-49595,n8n,HIGH,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H,2025,"version > ""0"" && version < ""1.99.0""",5,n8n 存在拒绝服务漏洞，源于向 `/rest/binary-data` 端点发送格式错误的二进制数据请求。
+CVE-2025-52478,n8n,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:N,2025,"version >= ""1.77.0"" && version < ""1.98.2""",8,n8n 表单触发器中存在存储型 XSS 漏洞，可通过注入 iframe 和 video/source 导致账户劫持。
+CVE-2025-52554,n8n,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N,2025,"version > ""0"" && version < ""1.99.1""",6,n8n 存在通过其 `/stop` 端点进行不当授权的漏洞，允许经过身份验证的用户停止他们不拥有的工作流执行。
+CVE-2025-55526,n8n,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N,2025,,2,n8n-workflows 存在目录遍历漏洞，通过 download_workflow 函数利用。
+CVE-2025-57749,n8n,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N,2025,"version > ""0"" && version < ""1.106.0""",5,"n8n ""读/写文件""节点中的符号链接遍历漏洞允许访问受限文件。"
+CVE-2025-61914,n8n,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:N,2025,"version > ""0"" && version < ""1.114.0""",3,n8n 的“响应 Webhook”节点可能允许存储型 XSS 在 iframe 沙箱外部执行。
+CVE-2025-61917,n8n,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:N,2025,"version > ""1.65.0"" && version < ""1.114.3""",8,n8n 的不安全缓冲区分配导致任务运行器中发生进程内内存泄露。
+CVE-2025-62726,n8n,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H,2025,"version > ""0"" && version < ""1.113.0""",5,n8n 存在通过 Git 节点预提交钩子实现远程代码执行的漏洞。
+CVE-2025-65964,n8n,CRITICAL,CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H,2025,"version >= ""0.123.1"" && version < ""1.119.2""",6,n8n 存在通过 Git 节点自定义 Pre-Commit 钩子实现远程代码执行漏洞。
+CVE-2025-68613,n8n,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H,2025,"version >= ""0.211.0"" && version < ""1.120.4"" || version >= ""1.121.0"" && version < ""1.121.1""",6,n8n 存在通过表达式注入实现远程代码执行的漏洞，允许经过身份验证的攻击者执行任意代码。
+CVE-2025-68668,n8n,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:L,2025,"version > ""1.0.0"" && version < ""2.0.0""",4,n8n 的基于 Pyodide 的 Python 代码节点存在沙箱绕过漏洞，可导致任意命令执行。
+CVE-2025-68697,n8n,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:H/A:N,2025,"version > ""1.2.1"" && version < ""2.0.0""",7,使用旧版代码节点执行的自托管 n8n 实例容易受到任意文件读/写漏洞的影响。
+CVE-2025-68949,n8n,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N,2025,"version > ""1.36.0"" && version < ""2.2.0""",6,n8n 的 Webhook 节点 IP 白名单绕过漏洞，通过部分字符串匹配允许攻击者绕过 IP 限制。
+CVE-2026-0863,n8n,HIGH,CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H,2026,,4,n8n Python 沙箱逃逸，通过异常格式化和隐式代码执行实现。
+CVE-2026-1470,n8n,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H,2026,"(version > ""0"" && version < ""1.123.17"") || (version >= ""2.0.0"" && version < ""2.4.5"") || (version >= ""2.5.0"" && version < ""2.5.1"")",6,n8n 的工作流表达式评估系统存在一个严重的远程代码执行（RCE）漏洞。
+CVE-2026-21858,n8n,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:N,2026,"version > ""1.65.0"" && version < ""1.121.0""",4,n8n 由于不当的 Webhook 请求处理，容易受到未经身份验证的文件访问。
+CVE-2026-21877,n8n,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H,2026,"version > ""0.123.0"" && version < ""1.121.3""",3,n8n 存在通过任意文件写入导致的远程代码执行 (RCE) 漏洞。
+CVE-2026-21893,n8n,CRITICAL,CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H,2026,"version > ""0.187.0"" && version < ""1.120.3""",4,n8n 的社区包安装功能存在命令注入漏洞。
+CVE-2026-21894,n8n,HIGH,CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S/U/C:L/I:H/A:N,2026,"version > ""0.150.0"" && version < ""2.2.2""",5,n8n 的 Stripe 触发器节点由于缺少签名验证，易受未经身份验证的伪造 Webhook 攻击。
+CVE-2026-25049,n8n,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H,2026,"(version > ""0"" && version < ""1.123.17"") || (version >= ""2.0.0"" && version < ""2.5.2"")",7,n8n 存在表达式逃逸漏洞，可导致远程代码执行 (RCE)。
+CVE-2026-25051,n8n,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:N,2026,"(version > ""0"" && version < ""1.122.5"") || (version >= ""1.123.0"" && version < ""1.123.2"")",5,n8n 在 webhook 响应中 CSP 执行不当可能导致存储型 XSS。
+CVE-2026-25052,n8n,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H,2026,"(version > ""0"" && version < ""1.123.18"") || (version >= ""2.0.0"" && version < ""2.5.0"")",4,n8n 的不当文件访问控制允许认证用户任意读取文件。
+CVE-2026-25053,n8n,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H,2026,"(version > ""0"" && version < ""1.123.10"") || (version >= ""2.0.0"" && version < ""2.5.0"")",4,n8n 的 Git 节点存在操作系统命令注入漏洞。经过身份验证的用户可以执行任意系统命令或读取任意文件。
+CVE-2026-25054,n8n,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:N,2026,"(version > ""2.0.0"" && version < ""2.2.1"") || (version > ""0"" && version < ""1.123.9"")",3,n8n 的工作流用户界面通过 Markdown 渲染存在存储型跨站脚本 (XSS) 漏洞。
+CVE-2026-25055,n8n,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H,2026,"(version > ""0"" && version < ""1.123.12"") || (version >= ""2.0.0"" && version < ""2.4.0"")",6,n8n 存在通过 SSH 节点在远程系统上任意文件写入的漏洞。
+CVE-2026-25056,n8n,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H,2026,"(version > ""0"" && version < ""1.118.0"") || (version >= ""2.0.0"" && version < ""2.4.0"")",4,n8n 的 Merge 节点中存在一个漏洞，允许经过身份验证的用户写入任意文件，可能导致远程代码执行。
+CVE-2026-25115,n8n,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H,2026,"version > ""0"" && version < ""2.4.8""",6,经身份验证的用户可以在 n8n 的 Python 代码节点中逃逸 Python 沙箱。
+CVE-2026-25631,n8n,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N,2026,"version > ""0"" && version < ""1.121.0""",3,n8n 的域名允许列表绕过漏洞导致凭据泄露。
+CVE-2026-27496,n8n,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N,2026,"version < ""1.123.22""",2,n8n JavaScript 任务运行器分配未初始化内存缓冲区导致信息泄露。
+CVE-2026-33660,n8n,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H,2026,"version < ""1.123.26""",2,"n8n Merge 节点""按 SQL 合并""模式通过 AlaSQL 实现本地文件读取和远程代码执行。"
+CVE-2026-33663,n8n,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N,2026,"version < ""1.123.27""",2,n8n 凭据管道授权漏洞允许 global:member 角色窃取明文 HTTP 凭据。
+CVE-2026-33665,n8n,HIGH,CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:N,2026,"version < ""1.121.0""",2,n8n LDAP 认证通过邮箱自动关联 LDAP 身份与本地账户，导致账户接管漏洞。
+CVE-2026-33696,n8n,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H,2026,"version < ""1.123.27""",2,n8n XML 和 GSuiteAdmin 节点通过精心构造的工作流参数存在原型污染漏洞。
+CVE-2026-33713,n8n,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H,2026,"version < ""1.123.26""",2,n8n Data Table Get 节点 SQL 注入漏洞允许通过 SQLite 读取文件并可能实现远程代码执行。
+CVE-2026-33720,n8n,HIGH,CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:N,2026,"version < ""2.8.0""",2,启用 N8N_SKIP_AUTH_ON_OAUTH_CALLBACK 时 n8n OAuth 回调处理程序跳过所有权验证。
+CVE-2026-33722,n8n,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N,2026,"version < ""1.123.23""",2,n8n 允许没有列表权限的认证用户获取外部密钥的明文值。
+CVE-2026-33724,n8n,HIGH,CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N,2026,"version < ""2.5.0""",2,n8n 源代码控制 SSH 功能禁用主机密钥验证，导致中间人攻击风险。
+CVE-2026-33749,n8n,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:N,2026,"version < ""1.123.27""",2,n8n 二进制数据端点提供 HTML 文件时缺少 Content-Disposition 头，导致 XSS 漏洞。
+CVE-2026-33751,n8n,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:L/A:N,2026,"version < ""1.123.27""",2,n8n LDAP 节点过滤器转义逻辑缺陷允许通过未转义的元字符进行 LDAP 注入。
+CVE-2026-42233,n8n,MEDIUM,CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:N/VC:N/VI:N/VA:N/SC:H/SI:H/SA:N,2026,"version < ""1.123.32"" || (version >= ""2.0.0"" && version < ""2.17.4"") || (version >= ""2.18.0"" && version < ""2.18.1"")",3,n8n Oracle 数据库节点 Limit 字段 SQL 注入漏洞
+CVE-2026-42235,n8n,HIGH,CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:A/VC:H/VI:H/VA:L/SC:H/SI:H/SA:L,2026,"version < ""1.123.32"" || (version >= ""2.0.0"" && version < ""2.17.4"") || (version >= ""2.18.0"" && version < ""2.18.1"")",2,n8n 通过 MCP OAuth client_name 参数存在 XSS 漏洞，可导致会话劫持和权限提升。
+CVE-2026-54309,n8n,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:L,2026,"(version < ""2.25.7"") || (version >= ""2.26.0"" && version < ""2.26.2"")",1,n8n MCP 浏览器 HTTP 传输模式暴露未认证浏览器控制会话
+CVE-2026-56348,n8n,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:L/A:L,2026,"version < ""2.20.0""",2,n8n 凭据泄露漏洞（允许的 HTTP 请求域限制绕过）
+CVE-2026-41495,n8n-mcp,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N,2026,"version < ""2.47.11""",2,n8n-MCP HTTP 模式在 2.47.11 版本之前会将未经认证请求中的敏感元数据（Bearer 令牌、API 密钥、JSON-RPC 载荷）写入服务器日志
+CVE-2026-42282,n8n-mcp,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N,2026,"version < ""2.47.13""",3,n8n-MCP HTTP 传输模式在日志中记录敏感的 MCP 工具调用参数（脱敏前），可能导致凭据泄露。
+CVE-2026-42449,n8n-mcp,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:L/A:N,2026,"version >= ""2.47.4"" && version < ""2.47.14""",3,n8n-mcp SSRFProtection.validateUrlSync() 缺乏 IPv6 检查，允许 IPv4 映射的 IPv6 地址绕过 SSRF 防护
+CVE-2026-30886,new-api,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N,2026,"version < ""0.11.4-alpha.2""",2,New API 视频代理 IDOR 漏洞 - 越权访问其他用户视频内容
+CVE-2026-32879,new-api,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:N/A:N,2026,"version >= ""0.10.0""",1,New API Passkey 二次验证绕过漏洞 - 可泄露 Root 级渠道密钥
+CVE-2026-41432,new-api,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:L,2026,"version < ""0.12.10""",3,New API Stripe Webhook 签名绕过漏洞，允许伪造事件任意充值配额 （0.12.10 版本之前受影响）
+CVE-2023-49785,nextchat,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N,2023,"version > ""0"" && version <= ""2.11.2""",3,NextChat 的 /api/cors 端点存在完全读取的 SSRF 和 XSS 漏洞。
+CVE-2025-50733,nextchat,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N,2025,,3,NextChat 存在跨站脚本 (XSS) 漏洞，原因是 AI 生成的 HTML 内容未经过适当净化。
+CVE-2025-50735,nextchat,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N,2025,"version <= ""2.16.0""",4,NextChat 中由于 WebDAV 代理处理不当导致的目录遍历漏洞。
+CVE-2026-7177,nextchat,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L,2026,"version <= ""2.16.1""",2,NextChat（ChatGPT-Next-Web）v2.16.1 及以下版本存在服务端请求伪造（SSRF）漏洞， 攻击者可通过 proxyHandler 函数在未授权情况下向内部或外部资源发送任意 HTTP 请求。
+CVE-2026-7178,nextchat,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H,2026,"version <= ""2.16.1""",2,NextChat（ChatGPT-Next-Web）2.16.1 及以下版本的 Artifacts 端点存在服务器端请求伪造（SSRF） 路径穿越漏洞，未认证攻击者可利用服务器的特权 API Token 调用任意 Cloudflare API 端点。
+CVE-2026-7643,nextchat,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:N,2026,"version <= ""2.16.1""",3,NextChat API 端点中存在宽松跨域策略漏洞。
+CVE-2026-7644,nextchat,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H,2026,"version <= ""2.16.1""",3,NextChat 未授权远程代码执行漏洞（addMcpServer Server Action）
+CVE-2024-12055,ollama,HIGH,CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,2024,"version <= ""0.3.14""",2,Ollama版本<=0.3.14中的漏洞允许通过恶意gguf模型文件上传导致DoS
+CVE-2024-12886,ollama,HIGH,CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,2024,"version < ""0.3.15""",2,ollama服务器中的内存溢出（OOM）漏洞
+CVE-2024-28224,ollama,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H,2024,"version < ""0.1.29""",6,Ollama DNS rebinding漏洞
+CVE-2024-37032,ollama,MEDIUM,,2024,"version < ""0.1.34""",9,Ollama未验证摘要格式（64位十六进制sha256）
+CVE-2024-39719,ollama,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N,2024,"version <= ""0.3.14""",3,Ollama 文件存在泄露漏洞
+CVE-2024-39720,ollama,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:H,2024,"version < ""0.1.46""",6,Ollama 越界读取漏洞
+CVE-2024-39721,ollama,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,2024,"version < ""0.1.34""",5,Ollama CreateModelHandler 函数文件读取漏洞
+CVE-2024-39722,ollama,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N,2024,"version < ""0.1.46""",3,Ollama API 路由路径遍历漏洞
+CVE-2024-45436,ollama,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N,2024,"version < ""0.1.47""",5,Ollama 可将 ZIP 存档成员提取到父目录之外
+CVE-2024-7773,ollama,CRITICAL,CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:H,2024,"version < ""0.1.38""",3,ollama 中由于 ZipSlip 漏洞导致的远程代码执行（RCE）
+CVE-2024-8063,ollama,HIGH,CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,2024,"version == ""0.3.3""",2,ollama/ollama版本v0.3.3中的除零漏洞
+CVE-2024-9840,ollama,HIGH,CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,2024,"version < ""0.3.22""",2,open-webui/open-webui中由于不当的多部分边界处理导致的DoS漏洞
+CVE-2025-0312,ollama,HIGH,CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,2025,"version <= ""0.3.14""",2,ollama中的漏洞允许通过GGUF模型文件中的空指针解引用导致DoS
+CVE-2025-0313,ollama,HIGH,CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,2025,"version <= ""0.3.14""",2,ollama中的漏洞允许通过GGUF模型进行DoS攻击
+CVE-2025-0315,ollama,HIGH,CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,2025,"version <= ""0.3.14""",2,ollama中的漏洞允许通过定制的GGUF模型文件上传导致DoS
+CVE-2025-0317,ollama,HIGH,CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,2025,"version <= ""0.3.14""",2,ollama中的漏洞允许通过恶意GGUF模型上传导致DoS
+CVE-2025-15063,ollama,CRITICAL,CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H,2025,,2,Ollama MCP 服务器 execAsync 命令注入远程代码执行漏洞。
+CVE-2025-15514,ollama,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,2025,"version >= ""0.11.5-rc0"" && version <= ""0.13.5""",5,Ollama 在多模态图像处理中存在空指针解引用漏洞，导致拒绝服务。
+CVE-2025-1975,ollama,HIGH,CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,2025,"version >= ""0"" && version < ""0.5.12""",3,Ollama 服务器易受拒绝服务 (DoS) 攻击
+CVE-2025-44779,ollama,MEDIUM,CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:H,2025,"version > ""0"" && version < ""0.1.34""",0,Ollama 允许删除任意文件。
+CVE-2025-51471,ollama,HIGH,CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:H/I:L/A:N,2025,"version > ""0"" && version <= ""0.9.6""",5,Ollama 存在跨域令牌暴露漏洞。
+CVE-2025-63389,ollama,CRITICAL,CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N,2025,"version > ""0"" && version <= ""0.13.5""",4,Ollama 平台缺少身份验证，导致攻击者可以执行模型管理操作。
+CVE-2025-66959,ollama,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,2025,"version == ""0.12.10""",3,Ollama 中 GGUF 解码器远程拒绝服务漏洞。
+CVE-2025-66960,ollama,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,2025,"version == ""0.12.10""",3,Ollama 存在拒绝服务漏洞，可通过特制 GGUF 元数据触发。
+CVE-2026-5530,ollama,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L,2026,"version <= ""0.1.18.1""",2,Ollama 模型拉取 API 服务端请求伪造（SSRF）漏洞
+CVE-2026-7020,ollama,MEDIUM,CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L,2026,"version <= ""0.20.2""",2,Ollama Tensor Model Transfer Handler（digestToPath）存在路径穿越漏洞，影响 0.20.2 及以下版本
+CVE-2026-7482,ollama,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:H,2026,"version < ""0.17.1""",3,Ollama 0.17.1 之前版本 GGUF 模型加载器堆越界读取漏洞（CVE-2026-7482）
+CVE-2024-12534,open-webui,HIGH,CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,2024,"version < ""0.3.33""",2,open-webui中缺乏字符长度验证导致DoS
+CVE-2024-12537,open-webui,HIGH,CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,2024,"version < ""0.3.33""",2,open-webui中缺乏身份验证机制，允许未经身份验证的访问，从而导致拒绝服务。
+CVE-2024-12868,open-webui,HIGH,CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,2024,"version < ""0.3.33""",2,open-webui中存在漏洞的starlette包版本导致拒绝服务
+CVE-2024-30256,open-webui,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N,2024,"version < ""0.1.117""",1,Open WebUI是一个用户友好的LLMs WebUI。Open-webui存在认证盲服务器端请求伪造漏洞。该漏洞已在0.1.117版本中修复。
+CVE-2024-47874,open-webui,HIGH,CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,2024,"version < ""0.3.33""",4,Open WebUI 通过 fastapi 对 starlette 存在易受攻击的依赖
+CVE-2024-53981,open-webui,HIGH,CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,2024,"version < ""0.4.7""",5,Open WebUI 未认证多部分边界拒绝服务（DoS）漏洞存在于api/chat/file中
+CVE-2024-6706,open-webui,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N,2024,"version < ""0.1.105""",3,Open WebUI 存储型跨站脚本漏洞
+CVE-2024-6707,open-webui,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N,2024,,2,Open WebUI 路径遍历漏洞
+CVE-2024-7033,open-webui,CRITICAL,CVSS:3.0/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:H/A:H,2024,"version < ""0.3.9""",2,open-webui中的任意文件写入漏洞
+CVE-2024-7034,open-webui,HIGH,CVSS:3.0/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:H/A:H,2024,"version < ""0.3.9""",2,open-webui中的任意文件写入漏洞
+CVE-2024-7035,open-webui,MEDIUM,CVSS:3.0/AV:N/AC:L/PR:H/UI:R/S:C/C:N/I:H/A:L,2024,"version < ""0.3.9""",2,open-webui中敏感操作的GET方法不安全
+CVE-2024-7036,open-webui,HIGH,CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,2024,"version < ""0.3.9""",2,open-webui中的漏洞允许未经身份验证的攻击者导致管理面板无响应。
+CVE-2024-7037,open-webui,MEDIUM,CVSS:3.0/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:H/A:H,2024,"version < ""0.3.9""",4,open-webui 允许写入和删除任意文件
+CVE-2024-7038,open-webui,LOW,CVSS:3.0/AV:N/AC:L/PR:H/UI:N/S:U/C:L/I:N/A:N,2024,"version < ""0.3.9""",4,open-webui 允许通过观察错误消息枚举文件名和遍历目录
+CVE-2024-7039,open-webui,HIGH,CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:L,2024,"version < ""0.3.9""",2,open-webui 中的权限管理不当漏洞
+CVE-2024-7040,open-webui,MEDIUM,CVSS:3.0/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:N/A:N,2024,"version < ""0.3.9""",2,open-webui 中的不当访问控制漏洞
+CVE-2024-7041,open-webui,MEDIUM,CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N,2024,"version < ""0.3.8""",4,open-webui 不安全的直接对象引用（IDOR）漏洞
+CVE-2024-7043,open-webui,HIGH,CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N,2024,"version < ""0.3.9""",2,open-webui中存在不当访问控制漏洞，允许未经授权的文件操作
+CVE-2024-7044,open-webui,MEDIUM,CVSS:3.0/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:N/A:N,2024,"version < ""0.3.9""",2,open-webui 聊天文件上传中的存储型跨站脚本（XSS）漏洞
+CVE-2024-7045,open-webui,MEDIUM,CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N,2024,"version < ""0.3.9""",2,open-webui中存在不当访问控制漏洞，允许未经授权的提示查看。
+CVE-2024-7046,open-webui,MEDIUM,CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N,2024,"version < ""0.3.9""",2,open-webui中存在不当访问控制漏洞，允许查看管理员详情。
+CVE-2024-7048,open-webui,MEDIUM,CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L,2024,"version < ""0.3.9""",2,Open WebUI 权限管理不当漏洞
+CVE-2024-7049,open-webui,MEDIUM,CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:N,2024,"version < ""0.3.9""",2,Open WebUI 用户权限绕过漏洞
+CVE-2024-7053,open-webui,HIGH,CVSS:3.0/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:L/A:N,2024,"version < ""0.3.9""",2,open-webui/open-webui 版本 0.3.8 中的会话固定漏洞
+CVE-2024-7806,open-webui,HIGH,CVSS:3.0/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H,2024,"version<= ""0.3.8""",2,open-webui版本<=0.3.8中存在通过CSRF实现的远程代码执行漏洞
+CVE-2024-7959,open-webui,HIGH,CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:N,2024,"version < ""0.3.9""",2,open-webui/open-webui版本0.3.8的`/openai/models`端点存在SSRF漏洞
+CVE-2024-7983,open-webui,HIGH,CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,2024,"version < ""0.3.9""",2,open-webui中未认证的markdown转HTML端点导致DoS
+CVE-2024-7990,open-webui,HIGH,CVSS:3.0/AV:N/AC:L/PR:H/UI:R/S:C/C:H/I:H/A:H,2024,"version < ""0.3.9""",2,open-webui中存在的存储型跨站脚本（XSS）漏洞
+CVE-2024-7999,open-webui,HIGH,CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,2024,"version < ""79778fa""",2,open-webui中由于多部分边界格式错误导致的拒绝服务（DoS）漏洞
+CVE-2024-8017,open-webui,CRITICAL,CVSS:3.0/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:H,2024,"version<= ""0.3.8""",2,open-webui版本<=0.3.8中的XSS漏洞
+CVE-2024-8053,open-webui,HIGH,CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,2024,"version < ""0.3.11""",2,open-webui中PDF生成端点缺乏身份验证
+CVE-2024-8060,open-webui,HIGH,CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:H,2024,"version >= ""0"" && version < ""0.5.17""",4,Open WebUI 允许通过任意文件上传实现远程代码执行
+CVE-2025-29446,open-webui,HIGH,CVSS:3.x/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H,2025,"version == ""0.5.16""",3,open-webui v0.5.16中的SSRF漏洞
+CVE-2025-63391,open-webui,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N,2025,"version <= ""0.6.32""",4,Open-WebUI /api/config 端点存在身份验证绕过漏洞。
+CVE-2025-63681,open-webui,LOW,CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N/E:P,2025,"version > ""0"" && version <= ""0.6.33""",0,Open-webui 存在不正确的访问控制漏洞，允许未经授权的任务取消。
+CVE-2025-64495,open-webui,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:N,2025,"version > ""0"" && version < ""0.6.35""",5,Open WebUI 在启用“将提示作为富文本插入”时，通过提示容易受到存储型 DOM XSS 攻击，导致 ATO/RCE。
+CVE-2025-64496,open-webui,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:N,2025,"version > ""0"" && version < ""0.6.35""",4,Open WebUI 在启用直接连接时，易受来自外部模型服务器的服务器发送事件 (SSE) 的代码注入攻击。
+CVE-2025-65958,open-webui,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:L/A:N,2025,"version > ""0"" && version < ""0.6.37""",4,Open WebUI 存在服务器端请求伪造 (SSRF) 漏洞，通过 /api/v1/retrieval/process/web 端点中的任意 URL 处理实现。
+CVE-2025-65959,open-webui,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:N,2025,"version > ""0"" && version < ""0.6.37""",6,Open WebUI 存在存储型 DOM XSS 漏洞，通过笔记中的“下载 PDF”功能进行利用。
+CVE-2025-15603,openwebui,LOW,CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N,2025,"version <= ""0.6.16""",2,Open WebUI JWT 密钥处理程序 WEBUI_SECRET_KEY 随机性不足漏洞
+CVE-2026-44555,openwebui,HIGH,,2026,"version < ""0.9.0""",1,Open WebUI 基础模型路由通过模型链绕过访问控制
+CVE-2026-44563,openwebui,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:L,2026,"version < ""0.9.0""",1,Open WebUI 通过 /api/generate、/api/embed、/api/embeddings 和 /api/show 端点存在未授权模型访问漏洞
+CVE-2026-44566,openwebui,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L,2026,"version < ""0.1.124""",1,Open WebUI 任意文件上传与路径穿越漏洞
+CVE-2026-45301,openwebui,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N,2026,"version < ""0.3.16""",2,Open WebUI 文件 API 缺少权限校验，任意已认证用户可列举、读取并删除所有用户上传的文件。
+CVE-2026-45365,openwebui,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:N,2026,"version < ""0.8.11""",2,Open WebUI 已认证用户可通过暴露的 bypass_filter 查询参数绕过模型访问控制
+CVE-2026-54006,openwebui,MEDIUM,CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:L/I:L/A:N,2026,"version < ""0.9.6""",1,Open WebUI IDOR 漏洞允许通过日历事件重新设置父级将事件写入其他用户的日历
+CVE-2026-54008,openwebui,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:L,2026,"version < ""0.9.6""",3,Open WebUI <= 0.9.5 OAuth _process_picture_url 重定向绕过 SSRF 漏洞 (CVE-2026-54008)
+CVE-2026-54018,openwebui,HIGH,7.7,2026,"version < ""0.9.6""",4,open-webui Open WebUI 的 SafePlaywrightURLLoader 存在通过 HTTP 重定向绕过 SSRF 防护的漏洞
+CVE-2026-54021,openwebui,MEDIUM,6.3,2026,"version < ""0.9.6""",2,open-webui 已认证用户可通过未保护的 url_idx 路径参数访问任意配置的 Ollama 后端
+CVE-2026-41208,paperclip,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H,2026,"version < ""2026.416.0""",2,Paperclip 通过 Agent 控制的 provisionCommand 实现权限提升，导致操作系统命令执行（RCE）
+CVE-2026-41679,paperclip,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H,2026,"version < ""2026.416.0""",2,Paperclip 未授权远程代码执行漏洞（导入接口鉴权绕过）
+CVE-2026-12045,pgadmin,CRITICAL,CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H,2026,"version >= ""9.13"" && version < ""9.16""",3,pgAdmin 4 AI Assistant 只读事务绕过漏洞，可执行任意 SQL 写操作
+CVE-2026-12048,pgadmin,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:H,2026,"version >= ""6.0"" && version < ""9.16""",2,pgAdmin 4 存储型跨站脚本攻击（XSS）漏洞，影响错误渲染和执行计划节点渲染路径
+CVE-2026-33081,pinchtab,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:N/I:L/A:N,2026,"version <= ""0.8.2""",3,PinchTab /download 端点通过浏览器侧重定向绕过导致的盲 SSRF 漏洞
+CVE-2026-33619,pinchtab,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:N/I:L/A:N,2026,"version == ""0.8.3""",2,PinchTab 任务调度器通过未校验的 callbackUrl 参数导致的盲 SSRF 漏洞
+CVE-2026-33620,pinchtab,MEDIUM,CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:L/A:N,2026,"version >= ""0.7.8"" && version < ""0.8.4""",3,PinchTab API Bearer Token 通过 URL 查询参数明文传输导致凭据泄露
+CVE-2026-33621,pinchtab,MEDIUM,CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:L/A:N,2026,"version >= ""0.7.7"" && version < ""0.8.5""",2,PinchTab 认证端点缺失频率限制，允许对 API Token 实施暴力破解攻击
+CVE-2026-33622,pinchtab,HIGH,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:L,2026,"version >= ""0.8.3"" && version <= ""0.8.5""",1,PinchTab /wait 端点绕过安全策略，在 allowEvaluate=false 时仍允许执行 JavaScript
+CVE-2026-33623,pinchtab,MEDIUM,CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H,2026,"version <= ""0.8.4""",3,PinchTab Windows 平台 PowerShell 清理脚本通过未转义的 Profile 名称导致 OS 命令注入
+CVE-2025-62373,pipecat,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H,2025,"version < ""0.0.94""",2,Pipecat LivekitFrameSerializer 不安全反序列化远程代码执行漏洞
+CVE-2026-44716,pipecat,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N,2026,"version >= ""0.0.90"" && version < ""1.2.0""",5,Pipecat Runner `/files` 端点路径穿越漏洞 — 通过 `%2F` 编码分隔符实现任意文件读取
+CVE-2026-34953,praisonai,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N,2026,"version < ""4.5.97""",2,PraisonAI OAuthManager 身份认证绕过漏洞（validate_token() 逻辑缺陷）
+CVE-2026-40088,praisonai,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H,2026,"version < ""4.5.121""",3,PraisonAI 通过 Shell 元字符进行操作系统命令注入（CWE-78）
+CVE-2026-44336,praisonai,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H,2026,"version < ""4.6.34""",2,PraisonAI MCP server 路径穿越与 Python .pth 注入导致远程代码执行（< 4.6.34）
+CVE-2026-47392,praisonai,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H,2026,"version <= ""1.6.37""",2,PraisonAI Agents execute_code() 沙箱逃逸漏洞——通过 print.__self__ 泄露内置模块
+CVE-2026-47393,praisonai,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H,2026,"version >= ""2.5.6"" && version < ""4.6.34""",4,PraisonAI 部署 API 代码生成器默认生成无认证 Flask 服务器
+CVE-2023-0055,pyload-ng,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N,2023,"version < ""0.5.0b3.dev32""",4,Pyload 在 HTTPS 会话中包含没有 'Secure' 属性的敏感 Cookie
+CVE-2023-0057,pyload-ng,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N,2023,"version < ""0.5.0b3.dev33""",4,pyLoad存在渲染UI层或框架限制不当的漏洞
+CVE-2023-0227,pyload-ng,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N,2023,"version < ""0.5.0b3.dev36""",4,Pyload会话过期不足漏洞
+CVE-2023-0297,pyload-ng,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H,2023,"version < ""0.5.0b3.dev31""",5,pyload-ng代码注入漏洞
+CVE-2023-0434,pyload-ng,MEDIUM,CVSS:3.0/AV:P/AC:L/PR:H/UI:R/S:U/C:N/I:H/A:H,2023,"version < ""0.5.0b3.dev40""",4,pyload-ng 输入验证不当
+CVE-2023-0435,pyload-ng,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H,2023,"version < ""0.5.0b3.dev41""",4,pyload-ng 过度攻击面
+CVE-2023-0488,pyload-ng,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N,2023,"version < ""0.5.0b3.dev42""",4,pyload-ng 存储型跨站脚本漏洞
+CVE-2023-0509,pyload-ng,HIGH,CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N,2023,"version < ""0.5.0b3.dev44""",4,pyload-ng 中的不当证书验证
+CVE-2023-47890,pyload-ng,HIGH,CVSS:3.1/AV:A/AC:H/PR:H/UI:N/S:C/C:H/I:H/A:H,2023,"version < ""0.5.0b3.dev75""",5,下载到任意文件夹可能导致远程代码执行
+CVE-2024-1240,pyload-ng,MEDIUM,CVSS:3.0/AV:N/AC:L/PR:L/UI:R/S:U/C:N/I:L/A:L,2024,"version < ""0.5.0b3.dev79""",3,Pyload-ng 登录功能开放重定向漏洞
+CVE-2024-21644,pyload-ng,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N,2024,"version < ""0.5.0""",4,pyload 未认证 Flask 配置泄露漏洞
+CVE-2024-21645,pyload-ng,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N,2024,"version < ""0.5.0b3.dev77""",4,pyload Log Injection 漏洞
+CVE-2024-22416,pyload-ng,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H,2024,"version < ""0.5.0b3.dev78""",6,pyLoad 中任何 API 调用的跨站请求伪造可能导致管理员权限提升
+CVE-2024-24808,pyload-ng,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N,2024,"version < ""0.5.0b3.dev79""",4,pyLoad 开放重定向漏洞，由于 is_safe_url 函数验证不当
+CVE-2024-32880,pyload-ng,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H,2024,"version < ""0.5.0""",3,pyLoad允许上传到任意文件夹导致远程代码执行
+CVE-2024-39205,pyload-ng,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H,2024,"version <= ""0.5.0b3.dev85""",5,pyload-ng 存在 js2py 沙箱逃逸导致的 RCE 漏洞
+CVE-2024-47821,pyload-ng,HIGH,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H,2024,"version < ""0.5.0b3.dev87""",4,pyLoad 通过 /flashgot API 下载到 /.pyload/scripts 存在远程代码执行漏洞
+CVE-2025-53890,pyload-ng,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H,2025,"version < ""0.20""",0,pyLoad 容易受到通过不安全的验证码处理导致的 XSS 攻击，允许未经身份验证的远程攻击者执行任意代码。
+CVE-2025-54140,pyload-ng,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N,2025,"version < ""0.5.0b3.dev90""",5,pyLoad 在 json/upload 端点存在路径遍历漏洞，允许任意文件写入。
+CVE-2025-54802,pyload-ng,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H,2025,"version < ""0.5.0b3.dev90""",5,pyLoad-ng CNL Blueprint 中通过 `package` 参数进行的路径遍历允许任意文件写入，从而导致远程代码执行 (RCE)。
+CVE-2025-55156,pyload-ng,HIGH,CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:H/VA:H/SC:N/SI:N/SA:N/E:P,2025,"version > ""0"" && version < ""0.5.0b3.dev91""",5,PyLoad 存在 SQL 注入漏洞，通过 /json/add_package API 端点的 add_links 参数。
+CVE-2025-57751,pyload-ng,HIGH,CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:P,2025,"version < ""0.5.0b3.dev92""",0,由于输入验证不当，pyLoad CNL Blueprint 中存在拒绝服务漏洞。
+CVE-2025-61773,pyload-ng,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N,2025,"version >= ""0"" && version < ""0.5.0b3.dev91""",4,通过未经净化的 CNL 和验证码参数在 pyLoad 中存在的代码注入和 XSS 漏洞
+CVE-2025-7346,pyload-ng,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N,2025,"version > ""0"" && version <= ""0.5.0b3.dev88""",5,pyLoad 易受绕过本地主机限制的攻击，从而能够创建任意软件包。
+CVE-2024-10264,qanything,HIGH,CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,2024,"version < ""1.4.2""",2,网易有道/qanything中的HTTP请求走私漏洞
+CVE-2024-12864,qanything,HIGH,CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,2024,"version < ""2.0.1""",2,文件上传功能中的拒绝服务（DoS）漏洞
+CVE-2024-12866,qanything,HIGH,CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N,2024,"version < ""2.0.1""",2,网易有道/qanything中的本地文件包含漏洞
+CVE-2024-25722,qanything,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H,2024,"version < ""1.2.0""",3,QAnything 在 1.2.0 之前版本的 MySQL 客户端存在 SQL 注入漏洞
+CVE-2024-7099,qanything,CRITICAL,CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H,2024,"version < ""1.4.2""",3,qanything SQL注入漏洞
+CVE-2024-8024,qanything,HIGH,CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N,2024,"version < ""1.4.2""",2,网易有道/qanything中的CORS配置错误漏洞
+CVE-2024-8026,qanything,HIGH,CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:H,2024,"version < ""d9ab8bc""",2,网易有道/qanything 后端 API 的 CSRF 漏洞
+CVE-2024-8027,qanything,MEDIUM,CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N,2024,,2,网易有道/QAnything中的存储型跨站脚本（XSS）漏洞
+CVE-2026-7191,qnabot-on-aws,HIGH,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H,2026,"version < ""7.3.0""",3,QnABot on AWS 通过 static-eval 沙箱绕过实现任意代码执行（CVE-2026-7191）
+CVE-2024-10131,ragflow,CRITICAL,CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H,2024,"version = ""0.11.0""",2,Ragflow `add_llm` 函数远程代码执行漏洞
+CVE-2024-12433,ragflow,CRITICAL,CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H,2024,"version >= ""0"" && version < ""0.14.0""",3,RagFlow中由于硬编码的AuthKey和pickle反序列化导致的远程代码执行漏洞
+CVE-2024-12450,ragflow,HIGH,CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N,2024,"version >= ""0.12.0"" && version < ""0.14.0""",3,infiniflow/ragflow 版本 0.12.0 中的多个漏洞
+CVE-2024-12779,ragflow,MEDIUM,CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N,2024,"version == ""0.12.0""",2,infiniflow/ragflow 版本 0.12.0 中的 SSRF 漏洞
+CVE-2024-12869,ragflow,MEDIUM,CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N,2024,"version == ""0.12.0""",2,RagFlow 中的不当身份验证漏洞允许未经授权查看邀请列表。
+CVE-2024-12870,ragflow,MEDIUM,CVSS:3.0/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N,2024,"version = ""cec2080"" || version < ""main""",2,RagFlow中存在存储型XSS漏洞，允许未经授权的JavaScript执行。
+CVE-2024-12871,ragflow,MEDIUM,CVSS:3.0/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N,2024,"version < ""0.12.1""",2,Ragflow中的XSS漏洞允许会话劫持和数据泄露
+CVE-2024-12880,ragflow,HIGH,CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:H,2024,"version < ""0.14.0""",2,通过RAGFlow中不安全的数据查询实现部分账户接管
+CVE-2024-53450,ragflow,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N,2024,"version = ""0.13.0""",3,RAGFlow 文档钩子访问控制不当
+CVE-2025-48187,ragflow,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N,2025,"version < ""0.18.2""",3,RAGFlow 通过 0.18.1 版本允许通过暴力破解电子邮件验证码进行账户接管。
+CVE-2025-51462,ragflow,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N,2025,"version == ""0.17.2""",0,RAGFlow 中存储型跨站脚本 (XSS) 漏洞。
+CVE-2026-45312,ragflow,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H,2026,"version < ""0.24.1""",2,RAGFlow Jinja2 服务端模板注入（SSTI）导致远程代码执行
+CVE-2023-48022,ray,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H,2023,"version >= ""0"" && version < ""2.49.3""",13,通过 Ray 作业提交 API 实现任意代码执行
+CVE-2023-6019,ray,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H,2023,"version < ""2.8.1""",5,Ray OS 命令注入漏洞
+CVE-2023-6020,ray,CRITICAL,CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:L/A:N,2023,"version < ""2.8.1""",5,Ray 缺失授权漏洞
+CVE-2023-6021,ray,CRITICAL,CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:L/A:N,2023,"version < ""2.8.1""",5,Ray路径遍历漏洞
+CVE-2024-57000,ray,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H,2024,"version >= ""2.9.3"" && version <= ""2.40.0""",3,Ray 中的命令注入漏洞
+CVE-2025-1979,ray,MEDIUM,CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:C/C:H/I:L/A:N,2025,"version < ""2.43.0""",5,在 Ray 2.43.0 之前的版本中记录 Redis 密码
+CVE-2025-34351,ray,CRITICAL,CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N,2025,"version > ""0"" && version <= ""2.52.0""",10,Ray 的新令牌认证默认禁用，导致未经授权的访问和任意代码执行。
+CVE-2025-62593,ray,CRITICAL,CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H,2025,"version > ""0"" && version < ""2.52.0""",0,Ray 易受通过 DNS 重绑定攻击，利用 Safari 和 Firefox 浏览器导致的关键远程代码执行 (RCE) 漏洞。
+CVE-2026-32981,ray,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N,2026,"version < ""2.8.1""",3,Ray Dashboard 路径遍历漏洞，可导致本地文件泄露
+CVE-2026-10300,sglang,LOW,CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L,2026,"version <= ""0.5.10.post1""",4,SGLang LoRA 调度器可达断言漏洞导致拒绝服务
+CVE-2026-10775,sglang,LOW,CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:N/I:L/A:L,2026,"version < ""0.5.12""",2,SGLang 多模态缓存哈希碰撞导致嵌入向量损坏和拒绝服务
+CVE-2026-5760,sglang,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H,2026,"version <= ""0.5.9""",4,SGLang reranking端点服务端模板注入（SSTI）漏洞导致远程代码执行
+CVE-2026-7301,sglang,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H,2026,"version >= ""0.5.5""",3,SGLang 多模态运行时调度器的 ROUTER 套接字将 pickle.loads() 暴露给未经认证的远程攻击者， 可实现远程代码执行（RCE）。
+CVE-2026-7302,sglang,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:H,2026,"version >= ""0.5.5""",3,SGLang 多模态运行时存在未经身份验证的路径遍历漏洞，允许攻击者向服务器进程具有写权限的任意位置写入文件。
+CVE-2026-7304,sglang,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H,2026,"version >= ""0.4.1.post7""",4,SGLang 多模态生成运行时通过 dill 反序列化未授权远程代码执行漏洞
+CVE-2026-44648,sillytavern,HIGH,CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H,2026,"version < ""1.18.0""",1,SillyTavern 在用户修改密码后未使现有会话失效，攻击者持有窃取的 Cookie 可在受害者重置密码后继续访问账户。
+CVE-2026-44649,sillytavern,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H,2026,"version < ""1.18.0""",2,SillyTavern SSO 请求头注入认证绕过漏洞
+CVE-2026-44650,sillytavern,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:H,2026,"version < ""1.18.0""",2,SillyTavern 扩展删除端点路径遍历漏洞允许未授权递归删除目录
+CVE-2026-44651,sillytavern,MEDIUM,,2026,"version < ""1.18.0""",2,SillyTavern CORS 代理错误响应中的反射型 XSS 漏洞
+CVE-2026-46372,sillytavern,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:L/A:N,2026,"version < ""1.18.0""",1,SillyTavern 1.18.0 之前版本通过 /api/search/searxng 接口暴露 SSRF 漏洞， 允许已认证的低权限用户对内部或回环服务发起服务端请求。
+CVE-2025-10096,simstudioai,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L,2025,"version <= ""1.0.0""",7,SimStudioAI sim 中通过 filePath 参数操纵导致的服务器端请求伪造 (SSRF) 漏洞。
+CVE-2025-10097,simstudioai,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L,2025,"version > ""0"" && version <= ""0.1.19""",8,SimStudioAI 的 `execute` 函数存在代码注入漏洞。
+CVE-2025-15099,simstudioai,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L,2025,"version <= ""0.5.27""",8,simstudioai sim 中由于 CRON Secret Handler 漏洞导致身份验证不当。
+CVE-2025-7107,simstudioai,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N,2025,"version <= ""0.1.17""",8,SimStudioAI sim handleLocalFile 函数中的路径遍历漏洞。
+CVE-2025-7114,simstudioai,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L,2025,,5,SimStudioAI 文件上传中缺少身份验证导致远程代码执行。
+CVE-2025-9800,simstudioai,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N,2025,,8,SimStudioAI sim 中的无限制文件上传漏洞。
+CVE-2025-9801,simstudioai,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:H,2025,,8,SimStudioAI sim 存在通过 filePath 参数进行的路径遍历攻击漏洞。
+CVE-2025-9805,simstudioai,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N,2025,,8,SimStudioAI sim 由于对图像代理请求处理不当，存在服务器端请求伪造 (SSRF) 漏洞。
+CVE-2026-6582,superagi,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L,2026,"version <= ""0.0.14""",4,SuperAGI 向量数据库管理端点身份验证缺失漏洞
+CVE-2026-35050,text-generation-webui,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H,2026,"version < ""4.1.1""",2,text-generation-webui 扩展设置路径遍历导致远程代码执行漏洞
+CVE-2023-31036,triton-inference-server,HIGH,CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H,2023,,2,NVIDIA Triton推理服务器路径遍历漏洞
+CVE-2024-0087,triton-inference-server,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:L/A:H,2024,,2,NVIDIA Triton Inference Server日志位置设置漏洞
+CVE-2024-0088,triton-inference-server,MEDIUM,CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:L/I:L/A:H,2024,,2,NVIDIA Triton Inference Server共享内存API漏洞
+CVE-2024-0095,triton-inference-server,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:L/A:H,2024,,2,NVIDIA Triton Inference Server 日志注入漏洞
+CVE-2024-0100,triton-inference-server,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:H/A:H,2024,,2,NVIDIA Triton Inference Server的追踪API漏洞
+CVE-2024-0103,triton-inference-server,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:N,2024,,2,NVIDIA Triton Inference Server 资源初始化漏洞
+CVE-2024-0116,triton-inference-server,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H,2024,,2,NVIDIA Triton Inference Server 存在越界读取漏洞
+CVE-2024-53880,triton-inference-server,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H,2024,,2,NVIDIA Triton Inference Server模型加载API的漏洞
+CVE-2025-23268,triton-inference-server,HIGH,CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:C/C:H/I:H/A:H,2025,,2,NVIDIA Triton Inference Server DALI 后端中不当的输入验证可能导致代码执行。
+CVE-2025-23310,triton-inference-server,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H,2025,,3,NVIDIA Triton Inference Server 存在通过特制输入导致栈缓冲区溢出的漏洞。
+CVE-2025-23311,triton-inference-server,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H,2025,,3,NVIDIA Triton Inference Server 中的堆栈溢出漏洞。
+CVE-2025-23316,triton-inference-server,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H,2025,,2,NVIDIA Triton Inference Server Python backend API PreAuth RCE Vulnerability
+CVE-2025-23317,triton-inference-server,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:H,2025,,3,NVIDIA Triton Inference Server 存在漏洞，攻击者可通过精心构造的 HTTP 请求实现远程代码执行。
+CVE-2025-23318,triton-inference-server,HIGH,CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H,2025,,3,NVIDIA Triton Inference Server Python 后端存在越界写入漏洞。
+CVE-2025-23319,triton-inference-server,HIGH,CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H,2025,,3,NVIDIA Triton Inference Server Python 后端存在越界写入漏洞。
+CVE-2025-23320,triton-inference-server,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N,2025,,3,NVIDIA Triton Inference Server 存在通过大请求导致信息泄露的漏洞。
+CVE-2025-23321,triton-inference-server,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,2025,,3,NVIDIA Triton Inference Server 易受除零导致的拒绝服务攻击。
+CVE-2025-23322,triton-inference-server,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,2025,,3,NVIDIA Triton Inference Server 中的双重释放漏洞。
+CVE-2025-23323,triton-inference-server,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,2025,,3,NVIDIA Triton Inference Server 中的整数溢出导致拒绝服务。
+CVE-2025-23324,triton-inference-server,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,2025,,3,NVIDIA Triton Inference Server 中的整数溢出导致拒绝服务。
+CVE-2025-23325,triton-inference-server,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,2025,,3,NVIDIA Triton Inference Server 中的无限制递归导致拒绝服务。
+CVE-2025-23326,triton-inference-server,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,2025,,3,NVIDIA Triton 推理服务器中的整数溢出导致拒绝服务。
+CVE-2025-23327,triton-inference-server,HIGH,CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H,2025,,3,NVIDIA Triton Inference Server 中的整数溢出漏洞。
+CVE-2025-23328,triton-inference-server,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,2025,,2,NVIDIA Triton 推理服务器存在越界写入漏洞。
+CVE-2025-23329,triton-inference-server,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,2025,,2,NVIDIA Triton Inference Server 易受通过共享内存访问导致的内存损坏攻击。
+CVE-2025-23331,triton-inference-server,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,2025,,3,NVIDIA Triton Inference Server 易受拒绝服务攻击，原因是内存分配过多。
+CVE-2025-23333,triton-inference-server,MEDIUM,CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N,2025,,3,NVIDIA Triton Inference Server Python 后端存在越界读取。
+CVE-2025-23334,triton-inference-server,MEDIUM,CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N,2025,,3,NVIDIA Triton Inference Server Python 后端存在越界读取漏洞。
+CVE-2025-23335,triton-inference-server,MEDIUM,CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:N/I:N/A:H,2025,,3,NVIDIA Triton 推理服务器下溢漏洞导致拒绝服务。
+CVE-2025-23336,triton-inference-server,MEDIUM,CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:N/I:N/A:H,2025,,0,NVIDIA Triton Inference Server 易受配置错误的模型导致的拒绝服务攻击。
+CVE-2025-33201,triton-inference-server,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S/U/C:N/I:N/A:H,2025,,3,NVIDIA Triton Inference Server 拒绝服务漏洞。
+CVE-2025-33202,triton-inference-server,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H,2025,,3,NVIDIA Triton Inference Server 堆栈溢出漏洞。
+CVE-2025-33238,triton-inference-server,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,2025,"version < ""26.01""",2,NVIDIA Triton 推理服务器 SageMaker HTTP 服务器竞争条件导致拒绝服务
+CVE-2026-24206,triton-inference-server,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L,2026,"version < ""26.03""",2,NVIDIA Triton 推理服务器身份验证绕过漏洞
+CVE-2026-24207,triton-inference-server,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H,2026,"version < ""26.03""",2,NVIDIA Triton 推理服务器身份验证绕过漏洞（r26.03 之前的所有版本）
+CVE-2026-30625,upsonic,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H,2026,"version < ""0.72.0""",3,Upsonic MCP 服务器任务创建功能存在命令注入远程代码执行漏洞
+CVE-2024-11040,vllm,HIGH,CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,2024,"version < ""0.5.2.3""",2,vllm-project vllm版本0.5.2.2易受拒绝服务攻击。
+CVE-2024-11041,vllm,CRITICAL,CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H,2024,"version == ""0.6.2""",2,vllm-project v0.6.2 中通过 MessageQueue.dequeue() 的远程代码执行漏洞
+CVE-2024-4839,vllm,MEDIUM,CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:L,2024,"version >= ""9.6""",2,parisneo/lollms-webui 中影响 vLLM 服务的跨站请求伪造 (CSRF) 漏洞。
+CVE-2024-8768,vllm,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,2024,"version >= ""0"" && version < ""0.5.5""",7,vLLM拒绝服务漏洞
+CVE-2024-8939,vllm,MEDIUM,CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,2024,"version < ""0.5.0.post2""",5,vLLM 通过 best_of 参数的拒绝服务漏洞
+CVE-2024-9052,vllm,CRITICAL,CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H,2024,"version == ""0.6.0""",2,vllm-project vllm分布式训练API中的远程代码执行漏洞
+CVE-2024-9053,vllm,CRITICAL,CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H,2024,"version < ""0.6.1""",2,vllm-project中由于不安全的pickle反序列化导致的远程代码执行漏洞
+CVE-2025-1953,vllm,LOW,CVSS:3.1/AV:A/AC:H/PR:L/UI:N/S:U/C:L/I:N/A:N,2025,"version < ""0.3.0""",4,vLLM AIBrix的前缀缓存组件中随机值不足
+CVE-2025-24357,vllm,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H,2025,"version < ""0.8.0""",4,使用 PyTorch < 2.6.0 时恶意模型远程代码执行修复绕过
+CVE-2025-25183,vllm,LOW,CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:U/C:N/I:L/A:N,2025,"version < ""0.7.2""",7,vLLM 使用 Python 3.12 内置 hash() 导致前缀缓存中的可预测哈希碰撞
+CVE-2025-29770,vllm,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H,2025,"version >= ""0"" && version < ""0.8.0""",3,vLLM 通过 outlines 无界磁盘缓存导致拒绝服务
+CVE-2025-29783,vllm,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H,2025,"version < ""0.8.0""",4,vLLM 允许通过 Mooncake 集成进行远程代码执行
+CVE-2025-30165,vllm,HIGH,CVSS:3.1/AV:A/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H,2025,"version >= ""0.5.2"" && version <= ""0.8.5.post1""",5,vLLM多节点集群配置中的远程代码执行漏洞
+CVE-2025-30202,vllm,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,2025,"version >= ""0.5.2"" && version < ""0.8.5""",6,通过多节点vLLM部署中的ZeroMQ数据泄露
+CVE-2025-32381,vllm,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H,2025,"version > ""0"" && version < ""0.1.18""",5,vllm 因内存中存在无界缓存而容易受到拒绝服务 (DoS) 攻击。
+CVE-2025-32444,vllm,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H,2025,"version >= ""0.6.5"" && version < ""0.8.5""",6,vLLM 通过 Mooncake 集成易受远程代码执行攻击
+CVE-2025-46560,vllm,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H,2025,"version >= ""0.8.0"" && version < ""0.8.5""",4,输入令牌处理中的二次时间复杂度导致拒绝服务
+CVE-2025-46570,vllm,LOW,CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:U/C:L/I:N/A:N,2025,"version < ""0.9.0""",5,vLLM 的基于块的前缀缓存中潜在的定时旁路漏洞
+CVE-2025-46722,vllm,MEDIUM,CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:L/I:N/A:L,2025,"version >= ""0.7.0"" && version < ""0.9.0""",6,vLLM在多模态哈希器图像哈希实现中存在弱点
+CVE-2025-47277,vllm,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H,2025,"version <= ""v0.8.5""",1,vLLM分布式节点模式下通过PyNcclPipe通信服务的远程代码执行漏洞
+CVE-2025-48887,vllm,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H,2025,"version >= ""0.6.4"" && version < ""0.9.0""",5,vLLM 在 `pythonic_tool_parser.py` 中存在正则表达式拒绝服务（ReDoS）漏洞
+CVE-2025-48942,vllm,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H,2025,"version >= ""0.8.0"" && version < ""0.9.0""",6,vLLM DOS：通过带有无效 JSON 模式的 HTTP 远程终止 vllm
+CVE-2025-48943,vllm,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H,2025,"version >= ""0.8.0"" && version < ""0.9.0""",6,vLLM允许客户端使用无效的正则表达式使openai服务器崩溃
+CVE-2025-48944,vllm,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H,2025,"version >= ""0.8.0"" && version < ""0.9.0""",4,vLLM 工具模式允许通过畸形模式和类型字段导致拒绝服务
+CVE-2025-48956,vllm,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,2025,"version > ""0.1.0"" && version < ""0.10.1.1""",5,vllm API 端点易受因HTTP头部过大导致的拒绝服务攻击。
+CVE-2025-59425,vllm,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N,2025,"version >= ""0"" && version < ""0.11.0""",5,vLLM API 密钥验证中的时序攻击漏洞
+CVE-2025-61620,vllm,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H,2025,"version >= ""0.5.1"" && version < ""0.11.0""",4,通过恶意 Jinja 模板在 vLLM 的 OpenAI 兼容服务器中引发资源耗尽（DoS）
+CVE-2025-62164,vllm,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H,2025,"version >= ""0.10.2"" && version < ""0.11.1""",4,vLLM 反序列化漏洞导致拒绝服务和潜在的远程代码执行。
+CVE-2025-62372,vllm,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H,2025,"version >= ""0.5.5"" && version < ""0.11.1""",0,由于多模态嵌入输入的形状验证不正确，vLLM 容易受到拒绝服务 (DoS) 攻击。
+CVE-2025-6242,vllm,HIGH,CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:L/A:H,2025,"version >= ""0.5.0"" && version < ""0.11.0""",6,vLLM 的 MediaConnector 类中存在服务器端请求伪造（SSRF）漏洞
+CVE-2025-62426,vllm,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H,2025,"version >= ""0.5.5"" && version < ""0.11.1""",6,vLLM 易受拒绝服务 (DoS) 攻击，通过特制 `chat_template_kwargs` 的大型聊天完成或分词请求。
+CVE-2025-65015,vllm,CRITICAL,CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:H,2025,"(version >= ""1.3.3"" && version < ""1.3.5"") || (version >= ""1.4.0"" && version < ""1.4.2"")",7,joserfc 存在因记录任意大的 JWT 令牌负载而触发的潜在不受控制的资源消耗漏洞
+CVE-2025-66448,vllm,HIGH,CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:U/C:H/I:H/A:H,2025,"version > ""0"" && version < ""0.11.1""",5,vLLM 存在远程代码执行漏洞，通过 `transformers_utils/get_config` 对 `auto_map` 条目处理不当。
+CVE-2025-71379,vllm,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L,2025,"version >= ""0.6.3"" && version < ""0.9.0""",3,vLLM 多组件正则表达式拒绝服务（ReDoS）漏洞
+CVE-2025-9141,vllm,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H,2025,"version >= ""0.10.0"" && version < ""0.10.1.1""",4,vLLM 在 Qwen3-Coder 的工具调用解析器中存在远程代码执行漏洞。
+CVE-2026-22773,vllm,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H,2026,"version > ""0.6.4"" && version < ""0.12.0""",5,vLLM 在 Idefics3 视觉模型中存在拒绝服务漏洞，该漏洞通过具有模糊尺寸的图像负载触发。
+CVE-2026-22778,vllm,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H,2026,"version >= ""0.8.3"" && version < ""0.14.1""",7,vLLM 中的一系列漏洞，包括信息泄露和堆溢出，在处理恶意视频 URL 时可能导致远程代码执行 (RCE)。
+CVE-2026-22807,vllm,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H,2026,"version > ""0.10.1"" && version < ""0.14.0""",6,vLLM 存在远程代码执行 (RCE) 漏洞，原因是模型初始化期间不安全的动态模块加载。
+CVE-2026-24779,vllm,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:L,2026,"version > ""0"" && version < ""0.14.1""",5,由于URL解析行为差异，vLLM通过MediaConnector存在服务器端请求伪造（SSRF）漏洞。
+CVE-2026-25960,vllm,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:L,2026,"version >= ""0.15.1"" && version < ""0.17.0""",3,vLLM SSRF 防护绕过漏洞（URL 解析器不一致）
+CVE-2026-27893,vllm,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H,2026,"version >= ""0.10.1"" && version < ""0.18.0""",1,vLLM trust_remote_code 安全绕过导致通过恶意模型仓库实现远程代码执行
+CVE-2026-34753,vllm,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:L,2026,"version >= ""0.16.0"" && version < ""0.19.0""",1,vLLM download_bytes_from_url 存在服务端请求伪造（SSRF）漏洞，允许攻击者从服务器发起任意 HTTP 请求
+CVE-2026-34755,vllm,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H,2026,"version >= ""0.7.0"" && version < ""0.19.0""",1,vLLM VideoMediaIO.load_base64() 缺少帧数限制导致内存耗尽拒绝服务
+CVE-2026-34756,vllm,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H,2026,"version >= ""0.1.0"" && version < ""0.19.0""",3,vLLM OpenAI 兼容 API 服务端因 n 参数无上限校验导致拒绝服务漏洞
+CVE-2026-34760,vllm,MEDIUM,CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:H/A:L,2026,"version >= ""0.5.5"" && version < ""0.18.0""",4,vLLM 音频处理不一致漏洞（单声道降混方式不符合国际标准）
+CVE-2026-41523,vllm,HIGH,CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H,2026,"version < ""0.22.0""",3,vLLM 是一个用于大语言模型（LLM）推理和服务的引擎
+CVE-2026-44222,vllm,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H,2026,"version >= ""0.6.1"" && version < ""0.20.0""",2,vLLM 大语言模型推理服务引擎存在 Token 注入漏洞
+CVE-2026-44223,vllm,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H,2026,"version >= ""0.18.0"" && version < ""0.20.0""",2,vllm vLLM 是一款用于大型语言模型（LLM）的推理与服务引擎
+CVE-2026-47155,vllm,MEDIUM,CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:H/A:N,2026,"version < ""0.22.0""",4,vLLM 版本固定控制绕过允许加载未固定的模型构件
+CVE-2026-48746,vllm,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:H,2026,"version >= ""0.3.0"" && version < ""0.22.0""",3,vLLM OpenAI API 认证中间件身份验证绕过漏洞
+CVE-2026-53923,vllm,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N,2026,"version >= ""0.5.5"" && version < ""0.23.1""",3,vLLM GGUF 反量化内核整数截断导致 GPU 内存信息泄露
+CVE-2026-54232,vllm,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H,2026,"version < ""0.22.1""",1,vLLM Dockerfile 通过 flashinfer-jit-cache 包存在依赖混淆攻击
+CVE-2026-54233,vllm,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H,2026,"version < ""0.23.1""",2,vLLM 大语言模型推理与服务引擎 /v1/audio/transcriptions 端点解压炸弹漏洞
+CVE-2026-54235,vllm,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:L,2026,"version < ""0.23.1""",3,vLLM NaN/Infinity 温度校验绕过漏洞
+CVE-2026-54236,vllm,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N,2026,"version < ""0.23.1""",3,CVE-2026-22778 修复不完整，未清理的错误消息可导致内存地址泄露
+CVE-2026-5497,vllm,HIGH,CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H,2026,"version >= ""0.15.0"" && version < ""0.19.1""",2,vLLM VideoMediaIO.load_base64() 无界帧数处理导致 OOM 拒绝服务漏洞
+CVE-2026-56340,vllm,HIGH,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H,2026,"version >= ""0.10.2"" && version < ""0.13.0""",2,vLLM 多模态嵌入缺乏稀疏张量校验导致拒绝服务漏洞
+CVE-2026-7141,vllm,MEDIUM,CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L,2026,"version <= ""0.19.0""",3,vllm KV 块处理器未初始化资源漏洞
+CVE-2026-33401,wallos,MEDIUM,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N,2026,"version < ""4.7.0""",3,Wallos 多处端点未受保护导致服务端请求伪造（SSRF）漏洞
+CVE-2026-30860,weknora,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H,2026,"version < ""0.2.12""",2,WeKnora AI 数据库查询接口 SQL 注入绕过导致未认证 PostgreSQL RCE
+CVE-2026-30861,weknora,CRITICAL,CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H,2026,"version >= ""0.2.5"" && version < ""0.2.10""",3,WeKnora MCP stdio 配置校验绕过导致未认证命令注入 RCE
