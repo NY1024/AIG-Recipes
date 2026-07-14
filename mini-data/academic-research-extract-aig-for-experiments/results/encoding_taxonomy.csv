@@ -1,0 +1,73 @@
+module_name,class_name,category,file_size,source_lines,uses_mapping,has_params
+a1z26,A1Z26,Classical Cipher,1592,41,False,True
+affine,AffineCipher,Classical Cipher,1663,42,False,True
+alternating_case,AlternatingCase,Case Manipulation,1430,39,False,True
+ascii_smuggling,AsciiSmuggling,Homoglyph/Obfuscation,3594,89,True,True
+ascii85,ASCII85,Base Encoding,1067,28,False,True
+atbash,AtbashCipher,Classical Cipher,1601,45,False,True
+aurebesh,Aurebesh,Symbol System,2028,41,True,True
+baconian,BaconianCipher,Classical Cipher,1838,48,True,True
+base_encoding,BaseEncoding,Base Encoding,4929,126,False,True
+binary,Binary,Base Encoding,1076,28,False,True
+braille,Braille,Symbol System,3388,107,False,True
+bubble,Bubble,Unicode Stylistic,1796,34,True,True
+caesar,CaesarCipher,Classical Cipher,1638,39,False,True
+camel_case,CamelCase,Case Manipulation,1623,46,False,True
+chemical,ChemicalSymbols,Symbol System,2058,45,True,True
+cursive,Cursive,Unicode Stylistic,1850,35,True,True
+cyrillic_stylized,CyrillicStylized,Unicode Stylistic,1431,32,True,True
+disemvowel,Disemvowel,Linguistic Transform,1123,29,False,True
+doubleStruck,DoubleStruck,Unicode Stylistic,1990,36,True,True
+dovahzul,Dovahzul,Symbol System,2051,45,True,True
+ecoji,Ecoji,Base Encoding,1274,39,False,True
+elder_futhark,ElderFuthark,Symbol System,1469,32,True,True
+emoji,Emoji,Homoglyph/Obfuscation,2800,75,False,True
+fraktur,Fraktur,Unicode Stylistic,1996,46,True,True
+fullwidth,FullWidth,Unicode Stylistic,1401,37,False,True
+greek,GreekLetters,Symbol System,1775,37,True,True
+hex,Hex,Base Encoding,1072,27,False,True
+hieroglyphics,Hieroglyphics,Symbol System,1864,35,True,True
+hiragana,Hiragana,Symbol System,3501,74,False,True
+homomorphic,Homomorphic,Homoglyph/Obfuscation,2215,59,False,True
+html,HTMLEntities,Base Encoding,1235,31,False,True
+invisible_text,InvisibleText,Homoglyph/Obfuscation,1122,27,False,True
+katakana,Katakana,Symbol System,3501,74,False,True
+kebab_case,KebabCase,Case Manipulation,1366,34,False,True
+klingon,Klingon,Symbol System,1706,35,True,True
+leetspeak,Leetspeak,Linguistic Transform,1546,47,True,True
+mathematical,MathematicalNotation,Unicode Stylistic,1855,35,True,True
+medieval,Medieval,Unicode Stylistic,1851,35,True,True
+mirror,MirrorText,Homoglyph/Obfuscation,1043,26,False,True
+monospace,Monospace,Unicode Stylistic,1994,36,True,True
+morse,Morse,Symbol System,2214,73,True,True
+nato,Nato,Symbol System,1916,59,True,True
+ogham,Ogham,Symbol System,1804,35,True,True
+pigLatin,PigLatin,Linguistic Transform,1771,48,False,True
+quenya,Quenya,Symbol System,1705,35,True,True
+qwerty_shift,QwertyShift,Homoglyph/Obfuscation,1837,52,True,True
+rail_fence,RailFence,Classical Cipher,1461,39,False,True
+random_case,RandomCase,Case Manipulation,1358,35,False,True
+regional_indicator,RegionalIndicator,Symbol System,1527,38,False,True
+reverse_words,ReverseWords,Linguistic Transform,1264,32,False,True
+roman_numerals,RomanNumerals,Symbol System,1784,50,False,True
+rot_encoding,ROTEncoding,Classical Cipher,3646,104,False,True
+rovarspraket,Rovarspraket,Linguistic Transform,1560,39,False,True
+semaphore,SemaphoreFlags,Symbol System,1955,51,True,True
+sentence_case,SentenceCase,Case Manipulation,1152,29,False,True
+small_caps,SmallCaps,Unicode Stylistic,1446,31,True,True
+snake_case,SnakeCase,Case Manipulation,1366,34,False,True
+strikethrough,Strikethrough,Unicode Stylistic,1152,28,False,True
+subscript,Subscript,Unicode Stylistic,1468,32,True,True
+superscript,Superscript,Unicode Stylistic,1825,33,True,True
+tap_code,TapCode,Classical Cipher,2092,62,True,True
+tengwar,TengwarScript,Symbol System,1812,35,True,True
+title_case,TitleCase,Case Manipulation,1313,34,False,True
+ubbi_dubbi,UbbiDubbi,Linguistic Transform,1142,29,False,True
+underline,Underline,Unicode Stylistic,1144,28,False,True
+upside_down,UpsideDown,Other,2068,38,True,True
+url,URLEncode,Base Encoding,1075,28,False,True
+vaporwave,Vaporwave,Unicode Stylistic,1046,26,False,True
+vigenere,VigenereCipher,Classical Cipher,1763,46,False,True
+wingdings,Wingdings,Symbol System,2402,43,True,True
+zalgo,Zalgo,Homoglyph/Obfuscation,1218,32,False,True
+zerowidth,Zerowidth,Homoglyph/Obfuscation,3209,83,False,True

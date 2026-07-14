@@ -1,0 +1,5 @@
+rule_id,rule_name,categories,prompt_length,code_pattern_count,judgment_standard_count,description
+cors_misconfig,[example] CORS Misconfiguration Detection,code,5213,1,5,Detect misconfigured Cross-Origin Resource Sharing (CORS) policies in MCP code that could lead to security vulnerabilities
+mcp_command_injection,MCP Tool Command Injection Detection,code,2619,3,4,"Detect MCP server tools that pass tool-call arguments into a shell, evaluator, or dynamic-import sink without sanitization, allowing argument-driven remote code execution (the mcp-remote / FastMCP-cla"
+mcp_credential_exfiltration,MCP Credential Exfiltration Detection,code,2467,3,3,"Detect MCP server code that reads secrets (env vars, key files, tokens) and transmits them to an external or attacker-controllable destination, or exposes them through tool output."
+mcp_tool_poisoning,MCP Tool Poisoning Detection,code,2716,3,3,"Detect hidden or malicious instructions embedded in MCP tool descriptions, parameter docstrings, or tool output that manipulate the host agent into unintended actions (tool poisoning / indirect prompt"
