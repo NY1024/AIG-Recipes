@@ -1015,11 +1015,10 @@ python extract_cve_rules.py --aig-root /path/to/AI-Infra-Guard --output-dir ./re
 如果研究使用了 AIG 的方法或代码作为 baseline，请引用：
 
 ```bibtex
-@misc{Tencent_AI-Infra-Guard_2025,
-  author       = {{Tencent Zhuque Lab}},
-  title        = {{AI-Infra-Guard: A Comprehensive, Intelligent, and Easy-to-Use AI Red Teaming Platform}},
-  year         = {2025},
-  howpublished = {GitHub repository},
-  url          = {https://github.com/Tencent/AI-Infra-Guard}
+@article{yang2026securing,
+  title={Securing the AI Agent: A Unified Framework for Multi-Layer Agent Red Teaming},
+  author={Yang, Yong and Zheng, Xing and Wu, Huiyu and Cheng, Huangsheng and Shi, Xiaorong and Guo, Jing and Yang, Bo and Zhou, Yi and Wu, Xiangfan and Ying, Zonghao},
+  journal={arXiv preprint arXiv:2606.31227},
+  year={2026}
 }
 ```
