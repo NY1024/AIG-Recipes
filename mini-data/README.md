@@ -6,7 +6,7 @@
 
 | # | 教程 | 适合谁 | 核心场景 |
 |---|------|--------|---------|
-| 1 | [从 AIG 提取漏洞数据与越狱评测基准——论文实验实战](academic-research-extract-aig-for-experiments.md) | 研究生、博士、安全研究员 | 4 个研究场景：漏洞统计实证研究、CVSS 攻击面分析、LLM 越狱评测、攻击面空白测绘 |
+| 1 | [AI-Infra-Guard 数据仓库的学术复用：漏洞数据提取、评测基准改造与论文实验方法](academic-research-extract-aig-for-experiments.md) | 研究生、博士、安全研究员 | 4 个研究场景：漏洞统计实证研究、CVSS 攻击面分析、LLM 越狱评测、攻击面空白测绘 |
 
 ## 教程 1 概述
 
