@@ -156,12 +156,15 @@
   ],
   "fingerprint_usage_stats": {
     "total_fingerprint_files": 117,
-    "total_matchers": 1,
+    "total_matchers": 159,
     "operator_distribution": {
-      "=": 1
+      "=": 146,
+      "~=": 13
     },
     "field_distribution": {
-      "body": 1
+      "body": 147,
+      "header": 9,
+      "icon": 3
     }
   },
   "design_pattern": "Rule-Engine DSL: Lexer → Token Stream → AST → Evaluator (visitor pattern with short-circuit evaluation)",

@@ -110,33 +110,34 @@ def make_charts(runner_data, preload_data, outfile):
     """Generate concurrency architecture chart"""
     fig, axes = plt.subplots(1, 2, figsize=(14, 5.5))
 
-    # Concurrency primitives usage
-    all_primitives = {**runner_data["concurrency_primitives"], **preload_data["concurrency_design"]}
-    # avoid duplicates, merge
-    merged = {}
-    for k, v in all_primitives.items():
-        merged[k] = v
-
-    labels = list(merged.keys())
-    values = [1 if v else 0 for v in merged.values()]
-    colors = ['#4ECDC4' if v else '#E0E0E0' for v in merged.values()]
-
-    axes[0].barh(labels, values, color=colors)
-    axes[0].set_title("Concurrency Primitives in AIG Scan Engine", fontsize=12, fontweight='bold')
-    axes[0].set_xlabel("Present (1) / Absent (0)")
-    axes[0].set_xlim(0, 1.5)
-
-    # Init pipeline
+    # Init pipeline as flow
     pipeline = runner_data["init_pipeline"]
     if pipeline:
         steps = [s.replace('init', '').strip() for s in pipeline]
         y_pos = range(len(steps))
-        axes[1].barh(y_pos, [1]*len(steps), color='#45B7D1', edgecolor='navy')
-        axes[1].set_yticks(y_pos)
-        axes[1].set_yticklabels(steps, fontsize=10)
-        axes[1].set_title("Runner Initialization Pipeline", fontsize=12, fontweight='bold')
-        axes[1].set_xlabel("Step")
-        axes[1].set_xlim(0, 1.5)
+        colors = ['#4ECDC4', '#45B7D1', '#FFA07A', '#F7DC6F']
+        axes[0].barh(y_pos, [1]*len(steps), color=colors[:len(steps)], edgecolor='navy', linewidth=0.5)
+        axes[0].set_yticks(list(y_pos))
+        axes[0].set_yticklabels(steps, fontsize=11)
+        axes[0].set_title("Runner Init Pipeline (sequential)", fontsize=12, fontweight='bold')
+        axes[0].set_xlabel("Execution Order →")
+        axes[0].set_xlim(0, 1.5)
+        # Add step numbers
+        for i in range(len(steps)):
+            axes[0].text(0.05, i, f'Step {i+1}', va='center', fontsize=9, color='white', fontweight='bold')
+
+    # Concurrency model: show concurrency level per component
+    components = ['Target Scan\n(goroutine per target)', 'Fingerprint Probe\n(SizedWaitGroup)', 'DNS Resolve\n(fastdialer cache)', 'Rate Limit\n(token bucket)', 'Result Output\n(channel consumer)']
+    # Show approximate concurrency levels
+    levels = ['∞ (target count)', '10 (concurrent param)', 'cached', '~rate limit', '1 (single goroutine)']
+    y_pos2 = range(len(components))
+    axes[1].barh(y_pos2, [1]*len(components), color=['#4ECDC4', '#FF6B6B', '#45B7D1', '#FFA07A', '#98D8C8'])
+    axes[1].set_yticks(list(y_pos2))
+    axes[1].set_yticklabels(components, fontsize=10)
+    axes[1].set_title("Concurrency Model per Component", fontsize=12, fontweight='bold')
+    axes[1].set_xlim(0, 1.5)
+    for i, level in enumerate(levels):
+        axes[1].text(0.02, i, level, va='center', fontsize=9, color='white', fontweight='bold')
 
     plt.tight_layout()
     plt.savefig(outfile, dpi=150, bbox_inches='tight')

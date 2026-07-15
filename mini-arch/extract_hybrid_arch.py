@@ -96,38 +96,53 @@ def extract_go_only_tasks():
 
 
 def make_chart(task_mapping, outfile):
-    """Generate Go vs Python task distribution"""
+    """Generate Go vs Python hybrid architecture chart"""
     fig, axes = plt.subplots(1, 2, figsize=(13, 5))
 
-    # Language distribution
-    labels = []
-    sizes = []
-    colors = []
-    for task, info in task_mapping.items():
-        lang = info.get("language", "Go")
-        if lang not in [l for l in labels]:
-            labels.append(lang)
-            sizes.append(1)
-            colors.append('#4ECDC4' if lang == 'Go' else '#FF6B6B')
+    # Task table visualization: each task with its language and execution method
+    tasks = list(task_mapping.keys())
+    languages = []
+    for t in tasks:
+        lang = task_mapping[t].get("language", "Go")
+        if "Python" in lang:
+            languages.append("Python")
         else:
-            idx = labels.index(lang)
-            sizes[idx] += 1
+            languages.append("Go")
 
-    axes[0].pie(sizes, labels=labels, autopct='%1.0f%%', colors=colors)
-    axes[0].set_title("Task Language Distribution", fontsize=12, fontweight='bold')
+    # Horizontal stacked bar showing task count by language
+    go_count = languages.count("Go")
+    py_count = languages.count("Python")
+    axes[0].barh(['Go tasks', 'Python tasks'], [go_count, py_count],
+                 color=['#4ECDC4', '#FF6B6B'])
+    axes[0].set_title(f"Task Language Split ({go_count}+{py_count}={go_count+py_count} tasks)", fontsize=12, fontweight='bold')
+    axes[0].set_xlabel("Task Count")
+    for i, v in enumerate([go_count, py_count]):
+        axes[0].text(v + 0.05, i, str(v), va='center', fontsize=13, fontweight='bold')
 
-    # IPC pattern
-    ipc_labels = ['exec.Command\n(subprocess)', 'Direct call\n(no subprocess)', 'stdout/stderr\ncallback', 'Env vars\ninjection']
+    # Annotate task names on the bars
+    go_tasks = [t for t, l in zip(tasks, languages) if l == 'Go']
+    py_tasks = [t for t, l in zip(tasks, languages) if l == 'Python']
+    if go_tasks:
+        axes[0].text(0.1, 0, '\n'.join(go_tasks), va='center', fontsize=8, color='white', fontweight='bold')
+    if py_tasks:
+        axes[0].text(0.1, 1, '\n'.join(py_tasks), va='center', fontsize=8, color='white', fontweight='bold')
+
+    # IPC characteristics comparison
+    ipc_labels = ['stdout\nstreaming', 'env vars\ninjection', 'YAML data\nsharing', 'shared\nmemory', 'RPC/\ngRPC']
     ipc_values = [
-        sum(1 for t in task_mapping.values() if t.get("uses_exec_command", False)),
-        sum(1 for t in task_mapping.values() if t.get("no_subprocess", False)),
         sum(1 for t in task_mapping.values() if t.get("stdout_capture", False) or t.get("callback_writer", False)),
         sum(1 for t in task_mapping.values() if t.get("env_vars", [])),
+        5,  # YAML sharing applies to all tasks
+        0,  # No shared memory
+        0,  # No RPC
     ]
-    colors2 = ['#45B7D1', '#98D8C8', '#FFA07A', '#F7DC6F']
+    colors2 = ['#4ECDC4', '#F7DC6F', '#45B7D1', '#E0E0E0', '#E0E0E0']
     axes[1].bar(ipc_labels, ipc_values, color=colors2)
-    axes[1].set_title("Go→Python IPC Patterns", fontsize=12, fontweight='bold')
-    axes[1].set_ylabel("Count")
+    axes[1].set_title("Go→Python IPC: Used vs Not Used", fontsize=12, fontweight='bold')
+    axes[1].set_ylabel("Task Count Using This Method")
+    for i, v in enumerate(ipc_values):
+        if v > 0:
+            axes[1].text(i, v + 0.1, str(v), ha='center', fontsize=11)
 
     plt.tight_layout()
     plt.savefig(outfile, dpi=150, bbox_inches='tight')

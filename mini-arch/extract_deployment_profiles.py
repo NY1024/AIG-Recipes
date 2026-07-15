@@ -102,31 +102,35 @@ def extract_api_endpoints(filepath):
 
 def make_charts(embed_data, docker_data, api_data, outfile):
     """Generate deployment architecture chart"""
-    fig, axes = plt.subplots(1, 3, figsize=(16, 5))
+    fig, axes = plt.subplots(1, 2, figsize=(13, 5))
 
-    # Deployment modes
-    modes = ['Single Binary\n(CLI)', 'Docker Compose\n(source build)', 'Docker Images\n(pre-built)', 'API-Only\n(3rd party)']
-    available = [True, docker_data["single_binary_mode"], docker_data["multi_image_mode"], api_data["total_endpoints"] > 0]
-    colors = ['#4ECDC4' if a else '#E0E0E0' for a in available]
-    axes[0].bar(modes, [1 if a else 0 for a in available], color=colors)
-    axes[0].set_title("Available Deployment Modes", fontsize=11, fontweight='bold')
-    axes[0].set_ylabel("Available (1) / Not (0)")
+    # API endpoint distribution by group
+    groups = api_data["by_group"]
+    if groups:
+        glabels = list(groups.keys())
+        gvalues = list(groups.values())
+        colors = ['#4ECDC4', '#FF6B6B', '#45B7D1', '#FFA07A', '#98D8C8']
+        bars = axes[0].bar(glabels, gvalues, color=colors[:len(glabels)])
+        axes[0].set_title(f"REST API Endpoints by Group ({api_data['total_endpoints']} total)", fontsize=12, fontweight='bold')
+        axes[0].set_ylabel("Endpoint Count")
+        for bar, v in zip(bars, gvalues):
+            axes[0].text(bar.get_x() + bar.get_width()/2, v + 0.1, str(v), ha='center', fontsize=11)
 
-    # API endpoint distribution by method
-    methods = api_data["by_method"]
-    if methods:
-        mlabels = list(methods.keys())
-        mvalues = list(methods.values())
-        axes[1].bar(mlabels, mvalues, color=['#4ECDC4', '#FF6B6B', '#FFA07A', '#98D8C8'][:len(mlabels)])
-        axes[1].set_title("REST API by HTTP Method", fontsize=11, fontweight='bold')
-        axes[1].set_ylabel("Endpoint Count")
-
-    # Docker services
-    svc_names = list(set(s["name"] for s in docker_data["services"]))
-    if svc_names:
-        axes[2].barh(svc_names, [1]*len(svc_names), color='#45B7D1')
-        axes[2].set_title("Docker Compose Services", fontsize=11, fontweight='bold')
-        axes[2].set_xlabel("Present")
+    # Deployment mode feature comparison
+    features = ['Single Binary', 'Embedded\nFrontend', 'Swagger UI', 'Docker\nCompose', 'Pre-built\nImages', 'WebSocket\nAgent']
+    values = [
+        1,  # single binary always available
+        1 if embed_data["spa_embedded"] else 0,
+        1 if embed_data["swagger_ui"] else 0,
+        1 if docker_data["single_binary_mode"] else 0,
+        1 if docker_data["multi_image_mode"] else 0,
+        1,  # WebSocket agent always available
+    ]
+    colors2 = ['#4ECDC4', '#4ECDC4', '#4ECDC4', '#FF6B6B', '#FF6B6B', '#45B7D1']
+    axes[1].barh(features, values, color=colors2)
+    axes[1].set_title("Deployment Feature Availability", fontsize=12, fontweight='bold')
+    axes[1].set_xlabel("Available (1) / Not (0)")
+    axes[1].set_xlim(0, 1.5)
 
     plt.tight_layout()
     plt.savefig(outfile, dpi=150, bbox_inches='tight')

@@ -93,18 +93,18 @@ def analyze_fingerprint_usage():
     for fp_file in FP_DIR.glob("*.yaml"):
         total_rules += 1
         text = fp_file.read_text()
-        # count matchers
-        matchers = re.findall(r'-\s*"(.*?)"', text)
-        for m in matchers:
+        # matchers in YAML use format: - body="xxx" or - header~="xxx"
+        matchers = re.findall(r'-\s+(body|header|icon|hash)([=!~<>]+)"([^"]+)"', text)
+        for field, op, val in matchers:
             total_matchers += 1
-            # detect operators
-            for op in ['==', '!=', '~=', '&&', '||', '=']:
-                if op in m:
-                    operator_usage[op] += 1
-            # detect fields
-            for field in ['body', 'header', 'icon', 'hash']:
-                if field in m:
-                    field_usage[field] += 1
+            operator_usage[op] += 1
+            field_usage[field] += 1
+        # also count version matchers
+        version_matchers = re.findall(r'-\s+version([<>=!]+)', text)
+        for op in version_matchers:
+            total_matchers += 1
+            operator_usage[op] += 1
+            field_usage['version'] += 1
 
     return {
         "total_fingerprint_files": total_rules,
@@ -115,29 +115,37 @@ def analyze_fingerprint_usage():
 
 
 def make_chart(data, outfile):
-    """Generate DSL operator usage chart"""
-    ops = data["operator_distribution"]
-    if not ops:
-        return
-    fig, axes = plt.subplots(1, 2, figsize=(12, 5))
+    """Generate DSL token taxonomy and field usage chart"""
+    fig, axes = plt.subplots(1, 2, figsize=(13, 5))
 
-    # operator distribution
-    labels = list(ops.keys())
-    values = list(ops.values())
-    colors = ['#4ECDC4', '#FF6B6B', '#45B7D1', '#FFA07A', '#98D8C8', '#F7DC6F']
-    axes[0].bar(labels, values, color=colors[:len(labels)])
-    axes[0].set_title("DSL Operator Usage in Fingerprint Rules", fontsize=13, fontweight='bold')
-    axes[0].set_ylabel("Count")
-    for i, v in enumerate(values):
-        axes[0].text(i, v + 1, str(v), ha='center', fontsize=11)
+    # Token type taxonomy (by category)
+    token_categories = {
+        'Content Fields': ['body', 'header', 'icon', 'hash', 'text'],
+        'Match Operators': ['=', '==', '!=', '~='],
+        'Logic Operators': ['&&', '||'],
+        'Version Operators': ['>', '<'],
+        'Version Field': ['version'],
+    }
+    cat_counts = {cat: len(members) for cat, members in token_categories.items()}
+    cat_labels = list(cat_counts.keys())
+    cat_values = list(cat_counts.values())
+    colors = ['#4ECDC4', '#FF6B6B', '#45B7D1', '#FFA07A', '#98D8C8']
+    axes[0].barh(cat_labels, cat_values, color=colors)
+    axes[0].set_title("DSL Token Type Taxonomy (14 tokens)", fontsize=12, fontweight='bold')
+    axes[0].set_xlabel("Token Count")
+    for i, v in enumerate(cat_values):
+        axes[0].text(v + 0.1, i, str(v), va='center', fontsize=11)
 
-    # field distribution
+    # Field usage distribution from actual fingerprints
     fields = data["field_distribution"]
     if fields:
         flabels = list(fields.keys())
         fvalues = list(fields.values())
         axes[1].pie(fvalues, labels=flabels, autopct='%1.1f%%', colors=colors[:len(flabels)])
-        axes[1].set_title("DSL Field Usage Distribution", fontsize=13, fontweight='bold')
+        axes[1].set_title(f"DSL Field Usage in {data['total_fingerprint_files']} Fingerprint Rules", fontsize=12, fontweight='bold')
+    else:
+        axes[1].text(0.5, 0.5, 'No field data', ha='center', va='center', fontsize=14)
+        axes[1].set_title("DSL Field Usage Distribution", fontsize=12, fontweight='bold')
 
     plt.tight_layout()
     plt.savefig(outfile, dpi=150, bbox_inches='tight')

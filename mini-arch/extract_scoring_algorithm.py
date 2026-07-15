@@ -120,32 +120,37 @@ def simulate_scoring(severity_dist):
 
 def make_charts(scoring, severity_dist, simulation, outfile):
     """Generate scoring algorithm analysis chart"""
-    fig, axes = plt.subplots(1, 3, figsize=(16, 5))
+    fig, axes = plt.subplots(1, 2, figsize=(13, 5))
 
     # Severity distribution
     dist = severity_dist["distribution"]
     labels = list(dist.keys())
     values = list(dist.values())
     colors = ['#FF6B6B', '#FFA07A', '#F7DC6F', '#98D8C8', '#E0E0E0']
-    axes[0].bar(labels, values, color=colors[:len(labels)])
-    axes[0].set_title("CVE Severity Distribution", fontsize=11, fontweight='bold')
+    bars = axes[0].bar(labels, values, color=colors[:len(labels)])
+    axes[0].set_title("CVE Severity Distribution (1691 rules)", fontsize=12, fontweight='bold')
     axes[0].set_ylabel("Count")
+    for bar, v in zip(bars, values):
+        axes[0].text(bar.get_x() + bar.get_width()/2, v + 5, str(v), ha='center', fontsize=10)
 
-    # Deduction model
-    deductions = scoring["deduction_per_vulnerability"]
-    ded_labels = ['High/Critical', 'Medium', 'Low']
-    ded_values = [deductions.get('high', 70), deductions.get('middle', 30), deductions.get('low', 10)]
-    axes[1].bar(ded_labels, ded_values, color=['#FF6B6B', '#F7DC6F', '#98D8C8'])
-    axes[1].set_title("Per-Vulnerability Deduction", fontsize=11, fontweight='bold')
-    axes[1].set_ylabel("Points deducted")
+    # Score degradation curve: show how score drops with increasing vuln count
+    # Simulate 1 to 50 vulnerabilities of different severities
+    vuln_counts = range(1, 51)
+    high_scores = [max(0, 100 - n * 70) for n in vuln_counts]
+    medium_scores = [max(0, 100 - n * 30) for n in vuln_counts]
+    low_scores = [max(0, 100 - n * 10) for n in vuln_counts]
+    mixed_scores = [max(0, 100 - (n//3 * 70 + n//3 * 30 + n//3 * 10)) for n in vuln_counts]
 
-    # Score comparison
-    scores = [simulation["current_formula_score"], simulation["cvss_weighted_hypothetical"], simulation["ratio_based_hypothetical"]]
-    score_labels = ['Current\n(flat deduction)', 'CVSS-weighted\n(hypothetical)', 'Ratio-based\n(hypothetical)']
-    axes[2].bar(score_labels, scores, color=['#FF6B6B', '#4ECDC4', '#45B7D1'])
-    axes[2].set_title("Scoring Model Comparison\n(with full vuln DB)", fontsize=11, fontweight='bold')
-    axes[2].set_ylabel("Security Score")
-    axes[2].set_ylim(0, 105)
+    axes[1].plot(list(vuln_counts), high_scores, 'r-o', label='High/Critical (−70 each)', markersize=3, linewidth=1.5)
+    axes[1].plot(list(vuln_counts), medium_scores, color='#F7DC6F', marker='s', label='Medium (−30 each)', markersize=3, linewidth=1.5)
+    axes[1].plot(list(vuln_counts), low_scores, 'g-^', label='Low (−10 each)', markersize=3, linewidth=1.5)
+    axes[1].plot(list(vuln_counts), mixed_scores, color='#45B7D1', marker='D', label='Mixed (equal split)', markersize=3, linewidth=1.5)
+    axes[1].axhline(y=0, color='gray', linestyle='--', alpha=0.5)
+    axes[1].set_title("Score Degradation: Current Formula vs Vulnerability Count", fontsize=11, fontweight='bold')
+    axes[1].set_xlabel("Number of Vulnerabilities")
+    axes[1].set_ylabel("Security Score")
+    axes[1].legend(fontsize=9)
+    axes[1].set_ylim(-5, 105)
 
     plt.tight_layout()
     plt.savefig(outfile, dpi=150, bbox_inches='tight')

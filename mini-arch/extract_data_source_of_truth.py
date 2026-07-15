@@ -143,22 +143,32 @@ def make_charts(data_struct, bilingual, outfile):
     """Generate data architecture chart"""
     fig, axes = plt.subplots(1, 2, figsize=(14, 5.5))
 
-    # YAML files per data directory
-    dirs = list(data_struct.keys())
-    yaml_counts = [data_struct[d]["yaml_files"] for d in dirs]
-    colors = ['#4ECDC4', '#FF6B6B', '#45B7D1', '#FFA07A', '#98D8C8']
-    axes[0].bar(dirs, yaml_counts, color=colors[:len(dirs)])
-    axes[0].set_title("YAML Rule Files per Data Directory", fontsize=12, fontweight='bold')
+    # YAML files per data directory — only show directories with files
+    dirs_with_files = {d: info for d, info in data_struct.items() if info["yaml_files"] > 0 or info["json_files"] > 0}
+    dirs = list(dirs_with_files.keys())
+    yaml_counts = [dirs_with_files[d]["yaml_files"] for d in dirs]
+    json_counts = [dirs_with_files[d]["json_files"] for d in dirs]
+    colors = ['#4ECDC4', '#FF6B6B', '#45B7D1', '#FFA07A', '#98D8C8', '#F7DC6F']
+    x = range(len(dirs))
+    axes[0].bar(x, yaml_counts, color=colors[:len(dirs)], label='YAML')
+    axes[0].bar(x, json_counts, bottom=yaml_counts, color='#BB8FCE', label='JSON')
+    axes[0].set_xticks(list(x))
+    axes[0].set_xticklabels(dirs, fontsize=10)
+    axes[0].set_title("Rule Files per Data Directory", fontsize=12, fontweight='bold')
     axes[0].set_ylabel("File Count")
-    for i, v in enumerate(yaml_counts):
-        axes[0].text(i, v + 1, str(v), ha='center', fontsize=10)
+    axes[0].legend(fontsize=10)
+    for i, (y, j) in enumerate(zip(yaml_counts, json_counts)):
+        total_f = y + j
+        if total_f > 0:
+            axes[0].text(i, total_f + 20, str(total_f), ha='center', fontsize=10)
 
-    # Bilingual sync
-    sync_labels = ['Synced (zh=en)', 'Chinese only', 'English only']
-    sync_values = [bilingual['synced'], bilingual['zh_only'], bilingual['en_only']]
-    sync_colors = ['#4ECDC4', '#FFA07A', '#FF6B6B']
-    axes[1].pie(sync_values, labels=sync_labels, autopct='%1.1f%%', colors=sync_colors)
-    axes[1].set_title("Bilingual Rule Synchronization", fontsize=12, fontweight='bold')
+    # Data size comparison (KB)
+    sizes = [dirs_with_files[d]["total_size_kb"] for d in dirs]
+    axes[1].barh(dirs, sizes, color=colors[:len(dirs)])
+    axes[1].set_title("Data Directory Size (KB)", fontsize=12, fontweight='bold')
+    axes[1].set_xlabel("Size (KB)")
+    for i, v in enumerate(sizes):
+        axes[1].text(v + 10, i, f'{v:.0f} KB', va='center', fontsize=10)
 
     plt.tight_layout()
     plt.savefig(outfile, dpi=150, bbox_inches='tight')

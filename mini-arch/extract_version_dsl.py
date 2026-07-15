@@ -126,26 +126,34 @@ def make_charts(vuln_stats, version_data, outfile):
     """Generate version comparison analysis chart"""
     fig, axes = plt.subplots(1, 2, figsize=(13, 5))
 
-    # Operator distribution in actual rules
+    # Operator distribution in actual rules — sorted by frequency
     ops = vuln_stats["operator_distribution"]
     if ops:
-        labels = list(ops.keys())
-        values = list(ops.values())
-        colors = ['#4ECDC4', '#FF6B6B', '#45B7D1', '#FFA07A', '#98D8C8', '#F7DC6F', '#BB8FCE']
-        axes[0].bar(labels, values, color=colors[:len(labels)])
-        axes[0].set_title("Version Comparison Operators in CVE Rules", fontsize=12, fontweight='bold')
-        axes[0].set_ylabel("Count")
-        for i, v in enumerate(values):
-            axes[0].text(i, v + 5, str(v), ha='center', fontsize=10)
+        # sort by value descending
+        sorted_ops = sorted(ops.items(), key=lambda x: x[1], reverse=True)
+        labels = [k for k, v in sorted_ops]
+        values = [v for k, v in sorted_ops]
+        colors = ['#4ECDC4', '#FF6B6B', '#45B7D1', '#FFA07A', '#98D8C8', '#F7DC6F', '#BB8FCE', '#85C1E2']
+        bars = axes[0].bar(labels, values, color=colors[:len(labels)])
+        axes[0].set_title("Version Comparison Operators in 1691 CVE Rules", fontsize=11, fontweight='bold')
+        axes[0].set_ylabel("Usage Count")
+        for bar, v in zip(bars, values):
+            axes[0].text(bar.get_x() + bar.get_width()/2, v + 10, str(v), ha='center', fontsize=9)
 
-    # Rule coverage
+    # Rule complexity: rules with && vs simple rules vs rules with ||
     total = vuln_stats["total_vuln_files"]
-    with_ver = vuln_stats["rules_with_version_comparison"]
-    without = total - with_ver
-    axes[1].pie([with_ver, without],
-                labels=[f'With version rule ({with_ver})', f'Without rule ({without})'],
-                autopct='%1.1f%%', colors=['#4ECDC4', '#E0E0E0'])
-    axes[1].set_title("CVE Rule Version Coverage", fontsize=12, fontweight='bold')
+    and_count = ops.get('&&', 0)
+    or_count = ops.get('||', 0)
+    simple_count = total - and_count - or_count  # rules without logical operators
+    # Some rules may have both && and || but that's rare; this is approximate
+    complexity_labels = [f'Simple rules\n(single comparison)', f'Compound rules\n(with &&)', f'Alternative rules\n(with ||)']
+    complexity_values = [simple_count, and_count, or_count]
+    colors2 = ['#4ECDC4', '#FF6B6B', '#F7DC6F']
+    axes[1].bar(complexity_labels, complexity_values, color=colors2)
+    axes[1].set_title("CVE Rule Complexity Distribution", fontsize=11, fontweight='bold')
+    axes[1].set_ylabel("Rule Count")
+    for i, v in enumerate(complexity_values):
+        axes[1].text(i, v + 15, str(v), ha='center', fontsize=10)
 
     plt.tight_layout()
     plt.savefig(outfile, dpi=150, bbox_inches='tight')
