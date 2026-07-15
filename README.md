@@ -2,7 +2,7 @@
 
 AI-Infra-Guard (AIG) Recipes — 脚本、数据与图表，服务于学术研究与方法提取。
 
-本仓库从 [AI-Infra-Guard](https://github.com/Tencent/AI-Infra-Guard) 项目中提取可复用的数据和检测方法，整理为独立可运行的脚本和配套图表，方便研究者和安全工程师直接使用。
+本仓库从 [AI-Infra-Guard](https://github.com/Tencent/AI-Infra-Guard) 项目中提取可复用的数据、检测方法和工程架构设计模式，整理为独立可运行的脚本和配套图表，方便研究者和安全工程师直接使用。
 
 ## 仓库结构
 
@@ -38,15 +38,36 @@ AIG-Recipes/
 │   ├── requirements.txt
 │   └── results/                            # 生成的图表与 CSV/JSON
 │
+├── mini-arch/                              # 工程架构解析教程与脚本
+│   ├── README.md
+│   ├── extract-aig-architecture-patterns.md # 技术文章（14 个场景）
+│   ├── extract_dsl_grammar.py
+│   ├── extract_scan_engine.py
+│   ├── extract_version_dsl.py
+│   ├── extract_server_agent.py
+│   ├── extract_hybrid_arch.py
+│   ├── extract_rule_llm_layered.py
+│   ├── extract_scoring_algorithm.py
+│   ├── extract_deployment_profiles.py
+│   ├── extract_database_persistence.py
+│   ├── extract_http_probing.py
+│   ├── extract_llm_integration.py
+│   ├── extract_tool_system.py
+│   ├── extract_provider_adapter.py
+│   ├── extract_scan_pipeline.py
+│   ├── requirements.txt
+│   └── results/                            # 生成的图表与 CSV/JSON
+│
 └── README.md                               # 本文件
 ```
 
-## 两个教程
+## 三个教程
 
 | 目录 | 主题 | 关注点 | 场景数 |
 |------|------|--------|--------|
 | `mini-data/` | AI-Infra-Guard 数据仓库的学术复用 | **数据提取**：漏洞数据集、CVSS 向量、越狱评测基准、攻击面测绘 | 4 + 引用分析 |
 | `mini-method/` | AI-Infra-Guard 方法提取与 Baseline 复用 | **方法提取**：攻击算法、检测规则、编排框架、评测基准、指纹库 | 10 |
+| `mini-arch/` | AI-Infra-Guard 工程架构解析 | **架构设计**：规则引擎 DSL、并发模型、分布式架构、混合语言编排、LLM 增强、评分算法、部署形态 | 14 |
 
 ## 快速开始
 
@@ -74,12 +95,22 @@ python extract_mcp_detection_rules.py --aig-root /path/to/AI-Infra-Guard --outpu
 python extract_fingerprints.py --aig-root /path/to/AI-Infra-Guard --output-dir ./results
 python extract_cve_rules.py --aig-root /path/to/AI-Infra-Guard --output-dir ./results
 # ... 运行其他脚本同理
+
+# --- 架构解析（mini-arch）---
+cd ../../mini-arch
+pip install -r requirements.txt
+python extract_dsl_grammar.py
+python extract_scan_engine.py
+python extract_version_dsl.py
+python extract_server_agent.py
+# ... 运行其他脚本同理
 ```
 
 ## 技术文章
 
 - [AI-Infra-Guard 数据仓库的学术复用：漏洞数据提取、评测基准改造与论文实验方法](mini-data/academic-research-extract-aig-for-experiments.md)
 - [AI-Infra-Guard 方法提取与 Baseline 复用：从安全检测规则到越狱攻击算法](mini-method/extract-aig-methods-as-baselines.md)
+- [AI-Infra-Guard 工程架构解析：AI 安全平台的设计模式与实现剖析](mini-arch/extract-aig-architecture-patterns.md)
 
 ## 许可证
 
