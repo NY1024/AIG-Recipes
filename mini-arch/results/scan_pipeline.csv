@@ -1,0 +1,10 @@
+Skill,Size (bytes),Sections,Dialogue Vectors,Table Vectors
+authorization-bypass-detection,3011,4,0,0
+data-leakage-detection,3814,6,0,0
+direct-injection-detection,2516,5,0,0
+file-path-traversal-detection,3153,6,0,0
+hardcoded-secret-detection,3394,6,0,0
+indirect-injection-detection,4408,5,0,0
+memory-poisoning-detection,3161,6,0,0
+owasp-asi,3202,5,0,0
+tool-abuse-detection,6081,3,0,0

@@ -1,0 +1,104 @@
+{
+  "adapter_architecture": {
+    "classes": [
+      "_MissingWebSocketDependencyError",
+      "ProviderConfig",
+      "ProviderOptions",
+      "ProviderResponseInfo",
+      "ProviderTestResult"
+    ],
+    "provider_routing_handlers": [
+      "standard",
+      "http",
+      "websocket",
+      "dify",
+      "coze"
+    ],
+    "special_providers": [
+      "http",
+      "websocket",
+      "coze",
+      "dify"
+    ],
+    "websocket_support": true,
+    "websocket_methods": [
+      "_is_websocket_url",
+      "_should_use_websocket",
+      "_get_ws_limits",
+      "_validate_websocket_config",
+      "_parse_ws_message",
+      "_append_ws_message_output",
+      "_is_ws_done_message",
+      "_receive_websocket_messages",
+      "_call_websocket_provider"
+    ],
+    "http_support": true,
+    "sse_parsing": true,
+    "response_formats": [
+      "OpenAI",
+      "Anthropic",
+      "Google",
+      "Ollama/Cohere",
+      "Dify"
+    ],
+    "cost_calculation": true,
+    "pricing_support": true,
+    "supports_yaml_config": true,
+    "supports_json_config": true,
+    "error_types_handled": [
+      "ImportError",
+      "TimeoutError"
+    ]
+  },
+  "providers_config": {
+    "api_format_groups": [
+      "dify",
+      "coze",
+      "openai_compatible",
+      "anthropic",
+      "google",
+      "cohere",
+      "huggingface",
+      "replicate"
+    ],
+    "providers_per_format": {
+      "dify": 1,
+      "coze": 2,
+      "openai_compatible": 11,
+      "anthropic": 1,
+      "google": 1,
+      "cohere": 1,
+      "huggingface": 1,
+      "replicate": 1
+    },
+    "total_providers": 19,
+    "all_provider_names": [
+      "dify",
+      "coze",
+      "coze-com",
+      "openai",
+      "mistral",
+      "groq",
+      "deepseek",
+      "perplexity",
+      "openrouter",
+      "togetherai",
+      "fireworks",
+      "ollama",
+      "localai",
+      "litellm",
+      "anthropic",
+      "google",
+      "cohere",
+      "huggingface",
+      "replicate"
+    ],
+    "pricing_entries": 0
+  },
+  "connectivity": {
+    "functions": [
+      "connectivity"
+    ],
+    "line_count": 24
+  }
+}

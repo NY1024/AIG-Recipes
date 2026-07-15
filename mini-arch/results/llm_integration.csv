@@ -1,0 +1,8 @@
+Aspect,Detail
+Pipeline Steps,Chromium Screenshot Capture | Vision LLM: Screenshot Analysis | Streaming LLM: Sensitive Info Analysis | XML Tag Extraction
+Prompt Sections,角色设定 | 概念定义 | 评分依据 | 高风险案例 | 低风险案例 | 系统类型判定 | 任务目标 | 输出格式
+Template Vars,html | screenshot_summary | url | url | url | url | html | screenshot_summary
+XML Tags,details | severity | result | summary | title
+LLM Methods,
+Streaming,True
+Vision,True

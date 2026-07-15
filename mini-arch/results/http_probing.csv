@@ -1,0 +1,13 @@
+Feature,Value
+http_methods,"['do', 'getResponse', 'doUnsafe', 'newRequest', 'setCustomHeaders', 'Get', 'POST']"
+http2_support,True
+redirect_control,True
+uses_err_use_last_response,True
+unsafe_raw_mode,True
+uses_rawhttp,True
+tls_skip_verify,True
+retryable_http,True
+proxy_support,True
+custom_headers,True
+disable_keepalive,True
+max_idle_conns_per_host,"-1,"

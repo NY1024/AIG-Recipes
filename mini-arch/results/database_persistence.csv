@@ -1,0 +1,12 @@
+Model,Fields,Has FK,Has JSON,Has YAML
+ModelParams,0,False,True,False
+Model,11,True,True,True
+ModelStore,0,False,False,False
+User,6,False,True,False
+Session,17,True,True,False
+TaskMessage,7,True,True,False
+TaskStore,0,False,False,False
+SimpleSearchParams,0,False,True,False
+Agent,10,False,True,False
+AgentStore,0,False,False,False
+Config,0,False,False,False

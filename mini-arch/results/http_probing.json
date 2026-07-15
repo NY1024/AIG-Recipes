@@ -1,0 +1,53 @@
+{
+  "http_client": {
+    "http_methods": [
+      "do",
+      "getResponse",
+      "doUnsafe",
+      "newRequest",
+      "setCustomHeaders",
+      "Get",
+      "POST"
+    ],
+    "http2_support": true,
+    "redirect_control": true,
+    "uses_err_use_last_response": true,
+    "unsafe_raw_mode": true,
+    "uses_rawhttp": true,
+    "tls_skip_verify": true,
+    "retryable_http": true,
+    "proxy_support": true,
+    "custom_headers": true,
+    "disable_keepalive": true,
+    "max_idle_conns_per_host": "-1,"
+  },
+  "encoding": {
+    "encoding_functions": [
+      "Decodegbk",
+      "Decodebig5",
+      "Encodebig5"
+    ],
+    "detected_charsets": [
+      "GB2312"
+    ],
+    "meta_charset_patterns": [],
+    "goto_used": true
+  },
+  "title_extraction": {
+    "functions": [
+      "ExtractTitle",
+      "trimTitleTags"
+    ],
+    "regex_patterns": [
+      "(?im)<\\s*title.*>(.*?)<\\s*/\\s*title>"
+    ]
+  },
+  "user_agents": {
+    "user_agent_count": 3,
+    "user_agents": [
+      "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36",
+      "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML like Gecko) Chrome/44.0.2403.155 Safari/537.36",
+      "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML like Gecko) Chrome/46.0.2486.0 Safari/537.36 Edge/13.10586"
+    ]
+  }
+}

@@ -1,0 +1,7 @@
+Tool Name,Module,Sandbox,Param Count
+search_skill,skill,True,2
+load_skill,skill,True,2
+dialogue,dialogue,True,1
+scan,dialogue,True,1
+batch,batch,True,1
+task,task,True,3

@@ -1,0 +1,201 @@
+{
+  "registry_system": {
+    "functions": [
+      "_load_xml_schema",
+      "_get_module_name",
+      "register_tool",
+      "decorator",
+      "wrapper",
+      "get_tool_by_name",
+      "get_tool_names",
+      "needs_agent_state",
+      "needs_context",
+      "should_execute_in_sandbox",
+      "get_tools_prompt",
+      "clear_registry"
+    ],
+    "uses_decorator_pattern": true,
+    "uses_wraps": true,
+    "uses_inspect_module": true,
+    "global_list_storage": true,
+    "global_dict_storage": true,
+    "xml_schema_loading": true,
+    "schema_file_loading": true,
+    "checks_agent_state": true,
+    "checks_context": true,
+    "checks_sandbox": true
+  },
+  "registered_tools": [
+    {
+      "name": "search_skill",
+      "module": "skill",
+      "sandbox_execution": true,
+      "file": "skill/skill.py"
+    },
+    {
+      "name": "load_skill",
+      "module": "skill",
+      "sandbox_execution": true,
+      "file": "skill/skill.py"
+    },
+    {
+      "name": "dialogue",
+      "module": "dialogue",
+      "sandbox_execution": true,
+      "file": "dialogue/dialogue.py"
+    },
+    {
+      "name": "scan",
+      "module": "dialogue",
+      "sandbox_execution": true,
+      "file": "dialogue/scan.py"
+    },
+    {
+      "name": "batch",
+      "module": "batch",
+      "sandbox_execution": true,
+      "file": "batch/batch.py"
+    },
+    {
+      "name": "task",
+      "module": "task",
+      "sandbox_execution": true,
+      "file": "task/task.py"
+    }
+  ],
+  "xml_schemas": [
+    {
+      "file": "skill_schema.xml",
+      "module": "skill",
+      "tool_names": [
+        "search_skill",
+        "load_skill"
+      ],
+      "param_count": 2,
+      "params": [
+        [
+          "query",
+          "string"
+        ],
+        [
+          "name",
+          "string"
+        ]
+      ],
+      "description_length": 417
+    },
+    {
+      "file": "dialogue_schema.xml",
+      "module": "dialogue",
+      "tool_names": [
+        "dialogue"
+      ],
+      "param_count": 1,
+      "params": [
+        [
+          "prompt",
+          "string"
+        ]
+      ],
+      "description_length": 135
+    },
+    {
+      "file": "scan_schema.xml",
+      "module": "dialogue",
+      "tool_names": [
+        "scan"
+      ],
+      "param_count": 1,
+      "params": [
+        [
+          "endpoints",
+          "string"
+        ]
+      ],
+      "description_length": 842
+    },
+    {
+      "file": "thinking_actions_schema.xml",
+      "module": "thinking",
+      "tool_names": [
+        "think"
+      ],
+      "param_count": 2,
+      "params": [
+        [
+          "thought",
+          "string"
+        ],
+        [
+          "thought",
+          "string"
+        ]
+      ],
+      "description_length": 21
+    },
+    {
+      "file": "batch_schema.xml",
+      "module": "batch",
+      "tool_names": [
+        "batch"
+      ],
+      "param_count": 1,
+      "params": [
+        [
+          "tool_calls",
+          "array"
+        ]
+      ],
+      "description_length": 458
+    },
+    {
+      "file": "finish_actions_schema.xml",
+      "module": "finish",
+      "tool_names": [
+        "finish"
+      ],
+      "param_count": 1,
+      "params": [
+        [
+          "content",
+          "string"
+        ]
+      ],
+      "description_length": 103
+    },
+    {
+      "file": "task_schema.xml",
+      "module": "task",
+      "tool_names": [
+        "task",
+        "list_agents"
+      ],
+      "param_count": 3,
+      "params": [
+        [
+          "prompt",
+          "string"
+        ],
+        [
+          "subagent_type",
+          "string"
+        ],
+        [
+          "description",
+          "string"
+        ]
+      ],
+      "description_length": 343
+    }
+  ],
+  "dispatcher": {
+    "functions": [
+      "__init__",
+      "get_all_tools_prompt",
+      "call_tool",
+      "_format_result"
+    ],
+    "uses_registry": true,
+    "has_error_handling": true
+  }
+}

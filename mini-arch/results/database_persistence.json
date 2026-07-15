@@ -1,0 +1,242 @@
+{
+  "models": [
+    {
+      "name": "ModelParams",
+      "field_count": 0,
+      "has_foreign_key": false,
+      "has_json_tag": true,
+      "has_yaml_tag": false,
+      "fields": []
+    },
+    {
+      "name": "Model",
+      "field_count": 11,
+      "has_foreign_key": true,
+      "has_json_tag": true,
+      "has_yaml_tag": true,
+      "fields": [
+        "ModelID",
+        "Username",
+        "ModelName",
+        "Token",
+        "BaseURL",
+        "Note",
+        "Limit",
+        "Default",
+        "CreatedAt",
+        "UpdatedAt",
+        "User"
+      ]
+    },
+    {
+      "name": "ModelStore",
+      "field_count": 0,
+      "has_foreign_key": false,
+      "has_json_tag": false,
+      "has_yaml_tag": false,
+      "fields": []
+    },
+    {
+      "name": "User",
+      "field_count": 6,
+      "has_foreign_key": false,
+      "has_json_tag": true,
+      "has_yaml_tag": false,
+      "fields": [
+        "UserID",
+        "Username",
+        "Email",
+        "IsActive",
+        "FirstLogin",
+        "CreatedAt"
+      ]
+    },
+    {
+      "name": "Session",
+      "field_count": 17,
+      "has_foreign_key": true,
+      "has_json_tag": true,
+      "has_yaml_tag": false,
+      "fields": [
+        "ID",
+        "Username",
+        "Title",
+        "TaskType",
+        "Content",
+        "Params",
+        "Attachments",
+        "Status",
+        "AssignedAgent",
+        "CountryIsoCode",
+        "StartedAt",
+        "CompletedAt",
+        "CreatedAt",
+        "UpdatedAt",
+        "User",
+        "Messages",
+        "Share"
+      ]
+    },
+    {
+      "name": "TaskMessage",
+      "field_count": 7,
+      "has_foreign_key": true,
+      "has_json_tag": true,
+      "has_yaml_tag": false,
+      "fields": [
+        "ID",
+        "SessionID",
+        "Type",
+        "EventData",
+        "Timestamp",
+        "CreatedAt",
+        "Session"
+      ]
+    },
+    {
+      "name": "TaskStore",
+      "field_count": 0,
+      "has_foreign_key": false,
+      "has_json_tag": false,
+      "has_yaml_tag": false,
+      "fields": []
+    },
+    {
+      "name": "SimpleSearchParams",
+      "field_count": 0,
+      "has_foreign_key": false,
+      "has_json_tag": true,
+      "has_yaml_tag": false,
+      "fields": []
+    },
+    {
+      "name": "Agent",
+      "field_count": 10,
+      "has_foreign_key": false,
+      "has_json_tag": true,
+      "has_yaml_tag": false,
+      "fields": [
+        "ID",
+        "Hostname",
+        "IP",
+        "Version",
+        "Capabilities",
+        "Meta",
+        "LastSeen",
+        "CreatedAt",
+        "UpdatedAt",
+        "Online"
+      ]
+    },
+    {
+      "name": "AgentStore",
+      "field_count": 0,
+      "has_foreign_key": false,
+      "has_json_tag": false,
+      "has_yaml_tag": false,
+      "fields": []
+    },
+    {
+      "name": "Config",
+      "field_count": 0,
+      "has_foreign_key": false,
+      "has_json_tag": false,
+      "has_yaml_tag": false,
+      "fields": []
+    }
+  ],
+  "state_machine": {
+    "all_statuses": [
+      "doing",
+      "done",
+      "error",
+      "failed",
+      "terminated",
+      "todo"
+    ],
+    "transitions": [
+      "error",
+      "doing"
+    ],
+    "reset_on_startup": true,
+    "reset_query": "status = 'doing' or status = 'failed'",
+    "transaction_count": 1,
+    "store_method_count": 27,
+    "stores": [
+      "CreateTaskMessage",
+      "ResetRunningTasks",
+      "GetUserSessions",
+      "GetSessionEventsByType",
+      "SearchUserSessionsSimple",
+      "createIndexes",
+      "DeleteUser",
+      "GetSession",
+      "GetSessionEvents",
+      "UpdateUserFirstLogin",
+      "UpdateSession",
+      "GetSessionMessages",
+      "SetShare",
+      "GetUserByEmail",
+      "GetUser",
+      "UpdateSessionAssignedAgent",
+      "DeleteSessionWithMessages",
+      "DeleteSessionMessages",
+      "CreateUser",
+      "StoreEvent",
+      "GetUserSessionsByType",
+      "DeleteSession",
+      "CreateSession",
+      "UpdateSessionStatus",
+      "visibleSessionsQuery",
+      "CheckUserExists",
+      "Init"
+    ]
+  },
+  "indexes": [
+    {
+      "name": "idx_sessions_username_created",
+      "table": "sessions",
+      "columns": "username, created_at DESC"
+    },
+    {
+      "name": "idx_sessions_username_tasktype",
+      "table": "sessions",
+      "columns": "username, task_type"
+    },
+    {
+      "name": "idx_sessions_status",
+      "table": "sessions",
+      "columns": "status"
+    },
+    {
+      "name": "idx_taskmessages_session_timestamp",
+      "table": "task_messages",
+      "columns": "session_id, timestamp"
+    },
+    {
+      "name": "idx_taskmessages_session_type",
+      "table": "task_messages",
+      "columns": "session_id, type"
+    },
+    {
+      "name": "idx_models_username_created",
+      "table": "models",
+      "columns": "username, created_at DESC"
+    }
+  ],
+  "event_sourcing": {
+    "event_methods": [
+      "StoreEvent",
+      "GetSessionEvents",
+      "GetSessionEventsByType"
+    ],
+    "message_types_hint": [],
+    "json_fields": [
+      "params",
+      "attachments",
+      "event_data"
+    ],
+    "uses_datatypes_json": true,
+    "uses_preload": 2
+  }
+}

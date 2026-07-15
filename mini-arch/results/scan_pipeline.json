@@ -1,0 +1,186 @@
+{
+  "pipeline": {
+    "detection_skills": [
+      "data-leakage-detection",
+      "tool-abuse-detection",
+      "indirect-injection-detection",
+      "authorization-bypass-detection"
+    ],
+    "pipeline_stages": [
+      {
+        "id": "1",
+        "name": "Info Collection",
+        "template": "project_summary"
+      },
+      {
+        "id": "2",
+        "name": "Vulnerability Detection",
+        "template": "agent_vulnerability_detector"
+      },
+      {
+        "id": "3",
+        "name": "Vulnerability Review",
+        "template": "agent_security_reviewer"
+      }
+    ],
+    "worker_concurrency": 4,
+    "uses_semaphore": true,
+    "uses_asyncio_gather": true,
+    "uses_return_exceptions": true,
+    "has_exception_handling": true,
+    "skips_failed_workers": true,
+    "has_report_generation": true,
+    "has_language_detection": true,
+    "classes": [
+      "ScanStage",
+      "ScanPipeline",
+      "Agent"
+    ]
+  },
+  "skill_detectors": [
+    {
+      "name": "authorization-bypass-detection",
+      "display_name": "Authorization Bypass Detection",
+      "file_size": 3011,
+      "section_count": 4,
+      "dialogue_vectors": 0,
+      "table_vectors": 0
+    },
+    {
+      "name": "data-leakage-detection",
+      "display_name": "Data Leakage Detection",
+      "file_size": 3814,
+      "section_count": 6,
+      "dialogue_vectors": 0,
+      "table_vectors": 0
+    },
+    {
+      "name": "direct-injection-detection",
+      "display_name": "Direct Injection Detection",
+      "file_size": 2516,
+      "section_count": 5,
+      "dialogue_vectors": 0,
+      "table_vectors": 0
+    },
+    {
+      "name": "file-path-traversal-detection",
+      "display_name": "File Path Traversal Detection",
+      "file_size": 3153,
+      "section_count": 6,
+      "dialogue_vectors": 0,
+      "table_vectors": 0
+    },
+    {
+      "name": "hardcoded-secret-detection",
+      "display_name": "Hardcoded Secret Detection",
+      "file_size": 3394,
+      "section_count": 6,
+      "dialogue_vectors": 0,
+      "table_vectors": 0
+    },
+    {
+      "name": "indirect-injection-detection",
+      "display_name": "Indirect Injection Detection",
+      "file_size": 4408,
+      "section_count": 5,
+      "dialogue_vectors": 0,
+      "table_vectors": 0
+    },
+    {
+      "name": "memory-poisoning-detection",
+      "display_name": "Memory Poisoning Detection",
+      "file_size": 3161,
+      "section_count": 6,
+      "dialogue_vectors": 0,
+      "table_vectors": 0
+    },
+    {
+      "name": "owasp-asi",
+      "display_name": "OWASP ASI Classification Framework",
+      "file_size": 3202,
+      "section_count": 5,
+      "dialogue_vectors": 0,
+      "table_vectors": 0
+    },
+    {
+      "name": "tool-abuse-detection",
+      "display_name": "Tool Abuse Detection",
+      "file_size": 6081,
+      "section_count": 3,
+      "dialogue_vectors": 0,
+      "table_vectors": 0
+    }
+  ],
+  "prompt_templates": [
+    {
+      "file": "agent_security_reviewer.md",
+      "size": 10076,
+      "sections": 10
+    },
+    {
+      "file": "agent_vulnerability_detector.md",
+      "size": 8112,
+      "sections": 10
+    },
+    {
+      "file": "compact.md",
+      "size": 899,
+      "sections": 0
+    },
+    {
+      "file": "format_report.md",
+      "size": 412,
+      "sections": 0
+    },
+    {
+      "file": "main.md",
+      "size": 1175,
+      "sections": 3
+    },
+    {
+      "file": "next_prompt.md",
+      "size": 185,
+      "sections": 0
+    },
+    {
+      "file": "project_summary.md",
+      "size": 7114,
+      "sections": 8
+    },
+    {
+      "file": "skill_runner.md",
+      "size": 4743,
+      "sections": 5
+    },
+    {
+      "file": "system_prompt.md",
+      "size": 3694,
+      "sections": 3
+    },
+    {
+      "file": "agents/build_preview.md",
+      "size": 3208,
+      "sections": 3
+    },
+    {
+      "file": "agents/code_audit.md",
+      "size": 4477,
+      "sections": 12
+    },
+    {
+      "file": "agents/dynamic_verification.md",
+      "size": 3404,
+      "sections": 9
+    },
+    {
+      "file": "agents/mcp_opera.md",
+      "size": 2314,
+      "sections": 2
+    },
+    {
+      "file": "agents/vuln_review.md",
+      "size": 6813,
+      "sections": 8
+    }
+  ]
+}
