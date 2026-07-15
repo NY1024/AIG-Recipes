@@ -1,0 +1,13 @@
+component,primitive,present
+runner,sized_waitgroup,True
+runner,rate_limiter,True
+runner,hybrid_map,True
+runner,fastdialer,True
+runner,atomic_counter,True
+runner,result_channel,True
+runner,callback_progress,True
+preload,sized_waitgroup,True
+preload,mutex_for_results,True
+preload,per_target_concurrency_param,True
+preload,index_cache_optimization,True
+preload,sha256_response_hash,True

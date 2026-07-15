@@ -1,0 +1,6 @@
+task_name,language,uses_subprocess,python_command,script_path
+AI-Infra-Scan,Go,False,,
+Mcp-Scan,Python (subprocess),True,None,None
+Model-Redteam-Report,Python (subprocess),True,None,None
+Agent-Scan,Python (subprocess),True,None,None
+Skill-Scan,Python (subprocess),True,None,None

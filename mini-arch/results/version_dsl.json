@@ -1,0 +1,78 @@
+{
+  "scenario": "Version Comparison DSL & Advisory Engine",
+  "source_files": [
+    "pkg/vulstruct/advisory.go",
+    "pkg/vulstruct/scanner.go",
+    "common/fingerprints/preload/version_range.go"
+  ],
+  "advisory_engine": {
+    "struct_name": "AdvisoryEngine",
+    "storage": "[]VersionVul (in-memory slice, no index)",
+    "methods": [
+      "LoadFromDirectory",
+      "LoadFromHost",
+      "GetAdvisories",
+      "GetCount",
+      "GetAll"
+    ],
+    "load_methods": [
+      "LoadFromDirectory",
+      "LoadFromHost"
+    ],
+    "matching_algorithm": "Linear scan: iterate all ads, match by FingerPrintName, then AdvisoryEval if rule exists"
+  },
+  "version_range_dsl": {
+    "struct_name": "versionRange",
+    "fields": [
+      "min *Version",
+      "max *Version",
+      "minInclusive bool",
+      "maxInclusive bool"
+    ],
+    "supported_operators": [
+      ">=",
+      ">",
+      "<=",
+      "<",
+      "==",
+      "="
+    ],
+    "bracket_notation": true,
+    "interval_arithmetic": {
+      "applyLowerBound": "Takes the higher of two lower bounds, tightens inclusivity",
+      "applyUpperBound": "Takes the lower of two upper bounds, tightens inclusivity",
+      "intersectVersionRanges": "Intersects multiple ranges into a single constraint",
+      "isValid": "Checks min <= max and boundary consistency"
+    },
+    "library": "github.com/hashicorp/go-version"
+  },
+  "version_check_known_issues": [
+    "Strips ALL alphabetic characters: '1.0.0-alpha' → '1.0.0', causing false matches with stable releases",
+    "Replaces '.X' suffix with '.0' before stripping: '1.0.0-rc1' → '1.0.0.01' → '1.0.0.01'",
+    "Maps 'latest' → '999' for comparison (works but semantically imprecise)"
+  ],
+  "vuln_rule_statistics": {
+    "total_vuln_files": 1691,
+    "rules_with_version_comparison": 1691,
+    "rules_without_rule_field": 0,
+    "operator_distribution": {
+      "<=": 499,
+      ">": 322,
+      "<": 1537,
+      "&&": 317,
+      ">=": 221,
+      "!=": 1,
+      "||": 29,
+      "==": 48
+    }
+  },
+  "design_pattern": "Compiled Rule DSL: YAML rule string → ParseAdvisorTokens → AST → AdvisoryEval (version comparison via go-version library)",
+  "key_design_decisions": [
+    "Two-tier matching: fingerprint name match (O(n) linear scan) → version rule evaluation",
+    "Custom UnmarshalYAML on VersionVul to handle nil Rule pointer and compile at load time",
+    "Interval arithmetic with inclusive/exclusive bounds and intersection for fuzzy version ranges",
+    "versionCheck() normalization is lossy: strips all letters, causing 1.0.0-alpha == 1.0.0",
+    "AdvisoryEngine stores rules in a flat slice with no index/hash map — linear scan per query",
+    "Rule compilation happens at YAML load time (ReadVersionVul), not at query time"
+  ]
+}

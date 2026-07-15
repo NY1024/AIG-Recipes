@@ -1,0 +1,104 @@
+{
+  "scenario": "Multi-Deployment Profile Architecture",
+  "source_files": [
+    "common/websocket/server.go",
+    "docker-compose.yml",
+    "docker-compose.images.yml",
+    "CLAUDE.md"
+  ],
+  "embedded_frontend": {
+    "embedded_directives": [
+      "static/*"
+    ],
+    "spa_embedded": true,
+    "swagger_ui": true,
+    "no_route_handler": true,
+    "delivery": "Single binary with embedded frontend (no separate web server needed)"
+  },
+  "docker_architecture": {
+    "services": [
+      {
+        "name": "services",
+        "compose_file": "source"
+      },
+      {
+        "name": "webserver",
+        "compose_file": "source"
+      },
+      {
+        "name": "agent",
+        "compose_file": "source"
+      },
+      {
+        "name": "services",
+        "compose_file": "images"
+      },
+      {
+        "name": "webserver",
+        "compose_file": "images"
+      },
+      {
+        "name": "agent",
+        "compose_file": "images"
+      }
+    ],
+    "single_binary_mode": true,
+    "multi_image_mode": true
+  },
+  "environment_variables": [],
+  "api_structure": {
+    "total_endpoints": 6,
+    "by_group": {
+      "v1": 2,
+      "agents": 1,
+      "system": 3
+    },
+    "by_method": {
+      "GET": 5,
+      "POST": 1
+    },
+    "sample_endpoints": [
+      {
+        "group": "v1",
+        "method": "GET",
+        "path": "/images/:path"
+      },
+      {
+        "group": "agents",
+        "method": "GET",
+        "path": "/ws"
+      },
+      {
+        "group": "v1",
+        "method": "GET",
+        "path": "/version"
+      },
+      {
+        "group": "system",
+        "method": "POST",
+        "path": "/update-data"
+      },
+      {
+        "group": "system",
+        "method": "GET",
+        "path": "/update-data"
+      },
+      {
+        "group": "system",
+        "method": "GET",
+        "path": "/version"
+      }
+    ]
+  },
+  "design_pattern": "Multi-Profile Delivery: single binary (CLI) ↔ Docker Compose (platform) ↔ API-only (integration)",
+  "key_design_decisions": [
+    "go:embed static/* packs SPA frontend into Go binary — no separate web server needed",
+    "Two Docker Compose profiles: source-build (docker-compose.yml) and pre-built images (docker-compose.images.yml)",
+    "REST API structured under /api/v1/ with groups: knowledge, app, agents, system",
+    "SSE endpoint (/api/v1/app/tasks/sse/:sessionId) for real-time progress to frontend",
+    "WebSocket endpoint (/api/v1/agents/ws) for Agent worker connections",
+    "Third-party API group (/api/v1/app/taskapi) for external integration without WebUI",
+    "Environment variables control DB path, upload dir, timezone — no config file required",
+    "Swagger UI at /docs/ with embedded spec — API documentation ships with the binary"
+  ]
+}

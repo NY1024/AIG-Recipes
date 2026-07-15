@@ -1,0 +1,175 @@
+{
+  "scenario": "Fingerprint DSL Grammar & Syntax",
+  "source_files": [
+    "common/fingerprints/parser/token.go",
+    "common/fingerprints/parser/synax.go",
+    "common/fingerprints/parser/parser.go"
+  ],
+  "token_types": [
+    {
+      "name": "tokenBody",
+      "value": "body",
+      "comment": "matches body content"
+    },
+    {
+      "name": "tokenHeader",
+      "value": "header",
+      "comment": "matches HTTP headers"
+    },
+    {
+      "name": "tokenIcon",
+      "value": "icon",
+      "comment": "matches icon content"
+    },
+    {
+      "name": "tokenHash",
+      "value": "hash",
+      "comment": "matches response hash"
+    },
+    {
+      "name": "tokenText",
+      "value": "text",
+      "comment": "matches text content"
+    },
+    {
+      "name": "tokenContains",
+      "value": "=",
+      "comment": "contains operator"
+    },
+    {
+      "name": "tokenFullEqual",
+      "value": "==",
+      "comment": "exact match operator"
+    },
+    {
+      "name": "tokenNotEqual",
+      "value": "!=",
+      "comment": "not equal operator"
+    },
+    {
+      "name": "tokenRegexEqual",
+      "value": "~=",
+      "comment": "regex match operator"
+    },
+    {
+      "name": "tokenAnd",
+      "value": "&&",
+      "comment": "logical AND"
+    },
+    {
+      "name": "tokenOr",
+      "value": "||",
+      "comment": "logical OR"
+    },
+    {
+      "name": "tokenVersion",
+      "value": "version",
+      "comment": "version identifier"
+    },
+    {
+      "name": "tokenGt",
+      "value": ">",
+      "comment": "greater than"
+    },
+    {
+      "name": "tokenLt",
+      "value": "<",
+      "comment": "less than"
+    }
+  ],
+  "ast_node_types": [
+    {
+      "name": "Rule",
+      "field_count": 1
+    },
+    {
+      "name": "dslExp",
+      "field_count": 4
+    },
+    {
+      "name": "logicExp",
+      "field_count": 3
+    },
+    {
+      "name": "bracketExp",
+      "field_count": 1
+    },
+    {
+      "name": "Exp",
+      "field_count": 1
+    }
+  ],
+  "evaluation_operators": [
+    {
+      "operator": "FullEqual",
+      "implementation": "text == s1"
+    },
+    {
+      "operator": "Contains",
+      "implementation": "strings.Contains(s1, text)"
+    },
+    {
+      "operator": "NotEqual",
+      "implementation": "!strings.Contains(s1, text)"
+    },
+    {
+      "operator": "RegexEqual",
+      "implementation": "next.cacheRegx.MatchString(s1)"
+    },
+    {
+      "operator": "FullEqual",
+      "implementation": "v1.Equal(vv.Must(vv.NewVersion(text)))"
+    },
+    {
+      "operator": "Contains",
+      "implementation": "v1.Equal(vv.Must(vv.NewVersion(text)))"
+    },
+    {
+      "operator": "NotEqual",
+      "implementation": "!v1.Equal(vv.Must(vv.NewVersion(text)))"
+    },
+    {
+      "operator": "Gt",
+      "implementation": "v1.GreaterThan(vv.Must(vv.NewVersion(text)))"
+    },
+    {
+      "operator": "Lt",
+      "implementation": "v1.LessThan(vv.Must(vv.NewVersion(text)))"
+    },
+    {
+      "operator": "Gte",
+      "implementation": "v1.GreaterThanOrEqual(vv.Must(vv.NewVersion(text)))"
+    },
+    {
+      "operator": "Lte",
+      "implementation": "v1.LessThanOrEqual(vv.Must(vv.NewVersion(text)))"
+    },
+    {
+      "operator": "IsInternal",
+      "implementation": "config.IsInternal"
+    }
+  ],
+  "version_check_known_issues": [
+    "Removes all alphabetic characters from version strings (e.g., '1.0.0-alpha' → '1.0.0')",
+    "Replaces '.alpha'/'.beta' suffixes with '.0' before stripping letters",
+    "Maps 'latest' to '999' for comparison purposes"
+  ],
+  "fingerprint_usage_stats": {
+    "total_fingerprint_files": 117,
+    "total_matchers": 1,
+    "operator_distribution": {
+      "=": 1
+    },
+    "field_distribution": {
+      "body": 1
+    }
+  },
+  "design_pattern": "Rule-Engine DSL: Lexer → Token Stream → AST → Evaluator (visitor pattern with short-circuit evaluation)",
+  "key_design_decisions": [
+    "Separation of concerns: YAML schema (parser.go) vs expression grammar (synax.go) vs lexer (token.go)",
+    "Two DSL modes: fingerprint matching (body/header/icon/hash) vs advisory version comparison (version/is_internal)",
+    "Hash matcher isolation: hash-based rules cannot coexist with content-based matchers in the same HttpRule",
+    "Short-circuit evaluation in logic expressions (AND stops on false, OR stops on true)",
+    "Version normalization strips alphabetic suffixes — known limitation causing 1.0.0-alpha == 1.0.0"
+  ]
+}

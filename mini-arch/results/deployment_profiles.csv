@@ -1,0 +1,7 @@
+endpoint_group,method,path
+v1,GET,/images/:path
+agents,GET,/ws
+v1,GET,/version
+system,POST,/update-data
+system,GET,/update-data
+system,GET,/version

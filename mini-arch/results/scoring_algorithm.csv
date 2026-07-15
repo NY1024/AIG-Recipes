@@ -1,0 +1,6 @@
+severity,count,deduction_points
+critical,247,70
+high,655,70
+medium,675,30
+low,87,10
+unknown,27,10

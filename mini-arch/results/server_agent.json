@@ -1,0 +1,184 @@
+{
+  "scenario": "Server-Agent Distributed Architecture",
+  "source_files": [
+    "common/websocket/agent.go",
+    "common/agent/agent.go",
+    "common/agent/types.go",
+    "common/websocket/sse_manager.go"
+  ],
+  "message_type_taxonomy": {
+    "agent_to_server": [
+      {
+        "name": "Register",
+        "value": "register",
+        "desc": "注册消息"
+      },
+      {
+        "name": "ResultUpdate",
+        "value": "resultUpdate",
+        "desc": "结果更新"
+      },
+      {
+        "name": "ActionLog",
+        "value": "actionLog",
+        "desc": "插件日志"
+      },
+      {
+        "name": "ToolUsed",
+        "value": "toolUsed",
+        "desc": "插件工作状态"
+      },
+      {
+        "name": "NewPlanStep",
+        "value": "newPlanStep",
+        "desc": "新建执行步骤"
+      },
+      {
+        "name": "StatusUpdate",
+        "value": "statusUpdate",
+        "desc": "更新步骤状态"
+      },
+      {
+        "name": "PlanUpdate",
+        "value": "planUpdate",
+        "desc": "更新任务计划"
+      },
+      {
+        "name": "Error",
+        "value": "error",
+        "desc": "更新任务计划"
+      }
+    ],
+    "server_to_agent": [
+      {
+        "name": "RegisterResp",
+        "value": "register_ack",
+        "desc": "注册响应"
+      },
+      {
+        "name": "TaskAssign",
+        "value": "task_assign",
+        "desc": "任务分配"
+      },
+      {
+        "name": "Terminate",
+        "value": "terminate",
+        "desc": "终止任务"
+      }
+    ],
+    "task_status": [
+      {
+        "name": "Pending",
+        "value": "pending"
+      },
+      {
+        "name": "Running",
+        "value": "running"
+      },
+      {
+        "name": "Complete",
+        "value": "complete"
+      },
+      {
+        "name": "Failed",
+        "value": "failed"
+      }
+    ],
+    "tool_status": [
+      {
+        "name": "Doing",
+        "value": "doing"
+      },
+      {
+        "name": "Done",
+        "value": "done"
+      }
+    ],
+    "agent_status": [
+      {
+        "name": "Running",
+        "value": "running"
+      },
+      {
+        "name": "Completed",
+        "value": "completed"
+      },
+      {
+        "name": "Failed",
+        "value": "failed"
+      },
+      {
+        "name": "Idle",
+        "value": "idle"
+      }
+    ]
+  },
+  "agent_lifecycle": {
+    "agent_methods": [
+      "RegisterTaskFunc",
+      "Start",
+      "Stop",
+      "connect",
+      "register",
+      "Disconnect",
+      "sendMessage",
+      "handleSend",
+      "handleReceive",
+      "processMessage",
+      "SendTaskResult",
+      "GetTaskBySessionId",
+      "cancelTask",
+      "removeTask",
+      "SendsToolUsedLog",
+      "SendToolUsed",
+      "SendNewPlanStep",
+      "SendStepStatusUpdate",
+      "SendPlanUpdate",
+      "SendError"
+    ],
+    "streaming_callbacks": [],
+    "connection_params": {
+      "read_limit": 1024,
+      "send_channel_buffer": 100,
+      "ping_handler": true,
+      "pong_handler": true
+    },
+    "task_execution_model": "Goroutine per task with context.CancelFunc for termination"
+  },
+  "websocket_server_design": {
+    "connection_constants": {
+      "pongWait": "120 * time.Second",
+      "writeWait": "60 * time.Second"
+    },
+    "agent_connection_fields": [
+      "conn    *websocket.Conn",
+      "agentID string",
+      "stateMu sync.RWMutex // 保护连接状态（agentID, isActive）",
+      "writeMu sync.Mutex   // 保护写操作（发送消息）",
+      "isActive bool"
+    ],
+    "dual_lock_design": "stateMu (RWMutex) for connection state, writeMu (Mutex) for write operations",
+    "heartbeat_retry": "Single retry with 1s sleep on ping failure",
+    "validator_integration": "go-playground/validator for registration validation",
+    "agent_replacement": "Duplicate agent ID triggers old connection close + new registration"
+  },
+  "sse_manager_design": {
+    "connection_storage": "map[string]*SSEConnection (sessionId → connection)",
+    "heartbeat_interval": "10 seconds (ticker)",
+    "heartbeat_type": "liveStatus with '思考中...' text",
+    "sse_format": "id: <id>\\nevent: <type>\\ndata: <json>\\n\\n",
+    "conflict_handling": "Duplicate sessionId closes existing connection before adding new one",
+    "flusher_required": "http.Flusher interface check at connection time"
+  },
+  "design_pattern": "Distributed Task Queue: Server (WebSocket hub) → Agent (worker with task goroutine) → SSE (frontend push)",
+  "key_design_decisions": [
+    "Dual communication channels: WebSocket for Agent↔Server, SSE for Server→Frontend",
+    "Dual-lock on AgentConnection: RWMutex for state reads, Mutex for serialized writes",
+    "6 streaming callback types: ResultCallback, ToolUseLogCallback, ToolUsedCallback, NewPlanStepCallback, StepStatusUpdateCallback, PlanUpdateCallback",
+    "Validator-based registration: required fields (agent_id, hostname, ip, version) with structured error formatting",
+    "Heartbeat: Server pings every ~96s (pongWait*8/10), Agent pong updates read deadline to 120s",
+    "SSE heartbeat every 10s with 'liveStatus' event for UI liveliness indication",
+    "Task execution: each task spawns a goroutine with context.CancelFunc for graceful termination",
+    "Agent replacement: same agent_id registration closes old connection, no task migration"
+  ]
+}

@@ -1,0 +1,12 @@
+metric,value
+total_vuln_files,1691
+rules_with_version,1691
+rules_without_rule,0
+op_<=,499
+op_>,322
+op_<,1537
+op_&&,317
+op_>=,221
+op_!=,1
+op_||,29
+op_==,48

@@ -1,0 +1,107 @@
+{
+  "scenario": "Data-as-Source-of-Truth Design Pattern",
+  "source_files": [
+    "data/",
+    "cmd/yamlcheck/main.go",
+    ".github/workflows/yaml-lint.yml"
+  ],
+  "data_directory_structure": {
+    "vuln": {
+      "yaml_files": 1691,
+      "json_files": 0,
+      "total_size_bytes": 2337876,
+      "total_size_kb": 2283.1
+    },
+    "agents": {
+      "yaml_files": 0,
+      "json_files": 0,
+      "total_size_bytes": 0,
+      "total_size_kb": 0.0
+    },
+    "mcp": {
+      "yaml_files": 4,
+      "json_files": 0,
+      "total_size_bytes": 14936,
+      "total_size_kb": 14.6
+    },
+    "fingerprints": {
+      "yaml_files": 121,
+      "json_files": 0,
+      "total_size_bytes": 56940,
+      "total_size_kb": 55.6
+    },
+    "vuln_en": {
+      "yaml_files": 1685,
+      "json_files": 0,
+      "total_size_bytes": 2510403,
+      "total_size_kb": 2451.6
+    },
+    "eval": {
+      "yaml_files": 0,
+      "json_files": 16,
+      "total_size_bytes": 1736740,
+      "total_size_kb": 1696.0
+    }
+  },
+  "yamlcheck_validation": {
+    "tool": "cmd/yamlcheck/main.go",
+    "validation_checks": [
+      "Fingerprint schema fields",
+      "Vulnerability rule schema fields",
+      "Required field presence (severity, category)"
+    ],
+    "ci_integration": ".github/workflows/yaml-lint.yml runs on data/** changes"
+  },
+  "bilingual_synchronization": {
+    "zh_components": 88,
+    "en_components": 86,
+    "zh_only": 2,
+    "en_only": 0,
+    "synced": 86,
+    "zh_only_list": [
+      "crewai",
+      "lobehub"
+    ],
+    "en_only_list": []
+  },
+  "yaml_schema_fields": {
+    "fingerprints": [
+      "http",
+      "info",
+      "version"
+    ],
+    "vuln": [
+      "info",
+      "references",
+      "rule"
+    ],
+    "mcp": [
+      "info",
+      "prompt_template"
+    ],
+    "eval": [
+      "author",
+      "count",
+      "data",
+      "default",
+      "description",
+      "description_zh",
+      "language",
+      "name",
+      "permission",
+      "recommendation",
+      "source",
+      "tags"
+    ]
+  },
+  "design_pattern": "Data-as-Source-of-Truth: All detection rules in version-controlled YAML, loaded at runtime, validated by CI",
+  "key_design_decisions": [
+    "No rules compiled into binary: all detection logic loaded from data/ at startup",
+    "YAML is the contract: Go engine and Python agents both read the same YAML format",
+    "CI gatekeeper: yamlcheck runs on every PR touching data/** via GitHub Actions",
+    "Bilingual by design: data/vuln/ (zh) and data/vuln_en/ (en) are parallel directories",
+    "Schema discipline: fingerprint YAML has info/http/version structure, vuln YAML has info/rule structure",
+    "Runtime loading: InitFingerPrintFromData() reads YAML → compiles DSL at startup, not compile-time",
+    "Out-of-band updates: rules can be added/modified without recompiling or redeploying the binary"
+  ]
+}

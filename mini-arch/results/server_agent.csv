@@ -1,0 +1,12 @@
+direction,type_name,type_value,description
+agent_to_server,Register,register,注册消息
+agent_to_server,ResultUpdate,resultUpdate,结果更新
+agent_to_server,ActionLog,actionLog,插件日志
+agent_to_server,ToolUsed,toolUsed,插件工作状态
+agent_to_server,NewPlanStep,newPlanStep,新建执行步骤
+agent_to_server,StatusUpdate,statusUpdate,更新步骤状态
+agent_to_server,PlanUpdate,planUpdate,更新任务计划
+agent_to_server,Error,error,更新任务计划
+server_to_agent,RegisterResp,register_ack,注册响应
+server_to_agent,TaskAssign,task_assign,任务分配
+server_to_agent,Terminate,terminate,终止任务

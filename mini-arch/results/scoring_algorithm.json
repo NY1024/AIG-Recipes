@@ -1,0 +1,56 @@
+{
+  "scenario": "Security Scoring Algorithm",
+  "source_file": "common/runner/runner.go",
+  "current_implementation": {
+    "function_signature": "func (r *Runner) CalcSecScore(advisories []vulstruct.Info) CallbackReportInfo",
+    "base_score": 100,
+    "floor_score": 0,
+    "deduction_per_vulnerability": {
+      "high": 70,
+      "middle": 30,
+      "low": 10
+    },
+    "formula": "score = 100 - (70*high + 30*medium + 10*low)",
+    "severity_classification": {
+      "high": "high",
+      "critical": "high",
+      "高危": "high",
+      "严重": "high",
+      "medium": "medium",
+      "中危": "medium"
+    },
+    "cvss_integration": false,
+    "weight_by_vulnerability_count": false,
+    "cap_per_vulnerability": false
+  },
+  "vulnerability_severity_distribution": {
+    "total": 1691,
+    "distribution": {
+      "critical": 247,
+      "high": 655,
+      "medium": 675,
+      "low": 87,
+      "unknown": 27
+    }
+  },
+  "scoring_simulation": {
+    "current_formula_score": 0,
+    "cvss_weighted_hypothetical": 0,
+    "ratio_based_hypothetical": 0,
+    "total_vulnerabilities": 1691,
+    "note": "With full vuln DB loaded, current formula floors to 0 immediately — demonstrating the coarseness"
+  },
+  "identified_limitations": [
+    "Fixed deduction ignores CVSS: a CVSS 9.8 critical and a CVSS 7.0 high both deduct 70 points",
+    "No ratio weighting: 1 critical vuln and 100 critical vulns produce the same floor (0) with enough vulns",
+    "No per-vulnerability cap: a single medium vuln deducts 30, but 4 medium vulns deduct 120 (floored to 0)",
+    "Severity classification is string-matching based: relies on exact strings like 'high', '高危', '严重'",
+    "No contextual scoring: doesn't consider exploitability, exposure (internal vs external), or attack complexity"
+  ],
+  "improvement_directions": [
+    "Integrate CVSS score into deduction: deduction = f(cvss) instead of fixed per-severity",
+    "Use logarithmic or square-root scaling for multiple vulnerabilities to avoid premature floor",
+    "Add exposure context: internal-only vulns should have lower weight than externally exploitable ones",
+    "Normalize to 0-100 with percentile-based scoring against industry baselines"
+  ]
+}

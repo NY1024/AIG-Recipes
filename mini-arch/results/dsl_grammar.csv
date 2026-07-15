@@ -1,0 +1,15 @@
+token_name,token_value,description
+tokenBody,body,matches body content
+tokenHeader,header,matches HTTP headers
+tokenIcon,icon,matches icon content
+tokenHash,hash,matches response hash
+tokenText,text,matches text content
+tokenContains,=,contains operator
+tokenFullEqual,==,exact match operator
+tokenNotEqual,!=,not equal operator
+tokenRegexEqual,~=,regex match operator
+tokenAnd,&&,logical AND
+tokenOr,||,logical OR
+tokenVersion,version,version identifier
+tokenGt,>,greater than
+tokenLt,<,less than

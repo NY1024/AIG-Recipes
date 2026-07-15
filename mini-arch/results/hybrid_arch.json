@@ -1,0 +1,88 @@
+{
+  "scenario": "Go+Python Hybrid Architecture",
+  "source_files": [
+    "common/agent/tasks.go",
+    "common/agent/types.go",
+    "common/agent/mcp_task.go",
+    "common/agent/prompt_tasks.go",
+    "common/agent/agent_task.go",
+    "common/agent/skill_task.go"
+  ],
+  "task_type_definitions": [
+    {
+      "name": "TestDemo",
+      "value": "Test-Demo"
+    },
+    {
+      "name": "AIInfraScan",
+      "value": "AI-Infra-Scan"
+    },
+    {
+      "name": "McpScan",
+      "value": "Mcp-Scan"
+    },
+    {
+      "name": "ModelRedteamReport",
+      "value": "Model-Redteam-Report"
+    },
+    {
+      "name": "ModelJailbreak",
+      "value": "Model-Jailbreak"
+    },
+    {
+      "name": "AgentScan",
+      "value": "Agent-Scan"
+    },
+    {
+      "name": "SkillScan",
+      "value": "Skill-Scan"
+    }
+  ],
+  "task_language_mapping": {
+    "AI-Infra-Scan": {
+      "language": "Go",
+      "python_command": null,
+      "script_path": null,
+      "uses_subprocess": false
+    },
+    "Mcp-Scan": {
+      "language": "Python (subprocess)",
+      "python_command": null,
+      "script_path": null,
+      "uses_subprocess": true
+    },
+    "Model-Redteam-Report": {
+      "language": "Python (subprocess)",
+      "python_command": null,
+      "script_path": null,
+      "uses_subprocess": true
+    },
+    "Agent-Scan": {
+      "language": "Python (subprocess)",
+      "python_command": null,
+      "script_path": null,
+      "uses_subprocess": true
+    },
+    "Skill-Scan": {
+      "language": "Python (subprocess)",
+      "python_command": null,
+      "script_path": null,
+      "uses_subprocess": true
+    }
+  },
+  "ipc_patterns": {
+    "subprocess_invocation": "exec.Command with stdout/stderr pipe",
+    "streaming_output": "tmpWriter wraps callback to stream Python stdout line-by-line",
+    "env_injection": "Python sub-projects receive config via os.Setenv / cmd.Env",
+    "shared_data_format": "YAML rule files in data/ are the contract between Go and Python"
+  },
+  "design_pattern": "Language Split by Concern: Go (high-concurrency network probing, web platform) + Python (LLM agent loops, evaluation frameworks)",
+  "key_design_decisions": [
+    "Go handles all network I/O: HTTP fingerprinting, CVE matching, WebSocket server, task scheduling",
+    "Python handles all LLM interaction: MCP code audit, prompt security eval, agent workflow testing",
+    "IPC via subprocess stdout streaming: Go wraps Python process with tmpWriter to capture output line-by-line",
+    "No shared memory or RPC: Go and Python communicate only through process boundary + YAML data files",
+    "Each Python sub-project has its own virtualenv (uv for AIG-PromptSecurity, pip for others)",
+    "Task type string (e.g., 'Mcp-Scan') is the routing key from WebSocket to specific handler"
+  ]
+}

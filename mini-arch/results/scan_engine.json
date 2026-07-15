@@ -1,0 +1,67 @@
+{
+  "scenario": "Concurrent Scan Engine Architecture",
+  "source_files": [
+    "common/runner/runner.go",
+    "common/fingerprints/preload/preload.go"
+  ],
+  "runner_struct_fields": [
+    "Options     *options.Options          // 配置选项",
+    "hp          *httpx.HTTPX              // HTTP 客户端",
+    "hm          *hybrid.HybridMap         // 混合存储",
+    "rateLimiter ratelimit.Limiter         // 速率限制器",
+    "result      chan HttpResult           // 结果通道",
+    "fpEngine    *preload.Runner           // 指纹引擎",
+    "advEngine   *vulstruct.AdvisoryEngine // 漏洞建议引擎",
+    "total       int                       // 总目标数",
+    "done        chan struct{"
+  ],
+  "init_pipeline_order": [
+    "initStorage",
+    "initComponents",
+    "initFingerprints",
+    "initVulnerabilityDB"
+  ],
+  "concurrency_primitives": {
+    "sized_waitgroup": true,
+    "rate_limiter": true,
+    "hybrid_map": true,
+    "fastdialer": true,
+    "atomic_counter": true,
+    "result_channel": true,
+    "callback_progress": true
+  },
+  "http_https_auto_retry": true,
+  "security_score_formula": null,
+  "score_design": {
+    "formula": "deduction = high*70 + medium*30 + low*10",
+    "base_score": 100,
+    "floor": 0,
+    "limitation": "Fixed deduction per severity, ignores CVSS scores, no severity ratio weighting"
+  },
+  "fingerprint_probe_concurrency": {
+    "concurrency_design": {
+      "sized_waitgroup": true,
+      "mutex_for_results": true,
+      "per_target_concurrency_param": true,
+      "index_cache_optimization": true,
+      "sha256_response_hash": true
+    },
+    "deduplication_algorithm": "unknown",
+    "version_extraction_methods": {
+      "regex_extractor": true,
+      "version_range_dsl": true,
+      "fuzzy_range_intersection": true
+    },
+    "fingerprint_func_interface": true
+  },
+  "design_pattern": "Producer-Consumer with Channel: Target Scanner (producer) → result chan → Output Handler (consumer)",
+  "key_design_decisions": [
+    "SizedWaitGroup controls max concurrency (= rate limit value), not a fixed worker pool",
+    "HybridMap (disk+memory) for target storage to handle large target lists without OOM",
+    "HTTP→HTTPS auto-retry with goto label, no redirect chain following for 3xx",
+    "Favicon hash matching as parallel identification channel alongside body/header DSL",
+    "Index page cache shared across all fingerprint probes for the same target (avoid redundant requests)",
+    "Deduplication uses O(n²) nested loop — identified as optimization candidate",
+    "CalcSecScore: absolute deduction model, not weighted by CVSS or vulnerability count ratio"
+  ]
+}
